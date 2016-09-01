@@ -6,7 +6,7 @@
     "language": "NodeJS",
     "services": ["Tone Analyzer", "Conversation API","Natural Language Classifier", "MongoDb"],
     "level" : "Intermediate",
-    "catogary" : "Mobile"
+    "category" : "Mobile"
   },
   {
     "name": "Logistics-wizard App",
@@ -15,7 +15,7 @@
     "language": "Python",
     "services": ["Big Data"],
     "level" : "Intermediate",
-    "catogary" : "Web"
+    "category" : "Web"
   },
   {
     "name": "SOmusic Web App",
@@ -24,7 +24,7 @@
     "language": "NodeJS",
     "services": ["cloudant", "twitter"],
     "level" : "Intermediate",
-    "catogary" : "Web"
+    "category" : "Web"
   },
   {
     "name": "Insights Search",
@@ -33,7 +33,7 @@
     "language": "NodeJS",
     "services": ["cloudant", "twitter"],
     "level" : "Intermediate",
-    "catogary" : "Web"
+    "category" : "Web"
   },
   {
     "name": "Todo Web App",
@@ -42,7 +42,7 @@
     "language": "NodeJS, Java, PHP, Python, Rails, Swift",
     "services": ["Cloudant, MongoDB"],
     "level" : "Beginner",
-    "catogary" : "Web"
+    "category" : "Web"
   },
   {
     "name": "Insights Weather",
@@ -51,7 +51,7 @@
     "language": "NodeJS",
     "services": ["Cloudant, Weather"],
     "level" : "Beginner",
-    "catogary" : "Web"
+    "category" : "Web"
   },
   {
     "name": "Places Insights Lab",
@@ -60,7 +60,7 @@
     "language": "NodeJS",
     "services": ["cloudant", "twitter", "weather"],
     "level" : "Beginner",
-    "catogary" : "Web"
+    "category" : "Web"
     },
     {
       "name": "David Bowie personalities",
@@ -69,7 +69,7 @@
       "language": "Python",
       "services": ["Personality Insights"],
       "level" : "Beginner",
-      "catogary" : "Web"
+      "category" : "Web"
     },
     {
       "name": "Your Celebrity Match",
@@ -78,7 +78,7 @@
       "language": "NodeJS",
       "services": [ "twitter", "Personality Insights" ],
       "level" : "Intermediate",
-      "catogary" : "Web"
+      "category" : "Web"
     },
     {
       "name": "Chat Bot - Car Dashboard",
@@ -87,7 +87,7 @@
       "language": "NodeJS",
       "services": [ "Conversation API", "Speech To Service", "Text To Speech" ],
       "level" : "Intermediate",
-      "catogary" : "Web"
+      "category" : "Web"
     },
     {
       "name": "Hybrid Banking App Demo",
@@ -96,7 +96,7 @@
       "language": "Java",
       "services": [ "Cloudant", "Watson Services", "Mobile Push Service", "Mobile Quality Assurance" ],
       "level" : "Intermediate",
-      "catogary" : "Mobile"
+      "category" : "Mobile"
     },
     {
       "name": "Sample Stock Trading application in Java EE",
@@ -105,7 +105,7 @@
       "language": "Java",
       "services": [ "DevOps", "Auto Scaling", "SQL DB" ],
       "level" : "Intermediate",
-      "catogary" : "Web"
+      "category" : "Web"
     },
     {
       "name": "Real Time Tone Analysis Application",
@@ -114,7 +114,7 @@
       "language": "NodeJS",
       "services": [ "Tone Analyzer", "Speech To Text" ],
       "level" : "Beginner",
-      "catogary" : "Web"
+      "category" : "Web"
     },
     {
       "name": "Capital Weather",
@@ -123,7 +123,7 @@
       "language": "NodeJS",
       "services": [ "Weather API" ],
       "level" : "Beginner",
-      "catogary" : "Web"
+      "category" : "Web"
     },
     {
       "name": "Talent Manager",
@@ -132,7 +132,7 @@
       "language": "Java",
       "services": [ "Personality Insights", "Cloudant" ],
       "level" : "Beginner",
-      "catogary" : "Web"
+      "category" : "Web"
     },
     {
       "name": "Logistics Wizard Toolchain",
@@ -141,7 +141,7 @@
       "language": "yml",
       "services": [ "DevOps" ],
       "level" : "Intermediate",
-      "catogary" : "Web"
+      "category" : "Web"
     },
     {
       "name": "Awesome skylink",
@@ -150,7 +150,7 @@
       "language": "NodeJS",
       "services": [ "DevOps" ],
       "level" : "Intermediate",
-      "catogary" : "IoT"
+      "category" : "IoT"
     },
     {
       "name": "IBM Ready App for Healthcare Android & IOS",
@@ -159,7 +159,7 @@
       "language": "Swift",
       "services": [ "Bluemix Mobile Services" ],
       "level" : "Intermediate",
-      "catogary" : "Mobile"
+      "category" : "Mobile"
     },
     {
       "name": "IBM Ready App for Retail Android & IOS",
@@ -168,7 +168,7 @@
       "language": "Objective C",
       "services": [ "Bluemix Mobile Services" ],
       "level" : "Intermediate",
-      "catogary" : "Mobile"
+      "category" : "Mobile"
     },
     {
       "name": "IBM Ready App for Banking Android & IOS",
@@ -177,7 +177,7 @@
       "language": "Objective C",
       "services": [ "Bluemix Mobile Services" ],
       "level" : "Intermediate",
-      "catogary" : "Mobile"
+      "category" : "Mobile"
     },
     {
       "name": "IBM Ready App for Insurance IOS",
@@ -186,7 +186,7 @@
       "language": "Swift",
       "services": [ "Bluemix Mobile Services" ],
       "level" : "Intermediate",
-      "catogary" : "Mobile"
+      "category" : "Mobile"
     },
     {
       "name": "Metric Collector",
@@ -195,7 +195,7 @@
       "language": "NodeJS",
       "services": [ "Cloudant" ],
       "level" : "Intermediate",
-      "catogary" : "Mobile"
+      "category" : "Mobile"
     },
     {
       "name": "Banking and minimum viable services",
@@ -204,7 +204,7 @@
       "language": "NodeJS",
       "services": [ "NodeJS, MQ-Light", "Cloudant"],
       "level" : "Intermediate",
-      "catogary" : "Mobile"
+      "category" : "Mobile"
     },
     {
       "name": "ASP.NET Core ToDo Sample",
@@ -213,7 +213,7 @@
       "language": "ASP.NET",
       "services": [ "ASP.NET, PostgreSQL"],
       "level" : "Intermediate",
-      "catogary" : "Web"
+      "category" : "Web"
     },
     {
       "name": "Personality Box Overview",
@@ -222,7 +222,7 @@
       "language": "NodeJS",
       "services": [ "Personality Insights API"],
       "level" : "Intermediate",
-      "catogary" : "Web"
+      "category" : "Web"
     },
     {
       "name": "Supply Chain Weather Overview",
@@ -231,7 +231,7 @@
       "language": "NodeJS",
       "services": [ "Insights for Weather, Leaflet, Esri Leaflet"],
       "level" : "Beginner",
-      "catogary" : "Web"
+      "category" : "Web"
     },
     {
       "name": "Serverless Slack app",
@@ -240,7 +240,7 @@
       "language": "NodeJS",
       "services": [ "OpenWhisk, Slack, API Connect, Cloudant"],
       "level" : "Intermediate",
-      "catogary" : "Mobile"
+      "category" : "Mobile"
     },
     {
       "name": "Watson Spreadsheet",
@@ -249,7 +249,7 @@
       "language": "NodeJS",
       "services": [ "Tone Analyzer, Watson Alchemy Concept Analysis"],
       "level" : "Beginner",
-      "catogary" : "Web"
+      "category" : "Web"
     },
     {
       "name": "Facebook Photo Analyzer",
@@ -258,7 +258,7 @@
       "language": "NodeJS",
       "services": [ "Watson Visual, Alchemy API, Cloudant"],
       "level" : "Beginner",
-      "catogary" : "Web"
+      "category" : "Web"
     }
 
 
