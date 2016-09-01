@@ -1,8 +1,9 @@
-# Bluemix Dev Advocates Community Site
+# Bluemix Open Source Github.io page
 
-This is the source code for the Bluemix Dev Advocates site which will be available at [https://ibm-bluemix.github.io/bluemix](https://ibm-bluemix.github.io/bluemix).
+Running on: [https://ibm-bluemix.github.io](https://ibm-bluemix.github.io)
 
-## Running locally
+
+## To run this locally
  - Install Jekyll
 
     ```
@@ -10,4 +11,4 @@ This is the source code for the Bluemix Dev Advocates site which will be availab
     sudo jekyll serve
     ```
 
-The above command will start and run Jekyll and you can view the application locally on: http://127.0.0.1:4000/
+Website will be running locally on: http://127.0.0.1:4000/
