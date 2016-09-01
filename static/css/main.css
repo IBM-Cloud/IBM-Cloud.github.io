@@ -1,0 +1,315 @@
+.main.outer{padding-top: 50px;}
+.header-panel.shadow-z-2 {
+    background-color: #0f212e;
+    padding: 20px 0 15px 0;
+    width: 100%;
+}
+.full{ font-size: 16px; }
+.logo-img {
+    width: 56px;
+    height: 56px;
+    border-radius: 60px;
+    margin: 0 auto;
+}
+.website_icon{
+  width: 56px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 20px;
+    background-image: url("./static/img/bluemix-logo-2016-feb.svg");
+}
+.logo-turner {
+    font-size: 18px;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+.row-content{
+    vertical-align: top;
+}
+.row-picture {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.row-details {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+}
+p.info {
+    color: #fff;
+}
+p.info a {
+    color: #fff;
+    text-decoration: underline;
+}
+.full ul,.full ol {
+  margin-left: 12px;
+  background: #f6fbff;
+  font-size: 13px;
+  padding: 5px;
+}
+.full img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.social-icons {
+    margin: 20px 0 0;
+}
+.icon {
+      background: white;
+      border-radius: 100%;
+      text-align: center;
+      line-height: 20px;
+      font-size: 20px;
+      color: #152935;
+      padding: 5px;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+}
+body .container .jumbotron-primary, body .container .well-primary, body .container-fluid .jumbotron-primary, body .container-fluid .well-primary{
+  background-color: #0f212e;
+}
+.icon:hover {
+    background: rgba(124,199,255,0.2);
+    color: #7cc7ff;
+}
+.menu ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.menu ul li a:hover, .menu ul li a:focus, li.current-menu-item > a{
+  background: rgba(124,199,255,0.2);
+}
+li.current-menu-item:before {
+    content: "";
+    display: inline-block;
+    height: 55px;
+    width: 5px;
+    position: absolute;
+    left: 9px;
+    vertical-align: middle;
+    background: #7cc7ff;
+}
+.menu ul li a {
+      font-size: 15px;
+      font-weight: normal;
+      cursor: pointer;
+      display: block;
+      text-decoration: none;
+      padding: 0 0 0 10px;
+      color: #7cc7ff;
+}
+.home-subtitle {
+    font-size: 26px;
+    margin-bottom: 32px;
+    margin-top: 5px;
+    color: #01c87b;
+    font-weight: 300;
+}
+h2.blog-title-pro{color: #fff;}
+h2.blog-title-pro:after {
+    content: "";
+    display: block;
+    width: 104px;
+    height: 4px;
+    margin-top: 16px;
+    margin-left: 1px;
+    background: rgb(90, 170, 250);
+}
+span.tags{ margin: 0 2px;cursor: pointer;display: inline-block;}
+.card .card-image .card-image-headline-custom{
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 5px 0 12px;
+    color: #fff;
+    font-size: 2em;
+    background: -moz-linear-gradient(bottom,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 83%, rgba(0,0,0) 100%);
+background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 83%,rgba(0,0,0) 100%);
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgba(0,0,0,0.9) 83%,rgb(0, 0, 0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+}
+.card .card-footer a {
+    margin: 0 !important;
+    position: relative;
+    bottom: 25px;
+    width: auto;
+}
+#filters {
+    margin: 0 0 25px 0;
+}
+.list-separator li > a i{
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 20px;
+}
+.error {
+    color: #EF7272!important;
+    font-size: 12px!important;
+}
+#portfolio-filter {
+        margin-top: 50px;
+}
+.navbar-toggle i {
+    color: #BCCCBF;
+}
+.menu .list-group-item-heading, .menu .list-group-item-text{
+    color:#fff!important;
+}
+.aboutUsHome{
+  text-align: center;
+}
+.aboutUsHome p{
+  text-align: center;
+}
+.aboutUsHome h1{
+  text-align: center;
+}
+#AbountInfo div{
+
+}
+
+
+footer {
+      border-top: 1px solid #C5C0C0;
+      width: 100%;
+      height: 10px;
+      margin-top: 10px;
+      margin-bottom: 3em;
+      padding-top: 10px;
+      color: black;
+      font-size: 13px;
+      bottom: 0;
+      padding-bottom: 10px;
+      text-align: center;
+}
+.pager li.active a {
+    background: rgba(89, 148, 129, 0.3);
+}
+
+.content.well {
+    float: left;
+}
+
+.project-item.col-md-4.col-sm-6.col-xs-12.ng-scope {
+    width: 50%;
+}
+
+.TotHome {
+    text-align: left;
+    float: left;
+    width: 100%;
+    padding: 15px;
+    padding-left: 15px;
+}
+button.tagFilter.btn.btn-sm {
+    background: #495a66;
+    color: #bdbdbd;
+    padding: 2px 10px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+button.tagFilter.btn.btn-sm.active {
+    background: #7cc7ff;
+    color: #254258;
+}
+.form-control{
+  padding: 6px 2px;
+  color: white;
+  font-size: 14px;
+}
+.project-content{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.project-outer span.tags{
+  background: none;
+  padding: 2px 5px;
+  font-size: 12px;
+  margin-right: -4px;
+  border-bottom: none;
+  border-radius: 1px;
+  font-weight: normal;
+  border-right: 1px solid #94a3ab;
+  border-left: 1px solid #94a3ab;
+}
+
+
+
+a.btn.btn-info.btn-raised.btn-sm.project-link{
+  background-color: #0f212e;
+color: rgba(255,255,255,.84);
+border: none;
+border-radius: 1px;
+}
+
+a.ng-binding{
+  color: #5aaafa;
+  font-size: 16px;
+}
+.FirSpanLeft{
+  float: left;
+  width: 20%;
+  color: #94a3ab;
+}
+.content.well {
+    padding: 10px;
+}
+#DesCrpC{
+  display: inline-block;
+    height: 51px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.tag-technologies {
+    height: 40px;
+    overflow: hidden;
+
+}
+
+.tag-technologies span{
+      color: #94a3ab;
+}
+
+.tag-level span{
+  color: #5aaafa;
+
+}
+.tag-holder span{
+  color: #00b29f;
+
+}
+.project-outer{
+      border-left: 8px solid #0f212e;
+}
+ul.list-separator.nav.navbar-nav.well.well-primary.default {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    #portfolio-filter {
+        margin-top: 0px;
+    }
+    .project-item.col-md-4.col-sm-6.col-xs-12.ng-scope {
+        width: 100%;
+    }
+}
+@media (min-width: 321px) and (max-width: 780px){
+  .project-item.col-md-4.col-sm-6.col-xs-12.ng-scope {
+      width: 100%;
+  }
+}
