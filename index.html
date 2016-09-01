@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="catalogApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="./static/img/favicon.png" />
+  <title>Bluemix Open Source</title>
+  <meta name="author" content="Twana Daniel - Developer Advocate" />
+  <meta name="description" content="IBM Bluemix Open Source" />
+  <meta name="keywords" content="Bluemix, Developer Advocate, IBM, Cloud " />
+
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <!-- FontAwesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
+  <!-- Material Design CSS -->
+  <link rel="stylesheet" href="./static/css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/css/emojione.min.css" />
+  <link rel="stylesheet" href="./static/css/main.css">
+
+
+</head>
+
+<body class="home overflow-hidden" ng-controller="MainController" ng-cloak>
+  <!--[if lt IE 7]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="header-panel shadow-z-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="row-picture">
+            <a href="index"><img id="about" class="logo-img" src="./static/img/bluemix-logo-2016-feb.svg" height="75px" width="75px"></a>
+          </div>
+          <div class="row-details">
+            <h4 class="list-group-item-heading">IBM Bluemix</h4>
+            <p class="list-group-item-text">Cloud Platform</p>
+            <div class="social-icons">
+              <a class="icon" target="_blank" href="https://github.com/IBM-Bluemix"><i class="fa fa-github"></i></a>
+              <a class="icon" target="_blank" href="http://stackoverflow.com/questions/tagged/ibm-bluemix"><i class="fa fa-stack-overflow"></i></a>
+              <a class="icon" target="_blank" href="https://console.ng.bluemix.net/"><i class="fa fa-smile-o"></i></a>
+            </div>
+          </div>
+          <div class="navbar-header pull-right">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fa fa-2x fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-9 col-sm-8 col-xs-12">
+          <h2 class="blog-title-pro">Bluemix Open Source</h2>
+          <p class="info">Cloud platform for building, running, and managing apps and services<br>
+            <i class="fa fa-users" aria-hidden="true"></i> GROWTH  &nbsp; &nbsp; &nbsp;
+            <i class="fa fa-book" aria-hidden="true"></i> APPLICATION CONTENT &nbsp; &nbsp; &nbsp;
+            <i class="fa fa-code" aria-hidden="true"></i> SCENARIO DEVELOPMENT
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container main outer">
+    <div class="row">
+      <!-- /.col-md-3 MENU to go here  -->
+      <!-- col-md-9 col-xs-12 full to go here -->
+
+      <div class="col-md-3 col-xs-12">
+        <nav class="menu">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="list-separator nav navbar-nav well well-primary default">
+              <form role="search">
+                <div class="form-group search-input">
+                  <input type="text" class="form-control" placeholder="Search" ng-model="searchText" autofocus>
+                </div>
+              </form>
+
+              <span class="text-muted">Filter By Language:</span>
+                <div class="search-body">
+                  <table>
+                    <tr>
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('NodeJS', true)">NodeJS</button>
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Java', true)">Java</button>
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Python', true)">Python</button>
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Php', true)">PHP</button>
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Ruby', true)">Ruby</button>
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('C#', true)">C#</button>
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Swift', true)">Swift / Objective C</button>
+
+                    </tr>
+                  </table>
+                </div>
+                <hr/>
+
+                <span class="text-muted">Filter By Categories:</span>
+                  <div class="search-body">
+                    <table>
+                      <tr>
+                        <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('IoT', true)">IoT</button>
+                        <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Web', true)">Web</button>
+                        <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Mobile', true)">Mobile</button>
+                      </tr>
+                    </table>
+                  </div>
+            </ul>
+          </div>
+        </nav>
+      </div> <!-- end /.col-md-3 MENU -->
+
+      <div class="col-md-9 col-xs-12 full"><!-- START FULL PAGE -->
+        <div class="content well">
+
+
+          <div class="TotHome">
+              Total <b>{{links.length}}</b> links in the catalog<span ng-if="filteredLinks.length != links.length">, <b>{{filteredLinks.length}}</b> links matching the search criteria</span>
+            </div>
+
+
+            <div class="project-item col-md-4 col-sm-6 col-xs-12" ng-repeat-start="link in (filteredLinks = (links | filter:searchText | filterPanel:filterConfiguration))">
+              <div class="well project-outer" ng-class="{demo: link.tags.indexOf('demo')>=0}">
+                <div class="link-title">
+                  <a href="{{link.html_url || link.url}}" target="_blank">{{link.name}}</a>
+
+                  <a href="{{link.homepage}}" ng-if="link.homepage">
+                    <span class="e1a-link e1a-sm"></span>
+                  </a>
+                </div>
+
+
+                <div class="project-content" id="DesCrpC">
+                  <span ng-bind-html="link.description | emoji"></span>
+                </div>
+
+                <div class="project-content">
+
+
+                <div class="tag-holder">
+                  <span class="FirSpanLeft">Lang: </span>
+                    <span class="label tags tag-filter">{{link.language || '&nbsp;'}}</span>
+                </div>
+
+                  <div class="tag-level">
+                    <span class="FirSpanLeft">Level: </span><span class="label tags tag-filter">{{link.level || '&nbsp;'}}</span>
+                  </div>
+                  <span class="FirSpanLeft">Services: </span>
+                  <div class="tag-technologies">
+                    <span ng-repeat="item in link.services">
+                      <span class="label tags tag-filter">{{item || '&nbsp;'}}</span>
+                    </span>
+                  </div>
+
+
+
+
+                </div>
+
+                <div class="project-footer">
+                  <a href="{{link.html_url || link.url}}" target="_blank" class="btn btn-info btn-raised btn-sm project-link">View Code</a>
+                  <span class="project-timeline" ng-if="link.stargazers_count">{{link.stargazers_count}}</span>
+                  <span class="project-timeline" ng-if="link.stargazers_count" class="e1a-star e1a-sm"></span>
+                  <!--            <span class="badge" ng-repeat="tag in link.tags">{{tag}}</span>-->
+                </div>
+              </div>
+            </div>
+            <div class="clearfix" ng-if="$index%4==3"></div>
+            <div ng-repeat-end=""></div>
+
+
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-12 col-xs-12 footer">
+              <footer>
+                Made with <i class="fa fa-heart" aria-hidden="true"></i> by The Bluemix Developer Advocacy team</br>
+                Powered by <a href="https://console.ng.bluemix.net/">IBM Bluemix.</a> Check out our source code on <a href="https://github.com/IBM-Bluemix">GitHub</a><br>
+                Copyright © IBM 2016
+              </footer>
+            </div>
+          </div>
+
+
+        </div> <!-- end /.col-md-9 -->
+
+
+
+      </div> <!-- end /.row -->
+
+      <br>
+    </div> <!-- end /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+    <script src="//cdn.jsdelivr.net/emojione/2.1.3/lib/js/emojione.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.min.js"></script>
+
+    <script src="./static/js/angular-spinners.min.js"></script>
+    <script src="./static/js/main.js"></script>
+
+
+
+  </body>
+  </html>
