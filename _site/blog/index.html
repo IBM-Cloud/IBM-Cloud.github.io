@@ -11,15 +11,16 @@
   <meta name="description" content="IBM Bluemix Open Source" />
   <meta name="keywords" content="Bluemix, Developer Advocate, IBM, Cloud " />
 
+
   <!-- Custom Fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
   <!-- FontAwesome icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
   <!-- Material Design CSS -->
-  <link rel="stylesheet" href="./static/css/bootstrap-material-design.min.css">
-  <link rel="stylesheet" href="./static/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./static/css/emojione.min.css" />
-  <link rel="stylesheet" href="./static/css/main.css">
+  <link rel="stylesheet" href="../static/css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/emojione.min.css" />
+  <link rel="stylesheet" href="../static/css/main.css">
 
 
 </head>
@@ -34,15 +35,15 @@
       <div class="row">
         <div class="col-md-3 col-sm-4 col-xs-12">
           <div class="row-picture">
-            <a href="index"><img id="about" class="logo-img" src="./static/img/bluemix-logo-2016-feb.svg" height="75px" width="75px"></a>
+            <a href="index"><img id="about" class="logo-img" src="../static/img/bluemix-logo-2016-feb.svg" height="75px" width="75px"></a>
           </div>
           <div class="row-details">
             <h4 class="list-group-item-heading">IBM Bluemix</h4>
-            <p class="list-group-item-text">Cloud Platform</p>
+            <p class="list-group-item-text">Developer Advocate Team</p>
             <div class="social-icons">
               <a class="icon" target="_blank" href="https://github.com/IBM-Bluemix"><i class="fa fa-github"></i></a>
               <a class="icon" target="_blank" href="http://stackoverflow.com/questions/tagged/ibm-bluemix"><i class="fa fa-stack-overflow"></i></a>
-              <a class="icon" target="_blank" href="https://console.ng.bluemix.net/"><i class="fa fa-smile-o"></i></a>
+              <a class="icon" target="_blank" href="/team/"><i class="fa fa-smile-o"></i></a>
             </div>
           </div>
           <div class="navbar-header pull-right">
@@ -53,8 +54,12 @@
           </div>
         </div>
         <div class="col-md-9 col-sm-8 col-xs-12">
-          <h2 class="blog-title-pro">Bluemix Code Samples</h2>
-          <p class="info"><i class="fa fa-code" aria-hidden="true"></i> See List of Bluemix code samples ready to be used, click on any of the demos to see more info on GitHub.         </p>
+          <h2 class="blog-title-pro">Bluemix Open Source</h2>
+          <p class="info">The mission of our team is drive usage back to the Bluemix platform as call it:<br>
+            <i class="fa fa-users" aria-hidden="true"></i> GROWTH  &nbsp; &nbsp; &nbsp;
+            <i class="fa fa-book" aria-hidden="true"></i> APPLICATION CONTENT &nbsp; &nbsp; &nbsp;
+            <i class="fa fa-code" aria-hidden="true"></i> SCENARIO DEVELOPMENT
+          </p>
         </div>
       </div>
     </div>
@@ -80,29 +85,26 @@
                 <div class="search-body">
                   <table>
                     <tr>
-                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Python', true)">Python</button>
-                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('PHP', true)">PHP</button>
-                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Ruby', true)">Ruby</button>
-
                       <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('NodeJS', true)">NodeJS</button>
                       <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Swift', true)">Swift</button>
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Ruby', true)">Ruby</button>
                       <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('C#', true)">C#</button>
-
-                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Objective C', true)">Objective C</button>
                       <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Java', true)">Java</button>
-
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Python', true)">Python</button>
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Php', true)">PHP</button>
                     </tr>
                   </table>
                 </div>
                 <hr/>
 
-                <span class="text-muted">Filter By Categories:</span>
+                <span class="text-muted">Filter By Technology:</span>
                   <div class="search-body">
                     <table>
                       <tr>
                         <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('IoT', true)">IoT</button>
-                        <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Web', true)">Web</button>
+                        <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Watson', true)">Watson</button>
                         <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Mobile', true)">Mobile</button>
+                        <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Database', true)">Database</button>
                       </tr>
                     </table>
                   </div>
@@ -111,100 +113,56 @@
         </nav>
       </div> <!-- end /.col-md-3 MENU -->
 
-      <div class="col-md-9 col-xs-12 full"><!-- START FULL PAGE -->
-        <div class="content well">
 
+      <div class="col-md-9 col-xs-12 full">
+  <div class="content well">
+    <header id="post-header">
+      <h1 id="post-subtitle">Articles by category: <em class="text-muted">Mobile</em></h1>
+    </header>
 
-          <div class="TotHome">
-              Total <b>{{links.length}}</b> links in the catalog<span ng-if="filteredLinks.length != links.length">, <b>{{filteredLinks.length}}</b> links matching the search criteria</span>
-            </div>
-
-
-            <div class="project-item col-md-4 col-sm-6 col-xs-12" ng-repeat-start="link in (filteredLinks = (links | filter:searchText | filterPanel:filterConfiguration))">
-              <div class="well project-outer" ng-class="{demo: link.tags.indexOf('demo')>=0}">
-                <div class="link-title">
-                  <a href="{{link.html_url || link.url}}" target="_blank">{{link.name}}</a>
-
-                  <a href="{{link.homepage}}" ng-if="link.homepage">
-                    <span class="e1a-link e1a-sm"></span>
-                  </a>
-                </div>
-
-
-                <div class="project-content" id="DesCrpC">
-                  <span ng-bind-html="link.description | emoji"></span>
-                </div>
-
-                <div class="project-content">
-
-
-                  <div class="tag-holder">
-                    <span class="FirSpanLeft">Lang: </span>
-                      <span class="label tags tag-filter">{{link.language || '&nbsp;'}}</span>
-                      <br>
-                      <span class="FirSpanLeft">Level: </span>
-                      <span class="label tags tag-filter">{{link.level || '&nbsp;'}}</span>
-                  </div>
-
-                  <hr/>
-
-                  <div class="tag-level">
-                    <span class="FirSpanLeft">URL: </span>
-                      <span class="label tags tag-filter"><a href="{{link.urlLink}}" target="_blank">Live Demo URL</a></span>
-                      <br>
-                      <span class="FirSpanLeft">Github: </span>
-                      <span class="label tags tag-filter"><a href="{{link.homepage}}" target="_blank">Sorce Code URL</a></span>
-                      <br>
-                      <span class="FirSpanLeft">Blog Article: </span>
-                      <span class="label tags tag-filter"><a href="{{link.blogPost}}" target="_blank">See Blog Article</a></span>
-                  </div>
-
-
-                  <hr/>
-
-
-                  <span class="FirSpanLeft">Services: </span>
-                  <div class="tag-technologies">
-                    <span ng-repeat="item in link.services">
-                      <span class="label tags tag-filter">{{item || '&nbsp;'}}</span>
-                    </span>
-                  </div>
-
-                </div>
-
-              </div>
-            </div>
-            <div class="clearfix" ng-if="$index%4==3"></div>
-            <div ng-repeat-end=""></div>
-
-
+    <div id="post-content">
+      <hr />
+      <a href="#" class="btn btn-sm btn-default btn-raised">IoT</a>
+      <button class="btn btn-sm btn-primary btn-raised">Mobile</button>
+      <hr />
+      <div class="list-group">
+        <div class="list-group-item">
+          <div class="row-action-primary">
+            <i class="fa fa-sticky-note"></i>
           </div>
-
-
-          <div class="row">
-            <div class="col-md-12 col-xs-12 footer">
-              <footer>
-                Made with <i class="fa fa-heart" aria-hidden="true"></i> by The Bluemix Developer Advocacy team</br>
-                Powered by <a href="https://console.ng.bluemix.net/">IBM Bluemix.</a> Check out our source code on <a href="https://github.com/IBM-Bluemix">GitHub</a><br>
-                Copyright © IBM 2016
-              </footer>
-            </div>
+          <div class="row-content">
+            <div class="least-content">2016</div>
+            <div class="least-content">28 July 2016</div>
+            <h4 class="list-group-item-heading"><a href="#">Setp By Step Developing Mobile App On Bluemix</a></h4>
+            <p class="list-group-item-text">You will learn how to develop a mobile app using Bluemix services step by step...</p>
           </div>
+        </div>
+        <div class="list-group-separator"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 col-xs-12 footer">
+      <footer>
+        Made with <span class="glyphicon glyphicon-heart"></span> by The Bluemix Developer Advocacy team</br>
+        Powered by <a href="https://console.ng.bluemix.net/">IBM Bluemix.</a> Check out our source code on <a href="https://github.com/IBM-Bluemix">GitHub</a><br>
+        Copyright © IBM 2016
+      </footer>
+    </div>
+  </div>
 
 
-        </div> <!-- end /.col-md-9 -->
+</div> <!-- end /.col-md-9 -->
 
 
 
-      </div> <!-- end /.row -->
 
-      <br>
     </div> <!-- end /.container -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-
 
     <script src="//cdn.jsdelivr.net/emojione/2.1.3/lib/js/emojione.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -212,8 +170,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.min.js"></script>
 
-    <script src="./static/js/angular-spinners.min.js"></script>
-    <script src="./static/js/main.js"></script>
+    <script src="../static/js/angular-spinners.min.js"></script>
+    <script src="../static/js/main.js"></script>
 
 
 
