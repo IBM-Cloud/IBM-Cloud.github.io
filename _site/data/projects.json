@@ -1,265 +1,368 @@
 [
   {
+    "Author" : "ANTON MCCONVILLE & Others",
     "name": "CloudCo Insurance App",
     "url": "https://github.com/IBM-Bluemix/insurance-bot",
     "description": "Insurance Policy Bot is a collection of experimental Watson & Bluemix concepts applied to the insurance domain.",
     "language": "NodeJS",
     "services": ["Tone Analyzer", "Conversation API","Natural Language Classifier", "MongoDb"],
     "level" : "Intermediate",
-    "category" : "Mobile"
+    "catogary" : "Mobile",
+    "urlLink": "http://cloudco.mybluemix.net/",
+    "blogPost" : ""
   },
   {
+    "Author" : "ANTON MCCONVILLE",
+    "name": "David Bowie personalities",
+    "description": "Exploring David Bowie's lyrics with Python, Watson & Bluemix",
+    "url": "https://github.com/IBM-Bluemix/ziggy",
+    "language": "Python",
+    "services": ["Personality Insights"],
+    "level" : "Beginner",
+    "catogary" : "Web",
+    "urlLink": "https://ziggy.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2016/04/11/natural-language-analysis-of-david-bowie-personas/"
+  },
+  {
+    "Author" : "ANTON MCCONVILLE",
+    "name": "Watson Spreadsheet",
+    "description": "This is a Node application that reads questions and answers from a Google Spreadsheet and runs Watson Tone Analysis on the answers. It writes the measured tone into rows of the Spreadsheet.",
+    "url": "https://github.com/IBM-Bluemix/watson-spreadsheet",
+    "language": "NodeJS",
+    "services": [ "Tone Analyzer, Watson Alchemy Concept Analysis"],
+    "level" : "Beginner",
+    "catogary" : "Web",
+    "urlLink": "",
+    "blogPost" : "https://developer.ibm.com/bluemix/2016/08/08/watson-services-and-google-docs/",
+    "__comment":"=========================================================================================="
+  },
+
+
+
+
+
+  {
+    "Author" : "Twana Daniel",
+    "name": "Migrate an application from Azure to Bluemix",
+    "description": "This tutorial will take you step by step from creating a NodeJS app on Azure and then migrating that app onto IBM Bluemix",
+    "url": "https://github.com/IBM-Bluemix/Migrate-Node-App?cm_mc_uid=03500478414514721131557&cm_mc_sid_50200000=1473164484",
+    "language": "NodeJS",
+    "services": [ "NodeJS, MongoDB" ],
+    "level" : "Beginner",
+    "catogary" : "Web",
+    "urlLink": "",
+    "blogPost" : "https://developer.ibm.com/bluemix/2016/02/08/migrate-app-from-azure-to-bluemix/"
+  },
+
+
+  {
+    "Author" : "Twana Daniel",
+    "name": "Deploy to Bluemix PHP codeigniter CRUD Application",
+    "description": "A sample/demo app that uses IBM Bluemix to analyze the objects in photos on Facebook via IBM Watson and analyzes the sentiment of the comments on photos via the Alchemy API.",
+    "url": "https://github.com/IBM-Bluemix/CRUD-PHP-Codeigniter-Bluemix?cm_mc_uid=03500478414514721131557&cm_mc_sid_50200000=1473164484",
+    "language": "PHP",
+    "services": [ "PHP, MySQL"],
+    "level" : "Beginner",
+    "catogary" : "Web",
+    "urlLink": "http://crud-php-codeigniter-bluemix.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2016/01/15/deploy-simple-database-php-app-to-bluemix/",
+    "__comment":"=========================================================================================="
+  },
+
+
+
+
+
+
+
+  {
+    "Author" : "FREDERIC LAVIGNE & Others",
     "name": "Logistics-wizard App",
     "url": "https://github.com/IBM-Bluemix/logistics-wizard",
     "description": "Controller for the Logistics Wizard showcase demo. The Logistics Wizard is an end-to-end, smart supply chain management solution that showcases how to execute hybrid cloud, microservices, and predictive data analytics in the real world.",
     "language": "Python",
     "services": ["Big Data"],
     "level" : "Intermediate",
-    "category" : "Web"
+    "catogary" : "Web",
+    "urlLink": "",
+    "blogPost" : ""
   },
   {
+    "Author" : "FREDERIC LAVIGNE",
     "name": "SOmusic Web App",
     "url": "https://github.com/l2fprod/somusic-webui",
     "description": "Music from social network - collect Spotify links in Twitter and build ranking",
     "language": "NodeJS",
     "services": ["cloudant", "twitter"],
     "level" : "Intermediate",
-    "category" : "Web"
+    "catogary" : "Web",
+    "urlLink": "http://somusic.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2015/07/27/somusic-and-twitter/"
   },
   {
+    "Author" : "FREDERIC LAVIGNE",
     "name": "Insights Search",
     "description": "Query interface for the Twitter service. Build your query visually.",
     "url": "https://github.com/IBM-Bluemix/insights-search",
     "language": "NodeJS",
     "services": ["cloudant", "twitter"],
     "level" : "Intermediate",
-    "category" : "Web"
+    "catogary" : "Web",
+    "urlLink": "",
+    "blogPost" : "https://developer.ibm.com/bluemix/2015/09/01/sample-ibm-insights-for-twitter/"
   },
   {
-    "name": "Todo Web App",
-    "url": "https://github.com/IBM-Bluemix/todo-apps",
-    "description": "The ToDo sample apps are meant to be simple demos of how you can take advantage of Bluemix and a database service done in number different langauges.",
-    "language": "NodeJS, Java, PHP, Python, Rails, Swift",
-    "services": ["Cloudant, MongoDB"],
-    "level" : "Beginner",
-    "category" : "Web"
-  },
-  {
+    "Author" : "FREDERIC LAVIGNE",
     "name": "Insights Weather",
     "url": "https://github.com/IBM-Bluemix/insights-weather",
     "description": "What's the weather like near you?",
     "language": "NodeJS",
     "services": ["Cloudant, Weather"],
     "level" : "Beginner",
-    "category" : "Web"
+    "catogary" : "Web",
+    "urlLink": "",
+    "blogPost" : "https://developer.ibm.com/bluemix/2015/12/08/insights-weather-sample-overview/"
   },
   {
+    "Author" : "FREDERIC LAVIGNE",
     "name": "Places Insights Lab",
     "url": "https://github.com/IBM-Bluemix/places-insights-lab",
     "description": "Mixing Twitter and Weather to find places to visit",
     "language": "NodeJS",
     "services": ["cloudant", "twitter", "weather"],
     "level" : "Beginner",
-    "category" : "Web"
-    },
-    {
-      "name": "David Bowie personalities",
-      "description": "Exploring David Bowie's lyrics with Python, Watson & Bluemix",
-      "url": "https://github.com/IBM-Bluemix/ziggy",
-      "language": "Python",
-      "services": ["Personality Insights"],
-      "level" : "Beginner",
-      "category" : "Web"
-    },
-    {
-      "name": "Your Celebrity Match",
-      "description": "Compare your Twitter profile against celebrities.",
-      "url": "https://github.com/watson-developer-cloud/your-celebrity-match",
-      "language": "NodeJS",
-      "services": [ "twitter", "Personality Insights" ],
-      "level" : "Intermediate",
-      "category" : "Web"
-    },
-    {
-      "name": "Chat Bot - Car Dashboard",
-      "description": "Application that demonstrates how the Conversation service uses intent capabilities in an animated car dashboard UI.",
-      "url": "https://github.com/watson-developer-cloud/car-dashboard",
-      "language": "NodeJS",
-      "services": [ "Conversation API", "Speech To Service", "Text To Speech" ],
-      "level" : "Intermediate",
-      "category" : "Web"
-    },
-    {
-      "name": "Hybrid Banking App Demo",
-      "description": "Hybrid Banking Demo - Interaction of Customer on Mobile Device with Banking Service Center. Application that demos interaction between a customer and company support staff using Bluemix Mobile backend and Watson services.",
-      "url": "https://github.com/watson-developer-cloud/car-dashboard",
-      "language": "Java",
-      "services": [ "Cloudant", "Watson Services", "Mobile Push Service", "Mobile Quality Assurance" ],
-      "level" : "Intermediate",
-      "category" : "Mobile"
-    },
-    {
-      "name": "Sample Stock Trading application in Java EE",
-      "description": "Build and deploy the application to Bluemix, and consume a database services and other services in the cloud. ",
-      "url": "https://github.com/IBM-Bluemix/JavaCloudTrader",
-      "language": "Java",
-      "services": [ "DevOps", "Auto Scaling", "SQL DB" ],
-      "level" : "Intermediate",
-      "category" : "Web"
-    },
-    {
-      "name": "Real Time Tone Analysis Application",
-      "description": "Real Time Tone Analysis samples dictation or conversations and displays a real-time transcription and an accompanying chart that plots the emotional, social, and writing tone of the language.",
-      "url": "https://github.com/IBM-Bluemix/real-time-tone-analysis",
-      "language": "NodeJS",
-      "services": [ "Tone Analyzer", "Speech To Text" ],
-      "level" : "Beginner",
-      "category" : "Web"
-    },
-    {
-      "name": "Capital Weather",
-      "description": "Capital Weather is a sample Bluemix application which utilizes the Weather Channel service, two mapping APIs, Leaflet and Esri Leaflet, and the Google Maps Geocoding API. It allows users to visualize the current weather in all the world capitals, as well as obtain historical weather data and future weather projections. The app provides a real world use case of the Weather Channel API and implements several of the methods exposed by that interface.",
-      "url": "https://github.com/IBM-Bluemix/capital-weather",
-      "language": "NodeJS",
-      "services": [ "Weather API" ],
-      "level" : "Beginner",
-      "category" : "Web"
-    },
-    {
-      "name": "Talent Manager",
-      "description": "Talent Manager allows you to find a developer with same set of skills and personalities like your other staff members. This is possible using the IBM personality insights service.",
-      "url": "https://github.com/IBM-Bluemix/talent-manager",
-      "language": "Java",
-      "services": [ "Personality Insights", "Cloudant" ],
-      "level" : "Beginner",
-      "category" : "Web"
-    },
-    {
-      "name": "Logistics Wizard Toolchain",
-      "description": "This toolchain will allow you to deploy the entire Logistics Wizard demo system, which is a supply chain management web application composed of several microservices:",
-      "url": "https://github.com/IBM-Bluemix/logistics-wizard-toolchain",
-      "language": "yml",
-      "services": [ "DevOps" ],
-      "level" : "Intermediate",
-      "category" : "Web"
-    },
-    {
-      "name": "Awesome skylink",
-      "description": "Skylink is a sample application that lets you connect a DJI drone aircraft to the IBM Cloud with near realtime image analysis leveraging IBM Cloudant, OpenWhisk, IBM Watson, and Alchemy Vision.",
-      "url": "https://github.com/IBM-Bluemix/skylink",
-      "language": "NodeJS",
-      "services": [ "DevOps" ],
-      "level" : "Intermediate",
-      "category" : "IoT"
-    },
-    {
-      "name": "IBM Ready App for Healthcare Android & IOS",
-      "description": "That’s where IBM Ready App for Healthcare shines. This app bridges the gap between therapist and patient, providing a platform so that patients can continue their treatment from home and ensure efficient, high quality treatment. With this app, patients can also fill out medical questionnaires and progress reports from any place with their mobile device prior to their in-clinic appointments.",
-      "url": "https://github.com/IBM-MIL/IBM-Ready-App-for-Healthcare?cm_mc_uid=03500478414514721131557&cm_mc_sid_50200000=1472478890",
-      "language": "Swift",
-      "services": [ "Bluemix Mobile Services" ],
-      "level" : "Intermediate",
-      "category" : "Mobile"
-    },
-    {
-      "name": "IBM Ready App for Retail Android & IOS",
-      "description": "The IBM Ready App for Retail gives you that edge. This app focuses on specialty stores and offers users a personalized customer experience. Using contextual notifications and beacons, the app guides users into a store and helps them navigate the purchasing process.",
-      "url": "https://github.com/IBM-MIL/IBM-Ready-App-for-Retail?cm_mc_uid=03500478414514721131557&cm_mc_sid_50200000=1472478890",
-      "language": "Objective C",
-      "services": [ "Bluemix Mobile Services" ],
-      "level" : "Intermediate",
-      "category" : "Mobile"
-    },
-    {
-      "name": "IBM Ready App for Banking Android & IOS",
-      "description": "Ready App to maximize a financial institution's ability to address the mobile needs of small business owners as well as attract prospects through personalized guidance.",
-      "url": "https://github.com/IBM-MIL/IBM-Ready-App-for-Banking/",
-      "language": "Objective C",
-      "services": [ "Bluemix Mobile Services" ],
-      "level" : "Intermediate",
-      "category" : "Mobile"
-    },
-    {
-      "name": "IBM Ready App for Insurance IOS",
-      "description": "Ready App that allows users to connect to a IoT sensor network within their home to manage the health of assets.",
-      "url": "https://github.com/IBM-MIL/IBM-Ready-App-for-Insurance",
-      "language": "Swift",
-      "services": [ "Bluemix Mobile Services" ],
-      "level" : "Intermediate",
-      "category" : "Mobile"
-    },
-    {
-      "name": "Metric Collector",
-      "description": "A lightweight web-tracking app to record user actions on a single-page webapp. Uses Piwik web analytics library to collect information and Node.js to store in Cloudant.",
-      "url": "https://github.com/ibm-cds-labs/metrics-collector/",
-      "language": "NodeJS",
-      "services": [ "Cloudant" ],
-      "level" : "Intermediate",
-      "category" : "Mobile"
-    },
-    {
-      "name": "Banking and minimum viable services",
-      "description": "New Bluemix sample app demonstrating how modern, user-centric banking apps can be built and run on Bluemix using microservice architecture.",
-      "url": "https://github.com/IBM-Bluemix/fintech-travel/?cm_mc_uid=03500478414514721131557&cm_mc_sid_50200000=1472478890",
-      "language": "NodeJS",
-      "services": [ "NodeJS, MQ-Light", "Cloudant"],
-      "level" : "Intermediate",
-      "category" : "Mobile"
-    },
-    {
-      "name": "ASP.NET Core ToDo Sample",
-      "description": "This application demonstrates how to use the ElephantSQL PostgreSQL Database Service in an ASP.NET Core application running on Bluemix.",
-      "url": "https://github.com/IBM-Bluemix/aspnet-core-todo",
-      "language": "ASP.NET",
-      "services": [ "ASP.NET, PostgreSQL"],
-      "level" : "Intermediate",
-      "category" : "Web"
-    },
-    {
-      "name": "Personality Box Overview",
-      "description": "Personality Box pulls the .txt files from your Box acount and allows you to analyze the unique personality traits of each file's author using the Watson Personality Insights API. For sample files, feel free to use either President Obama's 2015 State of the Union Address or Moby Dick - Chapter 1 hosted in our Box account.",
-      "url": "https://github.com/IBM-Bluemix/box-watson",
-      "language": "NodeJS",
-      "services": [ "Personality Insights API"],
-      "level" : "Intermediate",
-      "category" : "Web"
-    },
-    {
-      "name": "Supply Chain Weather Overview",
-      "description": "Supply Chain Weather is a sample Bluemix application which utilizes the Insights for Weather service and two mapping APIs, Leaflet and Esri Leaflet to dynamically create and augment shipments for a retail chain store's supply chain.",
-      "url": "https://github.com/IBM-Bluemix/supply-chain-weather",
-      "language": "NodeJS",
-      "services": [ "Insights for Weather, Leaflet, Esri Leaflet"],
-      "level" : "Beginner",
-      "category" : "Web"
-    },
-    {
-      "name": "Serverless Slack app",
-      "description": "This sample shows how to build a serverless Slack app using Slack Events API to receive events, with IBM Bluemix OpenWhisk actions to process these events, and how to expose these actions with API Connect.",
-      "url": "https://github.com/IBM-Bluemix/openwhisk-slackapp",
-      "language": "NodeJS",
-      "services": [ "OpenWhisk, Slack, API Connect, Cloudant"],
-      "level" : "Intermediate",
-      "category" : "Mobile"
-    },
-    {
-      "name": "Watson Spreadsheet",
-      "description": "This is a Node application that reads questions and answers from a Google Spreadsheet and runs Watson Tone Analysis on the answers. It writes the measured tone into rows of the Spreadsheet.",
-      "url": "https://github.com/IBM-Bluemix/watson-spreadsheet",
-      "language": "NodeJS",
-      "services": [ "Tone Analyzer, Watson Alchemy Concept Analysis"],
-      "level" : "Beginner",
-      "category" : "Web"
-    },
-    {
-      "name": "Facebook Photo Analyzer",
-      "description": "A sample/demo app that uses IBM Bluemix to analyze the objects in photos on Facebook via IBM Watson and analyzes the sentiment of the comments on photos via the Alchemy API.",
-      "url": "https://github.com/IBM-Bluemix/facebook-photo-analyzer",
-      "language": "NodeJS",
-      "services": [ "Watson Visual, Alchemy API, Cloudant"],
-      "level" : "Beginner",
-      "category" : "Web"
-    }
+    "catogary" : "Web",
+    "urlLink": "",
+    "blogPost" : "https://developer.ibm.com/bluemix/2015/12/08/insights-weather-sample-overview/"
+  },
+  {
+    "Author" : "FREDERIC LAVIGNE",
+    "name": "Serverless Slack app",
+    "description": "This sample shows how to build a serverless Slack app using Slack Events API to receive events, with IBM Bluemix OpenWhisk actions to process these events, and how to expose these actions with API Connect.",
+    "url": "https://github.com/IBM-Bluemix/openwhisk-slackapp",
+    "language": "NodeJS",
+    "services": [ "OpenWhisk, Slack, API Connect, Cloudant"],
+    "level" : "Intermediate",
+    "catogary" : "Mobile",
+    "urlLink": "",
+    "blogPost" : "https://developer.ibm.com/bluemix/2016/08/15/serverless-slack-app-with-bluemix-openwhisk/"
+  },
+  {
+    "Author" : "FREDERIC LAVIGNE",
+    "name": "Image tagging and face detection app IOS",
+    "description": "Vision App is a sample iOS application to automatically tag images and detect faces by using IBM visual recognition technologies.",
+    "url": "https://github.com/IBM-Bluemix/openwhisk-visionapp",
+    "language": "Objective C",
+    "services": [ "OpenWhisk, Visual Recognition, Cloudant"],
+    "level" : "Intermediate",
+    "catogary" : "Mobile",
+    "urlLink": "",
+    "blogPost" : "https://developer.ibm.com/bluemix/2016/02/29/openwhisk-and-watson-image-tagging-app/",
+    "__comment":"=========================================================================================="
+  },
 
 
-  ]
+
+
+
+
+
+  {
+    "Author" : "Ram Vennam",
+    "name": "Hybrid Banking App Demo",
+    "description": "Hybrid Banking Demo - Interaction of Customer on Mobile Device with Banking Service Center. Application that demos interaction between a customer and company support staff using Bluemix Mobile backend and Watson services.",
+    "url": "https://github.com/IBM-Bluemix/HybridBanking-Android",
+    "language": "Java",
+    "services": [ "Cloudant", "Watson Services", "Mobile Push Service", "Mobile Quality Assurance" ],
+    "level" : "Intermediate",
+    "catogary" : "Mobile",
+    "urlLink": "",
+    "blogPost" : "https://developer.ibm.com/bluemix/2015/10/01/creating-hybrid-apps-on-bluemix/"
+  },
+  {
+    "Author" : "Ram Vennam",
+    "name": "Sample Stock Trading application in Java EE",
+    "description": "Build and deploy the application to Bluemix, and consume a database services and other services in the cloud. ",
+    "url": "https://github.com/IBM-Bluemix/JavaCloudTrader",
+    "language": "Java",
+    "services": [ "DevOps", "Auto Scaling", "SQL DB" ],
+    "level" : "Intermediate",
+    "catogary" : "Web",
+    "urlLink": "http://cloudtrader.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2014/04/18/complex-java-ee-application-bluemix-cloudtrader/"
+  },
+  {
+    "Author" : "Ram Vennam",
+    "name": "Talent Manager",
+    "description": "Talent Manager allows you to find a developer with same set of skills and personalities like your other staff members. This is possible using the IBM personality insights service.",
+    "url": "https://github.com/IBM-Bluemix/talent-manager",
+    "language": "Java",
+    "services": [ "Personality Insights", "Cloudant" ],
+    "level" : "Beginner",
+    "catogary" : "Web",
+    "urlLink": "http://talent-manager.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2014/11/10/deploying-watson-cloudant-app-devops-services/",
+    "__comment":"=========================================================================================="
+  },
+
+
+
+
+
+
+
+
+  {
+    "Author" : "Jake Peyser",
+    "name": "Real Time Tone Analysis Application",
+    "description": "Real Time Tone Analysis samples dictation or conversations and displays a real-time transcription and an accompanying chart that plots the emotional, social, and writing tone of the language.",
+    "url": "https://github.com/IBM-Bluemix/real-time-tone-analysis",
+    "language": "NodeJS",
+    "services": [ "Tone Analyzer", "Speech To Text" ],
+    "level" : "Beginner",
+    "catogary" : "Web",
+    "urlLink": "https://realtime-tone.mybluemix.net/",
+    "blogPost" : ""
+  },
+  {
+    "Author" : "Jake Peyser",
+    "name": "Capital Weather",
+    "description": "Capital Weather is a sample Bluemix application which utilizes the Weather Channel service, two mapping APIs, Leaflet and Esri Leaflet, and the Google Maps Geocoding API. It allows users to visualize the current weather in all the world capitals, as well as obtain historical weather data and future weather projections. The app provides a real world use case of the Weather Channel API and implements several of the methods exposed by that interface.",
+    "url": "https://github.com/IBM-Bluemix/capital-weather",
+    "language": "NodeJS",
+    "services": [ "Weather API" ],
+    "level" : "Beginner",
+    "catogary" : "Web",
+    "urlLink": "https://capital-weather.mybluemix.net/",
+    "blogPost" : ""
+  },
+  {
+    "Author" : "Jake Peyser",
+    "name": "Banking and minimum viable services",
+    "description": "New Bluemix sample app demonstrating how modern, user-centric banking apps can be built and run on Bluemix using microservice architecture.",
+    "url": "https://github.com/IBM-Bluemix/fintech-travel/?cm_mc_uid=03500478414514721131557&cm_mc_sid_50200000=1472478890",
+    "language": "NodeJS",
+    "services": [ "NodeJS, MQ-Light", "Cloudant"],
+    "level" : "Intermediate",
+    "catogary" : "Mobile",
+    "urlLink": "",
+    "blogPost" : ""
+  },
+  {
+    "Author" : "Jake Peyser",
+    "name": "Personality Box Overview",
+    "description": "Personality Box pulls the .txt files from your Box acount and allows you to analyze the unique personality traits of each file's author using the Watson Personality Insights API. For sample files, feel free to use either President Obama's 2015 State of the Union Address or Moby Dick - Chapter 1 hosted in our Box account.",
+    "url": "https://github.com/IBM-Bluemix/box-watson",
+    "language": "NodeJS",
+    "services": [ "Personality Insights API"],
+    "level" : "Intermediate",
+    "catogary" : "Web",
+    "urlLink": "https://personality-box.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2015/06/25/intro-to-box-video/"
+  },
+  {
+    "Author" : "Jake Peyser",
+    "name": "Supply Chain Weather Overview",
+    "description": "Supply Chain Weather is a sample Bluemix application which utilizes the Insights for Weather service and two mapping APIs, Leaflet and Esri Leaflet to dynamically create and augment shipments for a retail chain store's supply chain.",
+    "url": "https://github.com/IBM-Bluemix/supply-chain-weather",
+    "language": "NodeJS",
+    "services": [ "Insights for Weather, Leaflet, Esri Leaflet"],
+    "level" : "Beginner",
+    "catogary" : "Web",
+    "urlLink": "",
+    "blogPost" : "",
+    "__comment":"=========================================================================================="
+  },
+
+
+
+
+
+
+
+  {
+    "Author" : "ANDREW TRICE",
+    "name": "Awesome skylink",
+    "description": "Skylink is a sample application that lets you connect a DJI drone aircraft to the IBM Cloud with near realtime image analysis leveraging IBM Cloudant, OpenWhisk, IBM Watson, and Alchemy Vision.",
+    "url": "https://github.com/IBM-Bluemix/skylink",
+    "language": "NodeJS",
+    "services": [ "DevOps" ],
+    "level" : "Intermediate",
+    "catogary" : "IoT",
+    "urlLink": "https://skylink.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2016/05/03/drones-take-on-enterprise-with-bluemix-and-openwhisk/",
+    "__comment": "=========================================================================================="
+  },
+
+
+
+
+
+  {
+    "Author" : "Jeff Sloyer",
+    "name": "Facebook Photo Analyzer",
+    "description": "A sample/demo app that uses IBM Bluemix to analyze the objects in photos on Facebook via IBM Watson and analyzes the sentiment of the comments on photos via the Alchemy API.",
+    "url": "https://github.com/IBM-Bluemix/facebook-photo-analyzer",
+    "language": "NodeJS",
+    "services": [ "Watson Visual, Alchemy API, Cloudant"],
+    "level" : "Beginner",
+    "catogary" : "Web",
+    "urlLink": "http://facebook-photo-analyzer.mybluemix.net/",
+    "blogPost" : "",
+    "__comment":"=========================================================================================="
+  },
+
+
+
+
+
+
+  {
+    "Author" : "Bluemix & Watson Team",
+    "name": "ChatBot - Car Dashboard",
+    "description": "Application that demonstrates how the Conversation service uses intent capabilities in an animated car dashboard UI.",
+    "url": "https://github.com/watson-developer-cloud/car-dashboard",
+    "language": "NodeJS",
+    "services": [ "Conversation API", "Speech To Service", "Text To Speech" ],
+    "level" : "Intermediate",
+    "catogary" : "Web",
+    "urlLink": "https://conversation-demo.mybluemix.net/",
+    "blogPost" : "https://www.ibm.com/blogs/watson/2016/07/build-chat-bot/"
+  },
+  {
+    "Author" : "Bluemix & Watson Team",
+    "name": "Todo Web App",
+    "url": "https://github.com/IBM-Bluemix/todo-apps",
+    "description": "The ToDo sample apps are meant to be simple demos of how you can take advantage of Bluemix and a database service done in number different langauges.",
+    "language": "NodeJS, Java, PHP, Python, Rails, Swift",
+    "services": ["Cloudant, MongoDB"],
+    "level" : "Beginner",
+    "catogary" : "Web",
+    "urlLink": "",
+    "blogPost" : ""
+  },
+  {
+    "Author" : "Bluemix & Watson Team",
+    "name": "Your Celebrity Match",
+    "description": "Compare your Twitter profile against celebrities.",
+    "url": "https://github.com/watson-developer-cloud/your-celebrity-match",
+    "language": "NodeJS",
+    "services": [ "twitter", "Personality Insights" ],
+    "level" : "Intermediate",
+    "catogary" : "Web",
+    "urlLink": "https://your-celebrity-match.mybluemix.net/",
+    "blogPost" : ""
+  },
+  {
+    "Author" : "Bluemix & Watson Team",
+    "name": "Metric Collector",
+    "description": "A lightweight web-tracking app to record user actions on a single-page webapp. Uses Piwik web analytics library to collect information and Node.js to store in Cloudant.",
+    "url": "https://github.com/ibm-cds-labs/metrics-collector/",
+    "language": "NodeJS",
+    "services": [ "Cloudant" ],
+    "level" : "Intermediate",
+    "catogary" : "Mobile",
+    "urlLink": "",
+    "blogPost" : "https://developer.ibm.com/clouddataservices/simple-metrics-tutorial-part-1-metrics-collection/"
+  }
+]

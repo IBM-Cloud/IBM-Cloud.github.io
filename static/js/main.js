@@ -111,8 +111,8 @@ catalogApp.controller('MainController', function ($scope, $http) {
         if (link.language) {
           link.tags.push(link.language);
         }
-        if (link.category) {
-          link.tags.push(link.category);
+        if (link.catogary) {
+          link.tags.push(link.catogary);
         }
       })
 

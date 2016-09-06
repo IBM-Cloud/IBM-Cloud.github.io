@@ -53,12 +53,8 @@
           </div>
         </div>
         <div class="col-md-9 col-sm-8 col-xs-12">
-          <h2 class="blog-title-pro">Bluemix Open Source</h2>
-          <p class="info">Cloud platform for building, running, and managing apps and services<br>
-            <i class="fa fa-users" aria-hidden="true"></i> GROWTH  &nbsp; &nbsp; &nbsp;
-            <i class="fa fa-book" aria-hidden="true"></i> APPLICATION CONTENT &nbsp; &nbsp; &nbsp;
-            <i class="fa fa-code" aria-hidden="true"></i> SCENARIO DEVELOPMENT
-          </p>
+          <h2 class="blog-title-pro">Bluemix Code Samples</h2>
+          <p class="info"><i class="fa fa-code" aria-hidden="true"></i> See List of Bluemix code samples ready to be used, click on any of the demos to see more info on GitHub.         </p>
         </div>
       </div>
     </div>
@@ -84,13 +80,16 @@
                 <div class="search-body">
                   <table>
                     <tr>
-                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('NodeJS', true)">NodeJS</button>
-                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Java', true)">Java</button>
                       <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Python', true)">Python</button>
-                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Php', true)">PHP</button>
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('PHP', true)">PHP</button>
                       <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Ruby', true)">Ruby</button>
+
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('NodeJS', true)">NodeJS</button>
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Swift', true)">Swift</button>
                       <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('C#', true)">C#</button>
-                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Swift', true)">Swift / Objective C</button>
+
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Objective C', true)">Objective C</button>
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Java', true)">Java</button>
 
                     </tr>
                   </table>
@@ -139,14 +138,31 @@
                 <div class="project-content">
 
 
-                <div class="tag-holder">
-                  <span class="FirSpanLeft">Lang: </span>
-                    <span class="label tags tag-filter">{{link.language || '&nbsp;'}}</span>
-                </div>
+                  <div class="tag-holder">
+                    <span class="FirSpanLeft">Lang: </span>
+                      <span class="label tags tag-filter">{{link.language || '&nbsp;'}}</span>
+                      <br>
+                      <span class="FirSpanLeft">Level: </span>
+                      <span class="label tags tag-filter">{{link.level || '&nbsp;'}}</span>
+                  </div>
+
+                  <hr/>
 
                   <div class="tag-level">
-                    <span class="FirSpanLeft">Level: </span><span class="label tags tag-filter">{{link.level || '&nbsp;'}}</span>
+                    <span class="FirSpanLeft">URL: </span>
+                      <span class="label tags tag-filter"><a href="{{link.urlLink}}" target="_blank">Live Demo URL</a></span>
+                      <br>
+                      <span class="FirSpanLeft">Github: </span>
+                      <span class="label tags tag-filter"><a href="{{link.homepage}}" target="_blank">Sorce Code URL</a></span>
+                      <br>
+                      <span class="FirSpanLeft">Blog Article: </span>
+                      <span class="label tags tag-filter"><a href="{{link.blogPost}}" target="_blank">See Blog Article</a></span>
                   </div>
+
+
+                  <hr/>
+
+
                   <span class="FirSpanLeft">Services: </span>
                   <div class="tag-technologies">
                     <span ng-repeat="item in link.services">
@@ -154,17 +170,8 @@
                     </span>
                   </div>
 
-
-
-
                 </div>
 
-                <div class="project-footer">
-                  <a href="{{link.html_url || link.url}}" target="_blank" class="btn btn-info btn-raised btn-sm project-link">View Code</a>
-                  <span class="project-timeline" ng-if="link.stargazers_count">{{link.stargazers_count}}</span>
-                  <span class="project-timeline" ng-if="link.stargazers_count" class="e1a-star e1a-sm"></span>
-                  <!--            <span class="badge" ng-repeat="tag in link.tags">{{tag}}</span>-->
-                </div>
               </div>
             </div>
             <div class="clearfix" ng-if="$index%4==3"></div>
