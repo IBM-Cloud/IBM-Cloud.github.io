@@ -57,8 +57,8 @@
 
   {
     "Author" : "Twana Daniel",
-    "name": "Deploy to Bluemix PHP codeigniter CRUD Application",
-    "description": "A sample/demo app that uses IBM Bluemix to analyze the objects in photos on Facebook via IBM Watson and analyzes the sentiment of the comments on photos via the Alchemy API.",
+    "name": "Deploy to Bluemix PHP codeigniter CRUD App",
+    "description": "We will use PHP as the runtime and codeigniter as our framework, we will then bind the application to the database using the ClearDB MySql service on Bluemix and and deploy it to Bluemix.",
     "url": "https://github.com/IBM-Bluemix/CRUD-PHP-Codeigniter-Bluemix?cm_mc_uid=03500478414514721131557&cm_mc_sid_50200000=1473164484",
     "language": "PHP",
     "services": [ "PHP, MySQL"],

@@ -97,7 +97,27 @@ catalogApp.controller('MainController', function ($scope, $http) {
 
   [
     {
-      url: "./data/projects.json",
+      url: "./data/ANTON.json",
+      tags: ["curated"]
+    },
+    {
+      url: "./data/FREDERIC.json",
+      tags: ["curated"]
+    },
+    {
+      url: "./data/Jake.json",
+      tags: ["curated"]
+    },
+    {
+      url: "./data/Other.json",
+      tags: ["curated"]
+    },
+    {
+      url: "./data/Ram.json",
+      tags: ["curated"]
+    },
+    {
+      url: "./data/Twana.json",
       tags: ["curated"]
     }
   ].forEach(function (source) {

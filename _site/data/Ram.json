@@ -1,0 +1,39 @@
+[
+  {
+    "Author" : "Ram Vennam",
+    "name": "Hybrid Banking App Demo",
+    "description": "Hybrid Banking Demo - Interaction of Customer on Mobile Device with Banking Service Center. Application that demos interaction between a customer and company support staff using Bluemix Mobile backend and Watson services.",
+    "url": "https://github.com/IBM-Bluemix/HybridBanking-Android",
+    "language": "Java",
+    "services": [ "Cloudant", "Watson Services", "Mobile Push Service", "Mobile Quality Assurance" ],
+    "level" : "Intermediate",
+    "catogary" : "Mobile",
+    "urlLink": "",
+    "blogPost" : "https://developer.ibm.com/bluemix/2015/10/01/creating-hybrid-apps-on-bluemix/"
+  },
+  {
+    "Author" : "Ram Vennam",
+    "name": "Sample Stock Trading application in Java EE",
+    "description": "Build and deploy the application to Bluemix, and consume a database services and other services in the cloud. ",
+    "url": "https://github.com/IBM-Bluemix/JavaCloudTrader",
+    "language": "Java",
+    "services": [ "DevOps", "Auto Scaling", "SQL DB" ],
+    "level" : "Intermediate",
+    "catogary" : "Web",
+    "urlLink": "http://cloudtrader.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2014/04/18/complex-java-ee-application-bluemix-cloudtrader/"
+  },
+  {
+    "Author" : "Ram Vennam",
+    "name": "Talent Manager",
+    "description": "Talent Manager allows you to find a developer with same set of skills and personalities like your other staff members. This is possible using the IBM personality insights service.",
+    "url": "https://github.com/IBM-Bluemix/talent-manager",
+    "language": "Java",
+    "services": [ "Personality Insights", "Cloudant" ],
+    "level" : "Beginner",
+    "catogary" : "Web",
+    "urlLink": "http://talent-manager.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2014/11/10/deploying-watson-cloudant-app-devops-services/",
+    "__comment":"=========================================================================================="
+  }
+]
