@@ -119,6 +119,10 @@ catalogApp.controller('MainController', function ($scope, $http) {
     {
       url: "./data/Twana.json",
       tags: ["curated"]
+    },
+    {
+      url: "./data/Vidyasagar.json",
+      tags: ["curated"]
     }
   ].forEach(function (source) {
     $http.get(source.url).success(function (links) {
