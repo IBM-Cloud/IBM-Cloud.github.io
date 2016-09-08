@@ -225,6 +225,21 @@ button.tagFilter.btn.btn-sm.active {
     background: #7cc7ff;
     color: #254258;
 }
+
+button.tagFilter.btn.btn-sm-menu {
+      background: #495a66;
+      color: #bdbdbd;
+      padding: 5px 12px;
+      font-size: 12px;
+      margin-right: 2px;
+      border-radius: 2px;
+}
+
+button.tagFilter.btn.btn-sm-menu.active {
+    background: #7cc7ff;
+    color: #254258;
+}
+
 .form-control{
   padding: 6px 2px;
   color: white;

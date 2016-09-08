@@ -97,34 +97,28 @@ catalogApp.controller('MainController', function ($scope, $http) {
 
   [
     {
-      url: "./data/ANTON.json",
-      tags: ["curated"]
+      url: "./data/ANTON.json"
     },
     {
-      url: "./data/FREDERIC.json",
-      tags: ["curated"]
+      url: "./data/FREDERIC.json"
     },
     {
-      url: "./data/Jake.json",
-      tags: ["curated"]
+      url: "./data/Jake.json"
     },
     {
-      url: "./data/Other.json",
-      tags: ["curated"]
+      url: "./data/Other.json"
     },
     {
-      url: "./data/Ram.json",
-      tags: ["curated"]
+      url: "./data/Ram.json"
     },
     {
-      url: "./data/Twana.json",
-      tags: ["curated"]
+      url: "./data/Twana.json"
     },
     {
-      url: "./data/Vidyasagar.json",
-      tags: ["curated"]
+      url: "./data/Vidyasagar.json"
     }
   ].forEach(function (source) {
+    var i = 0;
     $http.get(source.url).success(function (links) {
       links.forEach(function (link) {
         if (!link.tags) {
@@ -138,7 +132,11 @@ catalogApp.controller('MainController', function ($scope, $http) {
         if (link.catogary) {
           link.tags.push(link.catogary);
         }
+
       })
+
+
+
 
       $scope.links = $scope.links.concat(links);
       $scope.links.sort(function (link1, link2) {
