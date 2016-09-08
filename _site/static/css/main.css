@@ -314,4 +314,7 @@ ul.list-separator.nav.navbar-nav.well.well-primary.default {
   .project-item.col-md-4.col-sm-6.col-xs-12.ng-scope {
       width: 100%;
   }
+  ul.list-separator.nav.navbar-nav.well.well-primary.default {
+      width: auto;
+  }
 }
