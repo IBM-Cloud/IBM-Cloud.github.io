@@ -73,7 +73,7 @@ p.info a {
       display: inline-block;
 }
 body .container .jumbotron-primary, body .container .well-primary, body .container-fluid .jumbotron-primary, body .container-fluid .well-primary{
-  background-color: #0f212e;
+  background-color: #2d3f49;
 }
 .icon:hover {
     background: rgba(124,199,255,0.2);
@@ -193,6 +193,7 @@ footer {
       bottom: 0;
       padding-bottom: 10px;
       text-align: center;
+      color: #bdbdbd;
 }
 .pager li.active a {
     background: rgba(89, 148, 129, 0.3);
@@ -212,6 +213,7 @@ footer {
     width: 100%;
     padding: 15px;
     padding-left: 15px;
+    color: #bdbdbd;
 }
 button.tagFilter.btn.btn-sm {
     background: #495a66;
@@ -273,7 +275,7 @@ border-radius: 1px;
 
 a.ng-binding{
   color: #5aaafa;
-  font-size: 16px;
+  font-size: 18px;
 }
 .FirSpanLeft{
   float: left;
@@ -285,7 +287,7 @@ a.ng-binding{
 }
 #DesCrpC{
   display: inline-block;
-    height: 51px;
+    height: 65px;
     overflow: hidden;
     font-size: 12px;
 }
@@ -314,6 +316,15 @@ a.ng-binding{
 }
 ul.list-separator.nav.navbar-nav.well.well-primary.default {
     width: 100%;
+}
+body .container .jumbotron, body .container .jumbotron-default, body .container .well, body .container .well-default, body .container-fluid .jumbotron, body .container-fluid .jumbotron-default, body .container-fluid .well, body .container-fluid .well-default{
+  background-color: #0f212e;
+}
+.well.project-outer.demo{
+  background: #495a66;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #bdbdbd;
 }
 
 

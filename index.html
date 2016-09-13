@@ -11,13 +11,14 @@
   <meta name="description" content="IBM Bluemix Sample Code demos ready to use from IoT, Watson, Mobile and much more." />
   <meta name="keywords" content="Bluemix Sample code demos, Watson sample code, IoT samples, Bluemix Samples " />
 
+
   <!-- Custom Fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
   <!-- FontAwesome icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
   <!-- Material Design CSS -->
   <link rel="stylesheet" href="./static/css/bootstrap-material-design.min.css">
-  <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/css/bootstrap.css">
   <link rel="stylesheet" href="./static/css/main.css">
   <link rel="stylesheet" href="./static/css/emojione-awesome.css" />
 
@@ -25,6 +26,7 @@
 </head>
 
 <body class="home overflow-hidden" ng-controller="MainController" ng-cloak>
+
   <!--[if lt IE 7]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
   your browser</a> to improve your experience.</p>
@@ -118,6 +120,10 @@
         <div class="content well">
 
 
+          <meta name="keywords" content="Testing">
+
+
+
           <div class="TotHome">
               Total <b>{{links.length}}</b> links in the catalog<span ng-if="filteredLinks.length != links.length">, <b>{{filteredLinks.length}}</b> links matching the search criteria</span>
             </div>
@@ -126,7 +132,8 @@
             <div class="project-item col-md-4 col-sm-6 col-xs-12" ng-repeat-start="link in (filteredLinks = (links | filter:searchText | filterPanel:filterConfiguration))">
               <div class="well project-outer" ng-class="{demo: link.tags.indexOf('demo')>=0}">
                 <div class="link-title">
-                  <a href="{{link.html_url || link.url}}" target="_blank">{{link.name}}</a>
+                  <a href="{{link.html_url || link.url}}" target="_blank" >{{link.name}}</a>
+
 
                   <a href="{{link.homepage}}" ng-if="link.homepage">
                     <span class="e1a-link e1a-sm"></span>
