@@ -1,23 +1,29 @@
 // listen for request sent over XHR and automatically show/hide spinner
 angular.module('ngLoadingSpinner', ['angularSpinners'])
-  .directive('spinner', ['$http', 'spinnerService', function ($http, spinnerService) {
-    return {
-      link: function (scope, elm, attrs) {
-        scope.isLoading = function () {
-          return $http.pendingRequests.length > 0;
-        };
-        scope.$watch(scope.isLoading, function (loading) {
-          if (loading) {
-            spinnerService.show('spinner');
-          } else {
-            spinnerService.hide('spinner');
-          }
-        });
-      }
-    };
-    }]);
+.directive('spinner', ['$http', 'spinnerService', function ($http, spinnerService) {
+  return {
+    link: function (scope, elm, attrs) {
+      scope.isLoading = function () {
+        return $http.pendingRequests.length > 0;
+      };
+      scope.$watch(scope.isLoading, function (loading) {
+        if (loading) {
+          spinnerService.show('spinner');
+        } else {
+          spinnerService.hide('spinner');
+        }
+      });
+
+
+    }
+  };
+}]);
+
+
 
 var catalogApp = angular.module('catalogApp', ['ngLoadingSpinner', 'ngSanitize']);
+
+
 
 
 catalogApp.filter("filterPanel", function () {
@@ -30,118 +36,134 @@ catalogApp.filter("filterPanel", function () {
         // if no tag checked, show everything
         if (filterConfiguration.includeTags.length == 0 &&
           filterConfiguration.excludeTags.length == 0) {
-          keepLink = true;
-        }
+            keepLink = true;
+          }
 
-        // if no include, assume all included and let the exclude tag remove some
-        if (filterConfiguration.includeTags.length == 0) {
-          keepLink = true;
-        } else {
-          keepLink = true;
-          filterConfiguration.includeTags.forEach(function (tag) {
-            if (!link.tags || link.tags.indexOf(tag) < 0) {
+          // if no include, assume all included and let the exclude tag remove some
+          if (filterConfiguration.includeTags.length == 0) {
+            keepLink = true;
+          } else {
+            keepLink = true;
+            filterConfiguration.includeTags.forEach(function (tag) {
+              if (!link.tags || link.tags.indexOf(tag) < 0) {
+                keepLink = false;
+              }
+            });
+          }
+
+          filterConfiguration.excludeTags.forEach(function (tag) {
+            if (!link.tags || link.tags.indexOf(tag) >= 0) {
               keepLink = false;
             }
           });
-        }
 
-        filterConfiguration.excludeTags.forEach(function (tag) {
-          if (!link.tags || link.tags.indexOf(tag) >= 0) {
-            keepLink = false;
+          if (keepLink) {
+            results.push(link);
           }
         });
-
-        if (keepLink) {
-          results.push(link);
-        }
-      });
-      return results;
-    } else {
-      return links;
+        return results;
+      } else {
+        return links;
+      }
     }
-  }
-});
+  });
 
-catalogApp.filter("emoji", function () {
-  return function (input) {
-    return input ? emojione.toImage(input) : input;
-  }
-});
-
-catalogApp.controller('MainController', function ($scope, $http) {
-  console.info("Initializing MainController");
-  $scope.links = [];
-  $scope.filterConfiguration = {
-    enabled: true,
-    includeTags: [],
-    excludeTags: []
-  };
-
-  $scope.toggleTagConfiguration = function (tag, status) {
-    var tagSet = status ? $scope.filterConfiguration.includeTags : $scope.filterConfiguration.excludeTags;
-    var position = tagSet.indexOf(tag);
-    if (position >= 0) {
-      tagSet.splice(position, 1);
-    } else {
-      tagSet.push(tag);
+  catalogApp.filter("emoji", function () {
+    return function (input) {
+      return input ? emojione.toImage(input) : input;
     }
-  }
+  });
 
-  $scope.tagFilter = function (tag) {
-    if (categories.indexOf(tag) >= 0) {
-      return tag;
-    } else {
-      return null;
+  catalogApp.controller('MainController', function ($scope, $http) {
+    console.info("Initializing MainController");
+    $scope.links = [];
+    $scope.filterConfiguration = {
+      enabled: true,
+      includeTags: [],
+      excludeTags: []
+    };
+
+
+
+/*
+    $http.get('urltoRESTAPICall').
+    then(function(response) {
+      $scope.greeting = response.data;
+      console.log(response.data);
+    });
+*/
+
+
+
+    $scope.toggleTagConfiguration = function (tag, status) {
+      var tagSet = status ? $scope.filterConfiguration.includeTags : $scope.filterConfiguration.excludeTags;
+      var position = tagSet.indexOf(tag);
+      if (position >= 0) {
+        tagSet.splice(position, 1);
+      } else {
+        tagSet.push(tag);
+      }
     }
-  };
 
-  [
-    {
-      url: "./data/ANTON.json"
-    },
-    {
-      url: "./data/FREDERIC.json"
-    },
-    {
-      url: "./data/Jake.json"
-    },
-    {
-      url: "./data/Other.json"
-    },
-    {
-      url: "./data/Ram.json"
-    },
-    {
-      url: "./data/Twana.json"
-    },
-    {
-      url: "./data/Vidyasagar.json"
-    }
-  ].forEach(function (source) {
-    var i = 0;
-    $http.get(source.url).success(function (links) {
-      links.forEach(function (link) {
-        if (!link.tags) {
-          link.tags = [];
-        }
-        link.tags = link.tags.concat(source.tags);
+    $scope.tagFilter = function (tag) {
+      if (categories.indexOf(tag) >= 0) {
+        return tag;
+      } else {
+        return null;
+      }
+    };
 
-        if (link.language) {
-          link.tags.push(link.language);
-        }
-        if (link.catogary) {
-          link.tags.push(link.catogary);
-        }
+    [
+      {
+        url: "./data/ANTON.json"
+      },
+      {
+        url: "./data/FREDERIC.json"
+      },
+      {
+        url: "./data/Jake.json"
+      },
+      {
+        url: "./data/Other.json"
+      },
+      {
+        url: "./data/Ram.json"
+      },
+      {
+        url: "./data/Twana.json"
+      },
+      {
+        url: "./data/Vidyasagar.json"
+      }
+    ].forEach(function (source) {
+      var i = 0;
+      $http.get(source.url).success(function (links) {
+        links.forEach(function (link) {
+          if (!link.tags) {
+            link.tags = [];
+          }
+          link.tags = link.tags.concat(source.tags);
 
-      })
+          if (link.language == "") {
+            link.tags.push(link.language);
+          }
+          if (link.catogary) {
+            link.tags.push(link.catogary);
+          }
+
+        })
 
 
+        $(".hrefLink").each(function( index ) {
+            if (!$(this).attr('href')){
+              $(this).hide();
+            }
+          });
 
-
-      $scope.links = $scope.links.concat(links);
-      $scope.links.sort(function (link1, link2) {
-        return link1.name.localeCompare(link2.name);
+        $scope.links = $scope.links.concat(links);
+        $scope.links.sort(function (link1, link2) {
+          return link1.name.localeCompare(link2.name);
+        });
       });
     });
   });
-});

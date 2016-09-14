@@ -119,11 +119,13 @@
       <div class="col-md-9 col-xs-12 full"><!-- START FULL PAGE -->
         <div class="content well">
 
-
+<!--
           <meta name="keywords" content="Testing">
-
-
-
+          <div>
+      			<p>The ID is {{greeting.id}}</p>
+      			<p>The content is {{greeting.content}}</p>
+      		</div>
+ -->
           <div class="TotHome">
               Total <b>{{links.length}}</b> links in the catalog<span ng-if="filteredLinks.length != links.length">, <b>{{filteredLinks.length}}</b> links matching the search criteria</span>
             </div>
@@ -160,13 +162,13 @@
 
                   <div class="tag-level">
                     <span class="FirSpanLeft">URL: </span>
-                      <span class="label tags tag-filter"><a href="{{link.urlLink}}" target="_blank">Live Demo URL</a></span>
+                      <span class="label tags tag-filter "><a href="{{link.urlLink}}" class="hrefLink" target="_blank">Live Demo URL</a></span>
                       <br>
                       <span class="FirSpanLeft">Github: </span>
-                      <span class="label tags tag-filter"><a href="{{link.url}}" target="_blank">Source Code URL</a></span>
+                      <span class="label tags tag-filter"><a href="{{link.url}}" class="hrefLink" target="_blank">Source Code URL</a></span>
                       <br>
                       <span class="FirSpanLeft">Blog Article: </span>
-                      <span class="label tags tag-filter"><a href="{{link.blogPost}}" target="_blank">See Blog Article</a></span>
+                      <span class="label tags tag-filter"><a href="{{link.blogPost}}" class="hrefLink" target="_blank">link.blogPost</a></span>
                   </div>
 
 
@@ -189,6 +191,8 @@
 
 
           </div>
+
+
 
 
           <div class="row">
