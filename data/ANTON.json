@@ -6,10 +6,9 @@
     "description": "Insurance Policy Bot is a collection of experimental Watson & Bluemix concepts applied to the insurance domain.",
     "language": "NodeJS",
     "tags": ["demo", "featured", "solution"],
-
     "services": ["Tone Analyzer", "Conversation API","Natural Language Classifier", "MongoDb"],
     "level" : "Intermediate",
-    "catogary" : "Mobile",
+    "category" : "Mobile",
     "urlLink": "http://cloudco.mybluemix.net/",
     "urlLink": "",
     "blogPost" : ""
@@ -23,7 +22,7 @@
     "tags": ["demo", "featured"],
     "services": ["Personality Insights"],
     "level" : "Beginner",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "https://ziggy.mybluemix.net/",
     "blogPost" : "https://developer.ibm.com/bluemix/2016/04/11/natural-language-analysis-of-david-bowie-personas/"
   },
@@ -36,7 +35,7 @@
     "tags": ["demo"],
     "services": [ "Tone Analyzer, Watson Alchemy Concept Analysis"],
     "level" : "Beginner",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "",
     "blogPost" : "https://developer.ibm.com/bluemix/2016/08/08/watson-services-and-google-docs/"
   }

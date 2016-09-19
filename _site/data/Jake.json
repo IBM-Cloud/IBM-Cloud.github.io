@@ -8,7 +8,7 @@
     "tags": ["demo", "featured", "solution"],
     "services": [ "Tone Analyzer", "Speech To Text" ],
     "level" : "Beginner",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "https://realtime-tone.mybluemix.net/",
     "blogPost" : ""
   },
@@ -21,7 +21,7 @@
     "tags": ["demo"],
     "services": [ "Weather API" ],
     "level" : "Beginner",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "https://capital-weather.mybluemix.net/",
     "blogPost" : ""
   },
@@ -34,7 +34,7 @@
     "tags": ["demo"],
     "services": [ "NodeJS, MQ-Light", "Cloudant"],
     "level" : "Intermediate",
-    "catogary" : "Mobile",
+    "category" : "Mobile",
     "urlLink": "",
     "blogPost" : ""
   },
@@ -47,7 +47,7 @@
     "tags": ["demo"],
     "services": [ "Personality Insights API"],
     "level" : "Intermediate",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "https://personality-box.mybluemix.net/",
     "blogPost" : "https://developer.ibm.com/bluemix/2015/06/25/intro-to-box-video/"
   },
@@ -60,7 +60,7 @@
     "tags": ["demo"],
     "services": [ "Insights for Weather, Leaflet, Esri Leaflet"],
     "level" : "Beginner",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "",
     "blogPost" : ""
   }

@@ -8,7 +8,7 @@
     "tags": ["demo", "featured"],
     "services": [ "cloudant", "weather", "secure gateway" ],
     "level" : "Intermediate",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "https://logistics-wizard.mybluemix.net",
     "blogPost" : "https://github.com/IBM-Bluemix/logistics-wizard/wiki/Technical-Collateral"
   },
@@ -21,7 +21,7 @@
     "tags": ["demo"],
     "services": [ "twitter" ],
     "level" : "Intermediate",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "http://insights-search.mybluemix.net/",
     "blogPost" : "https://developer.ibm.com/bluemix/2015/09/01/sample-ibm-insights-for-twitter/"
   },
@@ -34,7 +34,7 @@
     "tags": ["demo"],
     "services": [ "weather" ],
     "level" : "Beginner",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "http://insights-weather.mybluemix.net",
     "blogPost" : "https://developer.ibm.com/bluemix/2015/12/08/insights-weather-sample-overview/"
   },
@@ -47,7 +47,7 @@
     "tags": ["demo"],
     "services": [ "twitter", "weather" ],
     "level" : "Beginner",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "",
     "blogPost" : ""
   },
@@ -60,7 +60,7 @@
     "tags": ["demo", "featured", "solution"],
     "services": [ "OpenWhisk", "slack", "API Connect", "cloudant" ],
     "level" : "Intermediate",
-    "catogary" : "Mobile",
+    "category" : "Mobile",
     "urlLink": "",
     "blogPost" : "https://developer.ibm.com/bluemix/2016/08/15/serverless-slack-app-with-bluemix-openwhisk/"
   },
@@ -73,7 +73,7 @@
     "tags": ["demo", "featured"],
     "services": [ "OpenWhisk", "Visual Recognition", "cloudant"],
     "level" : "Intermediate",
-    "catogary" : "Mobile",
+    "category" : "Mobile",
     "urlLink": "",
     "blogPost" : "https://developer.ibm.com/bluemix/2016/02/29/openwhisk-and-watson-image-tagging-app/"
   },
@@ -86,7 +86,7 @@
     "tags": ["demo", "featured", "solution"],
     "services": [ "OpenWhisk", "Visual Recognition", "cloudant"],
     "level" : "Intermediate",
-    "catogary" : "Mobile",
+    "category" : "Mobile",
     "urlLink": "",
     "blogPost" : "https://www.youtube.com/watch?v=1teIMpkI_Sg&feature=youtu.be"
   }

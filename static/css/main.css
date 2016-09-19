@@ -285,10 +285,10 @@ a.ng-binding{
     padding: 10px;
 }
 #DesCrpC{
-  display: inline-block;
-    height: 65px;
+    display: inline-block;
+    height: 93px;
     overflow: hidden;
-    font-size: 12px;
+    font-size: 13px;
 }
 .tag-technologies {
     height: 40px;
@@ -326,6 +326,9 @@ body .container .jumbotron, body .container .jumbotron-default, body .container 
     color: #bdbdbd;
 }
 
+.error404{
+  color: white;
+}
 
 @media (max-width: 768px) {
     #portfolio-filter {

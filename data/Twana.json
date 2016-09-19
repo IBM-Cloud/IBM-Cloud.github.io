@@ -8,7 +8,7 @@
     "tags": ["demo"],
     "services": [ "NodeJS, MongoDB" ],
     "level" : "Beginner",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "",
     "blogPost" : "https://developer.ibm.com/bluemix/2016/02/08/migrate-app-from-azure-to-bluemix/"
   },
@@ -23,7 +23,7 @@
     "tags": ["demo"],
     "services": [ "PHP, MySQL"],
     "level" : "Beginner",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "http://crud-php-codeigniter-bluemix.mybluemix.net/",
     "blogPost" : "https://developer.ibm.com/bluemix/2016/01/15/deploy-simple-database-php-app-to-bluemix/"
   }

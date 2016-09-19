@@ -124,7 +124,7 @@ catalogApp.filter("filterPanel", function () {
         url: "./data/Jake.json"
       },
       {
-        url: "./data/Other.json"
+        url: "./data/main.json"
       },
       {
         url: "./data/Ram.json"
@@ -147,8 +147,8 @@ catalogApp.filter("filterPanel", function () {
           if (link.language == "") {
             link.tags.push(link.language);
           }
-          if (link.catogary) {
-            link.tags.push(link.catogary);
+          if (link.category) {
+            link.tags.push(link.category);
           }
 
         })

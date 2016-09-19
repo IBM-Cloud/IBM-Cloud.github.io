@@ -7,9 +7,9 @@
 
   <link rel="shortcut icon" href="./static/img/favicon.png" />
   <title>Bluemix Open Source</title>
-  <meta name="author" content="Twana Daniel - Developer Advocate" />
-  <meta name="description" content="IBM Bluemix Open Source" />
-  <meta name="keywords" content="Bluemix, Developer Advocate, IBM, Cloud " />
+  <meta name="author" content="Twana Daniel - IBM Bluemix - Developer Advocate Team" />
+  <meta name="description" content="IBM Bluemix Sample Code demos ready to use from IoT, Watson, Mobile and much more." />
+  <meta name="keywords" content="Bluemix Sample code demos, Watson sample code, IoT samples, Bluemix Samples " />
 
 
   <!-- Custom Fonts -->
@@ -18,14 +18,15 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
   <!-- Material Design CSS -->
   <link rel="stylesheet" href="../static/css/bootstrap-material-design.min.css">
-  <link rel="stylesheet" href="../static/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../static/css/emojione.min.css" />
+  <link rel="stylesheet" href="../static/css/bootstrap.css">
   <link rel="stylesheet" href="../static/css/main.css">
+  <link rel="stylesheet" href="../static/css/emojione-awesome.css" />
 
 
 </head>
 
 <body class="home overflow-hidden" ng-controller="MainController" ng-cloak>
+
   <!--[if lt IE 7]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
   your browser</a> to improve your experience.</p>
@@ -35,15 +36,15 @@
       <div class="row">
         <div class="col-md-3 col-sm-4 col-xs-12">
           <div class="row-picture">
-            <a href="index"><img id="about" class="logo-img" src="../static/img/bluemix-logo-2016-feb.svg" height="75px" width="75px"></a>
+            <a href="index"><img id="about" class="logo-img" src="./static/img/bluemix-logo-2016-feb.svg" height="75px" width="75px"></a>
           </div>
           <div class="row-details">
             <h4 class="list-group-item-heading">IBM Bluemix</h4>
-            <p class="list-group-item-text">Developer Advocate Team</p>
+            <p class="list-group-item-text">Cloud Platform</p>
             <div class="social-icons">
               <a class="icon" target="_blank" href="https://github.com/IBM-Bluemix"><i class="fa fa-github"></i></a>
               <a class="icon" target="_blank" href="http://stackoverflow.com/questions/tagged/ibm-bluemix"><i class="fa fa-stack-overflow"></i></a>
-              <a class="icon" target="_blank" href="/team/"><i class="fa fa-smile-o"></i></a>
+              <a class="icon" target="_blank" href="https://new-console.ng.bluemix.net"><i class="fa fa-smile-o"></i></a>
             </div>
           </div>
           <div class="navbar-header pull-right">
@@ -54,12 +55,11 @@
           </div>
         </div>
         <div class="col-md-9 col-sm-8 col-xs-12">
-          <h2 class="blog-title-pro">Bluemix Open Source</h2>
-          <p class="info">The mission of our team is drive usage back to the Bluemix platform as call it:<br>
-            <i class="fa fa-users" aria-hidden="true"></i> GROWTH  &nbsp; &nbsp; &nbsp;
-            <i class="fa fa-book" aria-hidden="true"></i> APPLICATION CONTENT &nbsp; &nbsp; &nbsp;
-            <i class="fa fa-code" aria-hidden="true"></i> SCENARIO DEVELOPMENT
-          </p>
+          <h2 class="blog-title-pro">Bluemix Code Samples</h2>
+          <button type="button" class="tagFilter btn btn-sm-menu active" data-toggle="button" ng-click="toggleTagConfiguration('demo', true)"><i class="fa fa-code" aria-hidden="true"></i> All Demos</button>
+          <button type="button" class="tagFilter btn btn-sm-menu" data-toggle="button" ng-click="toggleTagConfiguration('featured', true)"><i class="fa fa-star" aria-hidden="true"></i> Featured Demos</button>
+          <button type="button" class="tagFilter btn btn-sm-menu" data-toggle="button" ng-click="toggleTagConfiguration('solution', true)"><i class="fa fa-codepen" aria-hidden="true"></i> Ready Solutions</button>
+
         </div>
       </div>
     </div>
@@ -85,26 +85,29 @@
                 <div class="search-body">
                   <table>
                     <tr>
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Python', true)">Python</button>
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('PHP', true)">PHP</button>
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Ruby', true)">Ruby</button>
+
                       <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('NodeJS', true)">NodeJS</button>
                       <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Swift', true)">Swift</button>
-                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Ruby', true)">Ruby</button>
                       <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('C#', true)">C#</button>
+
+                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Objective C', true)">Objective C</button>
                       <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Java', true)">Java</button>
-                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Python', true)">Python</button>
-                      <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Php', true)">PHP</button>
+
                     </tr>
                   </table>
                 </div>
                 <hr/>
 
-                <span class="text-muted">Filter By Technology:</span>
+                <span class="text-muted">Filter By Categories:</span>
                   <div class="search-body">
                     <table>
                       <tr>
                         <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('IoT', true)">IoT</button>
-                        <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Watson', true)">Watson</button>
+                        <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Web', true)">Web</button>
                         <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Mobile', true)">Mobile</button>
-                        <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Database', true)">Database</button>
                       </tr>
                     </table>
                   </div>
@@ -115,7 +118,7 @@
 
 
       <div class="col-md-9 col-xs-12 full">
-  <h1>404!! Page not found</h1>
+  <h1 class="error404">404!! Page not found</h1>
 
   <div class="row">
     <div class="col-md-12 col-xs-12 footer">

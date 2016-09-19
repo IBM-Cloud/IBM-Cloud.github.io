@@ -8,7 +8,7 @@
     "tags": ["demo", "featured", "solution"],
     "services": [ "DevOps" ],
     "level" : "Intermediate",
-    "catogary" : "IoT",
+    "category" : "IoT",
     "urlLink": "https://skylink.mybluemix.net/",
     "blogPost" : "https://developer.ibm.com/bluemix/2016/05/03/drones-take-on-enterprise-with-bluemix-and-openwhisk/"
   },
@@ -23,7 +23,7 @@
     "tags": ["demo"],
     "services": [ "Watson Visual, Alchemy API, Cloudant"],
     "level" : "Beginner",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "http://facebook-photo-analyzer.mybluemix.net/",
     "blogPost" : ""
   },
@@ -38,7 +38,7 @@
     "tags": ["demo", "featured"],
     "services": [ "Conversation API", "Speech To Service", "Text To Speech" ],
     "level" : "Intermediate",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "https://conversation-demo.mybluemix.net/",
     "blogPost" : "https://www.ibm.com/blogs/watson/2016/07/build-chat-bot/"
   },
@@ -51,7 +51,7 @@
     "tags": ["demo"],
     "services": ["Cloudant, MongoDB"],
     "level" : "Beginner",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "",
     "blogPost" : ""
   },
@@ -64,7 +64,7 @@
     "tags": ["demo"],
     "services": [ "twitter", "Personality Insights" ],
     "level" : "Intermediate",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "https://your-celebrity-match.mybluemix.net/",
     "blogPost" : ""
   },
@@ -77,7 +77,7 @@
     "tags": ["demo"],
     "services": [ "Cloudant" ],
     "level" : "Intermediate",
-    "catogary" : "Mobile",
+    "category" : "Mobile",
     "urlLink": "",
     "blogPost" : "https://developer.ibm.com/clouddataservices/simple-metrics-tutorial-part-1-metrics-collection/"
   }

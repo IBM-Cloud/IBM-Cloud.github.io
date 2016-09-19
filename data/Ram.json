@@ -8,7 +8,7 @@
     "tags": ["demo", "featured", "solution"],
     "services": [ "Cloudant", "Watson Services", "Mobile Push Service", "Mobile Quality Assurance" ],
     "level" : "Intermediate",
-    "catogary" : "Mobile",
+    "category" : "Mobile",
     "urlLink": "",
     "blogPost" : "https://developer.ibm.com/bluemix/2015/10/01/creating-hybrid-apps-on-bluemix/"
   },
@@ -21,7 +21,7 @@
     "tags": ["demo", "featured", "solution"],
     "services": [ "DevOps", "Auto Scaling", "SQL DB" ],
     "level" : "Intermediate",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "http://cloudtrader.mybluemix.net/",
     "blogPost" : "https://developer.ibm.com/bluemix/2014/04/18/complex-java-ee-application-bluemix-cloudtrader/"
   },
@@ -34,7 +34,7 @@
     "tags": ["demo"],
     "services": [ "Personality Insights", "Cloudant" ],
     "level" : "Beginner",
-    "catogary" : "Web",
+    "category" : "Web",
     "urlLink": "http://talent-manager.mybluemix.net/",
     "blogPost" : "https://developer.ibm.com/bluemix/2014/11/10/deploying-watson-cloudant-app-devops-services/",
     "__comment":"=========================================================================================="
