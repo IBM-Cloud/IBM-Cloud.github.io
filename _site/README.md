@@ -1,22 +1,20 @@
 # Bluemix Open Source Github.io page
 
-The Bluemix.github.io page is where Bluemix sample links be displayed.
-The repo a a JSON file inside the data folder in which the all the focus needed there to update and maintain.
-When updating the JSON data file, we want to show demos that fully working.
-Each demo should have links to:
+The Bluemix.github.io page is where Bluemix sample links to be displayed.
+The repo has a number of JSON files inside the data folder in which hold all the data.
+When updating the JSON data file, we want to show demos that are fully working and checked before pushing to be displayed there. Each demo should have links to:
 - Live URL of the site
 - GitHub repo
 - DeveloperWorks blog post for that demo
 
-The JSON file is  managed and reviewed by the Bluemix developer Advocate team when any new demo get added.
-There is a process in which we follow for adding new demos on to the JSON file.
+The JSON file is reviewed by the Bluemix developer Advocate team when any new demo gets added.
+There is a process in which we follow for adding new demos on to the JSON file.  
 
-
-## Add New Demo to the JSON data file
-Add your demo data to the "data_under_review.json" file, the demo will be reviewed and once reviewed then it will be moved on to main.json file. 
+1) Add your demo data to the "data_under_review.json" file.  
+2) The demo will be reviewed by us and once reviewed then it will be moved on to main.json file.   
 
 When adding a new demo, please make sure you follow the data sample from below.
-The Search and tagging and filtering works based on the this flow so please follow same to below layout.
+The Search and tagging and filtering works based on the flow below so please follow same to below layout.  
 Example Data:
 ```
 {
@@ -33,7 +31,6 @@ Example Data:
     "blogPost" : "https://github.com/IBM-Bluemix/logistics-wizard/wiki/Technical-Collateral"
   }
 ```
-
 
 
 

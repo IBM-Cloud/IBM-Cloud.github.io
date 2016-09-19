@@ -144,7 +144,7 @@ catalogApp.filter("filterPanel", function () {
           }
           link.tags = link.tags.concat(source.tags);
 
-          if (link.language == "") {
+          if (link.language) {
             link.tags.push(link.language);
           }
           if (link.category) {
