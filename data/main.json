@@ -1,41 +1,107 @@
 [
   {
-    "Author" : "ANDREW TRICE",
-    "name": "Awesome skylink",
-    "description": "Skylink is a sample application that lets you connect a DJI drone aircraft to the IBM Cloud with near realtime image analysis leveraging IBM Cloudant, OpenWhisk, IBM Watson, and Alchemy Vision.",
-    "url": "https://github.com/IBM-Bluemix/skylink",
+    "State" : "live",
+    "Author" : "ANTON MCCONVILLE & Others",
+    "name": "CloudCo Insurance App",
+    "url": "https://github.com/IBM-Bluemix/insurance-bot",
+    "description": "Insurance Policy Bot is a collection of experimental Watson & Bluemix concepts applied to the insurance domain.",
     "language": "NodeJS",
-    "tags": ["demo", "featured", "solution"],
-    "services": [ "DevOps" ],
+    "tags": ["ShowcaseDemos"],
+    "services": ["Tone Analyzer", "Conversation API","Natural Language Classifier", "MongoDb"],
     "level" : "Intermediate",
-    "category" : "IoT",
-    "urlLink": "https://skylink.mybluemix.net/",
-    "blogPost" : "https://developer.ibm.com/bluemix/2016/05/03/drones-take-on-enterprise-with-bluemix-and-openwhisk/"
+    "category" : "Mobile",
+    "urlLink": "http://cloudco.mybluemix.net/",
+    "urlLink": "",
+    "blogPost" : ""
   },
-
-
   {
-    "Author" : "Jeff Sloyer",
-    "name": "Facebook Photo Analyzer",
-    "description": "A sample/demo app that uses IBM Bluemix to analyze the objects in photos on Facebook via IBM Watson and analyzes the sentiment of the comments on photos via the Alchemy API.",
-    "url": "https://github.com/IBM-Bluemix/facebook-photo-analyzer",
-    "language": "NodeJS",
-    "tags": ["demo"],
-    "services": [ "Watson Visual, Alchemy API, Cloudant"],
+    "State" : "live",
+    "Author" : "ANTON MCCONVILLE",
+    "name": "David Bowie personalities",
+    "description": "Exploring David Bowie's lyrics with Python, Watson & Bluemix",
+    "url": "https://github.com/IBM-Bluemix/ziggy",
+    "language": "Python",
+    "tags": ["ShowcaseDemos"],
+    "services": ["Personality Insights"],
     "level" : "Beginner",
     "category" : "Web",
-    "urlLink": "http://facebook-photo-analyzer.mybluemix.net/",
+    "urlLink": "https://ziggy.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2016/04/11/natural-language-analysis-of-david-bowie-personas/"
+  },
+  {
+    "State" : "live",
+    "Author" : "IBM",
+    "name": "Image tagging and face detection app",
+    "description": "Vision App is a sample iOS application to automatically tag images and detect faces by using IBM visual recognition technologies.",
+    "url": "https://github.com/IBM-Bluemix/openwhisk-visionapp",
+    "language": "Swift",
+    "tags": ["ShowcaseDemos"],
+    "services": [ "OpenWhisk", "Visual Recognition", "cloudant"],
+    "level" : "Intermediate",
+    "category" : "Mobile",
+    "urlLink": "",
+    "blogPost" : "https://developer.ibm.com/bluemix/2016/02/29/openwhisk-and-watson-image-tagging-app/"
+  },
+  {
+    "State" : "live",
+    "Author" : "IBM",
+    "name": "Logistics Wizard",
+    "url": "https://github.com/IBM-Bluemix/logistics-wizard",
+    "description": "The Logistics Wizard is an end-to-end, smart supply chain management solution that showcases how to execute hybrid cloud, microservices, and predictive data analytics in the real world.",
+    "language": "Python, NodeJS",
+    "tags": ["ShowcaseDemos"],
+    "services": [ "cloudant", "weather", "secure gateway" ],
+    "level" : "Intermediate",
+    "category" : "Web",
+    "urlLink": "https://logistics-wizard.mybluemix.net",
+    "blogPost" : "https://github.com/IBM-Bluemix/logistics-wizard/wiki/Technical-Collateral"
+  },
+  {
+    "State" : "live",
+    "Author" : "Bluemix & Watson Team",
+    "name": "Your Celebrity Match",
+    "description": "Compare your Twitter profile against celebrities.",
+    "url": "https://github.com/watson-developer-cloud/your-celebrity-match",
+    "language": "NodeJS",
+    "tags": ["ShowcaseDemos"],
+    "services": [ "twitter", "Personality Insights" ],
+    "level" : "Intermediate",
+    "category" : "Web",
+    "urlLink": "https://your-celebrity-match.mybluemix.net/",
     "blogPost" : ""
   },
 
 
+
+
+
+
+
+
+
+
   {
+    "State" : "live",
+    "Author" : "Jake Peyser",
+    "name": "Real Time Tone Analysis Application",
+    "description": "Real Time Tone Analysis samples dictation or conversations and displays a real-time transcription and an accompanying chart that plots the emotional, social, and writing tone of the language.",
+    "url": "https://github.com/IBM-Bluemix/real-time-tone-analysis",
+    "language": "NodeJS",
+    "tags": ["SampleCode"],
+    "services": [ "Tone Analyzer", "Speech To Text" ],
+    "level" : "Beginner",
+    "category" : "Web",
+    "urlLink": "https://realtime-tone.mybluemix.net/",
+    "blogPost" : ""
+  },
+  {
+    "State" : "live",
     "Author" : "Bluemix & Watson Team",
     "name": "ChatBot - Car Dashboard",
     "description": "Application that demonstrates how the Conversation service uses intent capabilities in an animated car dashboard UI.",
     "url": "https://github.com/watson-developer-cloud/car-dashboard",
     "language": "NodeJS",
-    "tags": ["demo", "featured"],
+    "tags": ["SampleCode"],
     "services": [ "Conversation API", "Speech To Service", "Text To Speech" ],
     "level" : "Intermediate",
     "category" : "Web",
@@ -43,12 +109,55 @@
     "blogPost" : "https://www.ibm.com/blogs/watson/2016/07/build-chat-bot/"
   },
   {
+    "State" : "live",
+    "Author" : "Ram Vennam",
+    "name": "Hybrid Banking App Demo",
+    "description": "Hybrid Banking Demo - Interaction of Customer on Mobile Device with Banking Service Center. Application that demos interaction between a customer and company support staff using Bluemix Mobile backend and Watson services.",
+    "url": "https://github.com/IBM-Bluemix/HybridBanking-Android",
+    "language": "Java",
+    "tags": ["SampleCode"],
+    "services": [ "Cloudant", "Watson Services", "Mobile Push Service", "Mobile Quality Assurance" ],
+    "level" : "Intermediate",
+    "category" : "Mobile",
+    "urlLink": "",
+    "blogPost" : "https://developer.ibm.com/bluemix/2015/10/01/creating-hybrid-apps-on-bluemix/"
+  },
+  {
+    "State" : "live",
+    "Author" : "Ram Vennam",
+    "name": "Sample Stock Trading application in Java EE",
+    "description": "Build and deploy the application to Bluemix, and consume a database services and other services in the cloud. ",
+    "url": "https://github.com/IBM-Bluemix/JavaCloudTrader",
+    "language": "Java",
+    "tags": ["SampleCode"],
+    "services": [ "DevOps", "Auto Scaling", "SQL DB" ],
+    "level" : "Intermediate",
+    "category" : "Web",
+    "urlLink": "http://cloudtrader.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2014/04/18/complex-java-ee-application-bluemix-cloudtrader/"
+  },
+  {
+    "State" : "live",
+    "Author" : "Twana Daniel",
+    "name": "Deploy to Bluemix PHP codeigniter CRUD App",
+    "description": "We will use PHP as the runtime and codeigniter as our framework, we will then bind the application to the database using the ClearDB MySql service on Bluemix and and deploy it to Bluemix.",
+    "url": "https://github.com/IBM-Bluemix/CRUD-PHP-Codeigniter-Bluemix?cm_mc_uid=03500478414514721131557&cm_mc_sid_50200000=1473164484",
+    "language": "PHP",
+    "tags": ["SampleCode"],
+    "services": [ "PHP, MySQL"],
+    "level" : "Beginner",
+    "category" : "Web",
+    "urlLink": "http://crud-php-codeigniter-bluemix.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2016/01/15/deploy-simple-database-php-app-to-bluemix/"
+  },
+  {
+    "State" : "live",
     "Author" : "Bluemix & Watson Team",
     "name": "Todo Web App",
     "url": "https://github.com/IBM-Bluemix/todo-apps",
     "description": "The ToDo sample apps are meant to be simple demos of how you can take advantage of Bluemix and a database service done in number different langauges.",
     "language": "NodeJS, Java, PHP, Python, Rails, Swift",
-    "tags": ["demo"],
+    "tags": ["SampleCode"],
     "services": ["Cloudant, MongoDB"],
     "level" : "Beginner",
     "category" : "Web",
@@ -56,29 +165,29 @@
     "blogPost" : ""
   },
   {
-    "Author" : "Bluemix & Watson Team",
-    "name": "Your Celebrity Match",
-    "description": "Compare your Twitter profile against celebrities.",
-    "url": "https://github.com/watson-developer-cloud/your-celebrity-match",
+    "State" : "live",
+    "Author" : "ANDREW TRICE",
+    "name": "Awesome skylink",
+    "description": "Skylink is a sample application that lets you connect a DJI drone aircraft to the IBM Cloud with near realtime image analysis leveraging IBM Cloudant, OpenWhisk, IBM Watson, and Alchemy Vision.",
+    "url": "https://github.com/IBM-Bluemix/skylink",
     "language": "NodeJS",
-    "tags": ["demo"],
-    "services": [ "twitter", "Personality Insights" ],
+    "tags": ["SampleCode"],
+    "services": [ "DevOps" ],
     "level" : "Intermediate",
-    "category" : "Web",
-    "urlLink": "https://your-celebrity-match.mybluemix.net/",
-    "blogPost" : ""
-  },
-  {
-    "Author" : "Bluemix & Watson Team",
-    "name": "Metric Collector",
-    "description": "A lightweight web-tracking app to record user actions on a single-page webapp. Uses Piwik web analytics library to collect information and Node.js to store in Cloudant.",
-    "url": "https://github.com/ibm-cds-labs/metrics-collector/",
-    "language": "NodeJS",
-    "tags": ["demo"],
-    "services": [ "Cloudant" ],
-    "level" : "Intermediate",
-    "category" : "Mobile",
-    "urlLink": "",
-    "blogPost" : "https://developer.ibm.com/clouddataservices/simple-metrics-tutorial-part-1-metrics-collection/"
+    "category" : "IoT",
+    "urlLink": "https://skylink.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2016/05/03/drones-take-on-enterprise-with-bluemix-and-openwhisk/"
   }
+
+
+
+
+
+
+
+
+
+
+
+
 ]

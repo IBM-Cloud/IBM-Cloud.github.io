@@ -39,6 +39,7 @@ catalogApp.filter("filterPanel", function () {
             keepLink = true;
           }
 
+
           // if no include, assume all included and let the exclude tag remove some
           if (filterConfiguration.includeTags.length == 0) {
             keepLink = true;
@@ -55,6 +56,15 @@ catalogApp.filter("filterPanel", function () {
             if (!link.tags || link.tags.indexOf(tag) >= 0) {
               keepLink = false;
             }
+
+/*
+            filterConfiguration.excludeTags.forEach(function (tag) {
+              if (link.tags.State == "live") {
+                keepLink = false;
+              }
+*/
+
+
           });
 
           if (keepLink) {
@@ -115,25 +125,7 @@ catalogApp.filter("filterPanel", function () {
 
     [
       {
-        url: "./data/ANTON.json"
-      },
-      {
-        url: "./data/FREDERIC.json"
-      },
-      {
-        url: "./data/Jake.json"
-      },
-      {
         url: "./data/main.json"
-      },
-      {
-        url: "./data/Ram.json"
-      },
-      {
-        url: "./data/Twana.json"
-      },
-      {
-        url: "./data/Vidyasagar.json"
       }
     ].forEach(function (source) {
       var i = 0;
@@ -150,6 +142,11 @@ catalogApp.filter("filterPanel", function () {
           if (link.category) {
             link.tags.push(link.category);
           }
+
+          // if state is live
+          if (link.State == "live") {
+              keepLink = false;
+            }
 
         })
 
