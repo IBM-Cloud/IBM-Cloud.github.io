@@ -274,7 +274,7 @@ border-radius: 1px;
 
 a.ng-binding{
   color: #5aaafa;
-  font-size: 18px;
+  font-size: 16px;
 }
 .FirSpanLeft{
   float: left;
@@ -330,6 +330,69 @@ body .container .jumbotron, body .container .jumbotron-default, body .container 
 .error404{
   color: white;
 }
+
+
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.tags li {
+  float: left;
+}
+
+.tag {
+  background: #495a66;
+      border-radius: 3px 0 0 3px;
+      color: #5aaafa;
+      display: inline-block;
+      height: 26px;
+      line-height: 26px;
+      padding: 0 20px 0 23px;
+      position: relative;
+      margin: 0 10px 10px 0;
+      text-decoration: none;
+      -webkit-transition: color 0.2s;
+      margin-top: 5px;
+      font-size:14px;
+}
+
+.tag::before {
+  background: #5aaafa;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+      background: #0f212e;
+      border-bottom: 13px solid transparent;
+      border-left: 10px solid #495a66;
+      border-top: 13px solid transparent;
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: white;
+  }
+
+.tag:hover {
+  background-color: crimson;
+  color: white;
+}
+
+
+.tag:hover::after {
+   border-left-color: crimson;
+}
+
 
 @media (max-width: 768px) {
     #portfolio-filter {

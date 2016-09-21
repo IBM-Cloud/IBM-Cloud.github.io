@@ -58,7 +58,7 @@
         <div class="col-md-9 col-sm-8 col-xs-12">
           <h2 class="blog-title-pro">Bluemix Code Samples</h2>
           <button type="button" class="tagFilter btn btn-sm-menu" data-toggle="button" ng-click="toggleTagConfiguration('ShowcaseDemos', true)"><i class="fa fa-star" aria-hidden="true"></i> Showcase Demos</button>
-          <button type="button" class="tagFilter btn btn-sm-menu" data-toggle="button" ng-click="toggleTagConfiguration('SampleCode', true)"><i class="fa fa-codepen" aria-hidden="true"></i> Sample Code</button>
+          <button type="button" class="tagFilter btn btn-sm-menu" data-toggle="button" ng-click="toggleTagConfiguration('SampleCode', true)"><i class="fa fa-codepen" aria-hidden="true"></i> Sample Code's </button>
 
         </div>
       </div>
@@ -132,11 +132,13 @@
                 <div class="link-title">
                   <a href="{{link.html_url || link.url}}" target="_blank" >{{link.name}}</a>
 
-
                   <a href="{{link.homepage}}" ng-if="link.homepage">
                     <span class="e1a-link e1a-sm"></span>
                   </a>
                 </div>
+
+                <span class="tag">{{link.industry}}</span>
+
 
 
                 <div class="project-content" id="DesCrpC">
