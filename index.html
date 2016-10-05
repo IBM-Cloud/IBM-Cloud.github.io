@@ -190,7 +190,7 @@
             <div class="project-item col-md-3 col-sm-12 col-xs-12" ng-repeat-start="link in (filteredLinks = (links | filter:searchText | filterPanel:filterConfiguration))">
               <div class="well project-outer" ng-class="{demo: link.tags.indexOf('demo')>=0}">
                 <div class="link-title">
-                  <a href="{{link.urlLink}}}" target="_blank" >{{link.name}}</a>
+                  <a href="{{link.urlLink}}" target="_blank" >{{link.name}}</a>
 
                   <a href="{{link.homepage}}" ng-if="link.homepage">
                     <span class="e1a-link e1a-sm"></span>

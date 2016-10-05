@@ -10,7 +10,7 @@
     "services": ["Tone Analyzer", "Conversation API","Natural Language Classifier", "MongoDb"],
     "level" : "Intermediate",
     "category": ["Web"],
-    "urlLink": "http://cloudco.mybluemix.net/",
+    "urlLink": "http://cloudco.mybluemix.net",
     "blogPost" : "",
     "industry": "Insurance",
     "search": "Build an insurance app, app for insurance, insurance with node"
