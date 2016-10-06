@@ -148,6 +148,7 @@ catalogApp.filter("filterPanel", function () {
               keepLink = false;
             }
 
+
         })
 
 

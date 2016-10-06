@@ -454,6 +454,8 @@ body .container .jumbotron, body .container .jumbotron-default, body .container 
 .header-panel.shadow-z-2-filter {
   background: #ffffff;
   padding-left: 15px;
+  padding-right: 15px;
+
 }
 
 
@@ -490,7 +492,9 @@ body .container .jumbotron, body .container .jumbotron-default, body .container 
 .col-md-1.col-sm-4.col-xs-12.filter {
   padding-left: 0px;
 }
-
+.col-md-1.col-sm-4.col-xs-12.filter a:hover{
+  text-decoration: none;
+}
 
 .filterButton a{
   height: 40px;
@@ -498,8 +502,29 @@ body .container .jumbotron, body .container .jumbotron-default, body .container 
 
 .filterButton span{
   line-height: 37px;
-  padding-left: 6px;
+  padding-left: 10px;
 }
+
+.dropdown.col-md-12.col-xs-12::after {
+  position: absolute;
+  top: -0.4em;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-139deg);
+  right: 3em;
+  width: 0.9em;
+  height: .73em;
+  margin: 0 auto;
+  content: '';
+  background-color: inherit;
+  border-bottom: 1px solid #5596e6;
+  border-right: 1px solid #5596e6;
+}
+
+
+
+
+
+
 
 #searchTextF{
   background: #ebf0f7 url(../icons/search.svg) left no-repeat;
@@ -556,15 +581,46 @@ body .container .jumbotron, body .container .jumbotron-default, body .container 
     padding: 25px;
   }
   .col-md-1.col-sm-4.col-xs-12.filter{
-    padding-left: 0px;
-    width: 32%;
+    width: 30%;
   }
   .header-panel.shadow-z-2-banner h1{
     font-size: 25px;
   }
   .col-xs-12 {
-    width: auto;
+    width: 70%;
   }
+  .dropdown.col-md-12.col-xs-12{
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+
+  }
+  .inside.col-md-6.col-xs-12 {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.inside.col-md-12.col-xs-12.full {
+    width: 100%;
+}
+.inside.project-item.col-md-3.col-sm-12.col-xs-12.ng-scope{
+  width: 100%;
+}
+.header01.col-md-3.col-sm-12.col-xs-12{
+  width: 62%;
+
+}
+.header02.col-md-9.col-sm-12.col-xs-12{
+  width: 38%;
+
+}
+
+.insde.col-md-12.col-sm-4.col-xs-12{
+  width: 100%;
+}
+.ser.col-md-2.col-sm-4.col-xs-12.filter{
+  width: 27%
+}
+
 }
 @media (min-width: 321px) and (max-width: 780px){
   .project-item.col-md-4.col-sm-6.col-xs-12.ng-scope {
@@ -572,5 +628,15 @@ body .container .jumbotron, body .container .jumbotron-default, body .container 
   }
   ul.list-separator.nav.navbar-nav.well.well-primary.default {
     width: auto;
+  }
+  .ser.col-md-2.col-sm-4.col-xs-12.filter {
+    width: 30%;
+  }
+
+}
+
+@media (min-width: 781px) and (max-width: 1224px){
+  .col-md-3 {
+      width: 33%;
   }
 }
