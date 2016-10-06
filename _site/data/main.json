@@ -65,7 +65,7 @@
     "State" : "live",
     "Author" : "Bluemix & Watson Team",
     "name": "Your Celebrity Match",
-    "description": "Compare your Twitter profile against celebrities.",
+    "description": "Compare your Twitter profile against celebrities. Enter your Twitter handle to see which celebrities have the most similar (and different) personalities to yours!",
     "url": "https://github.com/watson-developer-cloud/your-celebrity-match",
     "language": "NodeJS",
     "tags": ["ShowcaseDemos"],
@@ -75,6 +75,23 @@
     "urlLink": "https://your-celebrity-match.mybluemix.net/",
     "blogPost" : "",
     "industry": "Social Media"
+
+  },
+
+  {
+    "State" : "live",
+    "Author" : "Bluemix & Watson Team",
+    "name": "Real Time Tone Analysis",
+    "description": "Real Time Tone Analysis samples dictation or conversations and displays a real-time transcription and an accompanying chart that plots the emotional, social, and writing tone of the language. The project is an experiment that combines the Watson Speech to Text and Tone Analysis services, integrating them in a node.js backend running on IBM Bluemix.",
+    "url": "https://github.com/IBM-Bluemix/real-time-tone-analysis",
+    "language": "NodeJS",
+    "tags": ["ShowcaseDemos"],
+    "services": [ "Speech to Text", "Tone Analysis" ],
+    "level" : "Intermediate",
+    "category": ["Web"],
+    "urlLink": "https://realtime-tone.mybluemix.net/",
+    "blogPost" : "",
+    "industry": "Tone Analysis"
 
   }
 
