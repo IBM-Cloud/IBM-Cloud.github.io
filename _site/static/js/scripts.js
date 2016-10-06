@@ -10,6 +10,10 @@ function handler1() {
         "text-decoration": "none"
       });
 
+      $("a#fliterButtonID:hover").css({
+            "text-decoration": "none"
+          });
+
     $(this).one("click", handler2);
     $( ".dropdown.col-md-12.col-xs-12" ).show();
 
@@ -21,6 +25,10 @@ function handler2() {
         "color": "#5596e6",
         "text-decoration": "none"
       });
+
+      $("a#fliterButtonID:hover").css({
+            "text-decoration": "none"
+          });
 
     $(this).one("click", handler1);
     $( ".dropdown.col-md-12.col-xs-12" ).hide();

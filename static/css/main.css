@@ -567,6 +567,10 @@ body .container .jumbotron, body .container .jumbotron-default, body .container 
     margin-bottom: 20px;
   }
 
+a#fliterButtonID:hover{
+    text-decoration: none;
+}
+
 
 
 @media (max-width: 768px) {
