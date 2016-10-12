@@ -572,6 +572,10 @@ a#fliterButtonID:hover{
 }
 
 
+.link-title {
+    height: 40px;
+}
+
 
 @media (max-width: 768px) {
   .col-md-12.col-xs-12.footer {
@@ -644,6 +648,9 @@ a#fliterButtonID:hover{
 
 @media (min-width: 781px) and (max-width: 1224px){
   .col-md-3 {
-      width: 33%;
+      width: 50%;
   }
+  .header-panel.shadow-z-2-banner h1 {
+    font-size: 25px;
+}
 }
