@@ -574,6 +574,9 @@ a#fliterButtonID:hover{
 
 
 @media (max-width: 768px) {
+  .col-md-12.col-xs-12.footer {
+    width: 100%;
+  }
   #portfolio-filter {
     margin-top: 0px;
   }

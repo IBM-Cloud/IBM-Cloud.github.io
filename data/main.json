@@ -9,12 +9,13 @@
     "tags": ["ShowcaseDemos"],
     "services": ["Tone Analyzer", "Conversation API","Natural Language Classifier", "MongoDb"],
     "level" : "Intermediate",
-    "category": ["Web"],
+    "category": "Web",
     "urlLink": "http://cloudco.mybluemix.net",
     "blogPost" : "",
     "industry": "Insurance",
     "search": "Build an insurance app, app for insurance, insurance with node"
   },
+
   {
     "State" : "live",
     "Author" : "ANTON MCCONVILLE",
@@ -25,11 +26,12 @@
     "tags": ["ShowcaseDemos"],
     "services": ["Personality Insights"],
     "level" : "Beginner",
-    "category": ["Web"],
+    "category": "Web",
     "urlLink": "https://ziggy.mybluemix.net/",
     "blogPost" : "https://developer.ibm.com/bluemix/2016/04/11/natural-language-analysis-of-david-bowie-personas/",
     "industry": "Music"
   },
+
   {
     "State" : "live",
     "Author" : "IBM",
@@ -40,11 +42,12 @@
     "tags": ["ShowcaseDemos"],
     "services": [ "OpenWhisk", "Visual Recognition", "cloudant"],
     "level" : "Intermediate",
-    "category": ["Mobile"],
+    "category": "Mobile",
     "urlLink": "",
     "blogPost" : "https://developer.ibm.com/bluemix/2016/02/29/openwhisk-and-watson-image-tagging-app/",
     "industry": "Image Recognition"
   },
+
   {
     "State" : "live",
     "Author" : "IBM",
@@ -55,12 +58,13 @@
     "tags": ["ShowcaseDemos"],
     "services": [ "cloudant", "weather", "secure gateway" ],
     "level" : "Intermediate",
-    "category": ["Web"],
+    "category": "Web",
     "urlLink": "https://logistics-wizard.mybluemix.net",
     "blogPost" : "https://github.com/IBM-Bluemix/logistics-wizard/wiki/Technical-Collateral",
     "industry": "Development Logistics"
 
   },
+
   {
     "State" : "live",
     "Author" : "Bluemix & Watson Team",
@@ -71,7 +75,7 @@
     "tags": ["ShowcaseDemos"],
     "services": [ "twitter", "Personality Insights" ],
     "level" : "Intermediate",
-    "category": ["Web"],
+    "category": "Web",
     "urlLink": "https://your-celebrity-match.mybluemix.net/",
     "blogPost" : "",
     "industry": "Social Media"
@@ -88,31 +92,11 @@
     "tags": ["ShowcaseDemos"],
     "services": [ "Speech to Text", "Tone Analysis" ],
     "level" : "Intermediate",
-    "category": ["Web"],
+    "category": "Web",
     "urlLink": "https://realtime-tone.mybluemix.net/",
     "blogPost" : "",
     "industry": "Tone Analysis"
 
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ]

@@ -111,7 +111,6 @@
     </div>
 
     <div class="inside col-md-6 col-xs-12">
-
       <span class="text-muted">CATEGORIES:</span>
       <div class="category search-body">
         <table>
@@ -190,7 +189,7 @@
   <div class="inside project-item col-md-3 col-sm-12 col-xs-12" ng-repeat-start="link in (filteredLinks = (links | filter:searchText | filterPanel:filterConfiguration))">
     <div class="well project-outer" ng-class="{demo: link.tags.indexOf('demo')>=0}">
       <div class="link-title">
-        <a href="{{link.urlLink}}" target="_blank" >{{link.name}}</a>
+        <a href="{{link.urlLink}}" target="_blank" data-track-action="Select" data-track-label="{{service.entity.label}}">{{link.name}}</a>
 
         <a href="{{link.homepage}}" ng-if="link.homepage">
           <span class="e1a-link e1a-sm"></span>
@@ -215,9 +214,7 @@
 
         <span class="FirSpanLeft">CATEGORY: </span><br>
         <div class="tag-technologies">
-          <span ng-repeat="item in link.category">
-            <span class="category label tags tag-filter">{{item || '&nbsp;'}}</span>
-          </span>
+            <span class="category label tags tag-filter">{{link.category || '&nbsp;'}}</span>
         </div>
 
         <span class="servicesLink">SERVICES: </span><br>
