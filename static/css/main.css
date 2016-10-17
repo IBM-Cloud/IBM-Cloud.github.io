@@ -378,7 +378,8 @@ body .container .jumbotron, body .container .jumbotron-default, body .container 
 }
 
 .error404{
-  color: white;
+  color: #5596e6;
+  margin-left: 30px;
 }
 
 

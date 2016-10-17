@@ -1,44 +1,41 @@
 # Bluemix Open Source Github.io page
 
 The Bluemix.github.io page is where Bluemix sample links to be displayed.
-The repo has a number of JSON files inside the data folder in which hold all the data.
-When updating the JSON data file, we want to show demos that are fully working and checked before pushing to be displayed there. Each demo should have links to:
+This repo is fully managed by the Bluemix Developer Advocate team, making sure we are displaying links to showcase demos in which are fully working and clear to follow through.
+
+### How to add new links to the Bluemix.github.io page
+We have a process in which how new links can be added to the Bluemix GitHub.io page.
+To add a new link follow these steps:
+
+Step 1) Create a new issue and label it as "Potential-Links".
+The issue descreption must have the following details:
 - Live URL of the site
 - GitHub repo
 - DeveloperWorks blog post for that demo
+- Good ReadMe follows our IBM Bluemix ReadMe standards.
 
-The JSON file is reviewed by the Bluemix developer Advocate team when any new demo gets added.
-There is a process in which we follow for adding new demos on to the JSON file.  
+Step 2) Once issue is created with new link, we will review the issue created, we will quickly check the source code demo, ReadMe and making sure the application is at the standards we want.
 
-1) Add your demo data to the "data_under_review.json" file.  
-2) The demo will be reviewed by us and once reviewed then it will be moved on to main.json file.   
-
-When adding a new demo, please make sure you follow the data sample from below.
-The Search and tagging and filtering works based on the flow below so please follow same to below layout.  
-Example Data:
-```
-{
-    "Author" : "IBM",
-    "name": "Logistics Wizard",
-    "url": "https://github.com/IBM-Bluemix/logistics-wizard",
-    "description": "The Logistics Wizard is an end-to-end, smart supply chain management solution that showcases how to execute hybrid cloud, microservices, and predictive data analytics in the real world.",
-    "language": "Python, NodeJS",
-    "tags": ["demo", "featured"],
-    "services": [ "cloudant", "weather", "secure gateway" ],
-    "level" : "Intermediate",
-    "category" : "Web",
-    "urlLink": "https://logistics-wizard.mybluemix.net",
-    "blogPost" : "https://github.com/IBM-Bluemix/logistics-wizard/wiki/Technical-Collateral"
-  }
-```
+We want to show large applications that shows off our technologies, we don't want hello world or getting started stuff.
 
 
 
-## If you wish to clone the repo and run the app locally then follow the commands below:
- - Install Jekyll
+### If you wish to clone the repo and run the app locally then follow the commands below:
+For any reason if you wish to run this code locally, you can follow the steps:
 
+ Step 1) Install Jekyll
     ```
     sudo gem install jekyll
+    ```
+If you want to read more on Jekyll, [click here](https://jekyllrb.com/)
+
+Step 2) git clone
+    ```
+    git clone https://github.com/IBM-Bluemix/IBM-Bluemix.github.io
+    ```
+
+Step 3) run the application
+    ```
     sudo jekyll serve
     ```
 
