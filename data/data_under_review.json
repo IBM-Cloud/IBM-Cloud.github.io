@@ -11,153 +11,130 @@
     "level" : "Intermediate",
     "category" : "Mobile",
     "urlLink": "",
-    "blogPost" : "https://developer.ibm.com/bluemix/2016/08/15/serverless-slack-app-with-bluemix-openwhisk/"
+    "blogPost" : "https://developer.ibm.com/bluemix/2016/08/15/serverless-slack-app-with-bluemix-openwhisk/",
+    "rate": "4/5"
   },
   {
-    "State" : "potential",
-    "Author" : "IBM",
-    "name": "Video processing with IBM OpenWhisk and Watson",
-    "description": "Discover dark data in videos with IBM Watson and IBM Bluemix OpenWhisk.",
-    "url": "https://github.com/IBM-Bluemix/openwhisk-visionapp",
-    "language": "Swift",
+    "State" : "live",
+    "Author" : "Bluemix & Watson Team",
+    "name": "ChatBot - Car Dashboard",
+    "description": "Application that demonstrates how the Conversation service uses intent capabilities in an animated car dashboard UI.",
+    "url": "https://github.com/watson-developer-cloud/car-dashboard",
+    "language": "NodeJS",
     "tags": ["SampleCode"],
-    "services": [ "OpenWhisk", "Visual Recognition", "cloudant"],
+    "services": [ "Conversation API", "Speech To Service", "Text To Speech" ],
+    "level" : "Intermediate",
+    "category" : "Web",
+    "urlLink": "https://conversation-demo.mybluemix.net/",
+    "blogPost" : "https://www.ibm.com/blogs/watson/2016/07/build-chat-bot/",
+    "industry": "ChatBot",
+    "rate": "4/5"
+  },
+  {
+    "State" : "live",
+    "Author" : "Ram Vennam",
+    "name": "Hybrid Banking App Demo",
+    "description": "Hybrid Banking Demo - Interaction of Customer on Mobile Device with Banking Service Center. Application that demos interaction between a customer and company support staff using Bluemix Mobile backend and Watson services.",
+    "url": "https://github.com/IBM-Bluemix/HybridBanking-Android",
+    "language": "Java",
+    "tags": ["SampleCode"],
+    "services": [ "Cloudant", "Watson Services", "Mobile Push Service", "Mobile Quality Assurance" ],
     "level" : "Intermediate",
     "category" : "Mobile",
     "urlLink": "",
-    "blogPost" : "https://www.youtube.com/watch?v=1teIMpkI_Sg&feature=youtu.be"
+    "blogPost" : "https://developer.ibm.com/bluemix/2015/10/01/creating-hybrid-apps-on-bluemix/",
+    "industry": "Banking",
+    "rate": "4/5"
+
   },
+
   {
-    "State" : "potential",
     "Author" : "Jake Peyser",
-    "name": "Personality Box Overview",
-    "description": "Personality Box pulls the .txt files from your Box acount and allows you to analyze the unique personality traits of each file's author using the Watson Personality Insights API. For sample files, feel free to use either President Obama's 2015 State of the Union Address or Moby Dick - Chapter 1 hosted in our Box account.",
-    "url": "https://github.com/IBM-Bluemix/box-watson",
+    "name": "Capital Weather",
+    "description": "Capital Weather is a sample Bluemix application which utilizes the Weather Channel service, two mapping APIs, Leaflet and Esri Leaflet, and the Google Maps Geocoding API. It allows users to visualize the current weather in all the world capitals, as well as obtain historical weather data and future weather projections. The app provides a real world use case of the Weather Channel API and implements several of the methods exposed by that interface.",
+    "url": "https://github.com/IBM-Bluemix/capital-weather",
     "language": "NodeJS",
     "tags": ["demo"],
+    "services": [ "Weather API" ],
+    "level" : "Beginner",
+    "category" : "Web",
+    "urlLink": "https://capital-weather.mybluemix.net/",
+    "blogPost" : "",
+    "rate": "3/5"
+  },
+  {
+    "State" : "live",
+    "Author" : "Ram Vennam",
+    "name": "Sample Stock Trading application in Java EE",
+    "description": "Build and deploy the application to Bluemix, and consume a database services and other services in the cloud. ",
+    "url": "https://github.com/IBM-Bluemix/JavaCloudTrader",
+    "language": "Java",
     "tags": ["SampleCode"],
+    "services": [ "DevOps", "Auto Scaling", "SQL DB" ],
     "level" : "Intermediate",
     "category" : "Web",
-    "urlLink": "https://personality-box.mybluemix.net/",
-    "blogPost" : "https://developer.ibm.com/bluemix/2015/06/25/intro-to-box-video/"
+    "urlLink": "http://cloudtrader.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2014/04/18/complex-java-ee-application-bluemix-cloudtrader/",
+    "industry": "Trade",
+    "rate": "3/5"
+  },
+  {
+    "State" : "live",
+    "Author" : "Bluemix & Watson Team",
+    "name": "Todo Web App",
+    "url": "https://github.com/IBM-Bluemix/todo-apps",
+    "description": "The ToDo sample apps are meant to be simple demos of how you can take advantage of Bluemix and a database service done in number different langauges.",
+    "language": "NodeJS, Java, PHP, Python, Rails, Swift",
+    "tags": ["SampleCode"],
+    "services": ["Cloudant, MongoDB"],
+    "level" : "Beginner",
+    "category" : "Web",
+    "urlLink": "",
+    "blogPost" : "",
+    "industry": "ToDo App",
+    "rate": "3/5"
+  },
+  {
+    "Author" : "Ram Vennam",
+    "name": "Talent Manager",
+    "description": "Talent Manager allows you to find a developer with same set of skills and personalities like your other staff members. This is possible using the IBM personality insights service.",
+    "url": "https://github.com/IBM-Bluemix/talent-manager",
+    "language": "Java",
+    "tags": ["demo"],
+    "services": [ "Personality Insights", "Cloudant" ],
+    "level" : "Beginner",
+    "category" : "Web",
+    "urlLink": "http://talent-manager.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2014/11/10/deploying-watson-cloudant-app-devops-services/",
+    "__comment":"=========================================================================================="
   },
 
 
-  
-
-
-
-
-
-
-
-
-
-    {
-      "State" : "live",
-      "Author" : "Jake Peyser",
-      "name": "Real Time Tone Analysis Application",
-      "description": "Real Time Tone Analysis samples dictation or conversations and displays a real-time transcription and an accompanying chart that plots the emotional, social, and writing tone of the language.",
-      "url": "https://github.com/IBM-Bluemix/real-time-tone-analysis",
-      "language": "NodeJS",
-      "tags": ["SampleCode"],
-      "services": [ "Tone Analyzer", "Speech To Text" ],
-      "level" : "Beginner",
-      "category" : "Web",
-      "urlLink": "https://realtime-tone.mybluemix.net/",
-      "blogPost" : "",
-      "industry": "Tone Analyzer"
-    },
-    {
-      "State" : "live",
-      "Author" : "Bluemix & Watson Team",
-      "name": "ChatBot - Car Dashboard",
-      "description": "Application that demonstrates how the Conversation service uses intent capabilities in an animated car dashboard UI.",
-      "url": "https://github.com/watson-developer-cloud/car-dashboard",
-      "language": "NodeJS",
-      "tags": ["SampleCode"],
-      "services": [ "Conversation API", "Speech To Service", "Text To Speech" ],
-      "level" : "Intermediate",
-      "category" : "Web",
-      "urlLink": "https://conversation-demo.mybluemix.net/",
-      "blogPost" : "https://www.ibm.com/blogs/watson/2016/07/build-chat-bot/",
-      "industry": "ChatBot"
-
-    },
-    {
-      "State" : "live",
-      "Author" : "Ram Vennam",
-      "name": "Hybrid Banking App Demo",
-      "description": "Hybrid Banking Demo - Interaction of Customer on Mobile Device with Banking Service Center. Application that demos interaction between a customer and company support staff using Bluemix Mobile backend and Watson services.",
-      "url": "https://github.com/IBM-Bluemix/HybridBanking-Android",
-      "language": "Java",
-      "tags": ["SampleCode"],
-      "services": [ "Cloudant", "Watson Services", "Mobile Push Service", "Mobile Quality Assurance" ],
-      "level" : "Intermediate",
-      "category" : "Mobile",
-      "urlLink": "",
-      "blogPost" : "https://developer.ibm.com/bluemix/2015/10/01/creating-hybrid-apps-on-bluemix/",
-      "industry": "Banking"
-
-    },
-    {
-      "State" : "live",
-      "Author" : "Ram Vennam",
-      "name": "Sample Stock Trading application in Java EE",
-      "description": "Build and deploy the application to Bluemix, and consume a database services and other services in the cloud. ",
-      "url": "https://github.com/IBM-Bluemix/JavaCloudTrader",
-      "language": "Java",
-      "tags": ["SampleCode"],
-      "services": [ "DevOps", "Auto Scaling", "SQL DB" ],
-      "level" : "Intermediate",
-      "category" : "Web",
-      "urlLink": "http://cloudtrader.mybluemix.net/",
-      "blogPost" : "https://developer.ibm.com/bluemix/2014/04/18/complex-java-ee-application-bluemix-cloudtrader/",
-      "industry": "Trade"
-    },
-    {
-      "State" : "live",
-      "Author" : "Twana Daniel",
-      "name": "Deploy to Bluemix PHP codeigniter CRUD App",
-      "description": "We will use PHP as the runtime and codeigniter as our framework, we will then bind the application to the database using the ClearDB MySql service on Bluemix and and deploy it to Bluemix.",
-      "url": "https://github.com/IBM-Bluemix/CRUD-PHP-Codeigniter-Bluemix?cm_mc_uid=03500478414514721131557&cm_mc_sid_50200000=1473164484",
-      "language": "PHP",
-      "tags": ["SampleCode"],
-      "services": [ "PHP, MySQL"],
-      "level" : "Beginner",
-      "category" : "Web",
-      "urlLink": "http://crud-php-codeigniter-bluemix.mybluemix.net/",
-      "blogPost" : "https://developer.ibm.com/bluemix/2016/01/15/deploy-simple-database-php-app-to-bluemix/",
-      "industry": "Web CRUD"
-
-    },
-    {
-      "State" : "live",
-      "Author" : "Bluemix & Watson Team",
-      "name": "Todo Web App",
-      "url": "https://github.com/IBM-Bluemix/todo-apps",
-      "description": "The ToDo sample apps are meant to be simple demos of how you can take advantage of Bluemix and a database service done in number different langauges.",
-      "language": "NodeJS, Java, PHP, Python, Rails, Swift",
-      "tags": ["SampleCode"],
-      "services": ["Cloudant, MongoDB"],
-      "level" : "Beginner",
-      "category" : "Web",
-      "urlLink": "",
-      "blogPost" : "",
-      "industry": "ToDo App"
-    },
-    {
-      "State" : "live",
-      "Author" : "ANDREW TRICE",
-      "name": "Awesome skylink",
-      "description": "Skylink is a sample application that lets you connect a DJI drone aircraft to the IBM Cloud with near realtime image analysis leveraging IBM Cloudant, OpenWhisk, IBM Watson, and Alchemy Vision.",
-      "url": "https://github.com/IBM-Bluemix/skylink",
-      "language": "NodeJS",
-      "tags": ["SampleCode"],
-      "services": [ "DevOps" ],
-      "level" : "Intermediate",
-      "category" : "IoT",
-      "urlLink": "https://skylink.mybluemix.net/",
-      "blogPost" : "https://developer.ibm.com/bluemix/2016/05/03/drones-take-on-enterprise-with-bluemix-and-openwhisk/",
-      "industry": "IoT"
-    }
+  {
+    "Author" : "IBM",
+    "name": "Insights Search",
+    "description": "Insights Search provides a search interface for the IBM Insights for Twitter service.",
+    "url": "https://github.com/IBM-Bluemix/insights-search",
+    "language": "NodeJS",
+    "tags": ["demo"],
+    "services": [ "twitter" ],
+    "level" : "Intermediate",
+    "category" : "Web",
+    "urlLink": "http://insights-search.mybluemix.net/",
+    "blogPost" : "https://developer.ibm.com/bluemix/2015/09/01/sample-ibm-insights-for-twitter/",
+    "rate": "2/5"
+  },
+  {
+    "Author" : "IBM",
+    "name": "Insights Weather",
+    "url": "https://github.com/IBM-Bluemix/insights-weather",
+    "description": "A sample application featuring the Weather Company Data for IBM Bluemix service.",
+    "language": "NodeJS",
+    "tags": ["demo"],
+    "services": [ "weather" ],
+    "level" : "Beginner",
+    "category" : "Web",
+    "urlLink": "http://insights-weather.mybluemix.net",
+    "blogPost" : "https://developer.ibm.com/bluemix/2015/12/08/insights-weather-sample-overview/",
+    "rate": "2/5"
+  },

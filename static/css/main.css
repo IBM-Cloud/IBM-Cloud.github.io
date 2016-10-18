@@ -232,9 +232,9 @@ footer {
   color: #aaf9e6;
 }
 .language.search-body {
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
 }
 
@@ -256,9 +256,9 @@ footer {
   color: #eed3fe;
 }
 .category.search-body {
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -559,22 +559,39 @@ body .container .jumbotron, body .container .jumbotron-default, body .container 
 }
 
 .dropdown.col-md-12.col-xs-12{
-    margin-left: 46px;
-    margin-top: 20px;
-    background: white;
-    padding: 10px;
-    width: 94.7%;
-    border: 1px solid #5596e6;
-    margin-bottom: 20px;
-  }
+  margin-left: 46px;
+  margin-top: 20px;
+  background: white;
+  padding: 10px;
+  width: 94.7%;
+  border: 1px solid #5596e6;
+  margin-bottom: 20px;
+}
 
 a#fliterButtonID:hover{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 
 .link-title {
-    height: 40px;
+  height: 40px;
+}
+
+ul.triggers {
+  color: #00a6bc;
+  list-style: none;
+  font-size: 18px;
+  width: 7em;
+  margin-left: 7em;
+}
+ul.triggers li {
+  cursor: pointer;
+  background: url(//d12zt1n3pd4xhr.cloudfront.net/fp/img/fp5arrow.png) 0 2px no-repeat;
+  padding-left: 24px;
+  margin: 0.5ex 0;
+}
+ul.triggers li:hover {
+  color: #111;
 }
 
 
@@ -610,28 +627,28 @@ a#fliterButtonID:hover{
   .inside.col-md-6.col-xs-12 {
     width: 100%;
     margin-bottom: 15px;
-}
-.inside.col-md-12.col-xs-12.full {
+  }
+  .inside.col-md-12.col-xs-12.full {
     width: 100%;
-}
-.inside.project-item.col-md-3.col-sm-12.col-xs-12.ng-scope{
-  width: 100%;
-}
-.header01.col-md-3.col-sm-12.col-xs-12{
-  width: 62%;
+  }
+  .inside.project-item.col-md-3.col-sm-12.col-xs-12.ng-scope{
+    width: 100%;
+  }
+  .header01.col-md-3.col-sm-12.col-xs-12{
+    width: 62%;
 
-}
-.header02.col-md-9.col-sm-12.col-xs-12{
-  width: 38%;
+  }
+  .header02.col-md-9.col-sm-12.col-xs-12{
+    width: 38%;
 
-}
+  }
 
-.insde.col-md-12.col-sm-4.col-xs-12{
-  width: 100%;
-}
-.ser.col-md-2.col-sm-4.col-xs-12.filter{
-  width: 27%
-}
+  .insde.col-md-12.col-sm-4.col-xs-12{
+    width: 100%;
+  }
+  .ser.col-md-2.col-sm-4.col-xs-12.filter{
+    width: 27%
+  }
 
 }
 @media (min-width: 321px) and (max-width: 780px){
@@ -649,9 +666,9 @@ a#fliterButtonID:hover{
 
 @media (min-width: 781px) and (max-width: 1224px){
   .col-md-3 {
-      width: 50%;
+    width: 50%;
   }
   .header-panel.shadow-z-2-banner h1 {
     font-size: 25px;
-}
+  }
 }

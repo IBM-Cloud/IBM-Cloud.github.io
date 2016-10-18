@@ -11,6 +11,8 @@
   <meta name="description" content="IBM Bluemix Sample Code demos ready to use from IoT, Watson, Mobile and much more." />
   <meta name="keywords" content="Bluemix Sample code demos, Watson sample code, IoT samples, Bluemix Samples, Mobile, Cloudant, Text to Speech, Speech To Text" />
 
+
+
   <!-- Custom Fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
   <!-- FontAwesome icons -->
@@ -20,10 +22,6 @@
   <link rel="stylesheet" href="./static/css/bootstrap.css">
   <link rel="stylesheet" href="./static/css/main.css">
   <link rel="stylesheet" href="./static/css/emojione-awesome.css" />
-
-  <link rel="stylesheet" href="./fancyplayer_code/css/jquery.fancybox.css" type="text/css" media="screen" />
-
-
 
 
 </head>
@@ -130,87 +128,13 @@
 
   <div class="container main outer">
     <div class="row">
+      <div class="row">
+        <div class="inside col-md-12 col-xs-12 full">
 
-
-      <div class="inside col-md-12 col-xs-12 full"><!-- START FULL PAGE -->
-
-
-        <meta name="keywords" content="Testing">
-
-        <div class="TotHome">
-          Total <b>{{links.length}}</b> links in the catalog<span ng-if="filteredLinks.length != links.length">, <b>{{filteredLinks.length}}</b> links matching the search criteria</span>
-        </div>
-
-
-        <div class="inside project-item col-md-3 col-sm-12 col-xs-12" ng-repeat-start="link in (filteredLinks = (links | filter:searchText | filterPanel:filterConfiguration))">
-          <div class="well project-outer" ng-class="{demo: link.tags.indexOf('demo')>=0}">
-            <div class="link-title">
-              <a href="{{link.urlLink}}" target="_blank" data-track-action="Select" data-track-label="{{service.entity.label}}">{{link.name}}</a>
-
-              <a href="{{link.homepage}}" ng-if="link.homepage">
-                <span class="e1a-link e1a-sm"></span>
-              </a>
-            </div>
-
-            <span class="tag">{{link.industry}}</span>
-
-
-
-            <div class="project-content" id="DesCrpC">
-              <span ng-bind-html="link.description | emoji"></span>
-            </div>
-
-            <div class="project-content">
-
-
-              <div class="tag-holder">
-                <span class="FirSpanLeft">LANGUAGES: </span><br>
-                <span class="language label tags tag-filter">{{link.language || '&nbsp;'}}</span>
-              </div><br>
-
-              <span class="FirSpanLeft">CATEGORY: </span><br>
-              <div class="tag-technologies">
-                <span class="category label tags tag-filter">{{link.category || '&nbsp;'}}</span>
-              </div>
-
-              <span class="servicesLink">SERVICES: </span><br>
-              <div class="tag-services">
-                <span ng-repeat="item in link.services">
-                  <span class="services label tags tag-filter">{{item || '&nbsp;'}},</span>
-                </span>
-              </div>
-
-
-
-            </div>
-
-
-          </div>
-
-          <div class="tag-level">
-
-            <span class="label tags tag-filter"><a href="{{link.blogPost}}" class="hrefLink" target="_blank">View Blog</a></span>
-
-
-
-
-            <span class="gitHubIcon">
-              <a href="{{link.url}}" class="hrefLink" target="_blank">
-                <img id="about" class="logo-img" src="./static/icons/github.svg" >
-              </a>
-            </span>
-
-
-          </div>
-
-
-        </div>
-        <div class="clearfix" ng-if="$index%4==3"></div>
-        <div ng-repeat-end=""></div>
-
-
-      </div>
-
+      <h1 class="error404">404!! Page not found</h1>
+      <br><br><br><br><br><br><br><br>
+    </div>
+  </div>
 
 
       <div class="row">
@@ -246,6 +170,8 @@
   <script src="./static/js/main.js"></script>
   <script src="./static/js/analytics.js"></script>
   <script src="./static/js/scripts.js"></script>
+
+
 
 
 

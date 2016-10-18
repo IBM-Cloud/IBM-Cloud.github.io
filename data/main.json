@@ -1,7 +1,7 @@
 [
   {
     "State" : "live",
-    "Author" : "ANTON MCCONVILLE & Others",
+    "Author" : "IBM",
     "name": "CloudCo Insurance App",
     "url": "https://github.com/IBM-Bluemix/insurance-bot",
     "description": "Insurance Policy Bot is a collection of experimental Watson & Bluemix concepts applied to the insurance domain.",
@@ -18,7 +18,7 @@
 
   {
     "State" : "live",
-    "Author" : "ANTON MCCONVILLE",
+    "Author" : "IBM",
     "name": "David Bowie personalities",
     "description": "Exploring David Bowie's lyrics with Python, Watson & Bluemix",
     "url": "https://github.com/IBM-Bluemix/ziggy",
@@ -43,7 +43,7 @@
     "services": [ "OpenWhisk", "Visual Recognition", "cloudant"],
     "level" : "Intermediate",
     "category": "Mobile",
-    "urlLink": "",
+    "urlLink": "https://github.com/IBM-Bluemix/openwhisk-visionapp",
     "blogPost" : "https://developer.ibm.com/bluemix/2016/02/29/openwhisk-and-watson-image-tagging-app/",
     "industry": "Image Recognition"
   },
@@ -67,7 +67,7 @@
 
   {
     "State" : "live",
-    "Author" : "Bluemix & Watson Team",
+    "Author" : "IBM",
     "name": "Your Celebrity Match",
     "description": "Compare your Twitter profile against celebrities. Enter your Twitter handle to see which celebrities have the most similar (and different) personalities to yours!",
     "url": "https://github.com/watson-developer-cloud/your-celebrity-match",
@@ -84,7 +84,7 @@
 
   {
     "State" : "live",
-    "Author" : "Bluemix & Watson Team",
+    "Author" : "IBM",
     "name": "Real Time Tone Analysis",
     "description": "Real Time Tone Analysis samples dictation or conversations and displays a real-time transcription and an accompanying chart that plots the emotional, social, and writing tone of the language. The project is an experiment that combines the Watson Speech to Text and Tone Analysis services, integrating them in a node.js backend running on IBM Bluemix.",
     "url": "https://github.com/IBM-Bluemix/real-time-tone-analysis",
