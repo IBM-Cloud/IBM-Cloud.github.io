@@ -312,8 +312,9 @@ a.btn.btn-info.btn-raised.btn-sm.project-link{
 
 a.ng-binding{
   color: #5184c3;
-  font-size: 16px;
+font-size: 20px;
 }
+
 .FirSpanLeft{
   float: left;
   width: 25%;
@@ -574,7 +575,7 @@ a#fliterButtonID:hover{
 
 
 .link-title {
-  height: 40px;
+  height: 55px;
 }
 
 ul.triggers {
