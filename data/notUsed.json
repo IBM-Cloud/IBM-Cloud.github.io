@@ -96,6 +96,20 @@
       "category" : "Web",
       "urlLink": "",
       "blogPost" : "https://developer.ibm.com/bluemix/2016/02/08/migrate-app-from-azure-to-bluemix/"
+    },
+    {
+      "Author" : "Jake Peyser",
+      "name": "Capital Weather",
+      "description": "Capital Weather is a sample Bluemix application which utilizes the Weather Channel service, two mapping APIs, Leaflet and Esri Leaflet, and the Google Maps Geocoding API. It allows users to visualize the current weather in all the world capitals, as well as obtain historical weather data and future weather projections. The app provides a real world use case of the Weather Channel API and implements several of the methods exposed by that interface.",
+      "url": "https://github.com/IBM-Bluemix/capital-weather",
+      "language": "NodeJS",
+      "tags": ["demo"],
+      "services": [ "Weather API" ],
+      "level" : "Beginner",
+      "category" : "Web",
+      "urlLink": "https://capital-weather.mybluemix.net/",
+      "blogPost" : "",
+      "rate": "3/5"
     }
 
 ]

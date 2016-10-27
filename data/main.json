@@ -131,6 +131,23 @@
     "blogPost" : "#",
     "industry": "Chatbot",
     "rate": "4/5"
+  },
+  {
+    "State" : "live",
+    "Author" : "Bluemix Team",
+    "name": "Dark Vision - Discover dark data in videos",
+    "description": "Dark Vision processes videos to discover dark data. By analyzing video frames with IBM Watson Visual Recognition, Dark Vision builds a summary with a set of tags and famous people or building detected in the video. Use this summary to enhance video search and categorization.",
+    "url": "https://github.com/IBM-Bluemix/openwhisk-darkvisionapp",
+    "language": "Swift",
+    "tags": ["SampleCode"],
+    "services": [ "Visual Recognition", "OpenWhisk", "Cloudant" ],
+    "level" : "Intermediate",
+    "category" : "Mobile",
+    "urlLink": "http://openwhisk-darkvision.mybluemix.net/",
+    "blogPost" : "https://www.ibm.com/blogs/bluemix/2016/03/openwhisk-and-watson-video-analysis-app/",
+    "industry": "Video Analyzer",
+    "rate": "5"
   }
+
 
 ]
