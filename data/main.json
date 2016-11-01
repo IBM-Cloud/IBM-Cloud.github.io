@@ -147,6 +147,23 @@
     "blogPost" : "https://www.ibm.com/blogs/bluemix/2016/03/openwhisk-and-watson-video-analysis-app/",
     "industry": "Video Analyzer",
     "rate": "5"
+  },
+
+  {
+    "State" : "live",
+    "Author" : "Bluemix Team",
+    "name": "Cognitive Concierge - Build an end-to-end Swift app",
+    "description": "CognitiveConcierge is an end-to-end Swift application sample with an iOS front end and a Kitura web framework back end. This application also demonstrates how to pull in a number of different Watson services to your Swift client and server side apps via the Watson Developer Cloud's iOS SDKs, including Conversation, Text to Speech, Speech to Text, and the Alchemy Language APIs.",
+    "url": "https://github.com/IBM-MIL/CognitiveConcierge",
+    "language": "Swift",
+    "tags": ["SampleCode"],
+    "services": [ "Conversation API", "Text to Speech", "Speech to Text", "Alchemy Language APIs" ],
+    "level" : "Intermediate",
+    "category" : "Mobile",
+    "urlLink": "https://www.youtube.com/watch?v=kQqE0hMg0Q8",
+    "blogPost" : "https://developer.ibm.com/swift/2016/10/24/build-end-end-swift-app-watson-apis/",
+    "industry": "How To",
+    "rate": "5"
   }
 
 
