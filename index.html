@@ -46,9 +46,9 @@
         </div>
         <div class="header02 col-md-9 col-sm-12 col-xs-12">
           <div class="social-icons">
-            <a class="icon" target="_blank" href="https://github.com/IBM-Bluemix"><i class="fa fa-github"></i></a>
-            <a class="icon" target="_blank" href="http://stackoverflow.com/questions/tagged/ibm-bluemix"><i class="fa fa-stack-overflow"></i></a>
-            <a class="icon" target="_blank" href="https://www.ibm.com/cloud-computing/bluemix"><i class="fa fa-smile-o"></i></a>
+            <a class="icon" data-track-action="Icon" data-track-label="github" target="_blank" href="https://github.com/IBM-Bluemix"><i class="fa fa-github"></i></a>
+            <a class="icon" data-track-action="Icon" data-track-label="StackOverFlow" target="_blank" href="http://stackoverflow.com/questions/tagged/ibm-bluemix"><i class="fa fa-stack-overflow"></i></a>
+            <a class="icon" data-track-action="Icon" data-track-label="Bluemix" target="_blank" href="https://www.ibm.com/cloud-computing/bluemix"><i class="fa fa-smile-o"></i></a>
           </div>
         </div>
       </div>
@@ -94,16 +94,16 @@
       <div class="language search-body">
         <table>
           <tr>
-            <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Python', true)">Python</button>
-            <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('PHP', true)">PHP</button>
-            <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Ruby', true)">Ruby</button>
+            <button type="button" data-track-action="Filter" data-track-label="Python" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Python', true)">Python</button>
+            <button type="button" data-track-action="Filter" data-track-label="PHP" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('PHP', true)">PHP</button>
+            <button type="button" data-track-action="Filter" data-track-label="Ruby" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Ruby', true)">Ruby</button>
 
-            <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('NodeJS', true)">NodeJS</button>
-            <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Swift', true)">Swift</button>
-            <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('C#', true)">C#</button>
+            <button type="button" data-track-action="Filter" data-track-label="NodeJS" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('NodeJS', true)">NodeJS</button>
+            <button type="button" data-track-action="Filter" data-track-label="Swift" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Swift', true)">Swift</button>
+            <button type="button" data-track-action="Filter" data-track-label="C#" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('C#', true)">C#</button>
 
-            <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Objective C', true)">Objective C</button>
-            <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Java', true)">Java</button>
+            <button type="button" data-track-action="Filter" data-track-label="Objective-C" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Objective C', true)">Objective C</button>
+            <button type="button" data-track-action="Filter" data-track-label="Java" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Java', true)">Java</button>
 
           </tr>
         </table>
@@ -115,9 +115,9 @@
       <div class="category search-body">
         <table>
           <tr>
-            <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('IoT', true)">IoT</button>
-            <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Web', true)">Web</button>
-            <button type="button" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Mobile', true)">Mobile</button>
+            <button type="button" data-track-action="Filter" data-track-label="IoT" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('IoT', true)">IoT</button>
+            <button type="button" data-track-action="Filter" data-track-label="Web" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Web', true)">Web</button>
+            <button type="button" data-track-action="Filter" data-track-label="Mobile" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Mobile', true)">Mobile</button>
           </tr>
         </table>
       </div>
@@ -138,14 +138,14 @@
         <meta name="keywords" content="Testing">
 
         <div class="TotHome">
-          Total <b>{{links.length}}</b> links in the catalog<span ng-if="filteredLinks.length != links.length">, <b>{{filteredLinks.length}}</b> links matching the search criteria</span>
+          Total of <b>{{links.length}}</b> code samples found</span> and <span ng-if="filteredLinks.length != links.length">, <b>{{filteredLinks.length}}</b> code samples matching the search/filter criteria</span>
         </div>
 
 
         <div class="inside project-item col-md-3 col-sm-12 col-xs-12" ng-repeat-start="link in (filteredLinks = (links | filter:searchText | filterPanel:filterConfiguration))">
           <div class="well project-outer" ng-class="{demo: link.tags.indexOf('demo')>=0}">
             <div class="link-title">
-              <a href="{{link.urlLink}}" target="_blank" data-track-action="Select" data-track-label="{{service.entity.label}}">{{link.name}}</a>
+              <a data-track-action="link-title" data-track-label="{{link.urlLink}}"  href="{{link.urlLink}}" target="_blank" data-track-action="Select" data-track-label="{{service.entity.label}}">{{link.name}}</a>
 
               <a href="{{link.homepage}}" ng-if="link.homepage">
                 <span class="e1a-link e1a-sm"></span>
@@ -189,13 +189,15 @@
 
           <div class="tag-level">
 
-            <span class="label tags tag-filter"><a href="{{link.blogPost}}" class="hrefLink" target="_blank">View Blog</a></span>
+            <span class="label tags tag-filter">
+              <a data-track-action="link-blog" data-track-label="{{link.blogPost}}" href="{{link.blogPost}}" class="hrefLink" target="_blank">View Blog</a>
+            </span>
 
 
 
 
             <span class="gitHubIcon">
-              <a href="{{link.url}}" class="hrefLink" target="_blank">
+              <a data-track-action="link-github" data-track-label="{{link.url}}" href="{{link.url}}" class="hrefLink" target="_blank">
                 <img id="about" class="logo-img" src="./static/icons/github.svg" >
               </a>
             </span>
