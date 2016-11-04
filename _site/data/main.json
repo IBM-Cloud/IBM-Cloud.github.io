@@ -2,9 +2,9 @@
   {
     "State" : "live",
     "Author" : "IBM",
-    "name": "CloudCo Insurance App",
-    "url": "https://github.com/IBM-Bluemix/insurance-bot",
-    "description": "Insurance Policy Bot is a collection of experimental Watson & Bluemix concepts applied to the insurance domain.",
+    "name": "Cloud Insurance Co.",
+    "url": "https://github.com/IBM-Bluemix/cloudco-insurance",
+    "description": "Cloud Insurance Co. is a collection of experimental Watson & Bluemix concepts applied to the insurance domain.",
     "language": "NodeJS",
     "tags": ["ShowcaseDemos"],
     "services": ["Tone Analyzer", "Conversation API","Natural Language Classifier", "MongoDb"],
@@ -35,7 +35,7 @@
   {
     "State" : "live",
     "Author" : "IBM",
-    "name": "Image tagging and face detection app",
+    "name": "Image tagging & Face detection",
     "description": "Vision App is a sample iOS application to automatically tag images and detect faces by using IBM visual recognition technologies.",
     "url": "https://github.com/IBM-Bluemix/openwhisk-visionapp",
     "language": "Swift",
@@ -102,7 +102,7 @@
   {
     "State" : "potential",
     "Author" : "IBM",
-    "name": "Serverless Slack app",
+    "name": "Serverless Slack Application",
     "description": "This sample shows how to build a serverless Slack app using Slack Events API to receive events, with IBM Bluemix OpenWhisk actions to process these events, and how to expose these actions with API Connect.",
     "url": "https://github.com/IBM-Bluemix/openwhisk-slackapp",
     "language": "NodeJS",
@@ -152,7 +152,7 @@
   {
     "State" : "live",
     "Author" : "Bluemix Team",
-    "name": "Cognitive Concierge - Build an end-to-end Swift app",
+    "name": "Cognitive Concierge - end-to-end Swift",
     "description": "CognitiveConcierge is an end-to-end Swift application sample with an iOS front end and a Kitura web framework back end. This application also demonstrates how to pull in a number of different Watson services to your Swift client and server side apps via the Watson Developer Cloud's iOS SDKs, including Conversation, Text to Speech, Speech to Text, and the Alchemy Language APIs.",
     "url": "https://github.com/IBM-MIL/CognitiveConcierge",
     "language": "Swift",

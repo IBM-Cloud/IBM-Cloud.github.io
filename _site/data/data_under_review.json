@@ -2,7 +2,7 @@
   {
     "State" : "live",
     "Author" : "Ram Vennam",
-    "name": "Hybrid Banking App Demo",
+    "name": "Hybrid Banking Demo",
     "description": "Hybrid Banking Demo - Interaction of Customer on Mobile Device with Banking Service Center. Application that demos interaction between a customer and company support staff using Bluemix Mobile backend and Watson services.",
     "url": "https://github.com/IBM-Bluemix/HybridBanking-Android",
     "language": "Java",
@@ -19,7 +19,7 @@
   {
     "State" : "live",
     "Author" : "Bluemix & Watson Team",
-    "name": "Todo Web App",
+    "name": "Todo List",
     "url": "https://github.com/IBM-Bluemix/todo-apps",
     "description": "The ToDo sample apps are meant to be simple demos of how you can take advantage of Bluemix and a database service done in number different langauges.",
     "language": "NodeJS, Java, PHP, Python, Rails, Swift",
@@ -29,7 +29,7 @@
     "category" : "Web",
     "urlLink": "",
     "blogPost" : "",
-    "industry": "ToDo App",
+    "industry": "How To",
     "rate": "UNDER REVIEW"
   },
 
