@@ -2,9 +2,9 @@
   {
     "State" : "live",
     "Author" : "IBM",
-    "name": "CloudCo Insurance App",
-    "url": "https://github.com/IBM-Bluemix/insurance-bot",
-    "description": "Insurance Policy Bot is a collection of experimental Watson & Bluemix concepts applied to the insurance domain.",
+    "name": "Cloud Insurance Co.",
+    "url": "https://github.com/IBM-Bluemix/cloudco-insurance",
+    "description": "Cloud Insurance Co. is a collection of experimental Watson & Bluemix concepts applied to the insurance domain.",
     "language": "NodeJS",
     "tags": ["ShowcaseDemos"],
     "services": ["Tone Analyzer", "Conversation API","Natural Language Classifier", "MongoDb"],
