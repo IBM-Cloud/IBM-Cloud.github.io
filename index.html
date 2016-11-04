@@ -149,7 +149,7 @@
         <div class="inside project-item col-md-3 col-sm-12 col-xs-12" ng-repeat-start="link in (filteredLinks = (links | filter:searchText | filterPanel:filterConfiguration))">
           <div class="well project-outer" ng-class="{demo: link.tags.indexOf('demo')>=0}">
             <div class="link-title">
-              <a data-track-action="link-title" data-track-label="{{link.urlLink}}"  href="{{link.urlLink}}" target="_blank" data-track-action="Select" data-track-label="{{service.entity.label}}">{{link.name}}</a>
+              <a data-track-action="link-title" data-track-label="{{link.urlLink}}"  href="{{link.url}}" target="_blank" data-track-action="Select" data-track-label="{{service.entity.label}}">{{link.name}}</a>
               <a href="{{link.homepage}}" ng-if="link.homepage">
                 <span class="e1a-link e1a-sm"></span>
               </a>
@@ -200,8 +200,8 @@
 
 
             <span class="gitHubIcon">
-              <a data-track-action="link-github" data-track-label="{{link.url}}" href="{{link.url}}" class="hrefLink" target="_blank">
-                <img id="about" class="logo-img" src="./static/icons/github.svg" >
+              <a data-track-action="link-github" data-track-label="{{link.url}}" href="{{link.urlLink}}" class="hrefLink" target="_blank">
+                <i class="fa fa-eye" aria-hidden="true"></i>
               </a>
             </span>
 
