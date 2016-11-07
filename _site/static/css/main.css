@@ -3,13 +3,21 @@
 }
 .header-panel.shadow-z-2 {
   background-color: #152934;
-  padding: 20px 0 15px 0;
+  padding: 15px 0;
   width: 100%;
 }
+.header-row {
+  display: flex;
+  justify-content: space-between;
+}
 .full{ font-size: 16px; }
-.logo-img {
-
-
+.logo-icon {
+  width: 22px;
+  height: 22px;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
 }
 .website_icon{
   width: 56px;
@@ -61,20 +69,21 @@ p.info a {
   text-align: right;
 }
 .icon {
-  background: white;
-  border-radius: 100%;
   text-align: center;
-  line-height: 20px;
-  font-size: 20px;
-  color: #152935;
-  padding: 5px;
-  width: 30px;
-  height: 30px;
+  line-height: 24px;
+  font-size: 24px;
+  color: white;
   display: inline-block;
+  margin-right: 1rem;
 }
 body .container .jumbotron-primary, body .container .well-primary, body .container-fluid .jumbotron-primary, body .container-fluid .well-primary{
   background-color: #f5f7fa;
 }
+
+.container {
+  max-width: 1440px;
+}
+
 .icon:hover {
   background: rgba(124,199,255,0.2);
   color: #7cc7ff;
@@ -122,6 +131,9 @@ h2.blog-title-pro:after {
   margin-top: 16px;
   margin-left: 1px;
   background: rgb(90, 170, 250);
+}
+.blog-link {
+  background-color: transparent;
 }
 span.tags{ margin: 0 2px;cursor:  inline-block;}
 .card .card-image .card-image-headline-custom{
@@ -296,6 +308,7 @@ span.services.label.tags.tag-filter.ng-binding{
   border-radius: 10px;
   color: #283a45;
   font-weight: normal;
+  padding: 3px 8px;
 }
 .project-outer{
 }
@@ -366,9 +379,6 @@ a.hrefLink {
 
 ul.list-separator.nav.navbar-nav.well.well-primary.default {
   width: 100%;
-}
-body .container .jumbotron, body .container .jumbotron-default, body .container .well, body .container .well-default, body .container-fluid .jumbotron, body .container-fluid .jumbotron-default, body .container-fluid .well, body .container-fluid .well-default{
-
 }
 
 .well.project-outer.demo{
@@ -450,8 +460,17 @@ body .container .jumbotron, body .container .jumbotron-default, body .container 
 
 .header-panel.shadow-z-2-banner{
   background: #5596e6;
-  padding: 40px;
-  background-image: url("../icons/GithubIO_banner.svg");
+  padding: 25px;
+}
+@media (min-width: 825px) {
+  .header-panel.shadow-z-2-banner{
+    background-size: 70%;
+    background: #5596e6;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 40px;
+    background-image: url("../img/banner-background.svg");
+  }
 }
 .header-panel.shadow-z-2-filter {
   background: #ffffff;
@@ -468,6 +487,10 @@ body .container .jumbotron, body .container .jumbotron-default, body .container 
   padding: 15px 0px;
 }
 
+.form-group .form-control {
+  margin-bottom: 0;
+}
+
 .form-group input
 {
   background: #ebf0f7;
@@ -481,6 +504,9 @@ body .container .jumbotron, body .container .jumbotron-default, body .container 
 
 }
 
+.search-input {
+  margin-top: 0;
+}
 
 .filterButton{
   border: 2px solid #5596e6;
@@ -605,10 +631,6 @@ ul.triggers li:hover {
   }
   .project-item.col-md-4.col-sm-6.col-xs-12.ng-scope {
     width: 100%;
-  }
-  .header-panel.shadow-z-2-banner{
-    background: #5596e6;
-    padding: 25px;
   }
   .col-md-1.col-sm-4.col-xs-12.filter{
     width: 30%;

@@ -16,7 +16,6 @@
   <!-- FontAwesome icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
   <!-- Material Design CSS -->
-  <link rel="stylesheet" href="./static/css/bootstrap-material-design.min.cssss">
   <link rel="stylesheet" href="./static/css/bootstrap.css">
   <link rel="stylesheet" href="./static/css/main.css">
   <link rel="stylesheet" href="./static/css/emojione-awesome.css" />
@@ -38,21 +37,21 @@
 
   <div class="header-panel shadow-z-2">
     <div class="container">
-      <div class="row">
-        <div class="header01 col-md-3 col-sm-12 col-xs-12">
+      <div class="header-row">
+        <div class="header01 header-logo">
           <div class="row-picture">
-            <a href="index"><img id="about" class="logo-img" src="./static/icons/bluemix_logo.svg" ></a>
+            <a href="index"><img id="about" src="./static/icons/bluemix_logo.svg" ></a>
           </div>
           <div class="row-details">
             <p class="list-group-item-text">IBM Bluemix | GitHub.io</p>
           </div>
 
         </div>
-        <div class="header02 col-md-9 col-sm-12 col-xs-12">
+        <div class="header02">
           <div class="social-icons">
             <a class="icon" data-track-action="Icon" data-track-label="github" target="_blank" href="https://github.com/IBM-Bluemix"><i class="fa fa-github"></i></a>
             <a class="icon" data-track-action="Icon" data-track-label="StackOverFlow" target="_blank" href="http://stackoverflow.com/questions/tagged/ibm-bluemix"><i class="fa fa-stack-overflow"></i></a>
-            <a class="icon" data-track-action="Icon" data-track-label="Bluemix" target="_blank" href="https://www.ibm.com/cloud-computing/bluemix"><i class="fa fa-smile-o"></i></a>
+            <a class="icon" href="https://www.ibm.com/cloud-computing/bluemix" data-track-action="Icon" data-track-label="Bluemix" target="_blank"><img id="bluemix" class="logo-icon" src="./static/icons/bluemix_logo_white.svg" ></a>
           </div>
         </div>
       </div>
@@ -62,7 +61,7 @@
   <div class="header-panel shadow-z-2-banner">
     <div class="container">
       <div class="row">
-        <h1>FEATURED SAMPLES</h1>
+        <h1>Featured Samples</h1>
       </div>
     </div>
   </div>
@@ -192,7 +191,7 @@
 
           <div class="tag-level">
 
-            <span class="label tags tag-filter">
+            <span class="label tags tag-filter blog-link">
               <a data-track-action="link-blog" data-track-label="{{link.blogPost}}" href="{{link.blogPost}}" class="hrefLink" target="_blank">View Blog</a>
             </span>
 

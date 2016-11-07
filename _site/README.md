@@ -25,7 +25,7 @@ For any reason if you wish to run this code locally, you can follow the steps:
 
  Step 1) Install Jekyll
     ```
-    sudo gem install jekyll
+    sudo gem install jekyll bundler
     ```
 If you want to read more on Jekyll, [click here](https://jekyllrb.com/)
 
@@ -36,7 +36,7 @@ Step 2) git clone
 
 Step 3) run the application
     ```
-    sudo jekyll serve
+    bundle exec jekyll serve
     ```
 
 Website will be running locally on: http://127.0.0.1:4000/
