@@ -12,7 +12,6 @@
   <meta name="keywords" content="Bluemix Sample code demos, Watson sample code, IoT samples, Bluemix Samples, Mobile, Cloudant, Text to Speech, Speech To Text" />
 
   <!-- Custom Fonts -->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
   <!-- FontAwesome icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
   <!-- Material Design CSS -->
@@ -36,7 +35,7 @@
 
 
   <div class="header-panel shadow-z-2">
-    <div class="container">
+    <div class="header-container">
       <div class="header-row">
         <div class="header01 header-logo">
           <div class="row-picture">
@@ -59,17 +58,16 @@
   </div>
 
   <div class="header-panel shadow-z-2-banner">
-    <div class="container">
-      <div class="row">
-        <h1>Featured Samples</h1>
-      </div>
+    <img class="header-image" src="./static/img/banner-background.svg" >
+    <div class="page-container">
+      <h1>Featured Samples</h1>
     </div>
   </div>
 
   <div class="header-panel shadow-z-2-filter">
-    <div class="container">
-      <div class="row">
-        <div class="fil col-md-10 col-sm-8 col-xs-12">
+    <div class="page-container">
+      <div class="filter-row">
+        <div class="fil">
           <form role="search">
             <div class="form-group search-input">
               <input type="text" class="form-control" placeholder="Search" ng-model="searchText" autofocus id="searchTextF">
@@ -77,10 +75,11 @@
           </form>
         </div>
 
-        <div class="ser col-md-2 col-sm-4 col-xs-12 filter" >
+        <div class="ser filter" >
           <form role="search">
             <a href="#" id="fliterButtonID"><div class="filterButton">
               <span> Filter </span>
+              <img class="filter-icon" src="./static/icons/filter.svg" >
             </div></a>
           </form>
         </div>
@@ -131,7 +130,7 @@
 
 
 
-  <div class="container main outer">
+  <div class="page-container main outer">
     <div class="row">
 
 
