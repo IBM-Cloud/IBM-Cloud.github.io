@@ -139,100 +139,73 @@
 
 
 <div class="page-container main outer">
+  <meta name="keywords" content="Testing">
+
+  <div class="TotHome">
+    Total of <b>{{links.length}}</b> code samples found</span> <span ng-if="filteredLinks.length != links.length">, <b>{{filteredLinks.length}}</b> and code samples matching the search/filter criteria.</span>
+  </div>
+
+  <ul class="items-wrapper"><!-- START FULL PAGE -->
+
+    <li class="inside project-item" ng-repeat-start="link in (filteredLinks = (links | filter:searchText | filterPanel:filterConfiguration))">
+      <div class="project-outer" ng-class="{demo: link.tags.indexOf('demo')>=0}">
+        <div class="link-title">
+          <a data-track-action="link-title" data-track-label="{{link.urlLink}}"  href="{{link.url}}" target="_blank" data-track-action="Select" data-track-label="{{service.entity.label}}">{{link.name}}</a>
+          <a href="{{link.homepage}}" ng-if="link.homepage">
+            <span class="e1a-link e1a-sm"></span>
+          </a>
+        </div>
+        <div class="project-content description">
+          <span ng-bind-html="link.description | emoji"></span>
+        </div>
+
+        <div class="project-content tag-group">
+
+
+          <div class="tag-holder">
+            <span class="FirSpanLeft">LANGUAGES: </span>
+            <span class="tag-filter language">{{link.language || '&nbsp;'}}</span>
+          </div>
+
+          <span class="FirSpanLeft">CATEGORY: </span>
+          <div class="tag-holder">
+            <span class="tag-filter category">{{link.category || '&nbsp;'}}</span>
+          </div>
+
+          <span class="FirSpanLeft">SERVICES: </span>
+          <div class="tag-services">
+            <span ng-repeat="item in link.services">
+              <span class="services ">{{item || '&nbsp;'}},</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tag-level">
+        <span ng-show="{{link.blogPost !== ''}}" class="project-link">
+          <a data-track-action="link-blog" data-track-label="{{link.blogPost}}" href="{{link.blogPost}}" class="hrefLink" target="_blank">Blog Post</a>
+        </span>
+        <span ng-show="{{link.urlLink !== ''}}" class="project-link">
+          <a data-track-action="link-demo" data-track-label="{{link.urlLink}}" href="{{link.urlLink}}" class="hrefLink" target="_blank">Live Demo</a>
+        </span>
+      </div>
+
+    </li>
+    <div ng-repeat-end=""></div>
+
+  </ul>
+
+
+
   <div class="row">
-
-
-    <div class="inside full"><!-- START FULL PAGE -->
-
-
-      <meta name="keywords" content="Testing">
-
-      <div class="TotHome">
-        Total of <b>{{links.length}}</b> code samples found</span> <span ng-if="filteredLinks.length != links.length">, <b>{{filteredLinks.length}}</b> and code samples matching the search/filter criteria.</span>
-      </div>
-
-
-      <div class="inside project-item col-md-3 col-sm-12 col-xs-12" ng-repeat-start="link in (filteredLinks = (links | filter:searchText | filterPanel:filterConfiguration))">
-        <div class="well project-outer" ng-class="{demo: link.tags.indexOf('demo')>=0}">
-          <div class="link-title">
-            <a data-track-action="link-title" data-track-label="{{link.urlLink}}"  href="{{link.url}}" target="_blank" data-track-action="Select" data-track-label="{{service.entity.label}}">{{link.name}}</a>
-            <a href="{{link.homepage}}" ng-if="link.homepage">
-              <span class="e1a-link e1a-sm"></span>
-            </a>
-          </div>
-          <div class="project-content description">
-            <span ng-bind-html="link.description | emoji"></span>
-          </div>
-
-          <div class="project-content tag-group">
-
-
-            <div class="tag-holder">
-              <span class="FirSpanLeft">LANGUAGES: </span><br>
-              <span class="tag-filter language">{{link.language || '&nbsp;'}}</span>
-            </div><br>
-
-            <span class="FirSpanLeft">CATEGORY: </span><br>
-            <div class="tag-technologies">
-              <span class="tag-filter category">{{link.category || '&nbsp;'}}</span>
-            </div>
-
-            <span class="FirSpanLeft">SERVICES: </span><br>
-            <div class="tag-services">
-              <span ng-repeat="item in link.services">
-                <span class="services ">{{item || '&nbsp;'}},</span>
-              </span>
-            </div>
-
-
-
-          </div>
-
-
-        </div>
-
-        <div class="tag-level">
-
-          <span class="label tags tag-filter blog-link">
-            <a data-track-action="link-blog" data-track-label="{{link.blogPost}}" href="{{link.blogPost}}" class="hrefLink" target="_blank">View Blog</a>
-          </span>
-
-
-
-
-          <span class="gitHubIcon">
-            <a data-track-action="link-github" data-track-label="{{link.url}}" href="{{link.urlLink}}" class="hrefLink" target="_blank">
-              <i class="fa fa-eye" aria-hidden="true"></i>
-            </a>
-          </span>
-
-
-        </div>
-
-
-      </div>
-      <div class="clearfix" ng-if="$index%4==3"></div>
-      <div ng-repeat-end=""></div>
-
-
+    <div class="col-md-12 col-xs-12 footer">
+      <footer>
+        Made with <i class="fa fa-heart" aria-hidden="true"></i> by The Bluemix Developer Advocacy team</br>
+        Powered by <a href="https://www.ibm.com/cloud-computing/bluemix" onclick="_gaq.push(['_trackEvent', 'button3', 'clicked'])" >IBM Bluemix.</a> Check out our source code on <a href="https://github.com/IBM-Bluemix">GitHub</a><br>
+        Copyright © IBM 2016
+      </footer>
     </div>
-
-
-
-    <div class="row">
-      <div class="col-md-12 col-xs-12 footer">
-        <footer>
-          Made with <i class="fa fa-heart" aria-hidden="true"></i> by The Bluemix Developer Advocacy team</br>
-          Powered by <a href="https://www.ibm.com/cloud-computing/bluemix" onclick="_gaq.push(['_trackEvent', 'button3', 'clicked'])" >IBM Bluemix.</a> Check out our source code on <a href="https://github.com/IBM-Bluemix">GitHub</a><br>
-          Copyright © IBM 2016
-        </footer>
-      </div>
-    </div>
-
-
-
-
-  </div> <!-- end /.row twana -->
+  </div>
 
   <br>
 </div> <!-- end /.container -->

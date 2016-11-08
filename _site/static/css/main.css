@@ -165,8 +165,11 @@ h2.blog-title-pro:after {
   background: rgb(90, 170, 250);
 }
 
-.blog-link {
+.project-link {
   background-color: transparent;
+  text-decoration: none;
+  float: right;
+  margin-left: 2rem;
 }
 
 .card .card-image .card-image-headline-custom{
@@ -259,13 +262,54 @@ footer {
   float: left;
 }
 
-.project-item.col-md-4.col-sm-6.col-xs-12.ng-scope {
-  width: 50%;
+.items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -3rem;
+  padding-left: 0;
+  margin-bottom: 3rem;
+}
+
+.project-item {
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+@media (min-width: 600px) {
+  .items-wrapper {
+    margin-right: -2%;
+  }
+
+  .project-item {
+    width: 48%;
+    margin-right: 2%;
+  }
+}
+
+@media (min-width: 970px) {
+  .project-item {
+    width: 31.33%;
+    margin-right: 2%;
+  }
+}
+
+@media (min-width: 1125px) {
+  .items-wrapper {
+    margin-right: -4%;
+  }
+
+  .project-item {
+    width: 22%;
+    margin-right: 2.6666%;
+  }
 }
 
 .TotHome {
   text-align: left;
-  float: left;
   width: 100%;
   padding: 2rem 2rem 2rem 3rem;
   color: #5A6872;
@@ -316,17 +360,17 @@ footer {
 .project-content{
   font-size: 14px;
   margin-bottom: 10px;
-  color: #152935;
+  color: rgba(0,0,0,0.75);
 }
 
 .project-content.description {
   display: inline-block;
-  height: 125px;
+  height: 100px;
   overflow: hidden;
 }
 
 .tag-filter {
-  padding: 3px 16px;
+  padding: 3px 12px;
   font-size: 12px;
   margin-right: 1px;
   border-radius: 10px;
@@ -346,78 +390,72 @@ footer {
   font-size: 14px;
 }
 
-.project-outer{
+.project-outer {
   border-top: 3px solid #8C9BA5;
+  padding: 1.5rem;
+  background-color: white;
+  flex: 1
 }
 
 .tag-services {
   height: 30px;
 }
 
-a.btn.btn-info.btn-raised.btn-sm.project-link{
+a.btn.btn-info.btn-raised.btn-sm.project-link {
   background-color: #0f212e;
   color: rgba(255,255,255,.84);
   border: none;
   border-radius: 1px;
 }
 
-.FirSpanLeft{
-  float: left;
+.FirSpanLeft {
+  display: block;
   width: 25%;
   color: #162935;
   font-size: 12px;
   font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 .content.well {
   padding: 10px;
 }
 
-.tag-level{
-  background: #eff2f5;
-  box-shadow: inset 0px 1px 2px 0px #bec5d0;
-  margin-bottom: 35px;
+.tag-level {
+  background-color: #EBF0F7;
   padding: 10px;
+  border-top: 1px solid #DFE6EB;
 }
-.tag-technologies {
-  height: 40px;
-  overflow: hidden;
 
-}
-.gitHubIcon{
+.gitHubIcon {
   float: right;
 }
 
-.tag-technologies span{
+.tag-technologies span {
   color: #94a3ab;
 }
 
-.tag-level span, .tag-level a{
+.tag-level span, .tag-level a {
   color: #5aaafa;
 
 }
+
 a.hrefLink {
   font-size: 14px;
 }
 
+.tag-holder {
+  margin-bottom: 1.5rem;
+}
+
 .tag-holder span, .tag-holder a {
   color: #162935;
-}
-.tag-level a, .tag-holder a{
-  text-decoration: underline;
 }
 
 ul.list-separator.nav.navbar-nav.well.well-primary.default {
   width: 100%;
 }
 
-.well.project-outer.demo{
-  background: #495a66;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: #bdbdbd;
-}
-
-.error404{
+.error404 {
   color: #5596e6;
   margin-left: 30px;
 }
@@ -722,9 +760,6 @@ ul.triggers li:hover {
   #portfolio-filter {
     margin-top: 0px;
   }
-  .project-item.col-md-4.col-sm-6.col-xs-12.ng-scope {
-    width: 100%;
-  }
   .col-md-1.col-sm-4.col-xs-12.filter{
     width: 30%;
   }
@@ -739,9 +774,6 @@ ul.triggers li:hover {
     margin-bottom: 15px;
   }
   .inside.col-md-12.col-xs-12.full {
-    width: 100%;
-  }
-  .inside.project-item.col-md-3.col-sm-12.col-xs-12.ng-scope{
     width: 100%;
   }
   .header01.col-md-3.col-sm-12.col-xs-12{
@@ -762,9 +794,6 @@ ul.triggers li:hover {
 
 }
 @media (min-width: 321px) and (max-width: 780px){
-  .project-item.col-md-4.col-sm-6.col-xs-12.ng-scope {
-    width: 100%;
-  }
   ul.list-separator.nav.navbar-nav.well.well-primary.default {
     width: auto;
   }
