@@ -160,32 +160,27 @@
               <span class="e1a-link e1a-sm"></span>
             </a>
           </div>
-
-          <span class="tag">{{link.industry}}</span>
-
-
-
-          <div class="project-content" id="DesCrpC">
+          <div class="project-content description">
             <span ng-bind-html="link.description | emoji"></span>
           </div>
 
-          <div class="project-content">
+          <div class="project-content tag-group">
 
 
             <div class="tag-holder">
               <span class="FirSpanLeft">LANGUAGES: </span><br>
-              <span class="language label tags tag-filter">{{link.language || '&nbsp;'}}</span>
+              <span class="tag-filter language">{{link.language || '&nbsp;'}}</span>
             </div><br>
 
             <span class="FirSpanLeft">CATEGORY: </span><br>
             <div class="tag-technologies">
-              <span class="category label tags tag-filter">{{link.category || '&nbsp;'}}</span>
+              <span class="tag-filter category">{{link.category || '&nbsp;'}}</span>
             </div>
 
-            <span class="servicesLink">SERVICES: </span><br>
+            <span class="FirSpanLeft">SERVICES: </span><br>
             <div class="tag-services">
               <span ng-repeat="item in link.services">
-                <span class="services label tags tag-filter">{{item || '&nbsp;'}},</span>
+                <span class="services ">{{item || '&nbsp;'}},</span>
               </span>
             </div>
 

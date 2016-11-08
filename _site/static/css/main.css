@@ -169,8 +169,6 @@ h2.blog-title-pro:after {
   background-color: transparent;
 }
 
-span.tags{ margin: 0 2px;cursor:  inline-block;}
-
 .card .card-image .card-image-headline-custom{
   position: absolute;
   margin-bottom: 0;
@@ -318,41 +316,40 @@ footer {
 .project-content{
   font-size: 14px;
   margin-bottom: 10px;
+  color: #152935;
 }
 
-span.language.label.tags.tag-filter.ng-binding{
-  padding: 3px 8px;
-  font-size: 11px;
+.project-content.description {
+  display: inline-block;
+  height: 125px;
+  overflow: hidden;
+}
+
+.tag-filter {
+  padding: 3px 16px;
+  font-size: 12px;
   margin-right: 1px;
-  border-bottom: none;
   border-radius: 10px;
-  font-weight: normal;
+}
+
+.tag-filter.language {
   background: #eed3fe;
   color: #7c4f9e;
 }
 
-span.category.label.tags.tag-filter.ng-binding{
-  padding: 3px 8px;
-  font-size: 11px;
-  margin-right: 1px;
-  border-bottom: none;
-  border-radius: 10px;
-  font-weight: normal;
-
+.tag-filter.category {
   background: #aaf9e6;
   color: #238070;
 }
 
-span.services.label.tags.tag-filter.ng-binding{
-  font-size: 12px;
-  border-bottom: none;
-  border-radius: 10px;
-  color: #283a45;
-  font-weight: normal;
-  padding: 3px 8px;
+.services {
+  font-size: 14px;
 }
+
 .project-outer{
+  border-top: 3px solid #8C9BA5;
 }
+
 .tag-services {
   height: 30px;
 }
@@ -364,26 +361,17 @@ a.btn.btn-info.btn-raised.btn-sm.project-link{
   border-radius: 1px;
 }
 
-a.ng-binding{
-  color: #5184c3;
-font-size: 20px;
-}
-
 .FirSpanLeft{
   float: left;
   width: 25%;
   color: #162935;
+  font-size: 12px;
+  font-weight: bold;
 }
 .content.well {
   padding: 10px;
 }
-#DesCrpC{
-  display: inline-block;
-  height: 93px;
-  overflow: hidden;
-  font-size: 13px;
-  color: #223541;
-}
+
 .tag-level{
   background: #eff2f5;
   box-shadow: inset 0px 1px 2px 0px #bec5d0;
@@ -704,7 +692,10 @@ a#fliterButtonID:hover{
 
 
 .link-title {
-  height: 55px;
+  color: #5184c3;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 ul.triggers {
