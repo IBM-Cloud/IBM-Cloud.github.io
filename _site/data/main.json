@@ -164,6 +164,23 @@
     "blogPost" : "https://developer.ibm.com/swift/2016/10/24/build-end-end-swift-app-watson-apis/",
     "industry": "How To",
     "rate": "5"
+  },
+
+  {
+    "State" : "live",
+    "Author" : "Bluemix Team",
+    "name": "Revitalize your Java EE app with IBM Bluemix services",
+    "description": "In this tutorial, you learn how to bring code from IBM DevOps Services into your Eclipse workspace, build and deploy the application to Bluemix, and consume a database services and other services in the cloud. To demonstrate this process, we'll work with the CloudTrader sample application.",
+    "url": "https://github.com/IBM-Bluemix/JavaCloudTrader",
+    "language": "Java",
+    "tags": ["SampleCode"],
+    "services": [ "DashDB", "Session Cache", "Auto-Scaling", "Eclipse" ],
+    "level" : "Intermediate",
+    "category" : "Web",
+    "urlLink": "http://cloudtrader.mybluemix.net/",
+    "blogPost" : "http://www.ibm.com/developerworks/cloud/library/cl-cloudtrader-app/index.html",
+    "industry": "How To",
+    "rate": "5"
   }
 
 
