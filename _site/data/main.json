@@ -43,7 +43,7 @@
     "services": [ "OpenWhisk", "Visual Recognition", "cloudant"],
     "level" : "Intermediate",
     "category": "Mobile",
-    "urlLink": "#",
+    "urlLink": "",
     "blogPost" : "https://developer.ibm.com/bluemix/2016/02/29/openwhisk-and-watson-image-tagging-app/",
     "industry": "Image Recognition"
   },
@@ -110,7 +110,7 @@
     "services": [ "OpenWhisk", "slack", "API Connect", "cloudant" ],
     "level" : "Intermediate",
     "category" : "Web",
-    "urlLink": "#",
+    "urlLink": "",
     "blogPost" : "https://developer.ibm.com/bluemix/2016/08/15/serverless-slack-app-with-bluemix-openwhisk/",
     "industry": "Integration",
     "rate": "4/5"
@@ -128,7 +128,7 @@
     "level" : "Intermediate",
     "category" : "Web",
     "urlLink": "https://conversation-demo.mybluemix.net/",
-    "blogPost" : "#",
+    "blogPost" : "",
     "industry": "Chatbot",
     "rate": "4/5"
   },
