@@ -169,8 +169,8 @@
   {
     "State" : "live",
     "Author" : "Bluemix Team",
-    "name": "Revitalize your Java EE app with IBM Bluemix services",
-    "description": "In this tutorial, you learn how to bring code from IBM DevOps Services into your Eclipse workspace, build and deploy the application to Bluemix, and consume a database services and other services in the cloud. To demonstrate this process, we'll work with the CloudTrader sample application.",
+    "name": "Java EE Stock Trading",
+    "description": "Learn how to bring code from GitHub into your local Eclipse workspace, build and deploy the application to Bluemix, and consume a database services and other services in the cloud.",
     "url": "https://github.com/IBM-Bluemix/JavaCloudTrader",
     "language": "Java",
     "tags": ["SampleCode"],
