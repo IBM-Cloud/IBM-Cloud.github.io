@@ -1,5 +1,19 @@
+@font-face {
+  font-family: 'Helvetica Neue for IBM';
+  src: url('../fonts/roman/helvetica-neue-roman.eot?') format('eot'), url('../fonts/roman/helvetica-neue-roman.woff2') format('woff2'), url('../fonts/roman/helvetica-neue-roman.woff') format('woff'), url('../fonts/roman/helvetica-neue-roman.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue for IBM';
+  src: url('../fonts/bold/helvetica-neue-bold.eot?') format('eot'), url('../fonts/bold/helvetica-neue-bold.woff2') format('woff2'), url('../fonts/bold/helvetica-neue-bold.woff') format('woff'), url('../fonts/bold/helvetica-neue-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue for IBM", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Noto Sans", Noto, sans-serif;
 }
 
 .header-container {
@@ -435,7 +449,7 @@ a.btn.btn-info.btn-raised.btn-sm.project-link {
 }
 
 .tag-level span, .tag-level a {
-  color: #5aaafa;
+  color: #337ab7;
 
 }
 
@@ -619,6 +633,24 @@ ul.list-separator.nav.navbar-nav.well.well-primary.default {
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
+
+  background: #FFF;
+  color: #5596e6;
+  text-decoration: none;
+}
+
+.filterButton:hover {
+  cursor: pointer;
+}
+
+.filterButton:focus, .filterButton:hover, .filterButton.active {
+  background-color: #5596e6;
+  color: white;
+  text-decoration: none;
+}
+
+.filterButton:hover polygon, .filterButton.active polygon {
+  fill: white;
 }
 
 .filter-icon {
