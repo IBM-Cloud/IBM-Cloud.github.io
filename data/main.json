@@ -181,7 +181,23 @@
     "blogPost" : "http://www.ibm.com/developerworks/cloud/library/cl-cloudtrader-app/index.html",
     "industry": "How To",
     "rate": "5"
-  }
+  },
 
+  {
+    "State" : "live",
+    "Author" : "Bluemix Team",
+    "name": "Onlie Store Catalog",
+    "description": "The Store Catalog Mobile Backend uses an API Connect Node.js runtime with the Cloudant NoSQL DB, Object Storage, Mobile Client Access, Push Notifications, and Mobile Analytics services on Bluemix. The template exhibits common architectural design patterns that developers can use to model their backend on Bluemix for mobile applications. This backend has been created to support the new IBM Mobile Dashboard Store Catalog template. It has the the ability to browse a list of products and supports the viewing of images for each item in the product list.",
+    "url": "https://github.com/ibm-bluemix-mobile-services/mobiledashboard-storecatalog-backend",
+    "language": "Swift, NodeJS",
+    "tags": ["SampleCode"],
+    "services": [ "API Connect", "Cloudant NoSQL DB", "Object Storage", "Mobile Client Access", "Push Notifications", "Mobile Analytics" ],
+    "level" : "Beginner",
+    "category" : "Mobile",
+    "urlLink": "#",
+    "blogPost" : "https://www.ibm.com/blogs/bluemix/2016/07/bluemix-mobile-creating-store-catalog-app-part1/",
+    "industry": "How To",
+    "rate": "5"
+  }
 
 ]
