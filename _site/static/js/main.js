@@ -57,110 +57,121 @@ catalogApp.filter("filterPanel", function () {
               keepLink = false;
             }
 
-/*
+            /*
             filterConfiguration.excludeTags.forEach(function (tag) {
-              if (link.tags.State == "live") {
-                keepLink = false;
-              }
-*/
-
-
-          });
-
-          if (keepLink) {
-            results.push(link);
+            if (link.tags.State == "live") {
+            keepLink = false;
           }
+          */
+
+
         });
-        return results;
-      } else {
-        return links;
-      }
-    }
-  });
 
-  catalogApp.filter("emoji", function () {
-    return function (input) {
-      return input ? emojione.toImage(input) : input;
-    }
-  });
-
-  catalogApp.controller('MainController', function ($scope, $http) {
-    console.info("Initializing MainController");
-    $scope.links = [];
-    $scope.filterConfiguration = {
-      enabled: true,
-      includeTags: [],
-      excludeTags: []
-    };
-
-
-
-/*
-    $http.get('urltoRESTAPICall').
-    then(function(response) {
-      $scope.greeting = response.data;
-      console.log(response.data);
-    });
-*/
-
-
-
-    $scope.toggleTagConfiguration = function (tag, status) {
-      var tagSet = status ? $scope.filterConfiguration.includeTags : $scope.filterConfiguration.excludeTags;
-      var position = tagSet.indexOf(tag);
-      if (position >= 0) {
-        tagSet.splice(position, 1);
-      } else {
-        tagSet.push(tag);
-      }
-    }
-
-    $scope.tagFilter = function (tag) {
-      if (categories.indexOf(tag) >= 0) {
-        return tag;
-      } else {
-        return null;
-      }
-    };
-
-    [
-      {
-        url: "./data/main.json"
-      }
-    ].forEach(function (source) {
-      var i = 0;
-      $http.get(source.url).success(function (links) {
-        links.forEach(function (link) {
-          if (!link.tags) {
-            link.tags = [];
-          }
-          link.tags = link.tags.concat(source.tags);
-
-          if (link.language) {
-            link.tags.push(link.language);
-          }
-          if (link.category) {
-            link.tags.push(link.category);
-          }
-
-          // if state is live
-          if (link.State == "live") {
-              keepLink = false;
-            }
-
-        })
-
-
-        $(".hrefLink").each(function( index ) {
-            if (!$(this).attr('href')){
-              $(this).hide();
-            }
-          });
-
-        $scope.links = $scope.links.concat(links);
-        $scope.links.sort(function (link1, link2) {
-          return link1.name.localeCompare(link2.name);
-        });
+        if (keepLink) {
+          results.push(link);
+        }
       });
+      return results;
+    } else {
+      return links;
+    }
+  }
+});
+
+catalogApp.filter("emoji", function () {
+  return function (input) {
+    return input ? emojione.toImage(input) : input;
+  }
+});
+
+catalogApp.controller('MainController', function ($scope, $http) {
+  console.info("Initializing MainController");
+  $scope.links = [];
+  $scope.filterConfiguration = {
+    enabled: true,
+    includeTags: [],
+    excludeTags: []
+  };
+
+
+
+  /*
+  $http.get('urltoRESTAPICall').
+  then(function(response) {
+  $scope.greeting = response.data;
+  console.log(response.data);
+});
+*/
+
+
+
+$scope.toggleTagConfiguration = function (tag, status) {
+  var tagSet = status ? $scope.filterConfiguration.includeTags : $scope.filterConfiguration.excludeTags;
+  var position = tagSet.indexOf(tag);
+  if (position >= 0) {
+    tagSet.splice(position, 1);
+  } else {
+    tagSet.push(tag);
+  }
+}
+
+$scope.tagFilter = function (tag) {
+  if (categories.indexOf(tag) >= 0) {
+    return tag;
+  } else {
+    return null;
+  }
+};
+
+[
+  {
+    url: "./data/main.json"
+  }
+].forEach(function (source) {
+  var i = 0;
+  $http.get(source.url).success(function (links) {
+    links.forEach(function (link) {
+      if (!link.tags) {
+        link.tags = [];
+      }
+      link.tags = link.tags.concat(source.tags);
+
+
+      if (link.language) {
+        link.tags.push(link.language);
+      }
+      if (link.category) {
+        link.tags.push(link.category);
+      }
+
+      // if state is live
+      if (link.State == "live") {
+        keepLink = false;
+      }
+
+    })
+
+
+    $(".hrefLink").each(function( index ) {
+      if (!$(this).attr('href')){
+        $(this).hide();
+      }
+    });
+
+    // view the links randomly everytime, to get better track of top clicks of the links
+    $scope.links = $scope.links.concat(links);
+    $scope.random = function() {
+      return 0.5 - Math.random();
+    }
+
+
+
+
+
+
+    $scope.links.sort(function (link1, link2) {
+      return link1.name.localeCompare(link2.name);
     });
   });
+});
+});

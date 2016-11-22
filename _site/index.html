@@ -8,8 +8,8 @@
   <link rel="shortcut icon" href="./static/img/favicon.png" />
   <title>Bluemix Open Source</title>
   <meta name="author" content="Twana Daniel - IBM Bluemix - Developer Advocate Team" />
-  <meta name="description" content="IBM Bluemix Sample Code demos ready to use from IoT, Watson, Mobile and much more." />
-  <meta name="keywords" content="Bluemix Sample code demos, Watson sample code, IoT samples, Bluemix Samples, Mobile, Cloudant, Text to Speech, Speech To Text" />
+  <meta name="description" content="IBM-Bluemix.github.io page - a place where developers can find featured code samples, you can find all samples from IoT, watson, mobile and more." />
+  <meta name="keywords" content="Bluemix code Samples, Watson sample code, IoT samples, Bluemix Samples, Mobile, Cloudant, Text to Speech, Speech To Text" />
 
   <!-- FontAwesome icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
@@ -143,7 +143,7 @@
 
   <ul class="items-wrapper"><!-- START FULL PAGE -->
 
-    <li class="inside project-item" ng-repeat-start="link in (filteredLinks = (links | filter:searchText | filterPanel:filterConfiguration))">
+    <li class="inside project-item" ng-repeat-start="link in (filteredLinks = (links | filter:searchText | filterPanel:filterConfiguration | orderBy:random )) ">
       <div class="project-outer" ng-class="{demo: link.tags.indexOf('demo')>=0}">
         <div class="link-title">
           <a data-track-action="link-title" data-track-label="{{link.urlLink}}"  href="{{link.url}}" target="_blank" data-track-action="Select" data-track-label="{{service.entity.label}}">{{link.name}}</a>
