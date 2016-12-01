@@ -158,13 +158,15 @@ $scope.tagFilter = function (tag) {
       }
     });
 
+/*
     // view the links randomly everytime, to get better track of top clicks of the links
     $scope.links = $scope.links.concat(links);
     $scope.random = function() {
       return 0.5 - Math.random();
     }
+*/
 
-
+  $scope.links = $scope.links.concat(links);
 
 
 
