@@ -16,7 +16,7 @@
     "search": "Build an insurance app, app for insurance, insurance with node"
   },
 
-  { 
+  {
     "State" : "live",
     "Author" : "IBM",
     "name": "David Bowie personalities",
@@ -196,6 +196,23 @@
     "category" : "Mobile",
     "urlLink": "#",
     "blogPost" : "https://www.ibm.com/blogs/bluemix/2016/07/bluemix-mobile-creating-store-catalog-app-part1/",
+    "industry": "How To",
+    "rate": "5"
+  },
+
+  {
+    "State" : "live",
+    "Author" : "Bluemix Team",
+    "name": "Alchemy Language API's",
+    "description": "AlchemyLanguage is a collection of APIs that offer text analysis through natural language processing. This set of APIs can analyze text to help you understand its concepts, entities, keywords, sentiment, and more. Additionally, you can create a custom model for some APIs to get specific results that are tailored to your domain.",
+    "url": "https://github.com/watson-developer-cloud/alchemylanguage-nodejs",
+    "language": "NodeJS",
+    "tags": ["SampleCode"],
+    "services": [ "All Alchemy Language API's"],
+    "level" : "Beginner",
+    "category" : "Web & Mobile",
+    "urlLink": "https://alchemy-language-demo.mybluemix.net/",
+    "blogPost" : "#",
     "industry": "How To",
     "rate": "5"
   }
