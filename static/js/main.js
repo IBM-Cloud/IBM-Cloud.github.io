@@ -164,7 +164,6 @@ $scope.tagFilter = function (tag) {
       return 0.5 - Math.random();
     }
 
-  $scope.links = $scope.links.concat(links);
 
 
 
