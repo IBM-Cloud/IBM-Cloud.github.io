@@ -215,6 +215,41 @@
     "blogPost" : "#",
     "industry": "How To",
     "rate": "5"
+  },
+
+  {
+    "State" : "live",
+    "Author" : "Bluemix Team",
+    "name": "Food-coach ChatBot",
+    "description": "This application demonstrates how the Conversation Service can be adapted to use Tone Analyzer's tone along with intents and entities in a simple chat interface adving users with thier food",
+    "url": "https://github.com/watson-developer-cloud/food-coach",
+    "language": "NodeJS",
+    "tags": ["SampleCode"],
+    "services": [ "Conversation API", "Tone Analyzer"],
+    "level" : "Beginner",
+    "category" : "Web",
+    "urlLink": "https://food-coach.mybluemix.net/",
+    "blogPost" : "#",
+    "industry": "How To",
+    "rate": "5"
+  },
+
+  {
+    "State" : "live",
+    "Author" : "Bluemix Team",
+    "name": "Conversation Enhanced",
+    "description": "This application demonstrates how the Conversation Service can be adapted to use Tone Analyzer's tone along with intents and entities in a simple chat interface adving users with thier food",
+    "url": "https://github.com/watson-developer-cloud/conversation-enhanced",
+    "language": "NodeJS",
+    "tags": ["SampleCode"],
+    "services": [ "Conversation API", "Retrieve and Rank"],
+    "level" : "Beginner",
+    "category" : "Web",
+    "urlLink": "http://conversation-enhanced.mybluemix.net/",
+    "blogPost" : "#",
+    "industry": "How To",
+    "rate": "5"
   }
+
 
 ]
