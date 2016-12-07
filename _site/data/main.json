@@ -194,7 +194,7 @@
     "services": [ "API Connect", "Cloudant NoSQL DB", "Object Storage", "Mobile Client Access", "Push Notifications", "Mobile Analytics" ],
     "level" : "Beginner",
     "category" : "Mobile",
-    "urlLink": "#",
+    "urlLink": "",
     "blogPost" : "https://www.ibm.com/blogs/bluemix/2016/07/bluemix-mobile-creating-store-catalog-app-part1/",
     "industry": "How To",
     "rate": "5"
@@ -212,7 +212,7 @@
     "level" : "Beginner",
     "category" : "Web & Mobile",
     "urlLink": "https://alchemy-language-demo.mybluemix.net/",
-    "blogPost" : "#",
+    "blogPost" : "",
     "industry": "How To",
     "rate": "5"
   },
@@ -229,7 +229,7 @@
     "level" : "Beginner",
     "category" : "Web",
     "urlLink": "https://food-coach.mybluemix.net/",
-    "blogPost" : "#",
+    "blogPost" : "",
     "industry": "How To",
     "rate": "5"
   },
@@ -246,7 +246,7 @@
     "level" : "Beginner",
     "category" : "Web",
     "urlLink": "http://conversation-enhanced.mybluemix.net/",
-    "blogPost" : "#",
+    "blogPost" : "",
     "industry": "How To",
     "rate": "5"
   }

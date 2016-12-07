@@ -87,6 +87,7 @@ catalogApp.filter("emoji", function () {
 catalogApp.controller('MainController', function ($scope, $http) {
   console.info("Initializing MainController");
   $scope.links = [];
+
   $scope.filterConfiguration = {
     enabled: true,
     includeTags: [],
@@ -129,7 +130,11 @@ $scope.tagFilter = function (tag) {
   }
 ].forEach(function (source) {
   var i = 0;
+
+
   $http.get(source.url).success(function (links) {
+
+
     links.forEach(function (link) {
       if (!link.tags) {
         link.tags = [];
@@ -148,29 +153,31 @@ $scope.tagFilter = function (tag) {
       if (link.State == "live") {
         keepLink = false;
       }
-
     })
-
-
-    $(".hrefLink").each(function( index ) {
-      if (!$(this).attr('href')){
-        $(this).hide();
-      }
-    });
-
     // view the links randomly everytime, to get better track of top clicks of the links
-    $scope.links = $scope.links.concat(links);
     $scope.random = function() {
+      $(".hrefLink").each(function( index ) {
+        if (!$(this).attr('href')){
+          $(this).hide();
+        }
+      });
+
       return 0.5 - Math.random();
     }
 
 
 
-
+    $scope.links = $scope.links.concat(links);
 
     $scope.links.sort(function (link1, link2) {
       return link1.name.localeCompare(link2.name);
     });
+
+
+
+
+
+
   });
 });
 });
