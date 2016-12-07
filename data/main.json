@@ -249,7 +249,25 @@
     "blogPost" : "",
     "industry": "How To",
     "rate": "5"
+  },
+
+  {
+    "State" : "live",
+    "Author" : "Bluemix Team",
+    "name": "Measuring emotion with IBM Watson Speech to Text and Tone Analysis",
+    "description": "Real Time Tone Analysis samples dictation or conversations and displays a real-time transcription and an accompanying chart that plots the emotional, social, and writing tone of the language.",
+    "url": "https://github.com/antonmc/moods",
+    "language": "NodeJS",
+    "tags": ["SampleCode"],
+    "services": [ "Speech to Text", "Tone Analysis"],
+    "level" : "Beginner",
+    "category" : "Web",
+    "urlLink": "https://moods.mybluemix.net/",
+    "blogPost" : "https://www.ibm.com/blogs/bluemix/2016/11/measuring-emotion-ibm-watson-speech-text-tone-analysis/",
+    "industry": "How To",
+    "rate": "5"
   }
+
 
 
 ]
