@@ -148,6 +148,9 @@ $scope.tagFilter = function (tag) {
       if (link.category) {
         link.tags.push(link.category);
       }
+      if (link.MostClicked) {
+        link.tags.push(link.MostClicked);
+      }
 
       // if state is live
       if (link.State == "live") {
