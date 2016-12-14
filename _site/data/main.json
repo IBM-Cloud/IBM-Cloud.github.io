@@ -244,7 +244,7 @@
     "level" : "Beginner",
     "category" : "Web",
     "urlLink": "https://food-coach.mybluemix.net/",
-    "blogPost" : "",
+    "blogPost" : "https://developer.ibm.com/watson/blog/2016/10/17/creating-a-compassionate-conversational-agent-using-watson-tone-analyzer-and-watson-conversation-services/",
     "industry": "How To",
     "rate": "5",
     "search": "build a ChatBot app, build food coach app",
