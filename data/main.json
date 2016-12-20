@@ -24,7 +24,7 @@
     "description": "The Logistics Wizard is an end-to-end, smart supply chain management solution that showcases how to execute hybrid cloud, microservices, and predictive data analytics in the real world.",
     "language": "Python, NodeJS",
     "tags": ["ShowcaseDemos"],
-    "services": [ "Cloudant", "Weather", "Secure Gateway" ],
+    "services": [ "Cloudant", "Weather", "OpenWhisk", "Toolchain", "ElephantSQL"],
     "level" : "Intermediate",
     "category": "Web",
     "urlLink": "https://logistics-wizard.mybluemix.net",
