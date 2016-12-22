@@ -176,7 +176,7 @@
           <span class="FirSpanLeft">SERVICES: </span>
           <div class="tag-services">
             <span ng-repeat="item in link.services">
-              <span class="services ">{{item || '&nbsp;'}},</span>
+              <span class="services ">{{item || '&nbsp;'}}{{$last ? '' : ','}}</span>
             </span>
           </div>
         </div>
