@@ -100,14 +100,8 @@
         <table>
           <tr>
             <button type="button" data-track-action="Filter" data-track-label="Python" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Python', true)">Python</button>
-            <button type="button" data-track-action="Filter" data-track-label="PHP" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('PHP', true)">PHP</button>
-            <button type="button" data-track-action="Filter" data-track-label="Ruby" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Ruby', true)">Ruby</button>
-
             <button type="button" data-track-action="Filter" data-track-label="NodeJS" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('NodeJS', true)">NodeJS</button>
             <button type="button" data-track-action="Filter" data-track-label="Swift" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Swift', true)">Swift</button>
-            <button type="button" data-track-action="Filter" data-track-label="C#" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('C#', true)">C#</button>
-
-            <button type="button" data-track-action="Filter" data-track-label="Objective-C" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Objective C', true)">Objective C</button>
             <button type="button" data-track-action="Filter" data-track-label="Java" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Java', true)">Java</button>
 
           </tr>
@@ -176,7 +170,7 @@
           <span class="FirSpanLeft">SERVICES: </span>
           <div class="tag-services">
             <span ng-repeat="item in link.services">
-              <span class="services ">{{item || '&nbsp;'}},</span>
+              <span class="services ">{{item || '&nbsp;'}}{{$last ? '' : ','}}</span>
             </span>
           </div>
         </div>
