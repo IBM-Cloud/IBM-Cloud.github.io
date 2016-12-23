@@ -378,6 +378,7 @@ footer {
 }
 
 .project-content.description {
+  display: inline-block; /* For non-webkit */
   display: -webkit-box;
   height: 100px;
   text-overflow: ellipsis;
