@@ -7,7 +7,7 @@
     "description": "Cloud Insurance Co. is a collection of experimental Watson & Bluemix concepts applied to the insurance domain.",
     "language": "NodeJS",
     "tags": ["ShowcaseDemos"],
-    "services": ["Tone Analyzer", "Conversation API","Natural Language Classifier", "MongoDB"],
+    "services": ["Tone Analyzer", "Conversation API","Natural Language Classifier", "Cloudant"],
     "level" : "Intermediate",
     "category": "Web",
     "urlLink": "http://cloudco.mybluemix.net",
