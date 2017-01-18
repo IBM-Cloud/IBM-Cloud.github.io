@@ -437,7 +437,47 @@
   "rate": "5",
   "search": "Build an app with Tradeoff Analytics to make better choices, build an app to make better choices, better choices app",
   "MostClicked": ""
+},
+
+{
+  "State" : "live",
+  "Author" : "Bluemix Team",
+  "name": "BluePic",
+  "description": "BluePic is a photo and image sharing sample application that allows you to take photos and share them with other BluePic users. This sample application demonstrates how to leverage, in a mobile iOS 10 application, a Kitura-based server application written in Swift.",
+  "url": "https://github.com/IBM-Swift/BluePic",
+  "language": "Swift",
+  "tags": ["SampleCode"],
+  "services": [ "OpenWhisk", "AlpchemyAPI", "Weather Company Data", "Cloudant NoSQL DB", "Object Storage", "Push Notifications", "Mobile Client Access"],
+  "level" : "Intermediate",
+  "category" : "Mobile",
+  "urlLink": "",
+  "blogPost" : "https://developer.ibm.com/swift/2016/11/15/transition-to-server-side-swift-with-bluepic/",
+  "industry": "How To",
+  "rate": "5",
+  "search": "Build a swift app with IBM Bluemix",
+  "MostClicked": ""
+},
+
+{
+  "State" : "live",
+  "Author" : "Bluemix Team",
+  "name": "OpenFridge",
+  "description": "The Internet of Things enables manufacturers and their customers to make more efficient use of consumer devices by attaching them to a network. Software running on a device at the edge that is paired with analytics in the cloud promises to improve quality of service and lower cost of maintenance resulting in better customer satisfaction.",
+  "url": "https://github.com/krook/openfridge",
+  "language": "None",
+  "tags": ["SampleCode"],
+  "services": [ "OpenWhisk", "Internet of Things Platform", "SendGrid", "Cloudant NoSQL DB"],
+  "level" : "Intermediate",
+  "category" : "IoT",
+  "urlLink": "",
+  "blogPost" : "https://developer.ibm.com/accelerate/2016/12/15/openfridge-improving-customer-service-with-iot-and-event-driven-computing/",
+  "industry": "How To",
+  "rate": "5",
+  "search": "Build an IoT application with using OpenWhisk, OpenWhisk and IoT on Bluemix",
+  "MostClicked": ""
 }
+
+
 
 
 

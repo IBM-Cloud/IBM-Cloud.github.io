@@ -456,7 +456,28 @@
   "rate": "5",
   "search": "Build a swift app with IBM Bluemix",
   "MostClicked": ""
+},
+
+{
+  "State" : "live",
+  "Author" : "Bluemix Team",
+  "name": "OpenFridge",
+  "description": "The Internet of Things enables manufacturers and their customers to make more efficient use of consumer devices by attaching them to a network. Software running on a device at the edge that is paired with analytics in the cloud promises to improve quality of service and lower cost of maintenance resulting in better customer satisfaction.",
+  "url": "https://github.com/krook/openfridge",
+  "language": "None",
+  "tags": ["SampleCode"],
+  "services": [ "OpenWhisk", "Internet of Things Platform", "SendGrid", "Cloudant NoSQL DB"],
+  "level" : "Intermediate",
+  "category" : "IoT",
+  "urlLink": "",
+  "blogPost" : "https://developer.ibm.com/accelerate/2016/12/15/openfridge-improving-customer-service-with-iot-and-event-driven-computing/",
+  "industry": "How To",
+  "rate": "5",
+  "search": "Build an IoT application with using OpenWhisk, OpenWhisk and IoT on Bluemix",
+  "MostClicked": ""
 }
+
+
 
 
 
