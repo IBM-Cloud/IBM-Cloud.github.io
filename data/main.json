@@ -437,6 +437,25 @@
   "rate": "5",
   "search": "Build an app with Tradeoff Analytics to make better choices, build an app to make better choices, better choices app",
   "MostClicked": ""
+},
+
+{
+  "State" : "live",
+  "Author" : "Bluemix Team",
+  "name": "BluePic",
+  "description": "BluePic is a photo and image sharing sample application that allows you to take photos and share them with other BluePic users. This sample application demonstrates how to leverage, in a mobile iOS 10 application, a Kitura-based server application written in Swift.",
+  "url": "https://github.com/IBM-Swift/BluePic",
+  "language": "Swift",
+  "tags": ["SampleCode"],
+  "services": [ "OpenWhisk", "AlpchemyAPI", "Weather Company Data", "Cloudant NoSQL DB", "Object Storage", "Push Notifications", "Mobile Client Access"],
+  "level" : "Intermediate",
+  "category" : "Mobile",
+  "urlLink": "",
+  "blogPost" : "https://developer.ibm.com/swift/2016/11/15/transition-to-server-side-swift-with-bluepic/",
+  "industry": "How To",
+  "rate": "5",
+  "search": "Build a swift app with IBM Bluemix",
+  "MostClicked": ""
 }
 
 
