@@ -140,10 +140,12 @@
 
     <li class="inside project-item" ng-repeat-start="link in (filteredLinks = (links | filter:searchText | filterPanel:filterConfiguration | orderBy:random )) ">
       <div class="project-outer" ng-class="{demo: link.tags.indexOf('demo')>=0}">
-
+        <!--
         <div class="mostClicked" ng-if="link.MostClicked !==''">
             {{link.MostClicked}}
         </div>
+        -->
+
         <div class="link-title">
           <a data-track-action="link-title" data-track-label="{{link.urlLink}}"  href="{{link.url}}" target="_blank" data-track-action="Select" data-track-label="{{service.entity.label}}">{{link.name}}</a>
           <a href="{{link.homepage}}" ng-if="link.homepage">
