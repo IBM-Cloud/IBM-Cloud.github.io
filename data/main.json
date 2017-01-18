@@ -475,7 +475,28 @@
   "rate": "5",
   "search": "Build an IoT application with using OpenWhisk, OpenWhisk and IoT on Bluemix",
   "MostClicked": ""
+},
+
+{
+  "State" : "live",
+  "Author" : "Bluemix Team",
+  "name": "IBM-Blockchain - Commercial Paper",
+  "description": "This application is a demonstration of how a commercial paper trading network might be implemented on IBM Blockchain.",
+  "url": "https://github.com/IBM-Blockchain/cp-web",
+  "language": "NodeJS",
+  "tags": ["SampleCode"],
+  "services": [ "Blockchain"],
+  "level" : "Intermediate",
+  "category" : "Web",
+  "urlLink": "",
+  "Video":   "https://www.youtube.com/watch?v=2O1rxn2wh2o",
+  "blogPost" : "https://developer.ibm.com/tv/trading-commercial-paper-via-blockchain-with-ibm-bluemix/",
+  "industry": "How To",
+  "rate": "5",
+  "search": "Blockchain on Bluemix",
+  "MostClicked": ""
 }
+
 
 
 
