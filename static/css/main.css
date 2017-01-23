@@ -378,9 +378,13 @@ footer {
 }
 
 .project-content.description {
-  display: inline-block;
+  display: inline-block; /* For non-webkit */
+  display: -webkit-box;
   height: 100px;
+  text-overflow: ellipsis;
   overflow: hidden;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 
 .tag-filter {
