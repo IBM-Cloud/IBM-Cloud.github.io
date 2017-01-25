@@ -96,15 +96,6 @@ catalogApp.controller('MainController', function ($scope, $http) {
 
 
 
-  /*
-  $http.get('urltoRESTAPICall').
-  then(function(response) {
-  $scope.greeting = response.data;
-  console.log(response.data);
-});
-*/
-
-
 
 $scope.toggleTagConfiguration = function (tag, status) {
   var tagSet = status ? $scope.filterConfiguration.includeTags : $scope.filterConfiguration.excludeTags;
