@@ -19,13 +19,7 @@ angular.module('ngLoadingSpinner', ['angularSpinners'])
   };
 }]);
 
-
-
 var catalogApp = angular.module('catalogApp', ['ngLoadingSpinner', 'ngSanitize']);
-
-
-
-
 catalogApp.filter("filterPanel", function () {
   return function (links, filterConfiguration) {
     if (filterConfiguration.enabled) {
@@ -63,10 +57,7 @@ catalogApp.filter("filterPanel", function () {
             keepLink = false;
           }
           */
-
-
         });
-
         if (keepLink) {
           results.push(link);
         }
@@ -94,87 +85,72 @@ catalogApp.controller('MainController', function ($scope, $http) {
     excludeTags: []
   };
 
-
-
-
-$scope.toggleTagConfiguration = function (tag, status) {
-  var tagSet = status ? $scope.filterConfiguration.includeTags : $scope.filterConfiguration.excludeTags;
-  var position = tagSet.indexOf(tag);
-  if (position >= 0) {
-    tagSet.splice(position, 1);
-  } else {
-    tagSet.push(tag);
-  }
-}
-
-$scope.tagFilter = function (tag) {
-  if (categories.indexOf(tag) >= 0) {
-    return tag;
-  } else {
-    return null;
-  }
-};
-
-[
-  {
-    url: "./data/main.json"
-  }
-].forEach(function (source) {
-  var i = 0;
-
-
-  $http.get(source.url).success(function (links) {
-
-
-    links.forEach(function (link) {
-      if (!link.tags) {
-        link.tags = [];
-      }
-      link.tags = link.tags.concat(source.tags);
-
-
-      if (link.language) {
-        link.tags.push(link.language);
-      }
-      if (link.category) {
-        link.tags.push(link.category);
-      }
-      if (link.MostClicked) {
-        link.tags.push(link.MostClicked);
-      }
-      if (link.search) {
-        link.tags.push(link.MostClicked);
-      }
-
-      // if state is live
-      if (link.State == "live") {
-        keepLink = false;
-      }
-    })
-    // view the links randomly everytime, to get better track of top clicks of the links
-    $scope.random = function() {
-      $(".hrefLink").each(function( index ) {
-        if (!$(this).attr('href')){
-          $(this).hide();
-        }
-      });
-
-      return 0.5 - Math.random();
+  $scope.toggleTagConfiguration = function (tag, status) {
+    var tagSet = status ? $scope.filterConfiguration.includeTags : $scope.filterConfiguration.excludeTags;
+    var position = tagSet.indexOf(tag);
+    if (position >= 0) {
+      tagSet.splice(position, 1);
+    } else {
+      tagSet.push(tag);
     }
+  }
 
+  $scope.tagFilter = function (tag) {
+    if (categories.indexOf(tag) >= 0) {
+      return tag;
+    } else {
+      return null;
+    }
+  };
 
+  [
+    {
+      url: "./data/main.json"
+    }
+  ].forEach(function (source) {
+    var i = 0;
+    $http.get(source.url).success(function (links) {
+      links.forEach(function (link) {
+        if (!link.tags) {
+          link.tags = [];
+        }
+        link.tags = link.tags.concat(source.tags);
 
-    $scope.links = $scope.links.concat(links);
+        if (link.language) {
+          link.tags.push(link.language);
+        }
+        if (link.category) {
+          link.tags.push(link.category);
+        }
+        if (link.MostClicked) {
+          link.tags.push(link.MostClicked);
+        }
+        if (link.search) {
+          link.tags.push(link.MostClicked);
+        }
 
-    $scope.links.sort(function (link1, link2) {
-      return link1.name.localeCompare(link2.name);
+        // if state is live
+        if (link.State == "live") {
+          keepLink = false;
+        }
+      })
+      // view the links randomly everytime, to get better track of top clicks of the links
+      $scope.random = function() {
+        $(".hrefLink").each(function( index ) {
+          if (!$(this).attr('href')){
+            $(this).hide();
+          }
+        });
+
+        return 0.5 - Math.random();
+      }
+
+      $scope.links = $scope.links.concat(links);
+      $scope.links.sort(function (link1, link2) {
+        return link1.name.localeCompare(link2.name);
+      });
     });
 
 
-
-
-
-
   });
-});
 });

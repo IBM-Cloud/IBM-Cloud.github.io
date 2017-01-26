@@ -17,26 +17,3 @@ The issue descreption must have the following details:
 Step 2) Once issue is created with new link, we will review the issue created, we will quickly check the source code demo, ReadMe and making sure the application is at the standards we want.
 
 We want to show large applications that shows off our technologies, we don't want hello world or getting started stuff.
-
-
-
-### If you wish to clone the repo and run the app locally then follow the commands below:
-For any reason if you wish to run this code locally, you can follow the steps:
-
- Step 1) Install Jekyll
-    ```
-    sudo gem install jekyll bundler
-    ```
-If you want to read more on Jekyll, [click here](https://jekyllrb.com/)
-
-Step 2) git clone
-    ```
-    git clone https://github.com/IBM-Bluemix/IBM-Bluemix.github.io
-    ```
-
-Step 3) run the application
-    ```
-    bundle exec jekyll serve
-    ```
-
-Website will be running locally on: http://127.0.0.1:4000/
