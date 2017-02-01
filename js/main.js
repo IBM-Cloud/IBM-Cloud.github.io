@@ -13,67 +13,73 @@ angular.module('ngLoadingSpinner', ['angularSpinners'])
           spinnerService.hide('spinner');
         }
       });
-
-
     }
   };
 }]);
 
 var catalogApp = angular.module('catalogApp', ['ngLoadingSpinner', 'ngSanitize']);
+
 catalogApp.filter("filterPanel", function () {
   return function (links, filterConfiguration) {
-    if (filterConfiguration.enabled) {
-      var results = [];
-      links.forEach(function (link) {
-        var keepLink = false;
+    var sortbyMostViewed = filterConfiguration.sort;
 
-        // if no tag checked, show everything
-        if (filterConfiguration.includeTags.length == 0 &&
-          filterConfiguration.excludeTags.length == 0) {
-            keepLink = true;
-          }
+    var results = [];
+    var keepLink = false;
+
+    links.forEach(function (link)
+    {
+
+      if(link.MostClicked == sortbyMostViewed && link.MostClicked != ""){
+        keepLink = true;
+      }
+
+      if (link.Added == sortbyMostViewed && link.Added != ""){
+        keepLink = true;
+        console.log(sortbyMostViewed);
+      }
+
+      // if no tag checked, show everything
+      if (filterConfiguration.includeTags.length == 0 && filterConfiguration.excludeTags.length == 0) {
+        keepLink = true;
+      }
 
 
-          // if no include, assume all included and let the exclude tag remove some
-          if (filterConfiguration.includeTags.length == 0) {
-            keepLink = true;
-          } else {
-            keepLink = true;
-            filterConfiguration.includeTags.forEach(function (tag) {
-              if (!link.tags || link.tags.indexOf(tag) < 0) {
-                keepLink = false;
-              }
-            });
-          }
 
-          filterConfiguration.excludeTags.forEach(function (tag) {
-            if (!link.tags || link.tags.indexOf(tag) >= 0) {
-              keepLink = false;
-            }
-
-            /*
-            filterConfiguration.excludeTags.forEach(function (tag) {
-            if (link.tags.State == "live") {
+      // if no include, assume all included and let the exclude tag remove some
+      if (filterConfiguration.includeTags.length == 0) {
+        keepLink = true;
+      } else {
+        keepLink = true;
+        filterConfiguration.includeTags.forEach(function (tag) {
+          if (!link.tags || link.tags.indexOf(tag) < 0) {
             keepLink = false;
           }
-          */
         });
-        if (keepLink) {
-          results.push(link);
+      }
+
+      filterConfiguration.excludeTags.forEach(function (tag) {
+        if (!link.tags || link.tags.indexOf(tag) >= 0) {
+          keepLink = false;
         }
       });
-      return results;
-    } else {
-      return links;
-    }
+
+      filterConfiguration.includeTags.forEach(function (tag) {
+        if (!link.tags || link.tags.indexOf(tag) < 0) {
+          keepLink = false;
+        }
+      });
+
+      if (keepLink) {
+        results.push(link);
+      }
+
+    });
+    return results;
   }
 });
 
-catalogApp.filter("emoji", function () {
-  return function (input) {
-    return input ? emojione.toImage(input) : input;
-  }
-});
+
+
 
 catalogApp.controller('MainController', function ($scope, $http) {
   console.info("Initializing MainController");
@@ -128,7 +134,6 @@ catalogApp.controller('MainController', function ($scope, $http) {
         if (link.search) {
           link.tags.push(link.MostClicked);
         }
-
         // if state is live
         if (link.State == "live") {
           keepLink = false;

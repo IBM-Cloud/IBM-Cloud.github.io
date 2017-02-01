@@ -15,7 +15,9 @@
     "blogPost" : "",
     "industry": "Insurance",
     "search": "Build an insurance app, app for insurance, insurance with node",
-    "MostClicked": "Most Viewed"
+    "MostClicked": "Most Viewed",
+    "Added": ""
+
   },
   {
     "State" : "live",
@@ -33,7 +35,9 @@
     "blogPost" : "https://github.com/IBM-Bluemix/logistics-wizard/wiki/Technical-Collateral",
     "industry": "Development Logistics",
     "search": "build a smart supply chain management solution, build a microservices application",
-    "MostClicked": "Most Viewed"
+    "MostClicked": "Most Viewed",
+    "Added": ""
+
   },
   {
     "State" : "live",
@@ -52,7 +56,8 @@
     "industry": "Chatbot",
     "rate": "4/5",
     "search": "build a chatbot using IBM Bluemix, Build a car dashboard chatbot",
-    "MostClicked": "Most Viewed"
+    "MostClicked": "Most Viewed",
+    "Added": ""
   },
   {
     "State" : "live",
@@ -71,7 +76,9 @@
     "industry": "How To",
     "rate": "5",
     "search": "build a swift app, build ios app with swift on Bluemix",
-    "MostClicked": "Most Viewed"
+    "MostClicked": "Most Viewed",
+    "Added": ""
+
   },
   {
     "State" : "live",
@@ -89,7 +96,8 @@
     "blogPost" : "https://developer.ibm.com/bluemix/2016/02/29/openwhisk-and-watson-image-tagging-app/",
     "industry": "Image Recognition",
     "search": "Build a visual app, build image tagging application, build an iOS application to automatically tag images and detect faces ",
-    "MostClicked": "Most Viewed"
+    "MostClicked": "Most Viewed",
+    "Added": ""
   },
 
 
@@ -111,7 +119,8 @@
     "industry": "Video Analyzer",
     "rate": "5",
     "search": "build Video Analyzer app, build an app to analyze videos",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
   {
     "State" : "live",
@@ -129,7 +138,8 @@
     "blogPost" : "",
     "industry": "Music",
     "search": "Build an tone app, lyrics with Python, Watson & Bluemix ",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
 
   {
@@ -148,7 +158,8 @@
     "blogPost" : "",
     "industry": "Social Media",
     "search": "build a Social Media app, build an app to discover the similarities",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
 
   {
@@ -167,7 +178,8 @@
     "blogPost" : "",
     "industry": "Tone Analysis",
     "search": "Build an app to analysis tone, tone Analysis app",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
   {
     "State" : "potential",
@@ -185,7 +197,8 @@
     "industry": "Integration",
     "rate": "4/5",
     "search": "build an app using OpenWhisk, build a serverless app, build an app using OpenWhisk and slack",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
   {
     "State" : "live",
@@ -204,7 +217,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "build a java app on bluemix, build a java app on the cloud",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
   {
     "State" : "live",
@@ -223,7 +237,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "build an online store application, build an application using API Connect and Node.js",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
   {
     "State" : "live",
@@ -242,7 +257,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "build an app using Alchemy API's, use API's services in yoru mobile or web applications",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
   {
     "State" : "live",
@@ -261,7 +277,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "build a ChatBot app, build food coach app",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
   {
     "State" : "live",
@@ -280,7 +297,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "build an app with deep conversations, build a ChatBot",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
 
   {
@@ -300,7 +318,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "build a Tone Analyzer",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
 
   {
@@ -320,7 +339,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "build a visual recognition app, build a visual app",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
 
   {
@@ -340,7 +360,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "build a social media collection app, build a personality insight app",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
 
   {
@@ -360,7 +381,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "build a language translator app, translate your app or website",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
 
   {
@@ -380,7 +402,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "convert your documents with IBM Watson document conversion service",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
 
   {
@@ -400,7 +423,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "Enhance your app with Watson Natural Language Classifier service",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
   {
     "State" : "live",
@@ -419,7 +443,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "Text to speech app, speech to text app",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
 
   {
@@ -439,7 +464,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "Build an app with Watson Discovery",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
 
   {
@@ -459,7 +485,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "Build an app with Tradeoff Analytics to make better choices, build an app to make better choices, better choices app",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": ""
   },
 
   {
@@ -479,7 +506,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "Build a swift app with IBM Bluemix",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": "Recently Added"
   },
 
   {
@@ -499,7 +527,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "Build an IoT application with using OpenWhisk, OpenWhisk and IoT on Bluemix",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": "Recently Added"
   },
 
   {
@@ -519,7 +548,8 @@
     "industry": "How To",
     "rate": "5",
     "search": "Blockchain on Bluemix",
-    "MostClicked": ""
+    "MostClicked": "",
+    "Added": "Recently Added"
   }
 
 
