@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <row>
+    <State>live</State>
+    <urlVideo>https://www.youtube.com/watch?v=Rvc1CqNJkOA&amp;t=1509s</urlVideo>
+    <Author>IBM</Author>
+    <name>IBM Streams Water Conservation Starter Kit</name>
+    <url>https://github.com/IBMStreams/streamsx.waterConservation.starterKit</url>
+    <description>Starter kit for smart and connected sprinkler system using Apache Edgent, Streaming Analytics and Insights for Weather</description>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>IoT</services>
+    <services>Streaming Analytics</services>
+    <services>Weather Data</services>
+    <services>Node.js &amp; React</services>
+    <level>Intermediate</level>
+    <category>IoT</category>
+    <urlLink></urlLink>
+    <blogPost>https://www.ibm.com/blogs/bluemix/2016/06/better-analytics-with-apache-quarks/</blogPost>
+    <industry>Sample App</industry>
+    <search>Stream water conservation starter Kit</search>
+    <MostClicked></MostClicked>
+    <Added>Recently Added</Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo>https://vimeo.com/202228447</urlVideo>
+    <Author>IBM</Author>
+    <name>ChatBot - A Voice-enabled native Android app</name>
+    <url>https://github.com/IBM-Bluemix/chatbot-watson-android</url>
+    <description>An Android ChatBot powered by IBM Watson Services (Conversation and Text-to-Speech) on IBM Bluemix.</description>
+    <language>Android</language>
+    <tags>SampleCode</tags>
+    <services>Conversation API</services>
+    <services>Text to Speech</services>
+    <level>Beginner</level>
+    <category>Mobile</category>
+    <urlLink></urlLink>
+    <blogPost>https://www.ibm.com/blogs/bluemix/2017/01/build-voice-enabled-chatbot-minutes/</blogPost>
+    <industry>Sample App</industry>
+    <search>Build an Android on app, build an ChatBot for Android</search>
+    <MostClicked></MostClicked>
+    <Added>Recently Added</Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>IBM</Author>
+    <name>Todo Apps for web and mobile</name>
+    <url>https://github.com/IBM-Bluemix/todo-apps</url>
+    <description>The ToDo sample apps are meant to be simple demos of how you can take advantage of Bluemix and a database service. In addition it shows how to take advantage of both the built-in and community buildpacks to deploy your app using whatever runtime you choose.</description>
+    <language>NodeJS, Java, Rails, Swift, PHP, Python</language>
+    <tags>SampleCode</tags>
+    <services>MongoDB</services>
+    <services>Cloudant</services>
+    <level>Intermediate</level>
+    <category>Web</category>
+    <urlLink></urlLink>
+    <blogPost></blogPost>
+    <industry>Sample App</industry>
+    <search>Build a simple php todo app, Build a simple Node.js todo app, Build a simple Swift todo app, Build a simple IOS todo app, Build a simple Java todo app, Build a simple Python todo app, Build a simple Rails todo app,  </search>
+    <MostClicked></MostClicked>
+    <Added>Recently Added</Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>IBM</Author>
+    <name>News Intelligence</name>
+    <url>https://github.com/watson-developer-cloud/news-intelligence</url>
+    <description>The News Intelligence application was created to highlight the combination of the AlchemyData News, Alchemy Language, and Tone Analyzer services as a News Intelligence tool</description>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>Tone Analyzer</services>
+    <services>AlchemyData News</services>
+    <services>Alchemy Language</services>
+    <level>Intermediate</level>
+    <category>Web</category>
+    <urlLink>https://news-intelligence.mybluemix.net/</urlLink>
+    <blogPost></blogPost>
+    <industry>News application</industry>
+    <search>Build a news application using IBM Bluemix services</search>
+    <MostClicked></MostClicked>
+    <Added>Recently Added</Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo>https://www.youtube.com/watch?v=TGxt0sP5zJI</urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>BluePic</name>
+    <description>BluePic is a photo and image sharing sample application that allows you to take photos and share them with other BluePic users. This sample application demonstrates how to leverage, in a mobile iOS 10 application, a Kitura-based server application written in Swift.</description>
+    <url>https://github.com/IBM-Swift/BluePic</url>
+    <language>Swift</language>
+    <tags>SampleCode</tags>
+    <services>OpenWhisk</services>
+    <services>AlpchemyAPI</services>
+    <services>Weather Company Data</services>
+    <services>Cloudant NoSQL DB</services>
+    <services>Object Storage</services>
+    <services>Push Notifications</services>
+    <services>Mobile Client Access</services>
+    <level>Intermediate</level>
+    <category>Mobile</category>
+    <urlLink></urlLink>
+    <blogPost>https://developer.ibm.com/swift/2016/11/15/transition-to-server-side-swift-with-bluepic/</blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>Build a swift app with IBM Bluemix</search>
+    <MostClicked></MostClicked>
+    <Added>Recently Added</Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo>https://www.youtube.com/watch?v=0Sl4rWZYo8w</urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>OpenFridge</name>
+    <description>The Internet of Things enables manufacturers and their customers to make more efficient use of consumer devices by attaching them to a network. Software running on a device at the edge that is paired with analytics in the cloud promises to improve quality of service and lower cost of maintenance resulting in better customer satisfaction.</description>
+    <url>https://github.com/krook/openfridge</url>
+    <language>None</language>
+    <tags>SampleCode</tags>
+    <services>OpenWhisk</services>
+    <services>Internet of Things Platform</services>
+    <services>SendGrid</services>
+    <services>Cloudant NoSQL DB</services>
+    <level>Intermediate</level>
+    <category>IoT</category>
+    <urlLink></urlLink>
+    <blogPost>https://developer.ibm.com/accelerate/2016/12/15/openfridge-improving-customer-service-with-iot-and-event-driven-computing/</blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>Build an IoT application with using OpenWhisk, OpenWhisk and IoT on Bluemix</search>
+    <MostClicked></MostClicked>
+    <Added>Recently Added</Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo>https://www.youtube.com/watch?v=2O1rxn2wh2o</urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>IBM-Blockchain - Commercial Paper</name>
+    <description>This application is a demonstration of how a commercial paper trading network might be implemented on IBM Blockchain.</description>
+    <url>https://github.com/IBM-Blockchain/cp-web</url>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>Blockchain</services>
+    <level>Intermediate</level>
+    <category>Web</category>
+    <urlLink></urlLink>
+    <blogPost>https://developer.ibm.com/tv/trading-commercial-paper-via-blockchain-with-ibm-bluemix/</blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>Blockchain on Bluemix</search>
+    <MostClicked></MostClicked>
+    <Added>Recently Added</Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>IBM</Author>
+    <name>Cloud Insurance Co.</name>
+    <url>https://github.com/IBM-Bluemix/cloudco-insurance</url>
+    <description>Cloud Insurance Co. is a collection of experimental Watson &amp; Bluemix concepts applied to the insurance domain.</description>
+    <language>NodeJS</language>
+    <tags>ShowcaseDemos</tags>
+    <services>Tone Analyzer</services>
+    <services>Conversation API</services>
+    <services>Natural Language Classifier</services>
+    <services>Cloudant</services>
+    <level>Intermediate</level>
+    <category>Web</category>
+    <urlLink>http://cloudco.mybluemix.net</urlLink>
+    <blogPost></blogPost>
+    <industry>Insurance</industry>
+    <search>Build an insurance app, app for insurance, insurance with node</search>
+    <MostClicked>Most Viewed</MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo>https://www.youtube.com/watch?v=wCxXs83-eRc&amp;t=66s</urlVideo>
+    <Author>IBM</Author>
+    <name>Logistics Wizard</name>
+    <url>https://github.com/IBM-Bluemix/logistics-wizard</url>
+    <description>The Logistics Wizard is an end-to-end, smart supply chain management solution that showcases how to execute hybrid cloud, microservices, and predictive data analytics in the real world.</description>
+    <language>Python, NodeJS</language>
+    <tags>ShowcaseDemos</tags>
+    <services>Cloudant</services>
+    <services>Weather</services>
+    <services>OpenWhisk</services>
+    <services>Toolchain</services>
+    <services>ElephantSQL</services>
+    <level>Intermediate</level>
+    <category>Web</category>
+    <urlLink>https://logistics-wizard.mybluemix.net</urlLink>
+    <blogPost>https://github.com/IBM-Bluemix/logistics-wizard/wiki/Technical-Collateral</blogPost>
+    <industry>Development Logistics</industry>
+    <search>build a smart supply chain management solution, build a microservices application</search>
+    <MostClicked>Most Viewed</MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>Bluemix &amp; Watson Team</Author>
+    <name>ChatBot - Car Dashboard</name>
+    <description>Application that demonstrates how the Conversation service uses intent capabilities in an animated car dashboard UI.</description>
+    <url>https://github.com/watson-developer-cloud/car-dashboard</url>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>Conversation API</services>
+    <services>Speech To Service</services>
+    <services>Text To Speech</services>
+    <level>Intermediate</level>
+    <category>Web</category>
+    <urlLink>https://conversation-demo.mybluemix.net/</urlLink>
+    <blogPost></blogPost>
+    <industry>Chatbot</industry>
+    <rate>4/5</rate>
+    <search>build a chatbot using IBM Bluemix, Build a car dashboard chatbot</search>
+    <MostClicked>Most Viewed</MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo>https://www.youtube.com/watch?v=kQqE0hMg0Q8</urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Cognitive Concierge - end-to-end Swift</name>
+    <description>CognitiveConcierge is an end-to-end Swift application sample with an iOS front end and a Kitura web framework back end. This application also demonstrates how to pull in a number of different Watson services to your Swift client and server side apps via the Watson Developer Cloud&#x27;s iOS SDKs, including Conversation, Text to Speech, Speech to Text, and the Alchemy Language APIs.</description>
+    <url>https://github.com/IBM-MIL/CognitiveConcierge</url>
+    <language>Swift</language>
+    <tags>SampleCode</tags>
+    <services>Conversation API</services>
+    <services>Text to Speech</services>
+    <services>Speech to Text</services>
+    <services>Alchemy Language APIs</services>
+    <level>Intermediate</level>
+    <category>Mobile</category>
+    <urlLink>https://www.youtube.com/watch?v=kQqE0hMg0Q8</urlLink>
+    <blogPost>https://developer.ibm.com/swift/2016/10/24/build-end-end-swift-app-watson-apis/</blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>build a swift app, build ios app with swift on Bluemix</search>
+    <MostClicked>Most Viewed</MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>IBM</Author>
+    <name>Image tagging &amp; Face detection</name>
+    <description>Vision App is a sample iOS application to automatically tag images and detect faces by using IBM visual recognition technologies.</description>
+    <url>https://github.com/IBM-Bluemix/openwhisk-visionapp</url>
+    <language>Swift</language>
+    <tags>ShowcaseDemos</tags>
+    <services>OpenWhisk</services>
+    <services>Visual Recognition</services>
+    <services>Cloudant</services>
+    <level>Intermediate</level>
+    <category>Mobile</category>
+    <urlLink></urlLink>
+    <blogPost>https://developer.ibm.com/bluemix/2016/02/29/openwhisk-and-watson-image-tagging-app/</blogPost>
+    <industry>Image Recognition</industry>
+    <search>Build a visual app, build image tagging application, build an iOS application to automatically tag images and detect faces </search>
+    <MostClicked>Most Viewed</MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo>https://www.youtube.com/watch?v=1teIMpkI_Sg</urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Dark Vision - Discover dark data in videos</name>
+    <description>Dark Vision processes videos to discover dark data. By analyzing video frames with IBM Watson Visual Recognition, Dark Vision builds a summary with a set of tags and famous people or building detected in the video. Use this summary to enhance video search and categorization.</description>
+    <url>https://github.com/IBM-Bluemix/openwhisk-darkvisionapp</url>
+    <language>Swift</language>
+    <tags>SampleCode</tags>
+    <services>Visual Recognition</services>
+    <services>OpenWhisk</services>
+    <services>Cloudant</services>
+    <level>Intermediate</level>
+    <category>Mobile</category>
+    <urlLink>http://openwhisk-darkvision.mybluemix.net/</urlLink>
+    <blogPost>https://www.ibm.com/blogs/bluemix/2016/03/openwhisk-and-watson-video-analysis-app/</blogPost>
+    <industry>Video Analyzer</industry>
+    <rate>5</rate>
+    <search>build Video Analyzer app, build an app to analyze videos</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>IBM</Author>
+    <name>David Bowie personalities</name>
+    <description>Exploring David Bowie&#x27;s lyrics with Python, Watson &amp; Bluemix</description>
+    <url>https://github.com/IBM-Bluemix/ziggy</url>
+    <language>Python</language>
+    <tags>ShowcaseDemos</tags>
+    <services>Personality Insights</services>
+    <level>Beginner</level>
+    <category>Web</category>
+    <urlLink>https://ziggy.mybluemix.net/</urlLink>
+    <blogPost></blogPost>
+    <industry>Music</industry>
+    <search>Build an tone app, lyrics with Python, Watson &amp; Bluemix </search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>IBM</Author>
+    <name>Your Celebrity Match</name>
+    <description>Compare your Twitter profile against celebrities. Enter your Twitter handle to see which celebrities have the most similar (and different) personalities to yours!</description>
+    <url>https://github.com/watson-developer-cloud/your-celebrity-match</url>
+    <language>NodeJS</language>
+    <tags>ShowcaseDemos</tags>
+    <services>Twitter</services>
+    <services>Personality Insights</services>
+    <level>Intermediate</level>
+    <category>Web</category>
+    <urlLink>https://your-celebrity-match.mybluemix.net/</urlLink>
+    <blogPost></blogPost>
+    <industry>Social Media</industry>
+    <search>build a Social Media app, build an app to discover the similarities</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>IBM</Author>
+    <name>Real Time Tone Analysis</name>
+    <description>Real Time Tone Analysis samples dictation or conversations and displays a real-time transcription and an accompanying chart that plots the emotional, social, and writing tone of the language. The project is an experiment that combines the Watson Speech to Text and Tone Analysis services, integrating them in a node.js backend running on IBM Bluemix.</description>
+    <url>https://github.com/IBM-Bluemix/real-time-tone-analysis</url>
+    <language>NodeJS</language>
+    <tags>ShowcaseDemos</tags>
+    <services>Speech to Text</services>
+    <services>Tone Analysis</services>
+    <level>Intermediate</level>
+    <category>Web</category>
+    <urlLink>https://realtime-tone.mybluemix.net/</urlLink>
+    <blogPost></blogPost>
+    <industry>Tone Analysis</industry>
+    <search>Build an app to analysis tone, tone Analysis app</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>potential</State>
+    <Author>IBM</Author>
+    <name>Serverless Slack Application</name>
+    <description>This sample shows how to build a serverless Slack app using Slack Events API to receive events, with IBM Bluemix OpenWhisk actions to process these events, and how to expose these actions with API Connect.</description>
+    <url>https://github.com/IBM-Bluemix/openwhisk-slackapp</url>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>OpenWhisk</services>
+    <services>Slack</services>
+    <services>API Connect</services>
+    <services>Cloudant</services>
+    <level>Intermediate</level>
+    <category>Web</category>
+    <urlLink></urlLink>
+    <blogPost>https://developer.ibm.com/bluemix/2016/08/15/serverless-slack-app-with-bluemix-openwhisk/</blogPost>
+    <industry>Integration</industry>
+    <rate>4/5</rate>
+    <search>build an app using OpenWhisk, build a serverless app, build an app using OpenWhisk and slack</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Java EE Stock Trading</name>
+    <description>Learn how to bring code from GitHub into your local Eclipse workspace, build and deploy the application to Bluemix, and consume a database services and other services in the cloud.</description>
+    <url>https://github.com/IBM-Bluemix/JavaCloudTrader</url>
+    <language>Java</language>
+    <tags>SampleCode</tags>
+    <services>DashDB</services>
+    <services>Session Cache</services>
+    <services>Auto-Scaling</services>
+    <services>Eclipse</services>
+    <level>Intermediate</level>
+    <category>Web</category>
+    <urlLink>http://cloudtrader.mybluemix.net/</urlLink>
+    <blogPost>http://www.ibm.com/developerworks/cloud/library/cl-cloudtrader-app/index.html</blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>build a java app on bluemix, build a java app on the cloud</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Online Store Catalog</name>
+    <description>The Store Catalog Mobile Backend uses an API Connect Node.js runtime with the Cloudant NoSQL DB, Object Storage, Mobile Client Access, Push Notifications, and Mobile Analytics services on Bluemix. The template exhibits common architectural design patterns that developers can use to model their backend on Bluemix for mobile applications. This backend has been created to support the new IBM Mobile Dashboard Store Catalog template. It has the the ability to browse a list of products and supports the viewing of images for each item in the product list.</description>
+    <url>https://github.com/ibm-bluemix-mobile-services/mobiledashboard-storecatalog-backend</url>
+    <language>Swift, NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>API Connect</services>
+    <services>Cloudant</services>
+    <services>Object Storage</services>
+    <services>Mobile Client Access</services>
+    <services>Push Notifications</services>
+    <services>Mobile Analytics</services>
+    <level>Beginner</level>
+    <category>Mobile</category>
+    <urlLink></urlLink>
+    <blogPost>https://www.ibm.com/blogs/bluemix/2016/07/bluemix-mobile-creating-store-catalog-app-part1/</blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>build an online store application, build an application using API Connect and Node.js</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Alchemy Language API&#x27;s</name>
+    <description>AlchemyLanguage is a collection of APIs that offer text analysis through natural language processing. This set of APIs can analyze text to help you understand its concepts, entities, keywords, sentiment, and more. Additionally, you can create a custom model for some APIs to get specific results that are tailored to your domain.</description>
+    <url>https://github.com/watson-developer-cloud/alchemylanguage-nodejs</url>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>All Alchemy Language API&#x27;s</services>
+    <level>Beginner</level>
+    <category>Web &amp; Mobile</category>
+    <urlLink>https://alchemy-language-demo.mybluemix.net/</urlLink>
+    <blogPost></blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>build an app using Alchemy API&#x27;s, use API&#x27;s services in yoru mobile or web applications</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Food-coach ChatBot</name>
+    <description>This application demonstrates how the Conversation Service can be adapted to use Tone Analyzer&#x27;s tone along with intents and entities in a simple chat interface advising users with their food</description>
+    <url>https://github.com/watson-developer-cloud/food-coach</url>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>Conversation API</services>
+    <services>Tone Analyzer</services>
+    <level>Beginner</level>
+    <category>Web</category>
+    <urlLink>https://food-coach.mybluemix.net/</urlLink>
+    <blogPost>https://developer.ibm.com/watson/blog/2016/10/17/creating-a-compassionate-conversational-agent-using-watson-tone-analyzer-and-watson-conversation-services/</blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>build a ChatBot app, build food coach app</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Conversation Enhanced</name>
+    <description>This application demonstrates the combination of the Conversation and Retrieve and Rank services. First, users pose questions to the Conversation service. If Conversation is not able to confidently answer, Conversation Enhanced executes a call to Retrieve and Rank to provide the user with a list of helpful answers.</description>
+    <url>https://github.com/watson-developer-cloud/conversation-enhanced</url>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>Conversation API</services>
+    <services>Retrieve and Rank</services>
+    <level>Beginner</level>
+    <category>Web</category>
+    <urlLink>http://conversation-enhanced.mybluemix.net/</urlLink>
+    <blogPost></blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>build an app with deep conversations, build a ChatBot</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo>https://www.youtube.com/watch?v=wUb--6FPBik</urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Watson Tone Analyzer</name>
+    <description>This service uses linguistic analysis to detect and interpret emotions, social tendencies, and language style cues found in text.</description>
+    <url>https://github.com/watson-developer-cloud/tone-analyzer-nodejs</url>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>Tone Analyzer</services>
+    <level>Beginner</level>
+    <category>Web</category>
+    <urlLink>https://tone-analyzer-demo.mybluemix.net/</urlLink>
+    <blogPost></blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>build a Tone Analyzer</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Watson Visual Recognition</name>
+    <description>Understand the contents of images. Create custom classifiers to develop smart applications. Create custom collections to search for similar images.</description>
+    <url>https://github.com/watson-developer-cloud/visual-recognition-nodejs</url>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>Visual Recognition</services>
+    <level>Beginner</level>
+    <category>Web</category>
+    <urlLink>https://visual-recognition-demo.mybluemix.net/</urlLink>
+    <blogPost></blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>build a visual recognition app, build a visual app</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Watson Personality Insights</name>
+    <description>Uncover a deeper understanding of people&#x27;s personality characteristics, needs, and values to drive personalization.</description>
+    <url>https://github.com/watson-developer-cloud/personality-insights-nodejs</url>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>Personality Insights</services>
+    <level>Beginner</level>
+    <category>Web</category>
+    <urlLink>https://personality-insights-livedemo.mybluemix.net/</urlLink>
+    <blogPost></blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>build a social media collection app, build a personality insight app</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Watson Language Translator</name>
+    <description>The IBM Watson Language Translator service converts text input in one language into a destination language for the end user using background from domain-specific models. Translation is available among Arabic, Chinese, English, French, Korean, Portuguese, German, and Spanish (some languages may not be available for all domains).</description>
+    <url>https://github.com/watson-developer-cloud/language-translator-nodejs</url>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>Language Translator</services>
+    <level>Beginner</level>
+    <category>Web</category>
+    <urlLink>https://language-translator-demo.mybluemix.net/</urlLink>
+    <blogPost></blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>build a language translator app, translate your app or website</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Watson Document Conversion</name>
+    <description>The Document Conversion service transforms HTML, PDF, and Microsoft Word documents into normalized HTML, plain text, or sets of Answer units. The Answer units can be run through a utility to convert it to the Solr JSON file type needed to train the Retrieve and Rank service.</description>
+    <url>https://github.com/watson-developer-cloud/document-conversion-nodejs</url>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>Document Conversion</services>
+    <level>Beginner</level>
+    <category>Web</category>
+    <urlLink>https://document-conversion-demo.mybluemix.net/</urlLink>
+    <blogPost></blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>convert your documents with IBM Watson document conversion service</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Watson Natural Language Classifier</name>
+    <description>Interpret and classify natural language with confidence.</description>
+    <url>https://github.com/watson-developer-cloud/natural-language-classifier-nodejs</url>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>Natural Language Classifier</services>
+    <level>Beginner</level>
+    <category>Web</category>
+    <urlLink>https://natural-language-classifier-demo.mybluemix.net/</urlLink>
+    <blogPost></blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>Enhance your app with Watson Natural Language Classifier service</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Watson Speech Service</name>
+    <description>Designed for streaming low-latency synthesis of audio from written text. The service synthesizes natural-sounding speech from input text in a variety of languages and voices that speak with appropriate cadence and intonation.</description>
+    <url>https://github.com/watson-developer-cloud/text-to-speech-nodejs</url>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>Text to Speech</services>
+    <level>Beginner</level>
+    <category>Web</category>
+    <urlLink>https://text-to-speech-demo.mybluemix.net/</urlLink>
+    <blogPost></blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>Text to speech app, speech to text app</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Watson Discovery</name>
+    <description>Rapidly build a cognitive search and content analytics engine and add it to existing applications with minimal effort.</description>
+    <url>https://github.com/watson-developer-cloud/discovery-nodejs</url>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>Discovery</services>
+    <level>Beginner</level>
+    <category>Web</category>
+    <urlLink>https://discovery-news-demo.mybluemix.net/</urlLink>
+    <blogPost>https://www.ibm.com/blogs/bluemix/2016/12/watson-discovery-general-availability/</blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>Build an app with Watson Discovery</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+  <row>
+    <State>live</State>
+    <urlVideo></urlVideo>
+    <Author>Bluemix Team</Author>
+    <name>Watson Tradeoff Analytics</name>
+    <description>Helps users make better choices to best meet multiple conflicting goals.</description>
+    <url>https://github.com/watson-developer-cloud/tradeoff-analytics-nodejs</url>
+    <language>NodeJS</language>
+    <tags>SampleCode</tags>
+    <services>Tradeoff Analytics</services>
+    <level>Beginner</level>
+    <category>Web</category>
+    <urlLink>http://tradeoff-analytics-demo.mybluemix.net/</urlLink>
+    <blogPost>https://www.ibm.com/blogs/bluemix/2015/05/watson-tradeoff-analytics/</blogPost>
+    <industry>How To</industry>
+    <rate>5</rate>
+    <search>Build an app with Tradeoff Analytics to make better choices, build an app to make better choices, better choices app</search>
+    <MostClicked></MostClicked>
+    <Added></Added>
+  </row>
+</root>
