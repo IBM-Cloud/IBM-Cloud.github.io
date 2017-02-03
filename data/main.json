@@ -1,6 +1,28 @@
 [
   {
     "State" : "live",
+    "urlVideo": "https://www.youtube.com/watch?v=Rvc1CqNJkOA&t=1509s",
+    "Author" : "IBM",
+    "name": "Stream water conservation starter Kit",
+    "url": "https://github.com/IBMStreams/streamsx.waterConservation.starterKit",
+    "description": "Starter kit for smart and connected sprinkler system using Apache Edgent, Streaming Analytics and Insights for Weather",
+    "language": "NodeJS",
+    "tags": ["SampleCode"],
+    "services": ["IoT", "Streaming Analytics", "Weather-Company-Data", "React"],
+    "level" : "Intermediate",
+    "category": "IoT",
+    "urlLink": "",
+    "blogPost" : "https://www.ibm.com/blogs/bluemix/2016/06/better-analytics-with-apache-quarks/",
+    "industry": "Sample App",
+    "search": "Stream water conservation starter Kit",
+    "MostClicked": "",
+    "Added": "Recently Added"
+  },
+
+
+
+  {
+    "State" : "live",
     "urlVideo": "https://vimeo.com/202228447",
     "Author" : "IBM",
     "name": "ChatBot - A Voice-enabled native Android app",
