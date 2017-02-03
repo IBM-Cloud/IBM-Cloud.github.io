@@ -3,7 +3,7 @@
     "State" : "live",
     "urlVideo": "https://www.youtube.com/watch?v=Rvc1CqNJkOA&t=1509s",
     "Author" : "IBM",
-    "name": "Stream water conservation starter Kit",
+    "name": "IBM Streams Water Conservation Starter Kit",
     "url": "https://github.com/IBMStreams/streamsx.waterConservation.starterKit",
     "description": "Starter kit for smart and connected sprinkler system using Apache Edgent, Streaming Analytics and Insights for Weather",
     "language": "NodeJS",
