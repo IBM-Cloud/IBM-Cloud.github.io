@@ -8,7 +8,7 @@
     "description": "Starter kit for smart and connected sprinkler system using Apache Edgent, Streaming Analytics and Insights for Weather",
     "language": "NodeJS",
     "tags": ["SampleCode"],
-    "services": ["IoT", "Streaming Analytics", "Weather-Company-Data", "React"],
+    "services": ["IoT", "Streaming Analytics", "Weather Data", "Node.js & React"],
     "level" : "Intermediate",
     "category": "IoT",
     "urlLink": "",
