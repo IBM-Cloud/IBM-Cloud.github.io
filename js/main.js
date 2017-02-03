@@ -128,6 +128,9 @@ catalogApp.controller('MainController', function ($scope, $http) {
         if (link.category) {
           link.tags.push(link.category);
         }
+        if (link.Subcategory) {
+          link.tags.push(link.Subcategory);
+        }
         if (link.MostClicked) {
           link.tags.push(link.MostClicked);
         }
