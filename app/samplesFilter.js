@@ -5,34 +5,31 @@ angular
   return function(listings, tagP){
 
     var filtered = [];
-    var keepLink = false;
+
+    console.log('Applying filter', tagP.languages, tagP.categories);
 
     angular.forEach(listings, function(listing){
+      var keepLink = false;
 
-      console.log('Flier Loading: ' + listing.language);
-      // code copied from MyCatalog - filter by categories and languages
-      if (tagP.includeTags.length == 0) {
+      // listing should at least one of the tags
+      if (tagP.languages.length === 0) {
         keepLink = true;
       } else {
-        keepLink = true;
-        tagP.includeTags.forEach(function (tag) {
-          if (!listing.tags || listing.tags.indexOf(tag) < 0) {
-            keepLink = false;
+        keepLink = false;
+        tagP.languages.forEach(function(language) {
+          if (listing.language && listing.language.indexOf(language) >= 0) {
+            keepLink = true;
           }
         });
       }
 
-      tagP.excludeTags.forEach(function (tag) {
-        if (!listing.tags || listing.tags.indexOf(tag) >= 0) {
-          keepLink = false;
+      // and listing should contain at least one category
+      if (keepLink) {
+        if (tagP.categories.length > 0) {
+          keepLink = (tagP.categories.indexOf(listing.category) >= 0
+            || tagP.categories.indexOf(listing.Subcategory) >= 0);
         }
-      });
-
-      tagP.includeTags.forEach(function (tag) {
-        if (!listing.tags || listing.tags.indexOf(tag) < 0) {
-          keepLink = false;
-        }
-      });
+      }
 
       if (keepLink) {
         filtered.push(listing);

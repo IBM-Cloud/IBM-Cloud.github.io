@@ -7,14 +7,11 @@ angular
     $scope.tagP = {
       all: "live",
       enabled: true,
-      includeTags: [],
-      excludeTags: []
+      languages: [],
+      categories: []
     }
 
-
-    // code copied from MyCatalog - filter by categories and languages
-    $scope.toggleTagConfiguration = function (tag, status) {
-      var tagSet = status ? $scope.tagP.includeTags : $scope.tagP.excludeTags;
+    function toggleTag(tagSet, tag) {
       var position = tagSet.indexOf(tag);
       if (position >= 0) {
         tagSet.splice(position, 1);
@@ -22,9 +19,14 @@ angular
         tagSet.push(tag);
       }
     }
-    // END - filter by categories and languages
 
+    $scope.toggleLanguage = function(language) {
+      toggleTag($scope.tagP.languages, language);
+    }
 
+    $scope.toggleCategory = function(category) {
+      toggleTag($scope.tagP.categories, category);
+    }
 
     // Randomly disply the samples
     /*
