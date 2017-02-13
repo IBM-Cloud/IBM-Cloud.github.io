@@ -2,7 +2,7 @@
 The [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) site is a well-maintained, centralized, curated collection of open sample applications built using Bluemix and Bluemix services. The site gives developers a go-to page to see all Bluemix capabilities.
 
 
-### How to add new links to the Bluemix.github.io page
+### How to add new links to the Bluemix.github.io page.
 We have a process in which how new links can be added to the Bluemix GitHub.io page.
 To add a new link follow these steps:
 
@@ -22,7 +22,7 @@ We want to show large applications that shows off our technologies, we don't wan
 
 ## Rules & Guidelines for adding new samples
 
-### Demo Card 
+### Demo Card
 
 Each demo is represented by a *Demo Card* comprised of the attributes below:
 
