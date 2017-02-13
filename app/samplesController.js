@@ -11,6 +11,7 @@ angular
       categories: []
     }
 
+
     function toggleTag(tagSet, tag) {
       var position = tagSet.indexOf(tag);
       if (position >= 0) {
@@ -22,11 +23,16 @@ angular
 
     $scope.toggleLanguage = function(language) {
       toggleTag($scope.tagP.languages, language);
+        //$scope.LanChecked = language;
+        //$scope.LanChecked = 'myLanguage';
+
     }
 
     $scope.toggleCategory = function(category) {
       toggleTag($scope.tagP.categories, category);
+      //$scope.CatChecked = 'myCategory';
     }
+
 
     // Randomly disply the samples
     /*
@@ -39,7 +45,7 @@ angular
     samplesFactory.getSamples().then(function(data) {
       $scope.samples = data.data;
     }).catch(function(error) {
-      //console.log(error);
+      console.log(error);
     });
 
 

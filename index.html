@@ -160,13 +160,17 @@
             <div class="tag-holder">
               <span class="FirSpanLeft">LANGUAGES: </span>
               <span ng-repeat="item in sample.language">
-                <span class="tag-filter language" id="">{{item}}</span>
+                <span class="tag-filter language" ng-class="LanChecked" id="">{{item}}</span>
+
+
               </span>
             </div>
 
             <span class="FirSpanLeft">CATEGORY: </span>
             <div class="tag-holder">
-              <span class="tag-filter category">{{sample.category || '&nbsp;'}}</span>
+                <span ng-repeat="item in sample.category">
+                  <span class="tag-filter category" ng-class="CatChecked">{{item}}</span>
+                </span>
             </div>
 
             <span class="FirSpanLeft">SERVICES: </span>

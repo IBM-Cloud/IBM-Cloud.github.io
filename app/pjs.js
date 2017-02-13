@@ -15,4 +15,5 @@ function handler2() {
   $( "#filterDropdown" ).hide();
 }
 
+
 $("#filterButton").one("click", handler1);
