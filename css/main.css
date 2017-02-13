@@ -279,7 +279,7 @@ footer {
 .items-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -3rem;
+  margin-top: 1rem;
   padding-left: 0;
   margin-bottom: 3rem;
 }
@@ -324,6 +324,25 @@ footer {
 .language.search-body button.tagFilter.btn.btn-sm.active {
   background: #238070;
   color: #aaf9e6;
+  padding-right: 15px;
+}
+
+.language.search-body button.tagFilter.btn.btn-sm.active:after{
+    position: absolute;
+      top: 3px;
+      bottom: 0;
+      content: "\274c";
+      font-size: 16px;
+      color: #aaf9e6;
+      line-height: 100px;
+      text-align: center;
+      padding-left: 2px;
+      content: '\d7';
+}
+
+span.tag-filter.category.ng-binding.active {
+    background: #238070;
+    color: #aaf9e6;
 }
 
 .category.search-body button.tagFilter.btn.btn-sm {
@@ -364,6 +383,11 @@ footer {
 .tag-filter.language {
   background: #eed3fe;
   color: #7c4f9e;
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 2px;
+  border-radius: 10px;
+  padding: 2px 10px;
 }
 
 .tag-filter.category {
@@ -831,7 +855,7 @@ ul.triggers li:hover {
 
 @media (min-width: 875px) {
   .language {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 
   .dropdown {
