@@ -279,7 +279,7 @@ footer {
 .items-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -3rem;
+  margin-top: 1rem;
   padding-left: 0;
   margin-bottom: 3rem;
 }
@@ -317,13 +317,45 @@ footer {
   border-bottom: none;
   border-radius: 10px;
   font-weight: normal;
-  background: #aaf9e6;
-  color: #238070;
+  background: #eed3fe;
+  color: #7c4f9e;
 }
 
 .language.search-body button.tagFilter.btn.btn-sm.active {
-  background: #238070;
-  color: #aaf9e6;
+  background: #7c4f9e;
+  color: #eed3fe;
+  padding-right: 15px;
+}
+
+.language.search-body button.tagFilter.btn.btn-sm.active:after{
+    position: absolute;
+      top: 3px;
+      bottom: 0;
+      content: "\274c";
+      font-size: 16px;
+      color: #eed3fe;
+      line-height: 100px;
+      text-align: center;
+      padding-left: 2px;
+      content: '\d7';
+}
+
+.category.search-body button.tagFilter.btn.btn-sm.active:after{
+    position: absolute;
+    top: 3px;
+    bottom: 0;
+    content: "\274c";
+    font-size: 16px;
+    color: #aaf9e6;
+    line-height: 100px;
+    text-align: center;
+    padding-left: 2px;
+    content: '\d7';
+}
+
+span.tag-filter.category.ng-binding.active {
+    background: #238070;
+    color: #aaf9e6;
 }
 
 .category.search-body button.tagFilter.btn.btn-sm {
@@ -333,13 +365,14 @@ footer {
   border-bottom: none;
   border-radius: 10px;
   font-weight: normal;
-  background: #eed3fe;
-  color: #7c4f9e;
+  background: #aaf9e6;
+  color: #238070;
 }
 
 .category.search-body button.tagFilter.btn.btn-sm.active{
-  background: #7c4f9e;
-  color: #eed3fe;
+  background: #238070;
+  color: #aaf9e6;
+  padding-right: 15px;
 }
 
 .project-content{
@@ -364,11 +397,24 @@ footer {
 .tag-filter.language {
   background: #eed3fe;
   color: #7c4f9e;
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 2px;
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+span.tag-filter.language.ng-binding.myLanguage {
+    background: #7c4f9e;
+    color: #eed3fe;
 }
 
 .tag-filter.category {
   background: #aaf9e6;
   color: #238070;
+}
+span.tag-filter.category.ng-binding.myCategory {
+    background: #238070;
+    color: #aaf9e6;
 }
 
 .services {
@@ -831,7 +877,7 @@ ul.triggers li:hover {
 
 @media (min-width: 875px) {
   .language {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 
   .dropdown {

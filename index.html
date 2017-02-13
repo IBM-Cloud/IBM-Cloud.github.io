@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="catalogApp">
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -12,23 +12,24 @@
   <meta name="keywords" content="Build a toolchain application on Bluemix, Bluemix code Samples, Watson code samples, IoT samples, Bluemix Samples, Mobile development on Bluemix, Cloudant database on Bluemix, Text to Speech, Speech To Text" />
 
   <!-- FontAwesome icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
+  <link rel="stylesheet" href="//use.fontawesome.com/74dfc6cf47.css">
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/emojione-awesome.css" />
   <link rel="stylesheet" href="./css/main.css">
 
 </head>
 
-<body class="home overflow-hidden" ng-controller="MainController">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDPHZL"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <body ng-app="ngSamples" ng-controller="samplesController" class="home overflow-hidden">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDPHZL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+
+
+    <!-- Top header blue line -->
     <div class="header-panel shadow-z-2">
       <div class="header-container">
         <div class="header-row">
-
           <div class="header01 header-logo">
             <div class="row-picture">
               <a href="index"><img id="about" src="./icons/bluemix_logo.svg" ></a>
@@ -37,7 +38,6 @@
               <p class="list-group-item-text">IBM Bluemix | GitHub.io</p>
             </div>
           </div>
-
           <div class="header02">
             <div class="social-icons">
               <a class="icon" href="https://www.ibm.com/cloud-computing/bluemix" data-track-action="Icon" data-track-label="Bluemix" target="_blank"><img id="bluemix" class="logo-icon" src="./icons/bluemix_logo_white.svg" ></a>
@@ -45,11 +45,11 @@
               <a class="icon" data-track-action="Icon" data-track-label="github" target="_blank" href="https://github.com/IBM-Bluemix"><i class="fa fa-github"></i></a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
 
+    <!-- Header label area -->
     <div class="header-panel shadow-z-2-banner">
       <img class="header-image" src="./img/banner-background.svg" >
       <div class="page-container">
@@ -57,6 +57,8 @@
       </div>
     </div>
 
+
+    <!-- Filter Area-->
     <div class="header-panel shadow-z-2-filter">
       <div class="page-container">
         <div class="filter-row">
@@ -71,8 +73,8 @@
 
           <div class="filterAreaDiv">
             <div class='bx--select'>
-              <select id="sortBy" ng-model="filterConfiguration.sort" class="form-sorting">
-                <option  disabled selected value >Sort by: All</option>
+              <select id="sortBy" ng-model="tagP.sort" class="form-sorting">
+                <option  disabled value >Sort by: All</option>
                 <option value="Most Viewed" >Most Viewed</option>
                 <option value="Recently Added" >Recently Added</option>
               </select>
@@ -104,11 +106,12 @@
         <div class="language search-body">
           <table>
             <tr>
-              <button  type="button" data-track-action="Filter" data-track-label="Python" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Python', true)">Python</button>
-              <button  type="button" data-track-action="Filter" data-track-label="NodeJS" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('NodeJS', true)">NodeJS</button>
-              <button  type="button" data-track-action="Filter" data-track-label="Java" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Java', true)">Java</button>
-              <button type="button" data-track-action="Filter" data-track-label="Swift" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Swift', true)">Swift</button>
-              <button type="button" data-track-action="Filter" data-track-label="Android" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Android', true)">Android</button>
+              <button  type="button" data-track-action="Filter" data-track-label="Python" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Python')">Python</button>
+              <button  type="button" data-track-action="Filter" data-track-label="NodeJS" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('NodeJS')">NodeJS</button>
+              <button  type="button" data-track-action="Filter" data-track-label="Java" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Java')">Java</button>
+              <button type="button" data-track-action="Filter" data-track-label="Swift" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Swift')">Swift</button>
+              <button type="button" data-track-action="Filter" data-track-label="Android" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Android')">Android</button>
+
             </tr>
           </table>
         </div>
@@ -119,10 +122,10 @@
         <div class="category search-body">
           <table>
             <tr>
-              <button  type="button" data-track-action="Filter" data-track-label="Watson" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Watson', true)">Watson</button>
-              <button  type="button" data-track-action="Filter" data-track-label="IoT" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('IoT', true)">IoT</button>
-              <button  type="button" data-track-action="Filter" data-track-label="Web" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Web', true)">Web</button>
-              <button  type="button" data-track-action="Filter" data-track-label="Mobile" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleTagConfiguration('Mobile', true)">Mobile</button>
+              <button  type="button" data-track-action="Filter" data-track-label="Watson" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('Watson')">Watson</button>
+              <button  type="button" data-track-action="Filter" data-track-label="IoT" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('IoT')">IoT</button>
+              <button  type="button" data-track-action="Filter" data-track-label="Web" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('Web')">Web</button>
+              <button  type="button" data-track-action="Filter" data-track-label="Mobile" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('Mobile')">Mobile</button>
             </tr>
           </table>
         </div>
@@ -132,95 +135,102 @@
   </div>
 
 
-
   <div class="page-container main outer">
     <div class="TotHome">
-      I found <b>{{links.length}}</b> features samples for you</span><span ng-if="filteredLinks.length != links.length">, <b>{{filteredLinks.length}}</b> and code samples matching the search/filter criteria.</span>
+      <span>I found <b>{{links.length}}</b> features samples for you</span><span ng-if="filteredLinks.length != links.length">, <b>{{filteredLinks.length}}</b> and code samples matching the search/filter criteria.</span>
     </div>
 
     <ul class="items-wrapper"><!-- START FULL PAGE -->
-      <li class="inside project-item" ng-repeat-start="link in (filteredLinks = (links | filter:searchTextData | filterPanel:filterConfiguration | filter:filterConfiguration.sort |orderBy:random )) ">
+      <li class="inside project-item" ng-repeat="sample in ( filteredLinks = ( samples | filter:searchTextData | filter:tagP.sort | samplesFilter:tagP)) " ng-class="filteredLinks">
+
         <div class="project-outer" ng-class="{demo: link.tags.indexOf('demo')>=0}">
-          <!--
-          <div class="mostClicked" ng-if="link.MostClicked !==''">
-          {{link.MostClicked}}
+
+          <div class="link-title">
+            <a id="demoID" data-track-action="link-title" data-track-label="{{sample.urlLink}}"  href="{{sample.url}}" target="_blank">{{sample.name}}</a>
+            <a href="{{sample.homepage}}" ng-if="sample.homepage">
+              <span class="e1a-sample e1a-sm"></span>
+            </a>
+          </div>
+          <div class="project-content description">
+            <span >{{sample.description}}</span>
+          </div>
+
+          <div class="project-content tag-group">
+
+            <div class="tag-holder">
+              <span class="FirSpanLeft">LANGUAGES: </span>
+              <span ng-repeat="item in sample.language">
+                <span class="tag-filter language" ng-class="LanChecked" id="">{{item}}</span>
+
+
+              </span>
+            </div>
+
+            <span class="FirSpanLeft">CATEGORY: </span>
+            <div class="tag-holder">
+                <span ng-repeat="item in sample.category">
+                  <span class="tag-filter category" ng-class="CatChecked">{{item}}</span>
+                </span>
+            </div>
+
+            <span class="FirSpanLeft">SERVICES: </span>
+            <div class="tag-services">
+              <span ng-repeat="item in sample.services">
+                <span class="services ">{{item || '&nbsp;'}}{{$last ? '' : ','}}</span>
+              </span>
+            </div>
+          </div>
+          <meta name="description" content="{{sample.search}}">
         </div>
-      -->
 
-      <div class="link-title">
-        <a id="demoID" data-track-action="link-title" data-track-label="{{link.urlLink}}"  href="{{link.url}}" target="_blank" data-track-action="Select" data-track-label="{{service.entity.label}}">{{link.name}}</a>
-        <a href="{{link.homepage}}" ng-if="link.homepage">
-          <span class="e1a-link e1a-sm"></span>
-        </a>
-      </div>
-      <div class="project-content description">
-        <span ng-bind-html="link.description "></span>
-      </div>
-
-      <div class="project-content tag-group">
-
-        <div class="tag-holder">
-          <span class="FirSpanLeft">LANGUAGES: </span>
-          <span class="tag-filter language">{{link.language || '&nbsp;'}}</span>
-        </div>
-
-        <span class="FirSpanLeft">CATEGORY: </span>
-        <div class="tag-holder">
-          <span class="tag-filter category">{{link.category || '&nbsp;'}}</span>
-        </div>
-
-        <span class="FirSpanLeft">SERVICES: </span>
-        <div class="tag-services">
-          <span ng-repeat="item in link.services">
-            <span class="services ">{{item || '&nbsp;'}}{{$last ? '' : ','}}</span>
+        <div class="tag-level">
+          <span ng-show="{{sample.blogPost !== ''}}" class="project-link">
+            <a id="BlogPost" href="{{sample.blogPost}}" class="hrefLink" target="_blank">Blog Post</a>
           </span>
-
+          <span ng-show="{{sample.urlLink !== ''}}" class="project-link">
+            <a id="LiveDemo" href="{{sample.urlLink}}" class="hrefLink" target="_blank">Live Demo</a>
+          </span>
+          <span ng-show="{{sample.urlVideo !== ''}}" class="project-link">
+            <a id="LiveVideo" href="{{sample.urlVideo}}" class="hrefLink" target="_blank">View Video</a>
+          </span>
         </div>
+
+      </li>
+    </ul>
+    <div class="row">
+      <div class="col-md-12 col-xs-12 footer">
+        <footer>
+          Made with <i class="fa fa-heart" aria-hidden="true"></i> by the Bluemix team</br>
+          Powered by <a href="https://www.ibm.com/cloud-computing/bluemix">IBM Bluemix.</a> See all of our samples on <a href="https://github.com/IBM-Bluemix">IBM-Bluemix GitHub</a><br>          Copyright © IBM 2017.
+        </footer>
       </div>
-      <meta name="description" content="{{link.search}}">
     </div>
-
-    <div class="tag-level">
-      <span ng-show="{{link.blogPost !== ''}}" class="project-link">
-        <a id="BlogPost" data-track-action="link-blog" data-track-label="{{link.blogPost}}" href="{{link.blogPost}}" class="hrefLink" target="_blank">Blog Post</a>
-      </span>
-      <span ng-show="{{link.urlLink !== ''}}" class="project-link">
-        <a id="LiveDemo" data-track-action="link-demo" data-track-label="{{link.urlLink}}" href="{{link.urlLink}}" class="hrefLink" target="_blank">Live Demo</a>
-      </span>
-      <span ng-show="{{link.urlVideo !== ''}}" class="project-link">
-        <a id="LiveVideo" data-track-action="link-video" data-track-label="{{link.urlVideo}}" href="{{link.urlVideo}}" class="hrefLink" target="_blank">View Video</a>
-      </span>
-    </div>
-
-  </li>
-  <div ng-repeat-end=""></div>
-
-</ul>
-
-<div class="row">
-  <div class="col-md-12 col-xs-12 footer">
-    <footer>
-      Made with <i class="fa fa-heart" aria-hidden="true"></i> by the Bluemix team</br>
-      Powered by <a href="https://www.ibm.com/cloud-computing/bluemix" onclick="_gaq.push(['_trackEvent', 'button3', 'clicked'])" >IBM Bluemix.</a> See all of our samples on <a href="https://github.com/IBM-Bluemix">IBM-Bluemix GitHub</a><br>
-      Copyright © IBM 2017.
-    </footer>
+    <br>
   </div>
-</div>
-<br>
-</div> <!-- end /.container -->
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="//cdn.jsdelivr.net/emojione/2.1.3/lib/js/emojione.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.min.js"></script>
+  </body>
 
-<script src="./js/angular-spinners.min.js"></script>
-<script src="./js/main.js"></script>
-<script src="./js/analytics.js"></script>
-<script src="./js/scripts.js"></script>
-</body>
+
+
+
+
+  <!-- Vendor Libs: jQuery only used for Bootstrap functionality -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"> </script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+
+  <!-- UI Libs -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap.min.js"> </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap-tpls.min.js"> </script>
+
+  <!-- App libs -->
+  <script src="app.js"></script>
+  <script src="app/samplesController.js"></script>
+  <script src="app/samplesFactory.js"></script>
+  <script src="app/samplesFilter.js"></script>
+  <script src="app/pjs.js"></script>
+
+  <!-- Analytics -->
+  <script src="scripts/analytics.js"></script>
+
 </html>
