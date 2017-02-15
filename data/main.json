@@ -1,6 +1,48 @@
 [
   {
     "State" : "live",
+    "urlVideo": "",
+    "Author" : "IBM",
+    "name": "Deploy Scalable Docker Application To IBM-Bluemix",
+    "url": "https://github.com/IBM-Bluemix/bluechatter",
+    "description": "Deploy, scale and secure a Node.js docker application on Bluemix",
+    "language": ["NodeJS"],
+    "tags": ["SampleCode"],
+    "services": ["Docker Containers", "Redis Cloud", "Auto-Scaling"],
+    "level" : "Beginner",
+    "category": ["Web"],
+    "Subcategory": "",
+    "urlLink": "https://bluechattercontainergroup.mybluemix.net/",
+    "blogPost" : "https://www.ibm.com/blogs/bluemix/2017/02/deploy-scalable-docker-application/",
+    "industry": "Sample App",
+    "search": "Deploy docker application to the cloud, build and deploy Docker application on the cloud, build a chat Docker app, deploy and scale Docker application",
+    "MostClicked": "",
+    "Added": "Recently Added"
+  },
+
+  {
+    "State" : "live",
+    "urlVideo": "https://vimeo.com/202225946",
+    "Author" : "IBM",
+    "name": "Feedback Mobile App using Ionic & Cloudant",
+    "url": "https://github.com/IBM-Bluemix/feedbackapp-ionic-cloudant",
+    "description": "An Ionic feedback app using Cloudant NoSQL service on IBM Bluemix. An easy to configure mobile app for receiving feedback at Meetups, Events etc",
+    "language": ["Hybrid"],
+    "tags": ["SampleCode"],
+    "services": ["Cloudant"],
+    "level" : "Beginner",
+    "category": ["Mobile"],
+    "Subcategory": "",
+    "urlLink": "",
+    "blogPost" : "https://www.ibm.com/blogs/bluemix/2016/12/create-feedback-app-ionic-cloudant/",
+    "industry": "Sample App",
+    "search": "Build hybrid application, Mobile app with Ionic",
+    "MostClicked": "",
+    "Added": "Recently Added"
+  },
+
+  {
+    "State" : "live",
     "urlVideo": "https://www.youtube.com/watch?v=Rvc1CqNJkOA&t=1509s",
     "Author" : "IBM",
     "name": "IBM Streams Water Conservation Starter Kit",
@@ -152,7 +194,7 @@
     "State" : "live",
     "urlVideo": "",
     "Author" : "IBM",
-    "name": "Cloud Insurance Co.",
+    "name": "Cloud Insurance Co. Web",
     "url": "https://github.com/IBM-Bluemix/cloudco-insurance",
     "description": "Cloud Insurance Co. is a collection of experimental Watson & Bluemix concepts applied to the insurance domain.",
     "language": ["NodeJS"],
@@ -169,6 +211,44 @@
     "Added": ""
 
   },
+  {
+    "urlVideo": "",
+    "Author" : "IBM",
+    "name": "Cloud Insurance Co. IOS",
+    "url": "https://github.com/IBM-Bluemix/cloudco-insurance",
+    "description": "Cloud Insurance Co. A native iOS app to interact with the chat bot integrated in the Cloud Insurance Co. application.",
+    "language": ["Swift"],
+    "services": ["Tone Analyzer", "Conversation API", "Cloudant"],
+    "level" : "Intermediate",
+    "category": ["Mobile"],
+    "Subcategory": "Watson",
+    "urlLink": "http://cloudco.mybluemix.net",
+    "blogPost" : "",
+    "industry": "Insurance",
+    "search": "Build an insurance app, app for insurance, insurance with node",
+    "MostClicked": "",
+    "Added": ""
+  },
+  {
+    "urlVideo": "",
+    "Author" : "IBM",
+    "name": "Cloud Insurance Co. Android",
+    "url": "https://github.com/IBM-Bluemix/insurance-bot-android",
+    "description": "Cloud Insurance Co. A native android app to interact with the chat bot integrated in the Cloud Insurance Co. application.",
+    "language": ["Android"],
+    "services": ["Tone Analyzer", "Conversation API", "Cloudant"],
+    "level" : "Intermediate",
+    "category": ["Mobile"],
+    "Subcategory": "Watson",
+    "urlLink": "http://cloudco.mybluemix.net",
+    "blogPost" : "",
+    "industry": "Insurance",
+    "search": "Build an insurance app, app for insurance, insurance with node",
+    "MostClicked": "",
+    "Added": ""
+  },
+
+
   {
     "State" : "live",
     "urlVideo": "https://www.youtube.com/watch?v=wCxXs83-eRc&t=66s",
