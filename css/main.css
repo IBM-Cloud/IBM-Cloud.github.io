@@ -876,7 +876,7 @@ ul.triggers li:hover {
 
 @media (min-width: 875px) {
   .language {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
   }
 
   .dropdown {
