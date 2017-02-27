@@ -715,10 +715,6 @@ ul.list-separator.nav.navbar-nav.well.well-primary.default {
   border-right: 1px solid #5596e6;
 }
 
-.language {
-  margin-bottom: 1.5rem;
-}
-
 .inside.filter-category {
   flex-basis: 50%;
   margin-right: 3rem;
@@ -875,10 +871,6 @@ ul.triggers li:hover {
 }
 
 @media (min-width: 875px) {
-  .language {
-    /*margin-bottom: 20px;*/
-  }
-
   .dropdown {
     display: flex;
   }
