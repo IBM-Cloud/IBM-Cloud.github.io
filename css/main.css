@@ -114,8 +114,12 @@ p.info a {
   margin-right: 24px;
 }
 
-.icon:hover #bluemix-logo-copy-6, .icon:hover #bluemix-logo-copy-5, .icon:hover #bluemix-logo-copy {
+.icon:hover #bluemix-logo-copy-6 {
   fill: #5aaafa;
+}
+
+.icon:hover .fa-stack-overflow, .icon:hover .fa-github {
+  color: #5aaafa;
 }
 
 body .container .jumbotron-primary, body .container .well-primary, body .container-fluid .jumbotron-primary, body .container-fluid .well-primary{
