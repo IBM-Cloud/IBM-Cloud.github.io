@@ -68,7 +68,7 @@
           <div class="fil">
             <form role="search">
               <div class="form-group search-input">
-                <input type="text" class="form-control" placeholder="Search by anything: IoT, Watson, Mobile, Web, Industries like insurance... " ng-model="searchTextData">
+                <input type="text" class="form-control" placeholder="Search by language, service or industry..." ng-model="searchTextData">
               </div>
             </form>
           </div>
@@ -139,7 +139,7 @@
 
   <div class="page-container main outer">
     <div class="TotHome">
-      <span>I found <b>{{links.length}}</b> features samples for you</span><span ng-if="filteredLinks.length != links.length">, <b>{{filteredLinks.length}}</b> and code samples matching the search/filter criteria.</span>
+      <span>Showing <span ng-if="filteredLinks.length != links.length"><b>{{filteredLinks.length}}</b> featured samples</span>
     </div>
 
     <ul class="items-wrapper"><!-- START FULL PAGE -->
