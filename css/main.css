@@ -640,14 +640,14 @@ ul.list-separator.nav.navbar-nav.well.well-primary.default {
 }
 
 .filterButton {
-  border: 2px solid #5596e6;
+  border: 2px solid #3D70B2;
   height: 40px;
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
 
   background: #FFF;
-  color: #5596e6;
+  color: #3D70B2;
   text-decoration: none;
 }
 
@@ -656,7 +656,7 @@ ul.list-separator.nav.navbar-nav.well.well-primary.default {
 }
 
 .filterButton:focus, .filterButton:hover, .filterButton.active {
-  background-color: #5596e6;
+  background-color: #3D70B2;
   color: white;
   text-decoration: none;
 }
