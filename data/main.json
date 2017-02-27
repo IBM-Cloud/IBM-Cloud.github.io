@@ -81,7 +81,7 @@
     "blogPost" : "https://www.ibm.com/blogs/bluemix/2017/01/build-voice-enabled-chatbot-minutes/",
     "industry": "Sample App",
     "search": "Build an Android on app, build an ChatBot for Android",
-    "MostClicked": "",
+    "MostClicked": "Most Viewed",
     "Added": "Recently Added"
   },
 
@@ -207,7 +207,7 @@
     "blogPost" : "",
     "industry": "Insurance",
     "search": "Build an insurance app, app for insurance, insurance with node",
-    "MostClicked": "Most Viewed",
+    "MostClicked": "",
     "Added": ""
 
   },
@@ -309,7 +309,7 @@
     "industry": "How To",
     "rate": "5",
     "search": "build a swift app, build ios app with swift on Bluemix",
-    "MostClicked": "Most Viewed",
+    "MostClicked": "",
     "Added": ""
 
   },
@@ -330,7 +330,7 @@
     "blogPost" : "https://developer.ibm.com/bluemix/2016/02/29/openwhisk-and-watson-image-tagging-app/",
     "industry": "Image Recognition",
     "search": "Build a visual app, build image tagging application, build an iOS application to automatically tag images and detect faces ",
-    "MostClicked": "Most Viewed",
+    "MostClicked": "",
     "Added": ""
   },
   {
@@ -351,7 +351,7 @@
     "industry": "Video Analyzer",
     "rate": "5",
     "search": "build Video Analyzer app, build an app to analyze videos",
-    "MostClicked": "",
+    "MostClicked": "Most Viewed",
     "Added": ""
   },
   {
@@ -735,7 +735,7 @@
     "industry": "How To",
     "rate": "5",
     "search": "Build an app with Tradeoff Analytics to make better choices, build an app to make better choices, better choices app",
-    "MostClicked": "",
+    "MostClicked": "Most Viewed",
     "Added": ""
   }
 
