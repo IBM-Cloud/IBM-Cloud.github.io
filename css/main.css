@@ -111,7 +111,11 @@ p.info a {
   font-size: 24px;
   color: white;
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: 24px;
+}
+
+.icon:hover #bluemix-logo-copy-6, .icon:hover #bluemix-logo-copy-5, .icon:hover #bluemix-logo-copy {
+  fill: #5aaafa;
 }
 
 body .container .jumbotron-primary, body .container .well-primary, body .container-fluid .jumbotron-primary, body .container-fluid .well-primary{
@@ -122,11 +126,6 @@ body .container .jumbotron-primary, body .container .well-primary, body .contain
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 2rem;
-}
-
-.icon:hover {
-  background: rgba(124,199,255,0.2);
-  color: #7cc7ff;
 }
 
 .menu ul li {
