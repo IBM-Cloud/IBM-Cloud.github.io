@@ -637,6 +637,9 @@ ul.list-separator.nav.navbar-nav.well.well-primary.default {
 
 .search-input input {
   padding-left: 48px;
+  background-image: url(../icons/search.svg);
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .search-input input.active {
@@ -729,13 +732,6 @@ ul.list-separator.nav.navbar-nav.well.well-primary.default {
 .inside.filter-category {
   flex-basis: 50%;
   margin-right: 3rem;
-}
-
-
-
-#searchTextF {
-  background: #ebf0f7 url(../icons/search.svg) left no-repeat;
-
 }
 
 .form-control{
