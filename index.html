@@ -139,7 +139,8 @@
 
   <div class="page-container main outer">
     <div class="TotHome">
-      <span>I found <b>{{links.length}}</b> features samples for you</span><span ng-if="filteredLinks.length != links.length">, <b>{{filteredLinks.length}}</b> and code samples matching the search/filter criteria.</span>
+      <span ng-if="samples.length === filteredLinks.length">Displaying <b>{{samples.length}}</b> featured samples.</span>
+      <span ng-if="filteredLinks.length != samples.length">Displaying <b>{{filteredLinks.length}}</b> code samples matching your criteria.</span>
     </div>
 
     <ul class="items-wrapper"><!-- START FULL PAGE -->
