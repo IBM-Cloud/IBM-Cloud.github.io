@@ -3,13 +3,13 @@ angular
   .controller('samplesController', function ($scope, samplesFactory) {
 
     $scope.samples = [];
-
     $scope.tagP = {
       all: "live",
       enabled: true,
       languages: [],
       categories: []
     }
+
 
 
     function toggleTag(tagSet, tag) {
@@ -25,7 +25,6 @@ angular
       toggleTag($scope.tagP.languages, language);
         //$scope.LanChecked = language;
         //$scope.LanChecked = 'myLanguage';
-
     }
 
     $scope.toggleCategory = function(category) {
@@ -33,17 +32,14 @@ angular
       //$scope.CatChecked = 'myCategory';
     }
 
-
-    // Randomly disply the samples
-    /*
+    // Randomly display the samples
     $scope.random = function(){
         return 0.5 - Math.random();
     };
-    */
 
     // load data from the factory
     samplesFactory.getSamples().then(function(data) {
-      $scope.samples = data.data;
+        $scope.samples = data.data;
     }).catch(function(error) {
       console.log(error);
     });

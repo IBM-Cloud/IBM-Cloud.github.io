@@ -7,6 +7,7 @@ angular
       return $http.get('data/main.json');
     }
 
+
     return{
       getSamples: getSamples
     }
