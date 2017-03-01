@@ -286,9 +286,9 @@ footer {
 .items-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin-top: 0;
   padding-left: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
 }
 
 .project-item {
@@ -297,7 +297,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .TotHome {
