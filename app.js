@@ -1,1 +1,1 @@
-angular.module('ngSamples', ['ui.bootstrap']);
+angular.module('ngSamples', ['ui.bootstrap', 'ngCookies']);

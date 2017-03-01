@@ -6,7 +6,7 @@ angular
 
     var filtered = [];
 
-    console.log('Applying filter', tagP.languages, tagP.categories, tagP.LanChecked);
+    //onsole.log('Applying filter', tagP.languages, tagP.categories, tagP.LanChecked);
 
     angular.forEach(listings, function(listing){
       var keepLink = false;

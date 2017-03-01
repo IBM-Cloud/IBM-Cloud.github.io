@@ -156,7 +156,6 @@
     </div>
   </div>
 
-
   <div class="page-container main outer">
     <div class="TotHome">
       <span ng-if="samples.length === filteredLinks.length">Displaying <b>{{samples.length}}</b> featured samples.</span>
@@ -242,8 +241,9 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"> </script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+  <script src="scripts/ngCookies.js"></script>
 
-  <!-- UI Libs -->
+  <!-- UI Libs & cookies-->
   <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap.min.js"> </script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap-tpls.min.js"> </script>
 
@@ -254,13 +254,10 @@
   <script src="app/samplesFilter.js"></script>
   <script src="app/pjs.js"></script>
 
-  <!-- Analytics -->
-  <!-- <script type="text/javascript" src="https://console.ng.bluemix.net/analytics/build/bluemix-analytics.min.js"></script> -->
-  <script src="https://dev-console.stage1.ng.bluemix.net/analytics/build/bluemix-analytics.js"></script>
-
-  <script src="scripts/analytics.js"></script>
-<script src="scripts/bluemixAnalytics.js"></script>
-
-  <script src="//www.ibm.com/common/stats/ida_production.js" type="text/javascript"></script>
+  <!-- Loading Google Analytics, Amplitude, snipes for (Tealium and Coremetrics), ida_production -->
+  <script src="scripts/bluemix-analytics.js"></script>
+  <script src="scripts/google-analytics.js"></script>
+  <script src="scripts/snipes.js"></script>
+  <script src="scripts/ida_production.js"></script>
 
 </html>
