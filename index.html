@@ -1,266 +1,317 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" href="./img/favicon.png" />
-  <title>Bluemix on Github - Github Pages</title>
-  <meta name="author" content="Twana Daniel || IBM Bluemix - Developer Advocate Team" />
-  <meta name="description" content="The IBM-Bluemix GitHub.io site is a well-maintained, centralized, curated collection of open sample applications built using Bluemix and Bluemix services. The site gives developers a go-to page to see all Bluemix capabilities. There is option to filter samples by languages, categories or even industries to find the sample using the services you want." />
-  <meta name="keywords" content="Build a toolchain application on Bluemix, Bluemix code Samples, Watson code samples, IoT samples, Bluemix Samples, Mobile development on Bluemix, Cloudant database on Bluemix, Text to Speech, Speech To Text" />
+    <link rel="shortcut icon" href="./img/favicon.png"/>
+    <title>Bluemix on Github - Github Pages</title>
+    <meta name="author" content="Twana Daniel || IBM Bluemix - Developer Advocate Team"/>
+    <meta name="description"
+          content="The IBM-Bluemix GitHub.io site is a well-maintained, centralized, curated collection of open sample applications built using Bluemix and Bluemix services. The site gives developers a go-to page to see all Bluemix capabilities. There is option to filter samples by languages, categories or even industries to find the sample using the services you want."/>
+    <meta name="keywords"
+          content="Build a toolchain application on Bluemix, Bluemix code Samples, Watson code samples, IoT samples, Bluemix Samples, Mobile development on Bluemix, Cloudant database on Bluemix, Text to Speech, Speech To Text"/>
 
-  <meta name="segment" property="IBM-Bluemix.GitHub.io" value="BluemixSample">
+    <meta name="segment" property="IBM-Bluemix.GitHub.io" value="BluemixSample">
 
-  <!-- FontAwesome icons -->
-  <link rel="stylesheet" href="//use.fontawesome.com/74dfc6cf47.css">
-  <link rel="stylesheet" href="./css/bootstrap.css">
-  <link rel="stylesheet" href="./css/emojione-awesome.css" />
-  <link rel="stylesheet" href="./css/main.css">
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="//use.fontawesome.com/74dfc6cf47.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/emojione-awesome.css"/>
+    <link rel="stylesheet" href="./css/main.css">
 
 </head>
 
-  <body ng-app="ngSamples" ng-controller="samplesController" class="home overflow-hidden">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDPHZL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+<body ng-app="ngSamples" ng-controller="samplesController" class="home overflow-hidden">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDPHZL" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 
-
-    <!-- Top header blue line -->
-    <div class="header-panel shadow-z-2">
-      <div class="header-container">
+<!-- Top header blue line -->
+<div class="header-panel shadow-z-2">
+    <div class="header-container">
         <div class="header-row">
-          <div class="header01 header-logo">
-            <div class="row-picture">
-              <a href="index"><img id="about" src="./icons/bluemix_logo.svg" ></a>
+            <div class="header01 header-logo">
+                <div class="row-picture">
+                    <a href="index"><img id="about" src="./icons/bluemix_logo.svg"></a>
+                </div>
+                <div class="row-details">
+                    <p class="list-group-item-text">IBM Bluemix | GitHub.io</p>
+                </div>
             </div>
-            <div class="row-details">
-              <p class="list-group-item-text">IBM Bluemix | GitHub.io</p>
-            </div>
-          </div>
-          <div class="header02">
-            <div class="social-icons">
-              <a class="icon" href="https://www.ibm.com/cloud-computing/bluemix" data-track-action="Icon" data-track-label="Bluemix" target="_blank">
-                <svg id="bluemix" class="logo-icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="bluemix-logo-copy-6" transform="translate(-13.000000, -13.000000)" fill="#FFFFFF">
-                            <g id="Page-1" transform="translate(13.000000, 13.000000)">
-                                <path d="M7.23529412,11.9294118 C7.23529412,12.8117647 7.41176471,13.6588235 7.76470588,14.4705882 C8.08235294,15.2470588 8.57647059,15.9529412 9.17647059,16.5529412 C9.31764706,16.6941176 9.45882353,16.8 9.6,16.9411765 L9.6,6.95294118 C9.45882353,7.05882353 9.31764706,7.2 9.17647059,7.34117647 C8.57647059,7.94117647 8.11764706,8.64705882 7.76470588,9.42352941 C7.41176471,10.2 7.23529412,11.0470588 7.23529412,11.9294118" id="Fill-1"></path>
-                                <path d="M18.3882353,7.30588235 C17.7882353,6.70588235 17.0823529,6.24705882 16.3058824,5.89411765 C15.4941176,5.54117647 14.6470588,5.36470588 13.7647059,5.36470588 C12.9882353,5.36470588 12.2470588,5.50588235 11.5411765,5.75294118 L20.2235294,10.7647059 C20.1529412,10.2705882 20.0117647,9.81176471 19.8,9.35294118 C19.4823529,8.61176471 18.9882353,7.90588235 18.3882353,7.30588235" id="Fill-3"></path>
-                                <path d="M10.7294118,6.14117647 L10.7294118,6.14117647 L13.9058824,11.6470588 L20.2941176,11.6470588 L20.2941176,11.4352941 L10.9411765,6.03529412 C10.8705882,6.07058824 10.8,6.10588235 10.7294118,6.14117647" id="Fill-5"></path>
-                                <path d="M20.3294118,12.2117647 L20.3294118,12.2117647 L13.9411765,12.2117647 L10.7647059,17.7529412 C10.8352941,17.7882353 10.9058824,17.8235294 10.9411765,17.8588235 L20.2941176,12.4588235 C20.2941176,12.3529412 20.2941176,12.2823529 20.3294118,12.2117647" id="Fill-7"></path>
-                                <path d="M16.3411765,17.9647059 C17.1176471,17.6470588 17.8235294,17.1529412 18.4235294,16.5529412 C19.0235294,15.9529412 19.4823529,15.2470588 19.8352941,14.4705882 C20.0117647,14.0117647 20.1529412,13.5529412 20.2588235,13.0588235 L11.5411765,18.0705882 C12.2470588,18.3176471 13.0235294,18.4588235 13.7647059,18.4588235 C14.6470588,18.4588235 15.5294118,18.2823529 16.3411765,17.9647059" id="Fill-9"></path>
-                                <path d="M13.4470588,11.9294118 L13.4470588,11.9294118 L10.2705882,6.42352941 C10.2352941,6.42352941 10.0941176,6.52941176 10.0941176,6.52941176 L10.0941176,17.3294118 C10.1647059,17.3647059 10.2,17.4 10.2705882,17.4352941 L13.4470588,11.9294118 Z" id="Fill-11"></path>
-                                <path d="M13.9058824,12.1764706 L13.9058824,12.2264706 L13.9058824,12.1764706 Z" id="Fill-13"></path>
-                                <path d="M13.7647059,4.90588235 C17.3647059,4.90588235 20.3647059,7.62352941 20.7529412,11.1176471 C20.7529412,11.2235294 20.7882353,11.3294118 20.7882353,11.4 L24,5.82352941 L20.6470588,0 L13.9411765,0 L10.6941176,5.61176471 C10.8,5.57647059 10.9058824,5.50588235 10.9764706,5.47058824 C11.8588235,5.08235294 12.7764706,4.90588235 13.7647059,4.90588235" id="Fill-15"></path>
-                                <polygon id="Fill-17" points="10.7647059 18.2470588 10.7647059 18.2470588 10.7647059 18.5970588"></polygon>
-                                <path d="M20.7882353,12.4235294 L20.7882353,12.4235294 C20.7882353,12.5294118 20.7882353,12.6352941 20.7529412,12.7411765 C20.3647059,16.2352941 17.4,18.9882353 13.7647059,18.9882353 C12.7764706,18.9882353 11.8235294,18.7764706 10.9764706,18.4235294 C10.8705882,18.3882353 10.8,18.3529412 10.6941176,18.2823529 L13.9058824,23.8588235 L20.6470588,23.8588235 L24,18.0352941 L20.7882353,12.4235294 Z" id="Fill-19"></path>
-                                <path d="M9.84705882,6.10588235 L3.35294118,6.10588235 L0,11.9294118 L3.35294118,17.7529412 L9.81176471,17.7529412 C9.74117647,17.6823529 9.63529412,17.6470588 9.56470588,17.5764706 C7.83529412,16.3058824 6.74117647,14.2588235 6.74117647,11.9294118 C6.74117647,9.63529412 7.87058824,7.55294118 9.56470588,6.28235294 C9.67058824,6.21176471 9.74117647,6.14117647 9.84705882,6.10588235" id="Fill-21"></path>
+            <div class="header02">
+                <div class="social-icons">
+                    <a class="icon" href="https://www.ibm.com/cloud-computing/bluemix" data-track-action="Icon"
+                       data-track-label="Bluemix" target="_blank">
+                        <svg id="bluemix" class="logo-icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="bluemix-logo-copy-6" transform="translate(-13.000000, -13.000000)"
+                                   fill="#FFFFFF">
+                                    <g id="Page-1" transform="translate(13.000000, 13.000000)">
+                                        <path d="M7.23529412,11.9294118 C7.23529412,12.8117647 7.41176471,13.6588235 7.76470588,14.4705882 C8.08235294,15.2470588 8.57647059,15.9529412 9.17647059,16.5529412 C9.31764706,16.6941176 9.45882353,16.8 9.6,16.9411765 L9.6,6.95294118 C9.45882353,7.05882353 9.31764706,7.2 9.17647059,7.34117647 C8.57647059,7.94117647 8.11764706,8.64705882 7.76470588,9.42352941 C7.41176471,10.2 7.23529412,11.0470588 7.23529412,11.9294118"
+                                              id="Fill-1"></path>
+                                        <path d="M18.3882353,7.30588235 C17.7882353,6.70588235 17.0823529,6.24705882 16.3058824,5.89411765 C15.4941176,5.54117647 14.6470588,5.36470588 13.7647059,5.36470588 C12.9882353,5.36470588 12.2470588,5.50588235 11.5411765,5.75294118 L20.2235294,10.7647059 C20.1529412,10.2705882 20.0117647,9.81176471 19.8,9.35294118 C19.4823529,8.61176471 18.9882353,7.90588235 18.3882353,7.30588235"
+                                              id="Fill-3"></path>
+                                        <path d="M10.7294118,6.14117647 L10.7294118,6.14117647 L13.9058824,11.6470588 L20.2941176,11.6470588 L20.2941176,11.4352941 L10.9411765,6.03529412 C10.8705882,6.07058824 10.8,6.10588235 10.7294118,6.14117647"
+                                              id="Fill-5"></path>
+                                        <path d="M20.3294118,12.2117647 L20.3294118,12.2117647 L13.9411765,12.2117647 L10.7647059,17.7529412 C10.8352941,17.7882353 10.9058824,17.8235294 10.9411765,17.8588235 L20.2941176,12.4588235 C20.2941176,12.3529412 20.2941176,12.2823529 20.3294118,12.2117647"
+                                              id="Fill-7"></path>
+                                        <path d="M16.3411765,17.9647059 C17.1176471,17.6470588 17.8235294,17.1529412 18.4235294,16.5529412 C19.0235294,15.9529412 19.4823529,15.2470588 19.8352941,14.4705882 C20.0117647,14.0117647 20.1529412,13.5529412 20.2588235,13.0588235 L11.5411765,18.0705882 C12.2470588,18.3176471 13.0235294,18.4588235 13.7647059,18.4588235 C14.6470588,18.4588235 15.5294118,18.2823529 16.3411765,17.9647059"
+                                              id="Fill-9"></path>
+                                        <path d="M13.4470588,11.9294118 L13.4470588,11.9294118 L10.2705882,6.42352941 C10.2352941,6.42352941 10.0941176,6.52941176 10.0941176,6.52941176 L10.0941176,17.3294118 C10.1647059,17.3647059 10.2,17.4 10.2705882,17.4352941 L13.4470588,11.9294118 Z"
+                                              id="Fill-11"></path>
+                                        <path d="M13.9058824,12.1764706 L13.9058824,12.2264706 L13.9058824,12.1764706 Z"
+                                              id="Fill-13"></path>
+                                        <path d="M13.7647059,4.90588235 C17.3647059,4.90588235 20.3647059,7.62352941 20.7529412,11.1176471 C20.7529412,11.2235294 20.7882353,11.3294118 20.7882353,11.4 L24,5.82352941 L20.6470588,0 L13.9411765,0 L10.6941176,5.61176471 C10.8,5.57647059 10.9058824,5.50588235 10.9764706,5.47058824 C11.8588235,5.08235294 12.7764706,4.90588235 13.7647059,4.90588235"
+                                              id="Fill-15"></path>
+                                        <polygon id="Fill-17"
+                                                 points="10.7647059 18.2470588 10.7647059 18.2470588 10.7647059 18.5970588"></polygon>
+                                        <path d="M20.7882353,12.4235294 L20.7882353,12.4235294 C20.7882353,12.5294118 20.7882353,12.6352941 20.7529412,12.7411765 C20.3647059,16.2352941 17.4,18.9882353 13.7647059,18.9882353 C12.7764706,18.9882353 11.8235294,18.7764706 10.9764706,18.4235294 C10.8705882,18.3882353 10.8,18.3529412 10.6941176,18.2823529 L13.9058824,23.8588235 L20.6470588,23.8588235 L24,18.0352941 L20.7882353,12.4235294 Z"
+                                              id="Fill-19"></path>
+                                        <path d="M9.84705882,6.10588235 L3.35294118,6.10588235 L0,11.9294118 L3.35294118,17.7529412 L9.81176471,17.7529412 C9.74117647,17.6823529 9.63529412,17.6470588 9.56470588,17.5764706 C7.83529412,16.3058824 6.74117647,14.2588235 6.74117647,11.9294118 C6.74117647,9.63529412 7.87058824,7.55294118 9.56470588,6.28235294 C9.67058824,6.21176471 9.74117647,6.14117647 9.84705882,6.10588235"
+                                              id="Fill-21"></path>
+                                    </g>
+                                </g>
                             </g>
-                        </g>
-                    </g>
-                </svg>
-              </a>
-               <a class="icon" data-track-action="Icon" data-track-label="StackOverFlow" target="_blank" href="http://stackoverflow.com/questions/tagged/ibm-bluemix"><i class="fa fa-stack-overflow"></i></a>
-               <a class="icon" data-track-action="Icon" data-track-label="github" target="_blank" href="https://github.com/IBM-Bluemix"><i class="fa fa-github"></i></a>
+                        </svg>
+                    </a>
+                    <a class="icon" data-track-action="Icon" data-track-label="StackOverFlow" target="_blank"
+                       href="http://stackoverflow.com/questions/tagged/ibm-bluemix"><i class="fa fa-stack-overflow"></i></a>
+                    <a class="icon" data-track-action="Icon" data-track-label="github" target="_blank"
+                       href="https://github.com/IBM-Bluemix"><i class="fa fa-github"></i></a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
+</div>
 
-    <!-- Header label area -->
-    <div class="header-panel shadow-z-2-banner">
-      <img class="header-image" src="./img/banner-background.svg" >
-      <div class="page-container">
+<!-- Header label area -->
+<div class="header-panel shadow-z-2-banner">
+    <img class="header-image" src="./img/banner-background.svg">
+    <div class="page-container">
         <h1>Featured Samples</h1>
-      </div>
     </div>
+</div>
 
 
-    <!-- Filter Area-->
-    <div class="header-panel shadow-z-2-filter">
-      <div class="page-container">
+<!-- Filter Area-->
+<div class="header-panel shadow-z-2-filter">
+    <div class="page-container">
         <div class="filter-row">
 
-          <div class="fil">
-            <form role="search">
-              <div class="form-group search-input">
-                <input type="text" class="form-control" placeholder="Search by language, service or industry..." ng-model="searchTextData">
-              </div>
-            </form>
-          </div>
-
-          <div class="filterAreaDiv">
-            <div class='bx--select'>
-              <select id="sortBy" ng-model="tagP.sort" class="form-sorting">
-                <option  value="" >Sort by: All</option>
-                <option value="Most Viewed" >Most Viewed</option>
-                <option value="Recently Added" >Recently Added</option>
-              </select>
+            <div class="fil">
+                <form role="search">
+                    <div class="form-group search-input">
+                        <input type="text" class="form-control" placeholder="Search by language, service or industry..."
+                               ng-model="searchTextData">
+                    </div>
+                </form>
             </div>
 
-            <div class="ser filter" >
-              <form role="search">
-                <div class="filterButton" id="filterButton">
-                  <span> Filter </span>
-                  <svg class="filter-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <div class="filterAreaDiv">
+                <div class='bx--select'>
+                    <select id="sortBy" ng-model="tagP.sort" class="form-sorting">
+                        <option value="">Sort by: All</option>
+                        <option value="Most Viewed">Most Viewed</option>
+                        <option value="Recently Added">Recently Added</option>
+                    </select>
+                </div>
+
+                <div class="ser filter">
+                    <form role="search">
+                        <div class="filterButton" id="filterButton">
+                            <span> Filter </span>
+                            <svg class="filter-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 16.8 13.9" enable-background="new 0 0 16.8 13.9" xml:space="preserve">
                     <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#3D70B2" points="4,0 0,4.6 2.7,4.6 2.7,13.9 5.3,13.9 5.3,4.6 8,4.6 "/>
                     <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#3D70B2" points="12.8,13.9 16.8,9.2 14.1,9.2 14.1,0 11.4,0 11.4,9.2
                     8.8,9.2 "/>
                   </svg>
+                        </div>
+                    </form>
                 </div>
-              </form>
             </div>
-          </div>
 
-      </div>
+        </div>
     </div>
-  </div>
+</div>
 
-  <div class="page-container">
+<div class="page-container">
     <div class="dropdown" id="filterDropdown">
-      <div class="inside filter-category">
-        <span class="filter-text">LANGUAGES:</span><br/>
-        <div class="language search-body">
-          <table>
-            <tr>
-              <button  type="button" data-track-action="Filter" data-track-label="Python" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Python')">Python</button>
-              <button  type="button" data-track-action="Filter" data-track-label="NodeJS" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('NodeJS')">NodeJS</button>
-              <button  type="button" data-track-action="Filter" data-track-label="Java" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Java')">Java</button>
-              <button type="button" data-track-action="Filter" data-track-label="Swift" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Swift')">Swift</button>
-              <button type="button" data-track-action="Filter" data-track-label="Android" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Android')">Android</button>
-              <button type="button" data-track-action="Filter" data-track-label="Hybrid" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Hybrid')">Hybrid</button>
-            </tr>
-          </table>
+        <div class="inside filter-category">
+            <span class="filter-text">LANGUAGES:</span><br/>
+            <div class="language search-body">
+                <table>
+                    <tr>
+                        <button type="button" data-track-action="Filter" data-track-label="Python"
+                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Python')">
+                            Python
+                        </button>
+                        <button type="button" data-track-action="Filter" data-track-label="NodeJS"
+                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('NodeJS')">
+                            NodeJS
+                        </button>
+                        <button type="button" data-track-action="Filter" data-track-label="Java"
+                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Java')">Java
+                        </button>
+                        <button type="button" data-track-action="Filter" data-track-label="Swift"
+                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Swift')">
+                            Swift
+                        </button>
+                        <button type="button" data-track-action="Filter" data-track-label="Android"
+                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Android')">
+                            Android
+                        </button>
+                        <button type="button" data-track-action="Filter" data-track-label="Hybrid"
+                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Hybrid')">
+                            Hybrid
+                        </button>
+                    </tr>
+                </table>
+            </div>
         </div>
-      </div>
 
-      <div class="inside 01">
-        <span class="filter-text">CATEGORIES:</span>
-        <div class="category search-body">
-          <table>
-            <tr>
-              <button  type="button" data-track-action="Filter" data-track-label="IoT" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('IoT')">IoT</button>
-              <button  type="button" data-track-action="Filter" data-track-label="Web" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('Web')">Web</button>
-              <button  type="button" data-track-action="Filter" data-track-label="Mobile" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('Mobile')">Mobile</button>
-              <button  type="button" data-track-action="Filter" data-track-label="Watson" class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('Watson')">Watson</button>
-            </tr>
-          </table>
+        <div class="inside 01">
+            <span class="filter-text">CATEGORIES:</span>
+            <div class="category search-body">
+                <table>
+                    <tr>
+                        <button type="button" data-track-action="Filter" data-track-label="IoT"
+                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('IoT')">IoT
+                        </button>
+                        <button type="button" data-track-action="Filter" data-track-label="Web"
+                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('Web')">Web
+                        </button>
+                        <button type="button" data-track-action="Filter" data-track-label="Mobile"
+                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('Mobile')">
+                            Mobile
+                        </button>
+                        <button type="button" data-track-action="Filter" data-track-label="Watson"
+                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('Watson')">
+                            Watson
+                        </button>
+                    </tr>
+                </table>
+            </div>
         </div>
-      </div>
 
     </div>
-  </div>
+</div>
 
-  <div class="page-container main outer">
+<div class="page-container main outer">
     <div class="TotHome">
-      <span ng-if="samples.length === filteredLinks.length">Displaying <b>{{samples.length}}</b> featured samples.</span>
-      <span ng-if="filteredLinks.length != samples.length">Displaying <b>{{filteredLinks.length}}</b> code samples matching your criteria.</span>
+        <span ng-if="samples.length === filteredLinks.length">Displaying <b>{{samples.length}}</b> featured samples.</span>
+        <span ng-if="filteredLinks.length != samples.length">Displaying <b>{{filteredLinks.length}}</b> code samples matching your criteria.</span>
     </div>
 
     <ul class="items-wrapper"><!-- START FULL PAGE -->
-      <li class="inside project-item" ng-repeat="sample in ( filteredLinks = ( samples | orderBy:random | filter:searchTextData | filter:tagP.sort | samplesFilter:tagP))">
+        <li class="inside project-item"
+            ng-repeat="sample in ( filteredLinks = ( samples | filter:searchTextData | filter:tagP.sort | samplesFilter:tagP | orderBy:random))">
 
-        <div class="project-outer" ng-class="{demo: link.tags.indexOf('demo')>=0}">
+            <div class="project-outer" ng-class="{demo: sample.tags.indexOf('demo')>=0}">
 
-          <div class="link-title">
-            <a id="demoID" data-track-action="link-title" data-track-label="{{sample.urlLink}}"  href="{{sample.url}}" target="_blank">{{sample.name}}</a>
-            <a href="{{sample.homepage}}" ng-if="sample.homepage">
-              <span class="e1a-sample e1a-sm"></span>
-            </a>
-          </div>
-          <div class="project-content description">
-            <span >{{sample.description}}</span>
-          </div>
+                <div class="link-title">
+                    <a id="demoID" data-track-action="sample-title" data-track-label="{{sample.urlLink}}"
+                       href="{{sample.url}}" target="_blank">{{sample.name}}</a>
+                    <a href="{{sample.homepage}}" ng-if="sample.homepage">
+                        <span class="e1a-sample e1a-sm"></span>
+                    </a>
+                </div>
+                <div class="project-content description">
+                    <span>{{sample.description}}</span>
+                </div>
 
-          <div class="project-content tag-group">
+                <div class="project-content tag-group">
 
-            <div class="tag-holder">
-              <span class="FirSpanLeft">LANGUAGES: </span>
-              <span ng-repeat="item in sample.language">
+                    <div class="tag-holder">
+                        <span class="FirSpanLeft">LANGUAGES: </span>
+                        <span ng-repeat="item in sample.language">
                 <span class="tag-filter language" ng-class="LanChecked" id="">{{item}}</span>
 
 
               </span>
-            </div>
+                    </div>
 
-            <span class="FirSpanLeft">CATEGORY: </span>
-            <div class="tag-holder">
+                    <span class="FirSpanLeft">CATEGORY: </span>
+                    <div class="tag-holder">
                 <span ng-repeat="item in sample.category">
                   <span class="tag-filter category" ng-class="CatChecked">{{item}}</span>
                 </span>
-            </div>
+                    </div>
 
-            <span class="FirSpanLeft">SERVICES: </span>
-            <div class="tag-services">
+                    <span class="FirSpanLeft">SERVICES: </span>
+                    <div class="tag-services">
               <span ng-repeat="item in sample.services">
                 <span class="services ">{{item || '&nbsp;'}}{{$last ? '' : ','}}</span>
               </span>
+                    </div>
+                </div>
+                <meta name="description" content="{{sample.search}}">
             </div>
-          </div>
-          <meta name="description" content="{{sample.search}}">
-        </div>
 
-        <div class="tag-level">
-          <span ng-show="{{sample.blogPost !== ''}}" class="project-link">
-            <a id="BlogPost" href="{{sample.blogPost}}" class="hrefLink" target="_blank">Blog Post</a>
-          </span>
-          <span ng-show="{{sample.urlLink !== ''}}" class="project-link">
-            <a id="LiveDemo" href="{{sample.urlLink}}" class="hrefLink" target="_blank">Live Demo</a>
-          </span>
-          <span ng-show="{{sample.urlVideo !== ''}}" class="project-link">
-            <a id="LiveVideo" href="{{sample.urlVideo}}" class="hrefLink" target="_blank">View Video</a>
-          </span>
-        </div>
 
-      </li>
+            <div class="tag-level">
+              <span ng-show="{{sample.blogPost !== ''}}" class="project-link">
+                <a id="BlogPost" data-track-action="sample-blog" data-track-label="{{sample.blogPost}}"
+                   href="{{sample.blogPost}}" class="hrefLink" target="_blank">Blog Post</a>
+              </span>
+                        <span ng-show="{{sample.urlLink !== ''}}" class="project-link">
+                <a id="LiveDemo" data-track-action="sample-demo" data-track-label="{{sample.urlLink}}" href="{{sample.urlLink}}"
+                   class="hrefLink" target="_blank">Live Demo</a>
+              </span>
+                        <span ng-show="{{sample.urlVideo !== ''}}" class="project-link">
+                <a id="LiveVideo" data-track-action="sample-video" data-track-label="{{sample.urlVideo}}"
+                   href="{{sample.urlVideo}}" class="hrefLink" target="_blank">View Video</a>
+              </span>
+            </div>
+
+        </li>
     </ul>
 
     <div class="row">
-      <div class="col-md-12 col-xs-12 footer">
-        <footer>
-          Made with <i class="fa fa-heart" aria-hidden="true"></i> by the Bluemix team</br>
-          Powered by <a href="https://www.ibm.com/cloud-computing/bluemix">IBM Bluemix.</a> See all of our samples on <a href="https://github.com/IBM-Bluemix">IBM-Bluemix GitHub</a><br>          Copyright © IBM 2017.
-        </footer>
-      </div>
+        <div class="col-md-12 col-xs-12 footer">
+            <footer>
+                Made with <i class="fa fa-heart" aria-hidden="true"></i> by the Bluemix team</br>
+                Powered by <a href="https://www.ibm.com/cloud-computing/bluemix">IBM Bluemix.</a> See all of our samples
+                on <a href="https://github.com/IBM-Bluemix">IBM-Bluemix GitHub</a><br> Copyright © IBM 2017.
+            </footer>
+        </div>
     </div>
     <br>
-  </div>
+</div>
 
-  </body>
-
-
+</body>
 
 
+<!-- Vendor Libs: jQuery only used for Bootstrap functionality -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="scripts/ngCookies.js"></script>
 
-  <!-- Vendor Libs: jQuery only used for Bootstrap functionality -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"> </script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
-  <script src="scripts/ngCookies.js"></script>
+<!-- UI Libs & cookies-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap-tpls.min.js"></script>
 
-  <!-- UI Libs & cookies-->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap.min.js"> </script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap-tpls.min.js"> </script>
+<!-- App libs -->
+<script src="app.js"></script>
+<script src="app/samplesController.js"></script>
+<script src="app/samplesFactory.js"></script>
+<script src="app/samplesFilter.js"></script>
+<script src="app/pjs.js"></script>
 
-  <!-- App libs -->
-  <script src="app.js"></script>
-  <script src="app/samplesController.js"></script>
-  <script src="app/samplesFactory.js"></script>
-  <script src="app/samplesFilter.js"></script>
-  <script src="app/pjs.js"></script>
-
-  <!-- Loading Google Analytics, segment, Bluemix analytics Amplitude, snipes for (Tealium and Coremetrics), ida_production -->
-  <script src="scripts/google-analytics.js"></script>
-  <script src="scripts/segment.js"></script>
-  <script src="https://console.stage1.ng.bluemix.net/analytics/build/bluemix-analytics.js"></script>
-  <script src="scripts/snipes.js"></script>
-  <script src="scripts/ida_production.js"></script>
-
+<!-- Loading Google Analytics, segment, Bluemix analytics Amplitude, snipes for (Tealium and Coremetrics), ida_production -->
+<script src="scripts/google-analytics.js"></script>
+<script src="scripts/segment.js"></script>
+<script src="https://console.stage1.ng.bluemix.net/analytics/build/bluemix-analytics.js"></script>
+<script src="scripts/snipes.js"></script>
+<script src="scripts/ida_production.js"></script>
 
 
 </html>

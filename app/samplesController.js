@@ -32,11 +32,6 @@ angular
             //$scope.CatChecked = 'myCategory';
         }
 
-        // Randomly display the samples
-        $scope.random = function(){
-            return 0.5 - Math.random();
-        };
-
         // Create and then delete cookie - cookies must be enabled to use analytics
         $scope.areCookiesEnabled = false;
         $cookieStore.put("TestCookie", "Test Cookie added!");
@@ -48,7 +43,15 @@ angular
             $scope.areCookiesEnabled = true;
         }
 
-
+        // Randomly display the samples and if href is empty then hide it
+        $scope.random = function(){
+            $(".hrefLink").each(function( index ) {
+                if (!$(this).attr('href')){
+                    $(this).hide();
+                }
+            });
+            return 0.5 - Math.random();
+        };
 
         // load data from the factory
         samplesFactory.getSamples().then(function(data) {
