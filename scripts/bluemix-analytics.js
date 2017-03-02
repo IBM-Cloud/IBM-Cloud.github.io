@@ -16,12 +16,12 @@
         'facebook': true,
         'intercom': true,
         'optimizely_key': '7964536850',
-        'segment_key': '2Bn4E1z8ARPAGGAH6bW9XSVy7pDpjgWp',
+        'segment_key': '34Q2oApcF5UJE03NgXwTY6A7f6MTs3kx',
         'version': 'Wed - June 7 - 9:59PM',
-        'analyticsServiceUrl': 'https://dev-console.stage1.ng.bluemix.net',
+        'analyticsServiceUrl': 'https://ibm-bluemix.github.io/',
         'enableNPS': true,
         'forceNPS': true,
-        'uServicesDomain': 'stage1.ng.bluemix.net',
+        'uServicesDomain': 'ibm-bluemix.github.io/',
     }
     for (var attrname in analytics_config) {
         if ( !window._analytics.hasOwnProperty(attrname)) {
