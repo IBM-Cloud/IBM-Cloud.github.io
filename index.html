@@ -212,7 +212,7 @@
 
     <ul class="items-wrapper"><!-- START FULL PAGE -->
         <li class="inside project-item"
-            ng-repeat="sample in ( filteredLinks = ( samples | filter:searchTextData | filter:tagP.sort | samplesFilter:tagP | orderBy:random))">
+            ng-repeat="sample in ( filteredLinks = ( samples | filter:searchTextData | filter:tagP.sort | samplesFilter:tagP | orderBy:randomP))">
 
             <div class="project-outer" ng-class="{demo: sample.tags.indexOf('demo')>=0}">
 
@@ -312,6 +312,8 @@
 <script src="https://console.stage1.ng.bluemix.net/analytics/build/bluemix-analytics.js"></script>
 <script src="scripts/snipes.js"></script>
 <script src="scripts/ida_production.js"></script>
+<script src="scripts/clickActions.js"></script>
+
 
 
 </html>

@@ -3,12 +3,13 @@ angular
     .controller('samplesController', function ($scope, samplesFactory, $cookieStore) {
 
         $scope.samples = [];
+        $scope.randomP = [];
         $scope.tagP = {
             all: "live",
             enabled: true,
             languages: [],
             categories: []
-        }
+        };
 
 
 
@@ -25,12 +26,12 @@ angular
             toggleTag($scope.tagP.languages, language);
             //$scope.LanChecked = language;
             //$scope.LanChecked = 'myLanguage';
-        }
+        };
 
         $scope.toggleCategory = function(category) {
             toggleTag($scope.tagP.categories, category);
             //$scope.CatChecked = 'myCategory';
-        }
+        };
 
         // Create and then delete cookie - cookies must be enabled to use analytics
         $scope.areCookiesEnabled = false;
@@ -44,7 +45,7 @@ angular
         }
 
         // Randomly display the samples and if href is empty then hide it
-        $scope.random = function(){
+        $scope.randomP = function(){
             $(".hrefLink").each(function( index ) {
                 if (!$(this).attr('href')){
                     $(this).hide();
