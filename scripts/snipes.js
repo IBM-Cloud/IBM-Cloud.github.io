@@ -6,7 +6,7 @@ digitalData = {
 
             ibm: {
 
-                siteID: 'SAMPLES9999' // Set this to your SITEID
+                siteID: '' // Set this to your SITEID
 
             }
 
