@@ -1,3 +1,86 @@
+// located in header or in body, as appropriate
+if (window.bluemixAnalytics) {
+    //bluemixAnalytics.trackUserAction(category, field, action, data);
+}
+
+
+/**
+ * Created by alavigne on 2016-11-10.
+ */
+
+/* common code used by all 'trial' pages */
+
+
+
+// constants related to user form analytics
+var UFA = {
+    // reference to common analytics object utility methods.  It is assumed
+    // that the analytics javascript will have been loaded.
+    // the properties below will show up in segment and amplitude.
+    PAGE: 'registration', // ufa event for the registration page,
+    SUBMIT_BUTTON: 'submit button',
+    LINK_CLICKED: 'link clicked',
+    EVENT_FILLED: 'field filled',
+    EVENT_ERROR: 'validation error',
+    EVENT_SUBMIT: 'form submit',
+    EVENT_SUBMIT_FAIL: 'form submit failed',
+    INIT : 'page init',
+    INIT_FAIL: 'page init failed'
+};
+if (window.bm_analytics_common) {
+    UFA.analytics = bm_analytics_common.utils();
+}
+if (!UFA.analytics) {
+    UFA.analytics = {trackUserAction: function NoOP(){
+        if (arguments.length > 4) {
+            // directly invoke the callback;
+            var callback = arguments[4];
+            callback();
+        }
+    }};
+}
+
+
+/**
+ *
+ * setup_form_analytics
+ *
+ * initialize/setup the tracking for user form analytics
+ *
+ * inputFieldNames - array of input field name values to which to attach analytics events.  This
+ * method will attach listeners to detect when user leaves these input fields, then to fire track events if they've
+ * left with a field that has been left filled with some input.   These values need to match the
+ * 'name' attribute of the input fields in the registration form.
+ *
+ */
+
+function setup_form_analytics(inputFieldNames) {
+    function fieldNotEmpty(field) {
+        return ($(field).val().trim().length > 0);
+    }
+
+    var i;
+    for (i = 0; i < inputFieldNames.length; i++) {
+        var fieldSelector = 'input[name=' + inputFieldNames[i] + ']';
+        (function (j) {
+            $(fieldSelector).on('focusout', function (e) {
+                // if the user is leaving the field and it is not empty, record as a field filled user event.
+                if (fieldNotEmpty(e.target)) {
+                    UFA.analytics.trackUserAction(UFA.PAGE, inputFieldNames[j], UFA.EVENT_FILLED, UFA.EVENT_FILLED);
+                }
+            });
+        })(i);
+    };
+
+    // now add a listener for the country selector (if there's no country selector on this page, this
+    // code won't do anything).
+    $('select[name=countryCode]').on('change', function (e) {
+        // if the user is leaving the field and it is not empty, record as a field filled user event.
+        if (fieldNotEmpty(e.target)) {
+            UFA.analytics.trackUserAction(UFA.PAGE, 'countryCode', UFA.EVENT_FILLED, UFA.EVENT_FILLED);
+        }
+    });
+}
 
 
 function getQueryParameters() {
