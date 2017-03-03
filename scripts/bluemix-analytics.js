@@ -16,12 +16,12 @@
         'facebook': true,
         'intercom': true,
         'optimizely_key': '7964536850',
-        'segment_key': '34Q2oApcF5UJE03NgXwTY6A7f6MTs3kx',
+        'segment_key': '2Bn4E1z8ARPAGGAH6bW9XSVy7pDpjgWp',
         'version': 'Wed - June 7 - 9:59PM',
-        'analyticsServiceUrl': 'https://ibm-bluemix.github.io/',
+        'analyticsServiceUrl': 'https://console.stage1.ng.bluemix.net',
         'enableNPS': true,
         'forceNPS': true,
-        'uServicesDomain': 'ibm-bluemix.github.io/',
+        'uServicesDomain': 'stage1.ng.bluemix.net',
     }
     for (var attrname in analytics_config) {
         if ( !window._analytics.hasOwnProperty(attrname)) {
@@ -288,7 +288,7 @@
                  */
                 function addSegment(writeKey) {
                     global.analytics = global.analytics || {};
-                    // If the real google-analytics.js is already on the page return.
+                    // If the real analytics.js is already on the page return.
                     if (global.analytics.initialize) {
                         return Promise.resolve(true);
                     }
@@ -308,6 +308,9 @@
 
                     // A list of the methods in Analytics.js to stub.
                     global.analytics.methods = ['trackSubmit', 'trackClick', 'trackLink', 'trackForm', 'pageview', 'identify', 'group', 'track', 'ready', 'alias', 'page', 'once', 'off', 'on'];
+                    analytics.track('Signed Up', {
+                        plan: '333'
+                    });
 
                     // Define a factory to create stubs. These are placeholders
                     // for methods in Analytics.js so that you never have to wait
@@ -335,7 +338,7 @@
                     // and that will be sure to only ever load it once.
                     global.analytics.load = function (key) {
                         var protocol = document.location.protocol || 'http:';
-                        var url = protocol + '//cdn.segment.com/google-analytics.js/v1/' + key + '/analytics.min.js';
+                        var url = protocol + '//cdn.segment.com/analytics.js/v1/' + key + '/analytics.min.js';
                         var promiseDelayLoadingSegment = isNaN(global.delayLoadingSegment) ? Promise.resolve() : Promise.race([new Promise(function (resolve) {
                                 setTimeout(resolve, Math.min(global.delayLoadingSegment, MAXIMUM_SEGMENT_LOAD_DELAY_MS));
                             }), new Promise(function (resolve) {
@@ -599,7 +602,7 @@
                             segmentPromise.then(_no_jquery2.default.async_script.bind(_no_jquery2.default, scriptHost + '/analytics/sources/analytics-classic.js'));
                             // registerSegmentEventsForClassicBluemix( config );
                         } else if (config.segment && siteId === 'COMMON_LIBRARY') {
-                            // noop.  All stuff is included in the bluemix-google-analytics.js
+                            // noop.  All stuff is included in the bluemix-analytics.js
                         } else if (config.segment) {
                             segmentPromise.then(_no_jquery2.default.async_script.bind(_no_jquery2.default, scriptHost + '/analytics/sources/analytics-marketing.js'));
                         }
@@ -1126,7 +1129,9 @@
 
         /* WEBPACK VAR INJECTION */(function(global) {'use strict';
 
-            var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; // eslint-disable-line camelcase
+            var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+            var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // eslint-disable-line camelcase
 
 
             var _no_jquery = __webpack_require__(1);
@@ -1170,7 +1175,7 @@
             function onClickSurveyScale(ev) {
                 if (ev.target.className === 'radio__input') {
                     // can't bind data to this because we need this to be the underlying target that was clicked
-                    var offeringNameNode = document.querySelector('.ibmNps-survey-header__question > .offering-name');
+                    var offeringNameNode = document.querySelector('.ibmNps-question__offering');
                     if (offeringNameNode && ev.target.value) {
                         var data = parseInt(ev.target.value, 10);
                         (0, _trackEvents.trackUserFormAction)({
@@ -1203,25 +1208,41 @@
 
             var commentTextAreaOnBlurHandler = null;
             function addCommentTextAreaBlurEventListenerWithData(data) {
-                var surveyCommentTextAreaNode = document.querySelector('.ibmNps-survey-text > .survey-textarea');
-                commentTextAreaOnBlurHandler = onBlurCommentTextArea.bind(surveyCommentTextAreaNode, data);
-                surveyCommentTextAreaNode.addEventListener('blur', commentTextAreaOnBlurHandler);
+                var surveyCommentTextAreaNode = document.querySelector('.ibmNps-textarea');
+                if (surveyCommentTextAreaNode) {
+                    commentTextAreaOnBlurHandler = onBlurCommentTextArea.bind(surveyCommentTextAreaNode, data);
+                    surveyCommentTextAreaNode.addEventListener('blur', commentTextAreaOnBlurHandler);
+                } else {
+                    console.log('[analytics] unable to find .ibmNps-textarea'); // eslint-disable-line no-console
+                }
             }
 
             function removeCommentTextAreaBlurEventListener() {
-                var surveyCommentTextAreaNode = document.querySelector('.ibmNps-survey-text > .survey-textarea');
-                surveyCommentTextAreaNode.removeEventListener('beforeunload', commentTextAreaOnBlurHandler);
-                commentTextAreaOnBlurHandler = null;
+                var surveyCommentTextAreaNode = document.querySelector('.ibmNps-textarea');
+                if (surveyCommentTextAreaNode) {
+                    surveyCommentTextAreaNode.removeEventListener('beforeunload', commentTextAreaOnBlurHandler);
+                    commentTextAreaOnBlurHandler = null;
+                } else {
+                    console.log('[analytics] unable to find .ibmNps-textarea'); // eslint-disable-line no-console
+                }
             }
 
             function addSurveyScaleEventListener() {
-                var surveyScale = document.querySelector('.ibmNps-survey-container > .ibmNps-survey-scale');
-                surveyScale.addEventListener('click', onClickSurveyScale);
+                var surveyScale = document.querySelector('.ibmNps-container > .ibmNps-scale');
+                if (surveyScale) {
+                    surveyScale.addEventListener('click', onClickSurveyScale);
+                } else {
+                    console.log('[analytics] unable to find .ibmNps-container > .ibmNps-scale'); // eslint-disable-line no-console
+                }
             }
 
             function removeSurveyScaleEventListener() {
-                var surveyScale = document.querySelector('.ibmNps-survey-container > .ibmNps-survey-scale');
-                surveyScale.removeEventListener('click', onClickSurveyScale);
+                var surveyScale = document.querySelector('.ibmNps-container > .ibmNps-scale');
+                if (surveyScale) {
+                    surveyScale.removeEventListener('click', onClickSurveyScale);
+                } else {
+                    console.log('[analytics] unable to find .ibmNps-container > .ibmNps-scale'); // eslint-disable-line no-console
+                }
             }
 
             function closeSurvey(data, field) {
@@ -1271,7 +1292,7 @@
             function onBeforeDisplaySurvey(data) {
                 // console.log(`onBeforeDisplaySurvey ${JSON.stringify(data, null, 4)}`);
                 // Survey opened
-                global.analytics.page('Viewed NPS Survey', Object.assign({}, data, { survey_source: 'IBM Design NPS' }));
+                global.analytics.page('Viewed NPS Survey', _extends({}, data, { survey_source: 'IBM Design NPS' }));
                 // the survey isn't on the page yet but it will soon be so we just need a short timeout
                 global.setTimeout(function () {
                     addWindowUnloadEventListenerWithData(data);
@@ -1338,7 +1359,7 @@
                 var customOfferingIds = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
                 var additionalAttributes = arguments[2];
 
-                return Object.assign({
+                return _extends({
                     test: isTestNPS(), // eslint-disable-line no-underscore-dangle
                     forceSurvey: global.analytics_config.forceNPS
                 }, additionalAttributes, {
@@ -1393,10 +1414,12 @@
                                     var _ref = orgData.account || global.header.accountStatus,
                                         _ref$type = _ref.type,
                                         type = _ref$type === undefined ? 'UNKNOWN' : _ref$type,
-                                        status = _ref.status,
-                                        isAccountOwner = _ref.isAccountOwner;
+                                        _ref$status = _ref.status,
+                                        status = _ref$status === undefined ? 'ACTIVE' : _ref$status,
+                                        _ref$isAccountOwner = _ref.isAccountOwner,
+                                        isAccountOwner = _ref$isAccountOwner === undefined ? true : _ref$isAccountOwner;
 
-                                    sendCheckStatus(userGuid, Object.assign({}, customAttributes, {
+                                    sendCheckStatus(userGuid, _extends({}, customAttributes, {
                                         Is_Paid: type === 'PAYG',
                                         Account_Type: type,
                                         Registration_Status: status,
@@ -1418,6 +1441,8 @@
     /***/ function(module, exports, __webpack_require__) {
 
         /* WEBPACK VAR INJECTION */(function(global) {'use strict';
+
+            var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
             var _identification = __webpack_require__(5);
 
@@ -1484,7 +1509,7 @@
                         return;
                     }
                     // Call the segment track event
-                    global.analytics.track('User Form', Object.assign({}, fields, {
+                    global.analytics.track('User Form', _extends({}, fields, {
                         url: window.location.href,
                         path: window.location.pathname
                     }), null, callback);
@@ -1494,9 +1519,9 @@
                     var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
 
                     (0, _identification.getAnonymousId)().then(function (wipi) {
-                        var analyticProperties = Object.assign({}, properties, { wipi: wipi });
+                        var analyticProperties = _extends({}, properties, { wipi: wipi });
                         var userID = (0, _identification.getUserID)();
-                        var analyticOptions = Object.assign({}, options);
+                        var analyticOptions = _extends({}, options);
                         if (userID) {
                             analyticOptions.userId = userID;
                         }
@@ -1514,6 +1539,8 @@
     /***/ function(module, exports, __webpack_require__) {
 
         /* WEBPACK VAR INJECTION */(function(global) {'use strict';
+
+            var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
             var _no_jquery = __webpack_require__(1);
 
@@ -1614,7 +1641,7 @@
                     }
 
                     this.getAnonymousId().then(function (wipi) {
-                        global.analytics.identify(userID, Object.assign({}, properties, { wipi: wipi }));
+                        global.analytics.identify(userID, _extends({}, properties, { wipi: wipi }));
                     });
                 },
 
@@ -1658,7 +1685,7 @@
                     this.getIUI().then(function (iui) {
                         if (iui) {
                             _this.getAnonymousId().then(function (anonymousId) {
-                                global.analytics.identify(iui, Object.assign({}, properties, { anonymousId: anonymousId }));
+                                global.analytics.identify(iui, _extends({}, properties, { anonymousId: anonymousId }));
                             });
                         } else {
                             console.log('Failed to perform identify. No IUI found'); // eslint-disable-line no-console
@@ -1714,6 +1741,7 @@
             function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
             // Campaign Storage - now in a cookie
+            var campaignCookieName = 'bmCampaigns';
 
             // TODO: This will eventually be removed when there is a way to solve
             // some of the client configurations through webpack
@@ -1734,6 +1762,27 @@
                     result[key] = value;
                 }
                 return result;
+            }
+
+            /**
+             * Parse JSON cookie string.
+             *
+             * @param {String} str
+             * @return {Object} Parsed object or undefined if not json cookie
+             * @public
+             */
+            function JSONCookie(str) {
+                var formattedString = str;
+                // trim off the j: in the string if it exists. It's added by express cookie-parser middleware
+                if (str.substr(0, 2) === 'j:') {
+                    formattedString = str.slice(2);
+                }
+
+                try {
+                    return JSON.parse(formattedString);
+                } catch (err) {
+                    return null;
+                }
             }
 
             /**
@@ -1792,6 +1841,22 @@
                 hasCampaign: function hasCampaign() {
                     var queryParams = getQueryParameters();
                     return !!(queryParams.cm_mmc || queryParams.cm_mmca1 || queryParams.cm_mmca2 || queryParams.cm_mmca3 || queryParams.S_PKG || queryParams.S_TACT || queryParams.S_OFF_CD || queryParams.S_MAIL_CD);
+                },
+
+                /**
+                 * Returns an array of campaign codes that may already exist in cookies or null if there's none.
+                 * Exposed for pages (like Registration) that wish to know all campaigns that have been encountered
+                 * and stored.
+                 *
+                 * @returns an array of campaign codes, or null if none found
+                 */
+                getCampaign: function getCampaign() {
+                    var data = _no_jquery2.default.getCookie(campaignCookieName);
+                    var decodedData = decodeURIComponent(data);
+                    return JSONCookie(decodedData); // eslint-disable-line new-cap
+                },
+                deleteCampaign: function deleteCampaign() {
+                    _no_jquery2.default.deleteCookie(campaignCookieName);
                 }
             };
             /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
@@ -1801,6 +1866,8 @@
     /***/ function(module, exports, __webpack_require__) {
 
         /* WEBPACK VAR INJECTION */(function(global) {'use strict';
+
+            var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
             var _campaignCodes = __webpack_require__(7);
 
@@ -1843,8 +1910,8 @@
 
                     _identification2.default.getAnonymousId().then(function (wipi) {
                         var userID = _identification2.default.getUserID();
-                        var analyticProperties = Object.assign({}, properties, campaignProperties, { wipi: wipi });
-                        var analyticOptions = Object.assign({}, options);
+                        var analyticProperties = _extends({}, properties, campaignProperties, { wipi: wipi });
+                        var analyticOptions = _extends({}, options);
                         if (userID) {
                             analyticOptions.userId = userID;
                         }

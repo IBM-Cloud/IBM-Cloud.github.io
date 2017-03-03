@@ -12,7 +12,6 @@ angular
         };
 
 
-
         function toggleTag(tagSet, tag) {
             var position = tagSet.indexOf(tag);
             if (position >= 0) {
@@ -37,8 +36,8 @@ angular
         $scope.areCookiesEnabled = false;
         $cookieStore.put("TestCookie", "Test Cookie added!");
         $scope.cookieValue = $cookieStore.get("TestCookie");
+        //console.log($scope.cookieValue);
 
-        console.log($scope.cookieValue);
         if ($scope.cookieValue) {
             $cookieStore.remove("TestCookie");
             $scope.areCookiesEnabled = true;

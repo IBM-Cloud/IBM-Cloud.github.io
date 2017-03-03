@@ -1,7 +1,18 @@
-// located in header or in body, as appropriate
+
 if (window.bluemixAnalytics) {
-    //bluemixAnalytics.trackUserAction(category, field, action, data);
+    analytics.track('Signed Up', {
+        plan: '333'
+    });
 }
+
+
+
+var link = document.getElementById('BUUttCli11');
+
+analytics.trackLink(link, 'Clicked Free-Trial Link', {
+    plan: 'Enterprise'
+});
+
 
 
 /**
@@ -27,10 +38,11 @@ var UFA = {
     INIT : 'page init',
     INIT_FAIL: 'page init failed'
 };
-if (window.bm_analytics_common) {
-    UFA.analytics = bm_analytics_common.utils();
+if (window.bluemixAnalytics) {
+    UFA.analytics = window.bluemixAnalytics;
 }
 if (!UFA.analytics) {
+
     UFA.analytics = {trackUserAction: function NoOP(){
         if (arguments.length > 4) {
             // directly invoke the callback;
@@ -78,6 +90,7 @@ function setup_form_analytics(inputFieldNames) {
         // if the user is leaving the field and it is not empty, record as a field filled user event.
         if (fieldNotEmpty(e.target)) {
             UFA.analytics.trackUserAction(UFA.PAGE, 'countryCode', UFA.EVENT_FILLED, UFA.EVENT_FILLED);
+            console.log('Yes In 01');
         }
     });
 }

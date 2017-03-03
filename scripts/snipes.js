@@ -14,7 +14,7 @@ digitalData = {
 
         category: {
 
-            primaryCategory: 'BluemixSamples' // Set this to your PAGE_CATEGORY
+            primaryCategory: 'yess' // Set this to your PAGE_CATEGORY
 
         }
 

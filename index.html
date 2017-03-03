@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/emojione-awesome.css"/>
     <link rel="stylesheet" href="./css/main.css">
-
 </head>
 
 <body ng-app="ngSamples" ng-controller="samplesController" class="home overflow-hidden">
@@ -98,7 +97,6 @@
         <h1>Featured Samples</h1>
     </div>
 </div>
-
 
 <!-- Filter Area-->
 <div class="header-panel shadow-z-2-filter">
@@ -212,7 +210,7 @@
 
     <ul class="items-wrapper"><!-- START FULL PAGE -->
         <li class="inside project-item"
-            ng-repeat="sample in ( filteredLinks = ( samples | filter:searchTextData | filter:tagP.sort | samplesFilter:tagP | orderBy:randomP))">
+            ng-repeat="sample in ( filteredLinks = ( samples | filter:searchTextData | filter:tagP.sort | samplesFilter:tagP | orderBy: randomP))">
 
             <div class="project-outer" ng-class="{demo: sample.tags.indexOf('demo')>=0}">
 
@@ -256,8 +254,10 @@
             </div>
 
 
+
             <div class="tag-level">
-              <span ng-show="{{sample.blogPost !== ''}}" class="project-link">
+
+                <span ng-show="{{sample.blogPost !== ''}}" class="project-link">
                 <a id="BlogPost" data-track-action="sample-blog" data-track-label="{{sample.blogPost}}"
                    href="{{sample.blogPost}}" class="hrefLink" target="_blank">Blog Post</a>
               </span>
@@ -277,9 +277,10 @@
     <div class="row">
         <div class="col-md-12 col-xs-12 footer">
             <footer>
+
                 Made with <i class="fa fa-heart" aria-hidden="true"></i> by the Bluemix team</br>
                 Powered by <a href="https://www.ibm.com/cloud-computing/bluemix">IBM Bluemix.</a> See all of our samples
-                on <a href="https://github.com/IBM-Bluemix">IBM-Bluemix GitHub</a><br> Copyright © IBM 2017.
+                on <a id="GitHubTestLink" href="https://github.com/IBM-Bluemix">IBM-Bluemix GitHub</a><br> Copyright © IBM 2017.
             </footer>
         </div>
     </div>
@@ -308,11 +309,35 @@
 
 <!-- Loading Google Analytics, segment, Bluemix analytics Amplitude, snipes for (Tealium and Coremetrics), ida_production -->
 <script src="scripts/google-analytics.js"></script>
+
+<!--
 <script src="scripts/segment.js"></script>
-<script src="https://console.stage1.ng.bluemix.net/analytics/build/bluemix-analytics.js"></script>
+<script src="scripts/bluemix-analytics.js"></script>
+<script src="scripts/clickActions.js"></script>
+
 <script src="scripts/snipes.js"></script>
 <script src="scripts/ida_production.js"></script>
-<script src="scripts/clickActions.js"></script>
+
+-->
+
+<script type="text/javascript">
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+        analytics.load("34Q2oApcF5UJE03NgXwTY6A7f6MTs3kx");
+        analytics.page();
+    }}();
+
+    if (window.bluemixAnalytics) {
+        analytics.track('Home Page', {
+            plan: 'Enterprise1'
+        });
+    }
+
+    var link = document.getElementById('GitHubTestLink');
+    analytics.trackLink(link, 'Clicked on IBM-Bluemix GitHub Link', {
+        plan: 'Enterprise2'
+    });
+</script>
+
 
 
 
