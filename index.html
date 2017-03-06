@@ -8,11 +8,8 @@
     <link rel="shortcut icon" href="./img/favicon.png"/>
     <title>Bluemix on Github - Github Pages</title>
     <meta name="author" content="Twana Daniel || IBM Bluemix - Developer Advocate Team"/>
-    <meta name="description"
-          content="The IBM-Bluemix GitHub.io site is a well-maintained, centralized, curated collection of open sample applications built using Bluemix and Bluemix services. The site gives developers a go-to page to see all Bluemix capabilities. There is option to filter samples by languages, categories or even industries to find the sample using the services you want."/>
-    <meta name="keywords"
-          content="Build a toolchain application on Bluemix, Bluemix code Samples, Watson code samples, IoT samples, Bluemix Samples, Mobile development on Bluemix, Cloudant database on Bluemix, Text to Speech, Speech To Text"/>
-
+    <meta name="description" content="The IBM-Bluemix GitHub.io site is a well-maintained, centralized, curated collection of open sample applications built using Bluemix and Bluemix services. The site gives developers a go-to page to see all Bluemix capabilities. There is option to filter samples by languages, categories or even industries to find the sample using the services you want."/>
+    <meta name="keywords" content="Build a toolchain application on Bluemix, Bluemix code Samples, Watson code samples, IoT samples, Bluemix Samples, Mobile development on Bluemix, Cloudant database on Bluemix, Text to Speech, Speech To Text"/>
     <meta name="segment" property="IBM-Bluemix.GitHub.io" value="BluemixSample">
 
     <!-- FontAwesome icons -->
@@ -20,6 +17,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/emojione-awesome.css"/>
     <link rel="stylesheet" href="./css/main.css">
+
 </head>
 
 <body ng-app="ngSamples" ng-controller="samplesController" class="home overflow-hidden">
@@ -46,7 +44,7 @@
             <div class="header02">
                 <div class="social-icons">
                     <a class="icon" href="https://www.ibm.com/cloud-computing/bluemix" data-track-action="Icon"
-                       data-track-label="Bluemix" target="_blank">
+                       data-track-label="Bluemix" target="_blank" analytics-on="click" analytics-event="Header To: IBM Bluemix Site">
                         <svg id="bluemix" class="logo-icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
                              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -81,9 +79,9 @@
                         </svg>
                     </a>
                     <a class="icon" data-track-action="Icon" data-track-label="StackOverFlow" target="_blank"
-                       href="http://stackoverflow.com/questions/tagged/ibm-bluemix"><i class="fa fa-stack-overflow"></i></a>
+                       href="http://stackoverflow.com/questions/tagged/ibm-bluemix" analytics-on="click" analytics-event="Header To: StackOverFlow"><i class="fa fa-stack-overflow"></i></a>
                     <a class="icon" data-track-action="Icon" data-track-label="github" target="_blank"
-                       href="https://github.com/IBM-Bluemix"><i class="fa fa-github"></i></a>
+                       href="https://github.com/IBM-Bluemix" analytics-on="click" analytics-event="Header To: Main IBM GitHub"><i class="fa fa-github"></i></a>
                 </div>
             </div>
         </div>
@@ -115,9 +113,9 @@
             <div class="filterAreaDiv">
                 <div class='bx--select'>
                     <select id="sortBy" ng-model="tagP.sort" class="form-sorting">
-                        <option value="">Sort by: All</option>
-                        <option value="Most Viewed">Most Viewed</option>
-                        <option value="Recently Added">Recently Added</option>
+                        <option value="" analytics-on="click" analytics-event="Sort by: All">Sort by: All</option>
+                        <option value="Most Viewed" analytics-on="click" analytics-event="Sort by: Most Viewed">Most Viewed</option>
+                        <option value="Recently Added" analytics-on="click" analytics-event="Sort by: Recently Added">Recently Added</option>
                     </select>
                 </div>
 
@@ -201,7 +199,6 @@
 
     </div>
 </div>
-
 <div class="page-container main outer">
     <div class="TotHome">
         <span ng-if="samples.length === filteredLinks.length">Displaying <b>{{samples.length}}</b> featured samples.</span>
@@ -210,16 +207,13 @@
 
     <ul class="items-wrapper"><!-- START FULL PAGE -->
         <li class="inside project-item"
-            ng-repeat="sample in ( filteredLinks = ( samples | filter:searchTextData | filter:tagP.sort | samplesFilter:tagP | orderBy: randomP))">
+            ng-repeat="sample in ( filteredLinks = ( samples | filter:searchTextData | filter:tagP.sort | samplesFilter:tagP ))">
 
             <div class="project-outer" ng-class="{demo: sample.tags.indexOf('demo')>=0}">
-
+                <!-- tracking sample links -->
                 <div class="link-title">
-                    <a id="demoID" data-track-action="sample-title" data-track-label="{{sample.urlLink}}"
-                       href="{{sample.url}}" target="_blank">{{sample.name}}</a>
-                    <a href="{{sample.homepage}}" ng-if="sample.homepage">
-                        <span class="e1a-sample e1a-sm"></span>
-                    </a>
+                    <a id="demoID" data-track-action="sample-title" data-track-label="{{sample.urlLink}}" href="{{sample.url}}" target="_blank" analytics-on="click" analytics-event="Sample Title: {{sample.name}}">{{sample.name}}</a>
+                    <a href="{{sample.homepage}}" ng-if="sample.homepage"> <span class="e1a-sample e1a-sm"></span></a>
                 </div>
                 <div class="project-content description">
                     <span>{{sample.description}}</span>
@@ -256,19 +250,15 @@
 
 
             <div class="tag-level">
-
                 <span ng-show="{{sample.blogPost !== ''}}" class="project-link">
-                <a id="BlogPost" data-track-action="sample-blog" data-track-label="{{sample.blogPost}}"
-                   href="{{sample.blogPost}}" class="hrefLink" target="_blank">Blog Post</a>
-              </span>
-                        <span ng-show="{{sample.urlLink !== ''}}" class="project-link">
-                <a id="LiveDemo" data-track-action="sample-demo" data-track-label="{{sample.urlLink}}" href="{{sample.urlLink}}"
-                   class="hrefLink" target="_blank">Live Demo</a>
-              </span>
-                        <span ng-show="{{sample.urlVideo !== ''}}" class="project-link">
-                <a id="LiveVideo" data-track-action="sample-video" data-track-label="{{sample.urlVideo}}"
-                   href="{{sample.urlVideo}}" class="hrefLink" target="_blank">View Video</a>
-              </span>
+                    <a id="BlogPost" data-track-action="sample-blog" data-track-label="{{sample.blogPost}}" href="{{sample.blogPost}}" class="hrefLink" target="_blank" analytics-on="click" analytics-event="Blog Post: {{sample.name}}">Blog Post</a>
+                </span>
+                <span ng-show="{{sample.urlLink !== ''}}" class="project-link">
+                    <a id="LiveDemo" data-track-action="sample-demo" data-track-label="{{sample.urlLink}}" href="{{sample.urlLink}}" class="hrefLink" target="_blank" analytics-on="click" analytics-event="Live Demo: {{sample.name}}">Live Demo</a>
+                </span>
+                <span ng-show="{{sample.urlVideo !== ''}}" class="project-link">
+                    <a id="LiveVideo" data-track-action="sample-video" data-track-label="{{sample.urlVideo}}" href="{{sample.urlVideo}}" class="hrefLink" target="_blank" analytics-on="click" analytics-event="View Video: {{sample.name}}">View Video</a>
+                </span>
             </div>
 
         </li>
@@ -279,8 +269,8 @@
             <footer>
 
                 Made with <i class="fa fa-heart" aria-hidden="true"></i> by the Bluemix team</br>
-                Powered by <a id="IBMBluemix" target="_blank" href="https://www.ibm.com/cloud-computing/bluemix">IBM Bluemix.</a> See all of our samples
-                on <a id="IBMBluemixGitHub" target="_blank" href="https://github.com/IBM-Bluemix">IBM-Bluemix GitHub</a><br> Copyright © IBM 2017.
+                Powered by <a id="IBMBluemix" target="_blank" href="https://www.ibm.com/cloud-computing/bluemix" analytics-on="click" analytics-event="Footer To: IBM Bluemix Site">IBM Bluemix.</a> See all of our samples
+                on <a id="IBMBluemixGitHub" target="_blank" href="https://github.com/IBM-Bluemix" analytics-on="click" analytics-event="Footer To: Main IBM GitHub">IBM-Bluemix GitHub</a><br> Copyright © IBM 2017.
             </footer>
         </div>
     </div>
@@ -294,35 +284,24 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="scripts/ngCookies.js"></script>
 
 <!-- UI Libs & cookies-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap-tpls.min.js"></script>
+<script src="scripts/ngCookies.js"></script>
 
-<!-- App libs -->
+<!-- Loading controllers, factory, filters and dependencies -->
 <script src="app.js"></script>
 <script src="app/samplesController.js"></script>
 <script src="app/samplesFactory.js"></script>
 <script src="app/samplesFilter.js"></script>
 <script src="app/pjs.js"></script>
 
-<!-- Loading Google Analytics, segment, Bluemix analytics Amplitude, snipes for (Tealium and Coremetrics), ida_production -->
+<!-- Loading Google Analytics, segment scripts, angulartics.min.js and angulartics-segment.min.js to track events, Bluemix analytics Amplitude, snipes for (Tealium and Coremetrics), ida_production -->
 <script src="scripts/google-analytics.js"></script>
-
-<!--
-<script src="scripts/segment.js"></script>
-<script src="scripts/bluemix-analytics.js"></script>
-<script src="scripts/clickActions.js"></script>
-
-<script src="scripts/snipes.js"></script>
-<script src="scripts/ida_production.js"></script>
-
--->
-
-<script src="scripts/segment.js"></script>
-
-
+<script src="./scripts/angulartics.min.js"></script>
+<script src="./scripts/angulartics-segment.min.js"></script>
+<script src="scripts/segment.js"> </script>
 
 
 </html>

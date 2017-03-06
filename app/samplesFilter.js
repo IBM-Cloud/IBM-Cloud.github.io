@@ -8,7 +8,10 @@ angular
 
     //onsole.log('Applying filter', tagP.languages, tagP.categories, tagP.LanChecked);
 
+
+
     angular.forEach(listings, function(listing){
+
       var keepLink = false;
 
       // listing should at least one of the tags
@@ -64,6 +67,7 @@ angular
 
       if (keepLink) {
         filtered.push(listing);
+
       }
       // END - filter by categories and languages
 
