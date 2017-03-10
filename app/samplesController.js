@@ -11,11 +11,6 @@ angular
             categories: []
         };
 
-        $scope.TrackData = function (data) {
-
-            analytics.trackLink(data, 'Butoon', {
-            });
-        };
 
         function toggleTag(tagSet, tag) {
             var position = tagSet.indexOf(tag);

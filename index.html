@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/emojione-awesome.css"/>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/NPS-Style.css">
+
 
 </head>
 
@@ -192,6 +194,10 @@
                                 class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('Watson')">
                             Watson
                         </button>
+                        <button type="button" data-track-action="Filter" data-track-label="Serverless"
+                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('Serverless')">
+                            Serverless
+                        </button>
                     </tr>
                 </table>
             </div>
@@ -281,6 +287,7 @@
 </div>
 
 
+
 <a href="#" onclick="showNpsSurvey();return false" class="survey cancelled-out-taborder" tabindex="0">
     <div class="floating-feedback">
         <!--?xml version="1.0" encoding="utf-8"?-->
@@ -314,8 +321,15 @@
           	</g>
           </g>
           </svg>
+        <div class="feedback-tooltip">
+            <span>Give Feedback</span>
+        </div>
+    </div>
+    <div class="give-feedback">
+        <h5><span></span>Give Feedback</h5>
     </div>
 </a>
+
 
 </body>
 
@@ -342,6 +356,7 @@
 <script src="./scripts/angulartics.min.js"></script>
 <script src="./scripts/angulartics-segment.min.js"></script>
 <script src="scripts/segment.js"> </script>
+
 
 <!-- NPS Feedback -->
 <script src="scripts/NPS.js"></script>
