@@ -21,6 +21,7 @@ angular
             }
         }
 
+
         $scope.toggleLanguage = function(language) {
             toggleTag($scope.tagP.languages, language);
             //$scope.LanChecked = language;

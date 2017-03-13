@@ -707,7 +707,7 @@ ul.list-separator.nav.navbar-nav.well.well-primary.default {
   border: 1px solid #5596e6;
   margin: 20px auto 0 auto;
   max-width: 1440px;
-  display: none;
+  display: flex;
 }
 
 .dropdown::after {
@@ -732,6 +732,10 @@ ul.list-separator.nav.navbar-nav.well.well-primary.default {
 .inside.filter-category {
   flex-basis: 50%;
   margin-right: 3rem;
+}
+
+.inside01{
+  flex-basis: 50%;
 }
 
 .form-control{
@@ -905,9 +909,7 @@ ul.triggers li:hover {
     margin-bottom: 0;
   }
 
-  .dropdown {
-    display: flex;
-  }
+
 }
 
 @media (max-width: 768px) {
