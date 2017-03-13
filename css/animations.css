@@ -93,3 +93,14 @@ body.skip-animations * {
 .repeat-animation.ng-move.ng-move-active {
     opacity:1;
 }
+
+
+/* Animation for filter area */
+
+
+.sample-show-hide {
+    transition: all linear 0.5s;
+}
+.sample-show-hide.ng-hide {
+    opacity: 0;
+}
