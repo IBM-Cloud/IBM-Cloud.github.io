@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="./img/favicon.png"/>
-    <title>Bluemix on Github - Github Pages</title>
+    <title>Bluemix GitHub.io</title>
     <meta name="author" content="Twana Daniel || IBM Bluemix - Developer Advocate Team"/>
     <meta name="description" content="The IBM-Bluemix GitHub.io site is a well-maintained, centralized, curated collection of open sample applications built using Bluemix and Bluemix services. The site gives developers a go-to page to see all Bluemix capabilities. There is option to filter samples by languages, categories or even industries to find the sample using the services you want."/>
     <meta name="keywords" content="Build a toolchain application on Bluemix, Bluemix code Samples, Watson code samples, IoT samples, Bluemix Samples, Mobile development on Bluemix, Cloudant database on Bluemix, Text to Speech, Speech To Text"/>
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/emojione-awesome.css"/>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/NPS-Style.css">
+    <link rel="stylesheet" href="./css/animations.css">
 
 
 </head>
@@ -25,11 +26,9 @@
 <body ng-app="ngSamples" ng-controller="samplesController" class="home overflow-hidden">
 <!-- Google Tag Manager (noscript) -->
 <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDPHZL" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDPHZL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
-
 
 <!-- Top header blue line -->
 <div class="header-panel shadow-z-2">
@@ -98,193 +97,10 @@
     </div>
 </div>
 
-<!-- Filter Area-->
-<div class="header-panel shadow-z-2-filter">
-    <div class="page-container">
-        <div class="filter-row">
 
-            <div class="fil">
-                <form role="search">
-                    <div class="form-group search-input">
-                        <input type="text" class="form-control" placeholder="Search by language, service or industry..."
-                               ng-model="searchTextData">
-                    </div>
-                </form>
-            </div>
+<!-- Loading the view -->
+<div ng-view> </div>
 
-            <div class="filterAreaDiv">
-                <div class='bx--select'>
-                    <select id="sortBy" ng-model="tagP.sort" class="form-sorting">
-                        <option value="" analytics-on="click" analytics-event="Sort by: All">Sort by: All</option>
-                        <option value="Most Viewed" analytics-on="click" analytics-event="Sort by: Most Viewed">Most Viewed</option>
-                        <option value="Recently Added" analytics-on="click" analytics-event="Sort by: Recently Added">Recently Added</option>
-                    </select>
-                </div>
-
-                <div class="ser filter">
-                    <form role="search">
-                        <div class="filterButton" id="filterButton">
-                            <span> Filter </span>
-                            <svg class="filter-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 16.8 13.9" enable-background="new 0 0 16.8 13.9" xml:space="preserve">
-                    <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#3D70B2" points="4,0 0,4.6 2.7,4.6 2.7,13.9 5.3,13.9 5.3,4.6 8,4.6 "/>
-                    <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#3D70B2" points="12.8,13.9 16.8,9.2 14.1,9.2 14.1,0 11.4,0 11.4,9.2
-                    8.8,9.2 "/>
-                  </svg>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<div class="page-container">
-    <div class="dropdown" id="filterDropdown">
-        <div class="inside filter-category">
-            <span class="filter-text">LANGUAGES:</span><br/>
-            <div class="language search-body">
-                <table>
-                    <tr>
-                        <button type="button" data-track-action="Filter" data-track-label="Python"
-                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Python')">
-                            Python
-                        </button>
-                        <button type="button" data-track-action="Filter" data-track-label="NodeJS"
-                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('NodeJS')">
-                            NodeJS
-                        </button>
-                        <button type="button" data-track-action="Filter" data-track-label="Java"
-                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Java')">Java
-                        </button>
-                        <button type="button" data-track-action="Filter" data-track-label="Swift"
-                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Swift')">
-                            Swift
-                        </button>
-                        <button type="button" data-track-action="Filter" data-track-label="Android"
-                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Android')">
-                            Android
-                        </button>
-                        <button type="button" data-track-action="Filter" data-track-label="Hybrid"
-                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleLanguage('Hybrid')">
-                            Hybrid
-                        </button>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="inside 01">
-            <span class="filter-text">CATEGORIES:</span>
-            <div class="category search-body">
-                <table>
-                    <tr>
-                        <button type="button" data-track-action="Filter" data-track-label="IoT"
-                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('IoT')">IoT
-                        </button>
-                        <button type="button" data-track-action="Filter" data-track-label="Web"
-                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('Web')">Web
-                        </button>
-                        <button type="button" data-track-action="Filter" data-track-label="Mobile"
-                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('Mobile')">
-                            Mobile
-                        </button>
-                        <button type="button" data-track-action="Filter" data-track-label="Watson"
-                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('Watson')">
-                            Watson
-                        </button>
-                        <button type="button" data-track-action="Filter" data-track-label="Serverless"
-                                class="tagFilter btn btn-sm" data-toggle="button" ng-click="toggleCategory('Serverless')">
-                            Serverless
-                        </button>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-    </div>
-</div>
-<div class="page-container main outer">
-    <div class="TotHome">
-        <span ng-if="samples.length === filteredLinks.length">Displaying <b>{{samples.length}}</b> featured samples.</span>
-        <span ng-if="filteredLinks.length != samples.length">Displaying <b>{{filteredLinks.length}}</b> code samples matching your criteria.</span>
-    </div>
-
-    <ul class="items-wrapper"><!-- START FULL PAGE -->
-        <li class="inside project-item"
-            ng-repeat="sample in ( filteredLinks = ( samples | filter:searchTextData | filter:tagP.sort | samplesFilter:tagP ))">
-
-            <div class="project-outer" ng-class="{demo: sample.tags.indexOf('demo')>=0}">
-                <!-- tracking sample links -->
-                <div class="link-title">
-                    <a id="demoID" data-track-action="sample-title" data-track-label="{{sample.urlLink}}" href="{{sample.url}}" target="_blank" analytics-on="click" analytics-event="Sample Title: {{sample.name}}">{{sample.name}}</a>
-                    <a href="{{sample.homepage}}" ng-if="sample.homepage"> <span class="e1a-sample e1a-sm"></span></a>
-                </div>
-                <div class="project-content description">
-                    <span>{{sample.description}}</span>
-                </div>
-
-                <div class="project-content tag-group">
-
-                    <div class="tag-holder">
-                        <span class="FirSpanLeft">LANGUAGES: </span>
-                        <span ng-repeat="item in sample.language">
-                <span class="tag-filter language" ng-class="LanChecked" id="">{{item}}</span>
-
-
-              </span>
-                    </div>
-
-                    <span class="FirSpanLeft">CATEGORY: </span>
-                    <div class="tag-holder">
-                <span ng-repeat="item in sample.category">
-                  <span class="tag-filter category" ng-class="CatChecked">{{item}}</span>
-                </span>
-                    </div>
-
-                    <span class="FirSpanLeft">SERVICES: </span>
-                    <div class="tag-services">
-              <span ng-repeat="item in sample.services">
-                <span class="services ">{{item || '&nbsp;'}}{{$last ? '' : ','}}</span>
-              </span>
-                    </div>
-                </div>
-                <meta name="description" content="{{sample.search}}">
-            </div>
-
-
-
-            <div class="tag-level">
-                <span ng-show="{{sample.blogPost !== ''}}" class="project-link">
-                    <a id="BlogPost" data-track-action="sample-blog" data-track-label="{{sample.blogPost}}" href="{{sample.blogPost}}" class="hrefLink" target="_blank" analytics-on="click" analytics-event="Blog Post: {{sample.name}}">Blog Post</a>
-                </span>
-                <span ng-show="{{sample.urlLink !== ''}}" class="project-link">
-                    <a id="LiveDemo" data-track-action="sample-demo" data-track-label="{{sample.urlLink}}" href="{{sample.urlLink}}" class="hrefLink" target="_blank" analytics-on="click" analytics-event="Live Demo: {{sample.name}}">Live Demo</a>
-                </span>
-                <span ng-show="{{sample.urlVideo !== ''}}" class="project-link">
-                    <a id="LiveVideo" data-track-action="sample-video" data-track-label="{{sample.urlVideo}}" href="{{sample.urlVideo}}" class="hrefLink" target="_blank" analytics-on="click" analytics-event="View Video: {{sample.name}}">View Video</a>
-                </span>
-            </div>
-
-        </li>
-    </ul>
-
-
-    <div class="row">
-        <div class="col-md-12 col-xs-12 footer">
-            <footer>
-
-                Made with <i class="fa fa-heart" aria-hidden="true"></i> by the Bluemix team</br>
-                Copyright © IBM 2017 | <a target="_blank" href="https://www.ibm.com/privacy/us/en/?lnk=flg-priv-usen" analytics-on="click" analytics-event="Footer To: Privacy">Privacy</a>
-                <br>Powered by <a id="IBMBluemix" target="_blank" href="https://www.ibm.com/cloud-computing/bluemix" analytics-on="click" analytics-event="Footer To: IBM Bluemix Site">IBM Bluemix</a>
-                <br>
-            </footer>
-
-        </div>
-    </div>
-    <br>
-</div>
 
 
 
@@ -329,37 +145,35 @@
         <h5><span></span>Give Feedback</h5>
     </div>
 </a>
-
-
 </body>
 
 
-<!-- Vendor Libs: jQuery only used for Bootstrap functionality -->
+<!-- Vendor libraries: jQuery only used for Bootstrap functionality -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<!-- UI Libs & cookies-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap-tpls.min.js"></script>
-<script src="scripts/ngCookies.js"></script>
+
+<!-- Loading Angular scripts-->
+<script src="app/scripts/ngCookies.js"></script>
+<script src="app/scripts/angular-animate.js"></script>
+<script src="app/scripts/angular-route.js"></script>
 
 <!-- Loading controllers, factory, filters and dependencies -->
 <script src="app.js"></script>
-<script src="app/samplesController.js"></script>
-<script src="app/samplesFactory.js"></script>
-<script src="app/samplesFilter.js"></script>
-<script src="app/pjs.js"></script>
+<script src="app/controllers/samplesController.js"></script>
+<script src="app/services/samplesFactory.js"></script>
+<script src="app/filters/samplesFilter.js"></script>
 
 <!-- Loading Google Analytics, segment scripts, angulartics.min.js and angulartics-segment.min.js to track events, Bluemix analytics Amplitude, snipes for (Tealium and Coremetrics), ida_production -->
-<script src="scripts/google-analytics.js"></script>
-<script src="./scripts/angulartics.min.js"></script>
-<script src="./scripts/angulartics-segment.min.js"></script>
-<script src="scripts/segment.js"> </script>
-
+<script src="external_scripts/google-analytics.js"></script>
+<script src="external_scripts/angulartics.min.js"></script>
+<script src="external_scripts/angulartics-segment.min.js"></script>
+<script src="external_scripts/segment.js"> </script>
 
 <!-- NPS Feedback -->
-<script src="scripts/NPS.js"></script>
+<script src="external_scripts/NPS.js"></script>
 <script async src="https://nps.mybluemix.net/survey/nps-survey.js"></script>
 
 
