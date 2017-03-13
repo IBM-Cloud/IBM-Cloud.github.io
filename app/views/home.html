@@ -21,7 +21,7 @@
                     </select>
                 </div>
 
-                <div class="ser filter">
+                <div class="ser filter" ng-click="clickToExpand=true">
                     <form role="search">
                         <div class="filterButton" id="filterButton">
                             <span> Filter </span>
@@ -41,7 +41,7 @@
 </div>
 
 <div class="page-container">
-    <div class="dropdown" id="filterDropdown">
+    <div class="dropdown" id="filterDropdown" ng-show="clickToExpand" >
         <div class="inside filter-category">
             <span class="filter-text">LANGUAGES:</span><br/>
             <div class="language search-body">
@@ -184,6 +184,3 @@
     </div>
     <br>
 </div>
-
-<script src="app/views/js/jqueryScripts.js"></script>
-
