@@ -73,7 +73,7 @@
     "description": "An Android ChatBot powered by IBM Watson Services (Conversation and Text-to-Speech) on IBM Bluemix.",
     "language": ["Android"],
     "tags": ["SampleCode"],
-    "services": ["Conversation API", "Text to Speech"],
+    "services": ["Conversation API", "Text to Speech", "Speech to Text", "Mobile Analytics"],
     "level" : "Beginner",
     "category": ["Mobile", "Watson"],
     "Subcategory": ["Watson"],
