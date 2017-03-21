@@ -18,7 +18,7 @@ angular
 
 
             // Simple POST request example (passing data) :
-            $http.post('http://t-daniel-backend.eu-gb.mybluemix.net/contact-form', data)
+            $http.post('https://t-daniel-backend.eu-gb.mybluemix.net/contact-form', data)
                 .then(function successCallback(data, config) {
                 // this callback will be called asynchronously
                 // when the response is available
