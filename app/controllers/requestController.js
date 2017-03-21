@@ -27,7 +27,7 @@ angular
 
                 // Injecting success into the array of alerts
                 $scope.alerts = [ {type: 'success', msg: ''} ];
-                $scope.alerts[0].msg = 'Thanks ' + $scope.myName + ', we have got your request.';
+                $scope.alerts[0].msg = 'Thanks, ' + $scope.myName + ' we have got your request, and we will be in touch. ';
 
                 // After user sent the email, then clear the values to be empty
                 $scope.myName = "";
