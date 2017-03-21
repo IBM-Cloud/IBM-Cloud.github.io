@@ -47,12 +47,7 @@
 .ngdialog-buttons {
 	text-align: right;
 }
-button.ng-isolate-scope {
-	color: #eed3fe;
-	font-size: 15px;
-	background: none;
-	border: none;
-}
+
 
 .ngdialog.ngdialog-theme-default .ngdialog-close {
 	border-radius: 5px;
