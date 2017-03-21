@@ -883,6 +883,10 @@ ul.triggers li:hover {
   .header-image {
     width: 60%;
   }
+
+  .project-item {
+    height: 426px;
+  }
 }
 @media (min-width: 1250px) {
   .header-image {
@@ -893,6 +897,7 @@ ul.triggers li:hover {
     width: 22.75%;
     margin-left: 1.5%;
     margin-right: 1.5%;
+    height: 426px;
   }
 
   .project-item:nth-child(4n+1) {
