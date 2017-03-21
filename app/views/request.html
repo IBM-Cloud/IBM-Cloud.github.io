@@ -1,0 +1,40 @@
+<style>
+    a.survey.cancelled-out-taborder, .featureSample, .featureSampleMobile{
+        display: none;
+    }
+</style>
+<div class="sliding-panel-fade-screen"></div>
+<div class="containerContact">
+
+    <div class="contactBack">
+        <a href="./#!/index"> << Back </a>
+    </div>
+    <section class="contantIn">
+        <article class="contactArticle">
+            <header class="contact-header">
+                <h1 class="contact-title">
+                    <a class="contact-link">Request to feature new Sample</a>
+                </h1>
+
+                <div>Think your sample application should be featured here or you want to give us some feedback?<br>
+                    Simply add your details below, and we we'd be in touch </div>
+                <br><br>
+            </header>
+
+            <div class="RequestForm">
+                <form name="myForm" ng-submit="sendMail()">
+                    <input type="text" name="myName" ng-model="myName" placeholder="Name *" required autofocus><br>
+                    <input type="email" name="myEmail" ng-model="myEmail" placeholder="Email *" required><br>
+                    <textarea type="text" name="myDescription" ng-model="myDescription" placeholder="Description / Sample Repo*" class="myDescription" required></textarea>
+                    <br>
+                    <div class="form-group">
+                        <button type="submit" class="subm">Submit</button>
+                        <div class="messageContact" ng-show="emailSent">
+                            <div uib-alert ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')" close="closeAlert($index)" class="alert">{{alert.msg}}</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </section>
+</div>

@@ -71,3 +71,10 @@ Similar to the live demo link, every demo card should feature a *Blog Post Link*
 #### Blog Post Link
 
 Similar to the live demo link, every demo card should feature a *View Video*. This links the user to the a video of the demo.
+
+
+## Services the GitHub.io uses 
+- Availability Monitoring service to monitor all live demo links and alert us when any of the samples are down, and all alerts are sent to the #Bluemix-GitHub.io slack channel 
+- NPS is used to collect user feedback on the samples on the site 
+- Segment, Amplitude & Google Analytics is used to track user events and sessions on the site 
+- AngularJS routing, cookies, ui-bootstrap & Animations is used to create the overall site functionality. 

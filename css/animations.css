@@ -106,6 +106,43 @@ body.skip-animations * {
 }
 
 
+/* Animation for page views */
+
+.page-animation.ng-enter,
+.page-animation.ng-leave,
+.page-animation.ng-move {
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+    position:relative;
+}
+
+.page-animation.ng-enter {
+    left:10px;
+    opacity:0;
+}
+.page-animation.ng-enter.ng-enter-active {
+    left:0;
+    opacity:1;
+}
+
+.page-animation.ng-leave {
+    left:10px;
+    opacity:1;
+}
+.page-animation.ng-leave.ng-leave-active {
+    left:-10px;
+    opacity:0;
+}
+
+.page-animation.ng-move {
+    opacity:0.5;
+}
+.page-animation.ng-move.ng-move-active {
+    opacity:1;
+}
+
 
 
 
