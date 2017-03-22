@@ -173,6 +173,7 @@
 <script src="app/scripts/ngCookies.js"></script>
 <script src="app/scripts/angular-animate.js"></script>
 <script src="app/scripts/angular-route.js"></script>
+<script src="app/scripts/ngMessages.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
 <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
 
@@ -204,18 +205,33 @@
         <div class="RequestForm" ng-controller="requestController">
             <form name="myForm" ng-submit="sendMail()">
                 <div class="inputFormPopup">
-                    <input type="text" name="myName" ng-model="myName" placeholder="Name *" required autofocus><br>
-                    <input type="email" name="myEmail" ng-model="myEmail" placeholder="Email *" required><br>
-                    <input type="text" name="myUrl" ng-model="myUrl" placeholder="Sample Repo URL *" required><br>
+                    <div ng-messages="myForm.myName.$error">
+                        <div ng-message="required">This field is required</div>
+                    </div>
+                    <input type="text" name="myName" ng-model="myName" placeholder="Name *" required /><br>
 
-                    <textarea type="text" name="myDescription" ng-model="myDescription" placeholder="Description *" class="myDescription" required></textarea>
+
+                    <div ng-messages="myForm.myEmail.$error">
+                        <div ng-message="required">This field is required</div>
+                        <div ng-message="email">Your email address is invalid</div>
+                    </div>
+                    <input type="email" name="myEmail" ng-model="myEmail" placeholder="Email *" required /><br>
+
+
+                    <div ng-messages="myForm.myUrl.$error">
+                        <div ng-message="required">This field is required</div>
+                    </div>
+                    <input type="text" name="myUrl" ng-model="myUrl" placeholder="Sample Repo URL *" required /><br>
+
+
+                    <textarea type="text" name="myDescription" ng-model="myDescription" placeholder="Description" class="myDescription"></textarea>
                 </div>
 
 
                 <div class="form-group-popup">
                     <div class="ngdialog-buttons">
                         <button type="button" class="ngdialog-button ngdialog-button-cancel" ng-click="closeThisDialog()">Close</button>
-                        <button type="submit" class="ngdialog-button ngdialog-button-primary">Submit</button>
+                        <button type="submit" class="ngdialog-button ngdialog-button-primary" ng-disabled="myForm.$invalid">Submit</button>
 
                     </div>
                     <div class="messageContact" ng-show="emailSent">

@@ -960,11 +960,15 @@ a.featureSampleMobile{
 }
 
 button.ng-isolate-scope{
-  color: #eed3fe;
+  color: #ffffff;
   font-size: 15px;
   background: none;
   border: none;
 
+}
+
+button.ng-isolate-scope:hover{
+  color: #5596e6;
 }
 
 

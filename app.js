@@ -6,7 +6,7 @@
 // ngulartics & angulartics.segment = helps with tracking user clicks on the page that get sent to Segment
 // ngAnimate = for using Angular animations
 (function() {
-    var app = angular.module('ngSamples', ['ngRoute', 'ui.bootstrap', 'ui.bootstrap.modal', 'ngCookies', 'angulartics', 'angulartics.segment', 'ngAnimate', 'ngSanitize', 'ngDialog']);
+    var app = angular.module('ngSamples', ['ngRoute', 'ui.bootstrap', 'ui.bootstrap.modal', 'ngCookies', 'angulartics', 'angulartics.segment', 'ngAnimate', 'ngSanitize', 'ngDialog', 'ngMessages']);
 
     app.config(function($routeProvider) {
         $routeProvider
@@ -17,10 +17,6 @@
             .when('/index', {
                 controller: 'samplesController',
                 templateUrl: 'app/views/home.html'
-            })
-            .when('/request', {
-                controller:  'requestController',
-                templateUrl: 'app/views/request.html'
             })
             .otherwise( { redirectTo: '/' } );
     });

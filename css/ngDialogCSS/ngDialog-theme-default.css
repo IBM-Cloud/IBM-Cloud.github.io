@@ -105,7 +105,7 @@
 	background: #dfe6eb;
 }
 
-.alert-success{
+.alert-success, .alert-danger{
 	margin-top: 10px;
 }
 .ngdialog.ngdialog-theme-default .ngdialog-input textarea:focus,.ngdialog.ngdialog-theme-default .ngdialog-input input[type="text"]:focus,.ngdialog.ngdialog-theme-default .ngdialog-input input[type="password"]:focus,.ngdialog.ngdialog-theme-default .ngdialog-input input[type="email"]:focus,.ngdialog.ngdialog-theme-default .ngdialog-input input[type="url"]:focus {
