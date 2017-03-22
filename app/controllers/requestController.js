@@ -4,16 +4,19 @@ angular
 
         // setting message logic to false not display any message by default
         $scope.emailSent = false;
-        // scope binding the form data
-        var data = ({
-            myName: $scope.myName,
-            myEmail: $scope.myEmail,
-            myUrl: $scope.myUrl,
-            myDescription: $scope.myDescription
-        });
+
 
         //The send button will call this method to make an API to a nodeJS app.
         $scope.sendMail = function () {
+
+            // scope binding the form data
+            var data = ({
+                myName: $scope.myName,
+                myEmail: $scope.myEmail,
+                myUrl: $scope.myUrl,
+                myDescription: $scope.myDescription
+            });
+            
             // Simple POST request example (passing data) :
             $http.post('https://t-daniel-backend.eu-gb.mybluemix.net/contact-form', data)
                 .then(function successCallback(data, config) {
