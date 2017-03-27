@@ -16,9 +16,9 @@ angular
                 myUrl: $scope.myUrl,
                 myDescription: $scope.myDescription
             });
-
+            
             // Simple POST request example (passing data) :
-            $http.post('https://b4651037-d05a-4b7d-ab46-1e9a1abc096f-gws.api-gw.mybluemix.net/api-demo/v1/contact-form', data)
+            $http.post('https://t-daniel-backend.eu-gb.mybluemix.net/contact-form', data)
                 .then(function successCallback(data, config) {
                 // this callback will be called asynchronously
                 // when the response is available
