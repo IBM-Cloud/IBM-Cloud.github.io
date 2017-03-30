@@ -98,7 +98,7 @@ angular
                 className: 'ngdialog-theme-plain',
                 scope: $scope
             });
-        }
+        };
 
     });
 
