@@ -14,6 +14,7 @@
 
     <!-- FontAwesome icons -->
     <link rel="stylesheet" href="//use.fontawesome.com/74dfc6cf47.css">
+
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/emojione-awesome.css"/>
     <link rel="stylesheet" href="./css/main.css">
@@ -21,6 +22,10 @@
     <link rel="stylesheet" href="./css/animations.css">
 
 
+    <!-- ngDialog’s basic and theme CSS files -->
+    <link rel="stylesheet" href="./css/ngDialogCSS/ngDialog.css">
+    <link rel="stylesheet" href="./css/ngDialogCSS/ngDialog-theme-default.css">
+    <link rel="stylesheet" href="./css/ngDialogCSS/ngDialog-theme-plain.css">
 </head>
 
 <body ng-app="ngSamples" ng-controller="samplesController" class="home overflow-hidden">
@@ -36,14 +41,19 @@
         <div class="header-row">
             <div class="header01 header-logo">
                 <div class="row-picture">
-                    <a href="index"><img id="about" src="./icons/bluemix_logo.svg"></a>
+                    <a href="./#!/index"><img id="about" src="./icons/bluemix_logo.svg"></a>
                 </div>
                 <div class="row-details">
                     <p class="list-group-item-text">IBM Bluemix | GitHub.io</p>
                 </div>
             </div>
             <div class="header02">
+
+
                 <div class="social-icons">
+
+                    <button type="button" ng-dialog="firstDialogId" ng-dialog-controller="InsideCtrl" ng-dialog-data="{{jsonData}}" ng-dialog-class="ngdialog-theme-default" ng-dialog-show-close="false" analytics-on="click" analytics-event="SubmitYourSample Popup">Submit Your Sample</button>
+
                     <a class="icon" href="https://www.ibm.com/cloud-computing/bluemix" data-track-action="Icon"
                        data-track-label="Bluemix" target="_blank" analytics-on="click" analytics-event="Header To: IBM Bluemix Site">
                         <svg id="bluemix" class="logo-icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
@@ -89,20 +99,24 @@
     </div>
 </div>
 
-<!-- Header label area -->
-<div class="header-panel shadow-z-2-banner">
-    <img class="header-image" src="./img/banner-background.svg">
-    <div class="page-container">
-        <h1>Featured Samples</h1>
-    </div>
-</div>
+
 
 
 <!-- Loading the view -->
-<div ng-view> </div>
+<div ng-view class="page-animation"> </div>
 
 
+<div class="rowFooter">
+        <footer>
 
+            Made with <i class="fa fa-heart" aria-hidden="true"></i> by the Bluemix team</br>
+            Copyright © IBM 2017 | <a target="_blank" href="https://www.ibm.com/privacy/us/en/?lnk=flg-priv-usen" analytics-on="click" analytics-event="Footer To: Privacy">Privacy</a>
+            <br>Powered by <a id="IBMBluemix" target="_blank" href="https://www.ibm.com/cloud-computing/bluemix" analytics-on="click" analytics-event="Footer To: IBM Bluemix Site">IBM Bluemix</a>
+            <br>
+        </footer>
+
+</div>
+<br>
 
 <a href="#" onclick="showNpsSurvey();return false" class="survey cancelled-out-taborder" tabindex="0">
     <div class="floating-feedback">
@@ -159,15 +173,18 @@
 <script src="app/scripts/ngCookies.js"></script>
 <script src="app/scripts/angular-animate.js"></script>
 <script src="app/scripts/angular-route.js"></script>
+<script src="app/scripts/ngMessages.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
 
 <!-- Loading controllers, factory, filters and dependencies -->
 <script src="app.js"></script>
 <script src="app/controllers/samplesController.js"></script>
+<script src="app/controllers/requestController.js"></script>
 <script src="app/services/samplesFactory.js"></script>
 <script src="app/filters/samplesFilter.js"></script>
 
 <!-- Loading Google Analytics, segment scripts, angulartics.min.js and angulartics-segment.min.js to track events, Bluemix analytics Amplitude, snipes for (Tealium and Coremetrics), ida_production -->
-<script src="external_scripts/google-analytics.js"></script>
 <script src="external_scripts/angulartics.min.js"></script>
 <script src="external_scripts/angulartics-segment.min.js"></script>
 <script src="external_scripts/segment.js"> </script>
@@ -176,5 +193,51 @@
 <script src="external_scripts/NPS.js"></script>
 <script async src="https://nps.mybluemix.net/survey/nps-survey.js"></script>
 
+<!-- ng-Dialog Popup -->
+<script src="app/scripts/ngDialog.js"></script>
+<script type="text/ng-template" id="firstDialogId">
+    <div class="ngdialog-message">
+        <h3>Submit Your Sample Application</h3>
+        <p ng-show="theme">Think your application should be featured here? Don't be afraid to drop us a line, we'd love to get in touch.</p>
+    </div>
 
+        <div class="RequestForm" ng-controller="requestController">
+            <form name="myForm" ng-submit="sendMail()">
+                <div class="inputFormPopup">
+                    <div ng-messages="myForm.myName.$error">
+                        <div ng-message="required">This field is required</div>
+                    </div>
+                    <input type="text" name="myName" ng-model="myName" placeholder="Name *" required /><br>
+
+
+                    <div ng-messages="myForm.myEmail.$error">
+                        <div ng-message="required">This field is required</div>
+                        <div ng-message="email">Your email address is invalid</div>
+                    </div>
+                    <input type="email" name="myEmail" ng-model="myEmail" placeholder="Email *" required /><br>
+
+
+                    <div ng-messages="myForm.myUrl.$error">
+                        <div ng-message="required">This field is required</div>
+                    </div>
+                    <input type="text" name="myUrl" ng-model="myUrl" placeholder="Sample Repo URL *" required /><br>
+
+
+                    <textarea type="text" name="myDescription" ng-model="myDescription" placeholder="Description" class="myDescription"></textarea>
+                </div>
+
+
+                <div class="form-group-popup">
+                    <div class="ngdialog-buttons">
+                        <button type="button" class="ngdialog-button ngdialog-button-cancel" ng-click="closeThisDialog()">Close</button>
+                        <button type="submit" class="ngdialog-button ngdialog-button-primary" ng-disabled="myForm.$invalid">Submit</button>
+
+                    </div>
+                    <div class="messageContact" ng-show="emailSent">
+                        <div uib-alert ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')" close="closeAlert($index)" class="alert">{{alert.msg}}</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+</script>
 </html>
