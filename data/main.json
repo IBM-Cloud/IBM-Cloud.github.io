@@ -59,8 +59,6 @@
     "MostClicked": "Processing Images with IBM Watson, How to process images using Watson visual recognition",
     "Added": "Recently Added"
   },
-
-
   {
     "State" : "live",
     "urlVideo": "",
@@ -78,10 +76,9 @@
     "blogPost" : "https://www.ibm.com/blogs/bluemix/2017/02/deploy-scalable-docker-application/",
     "industry": "Sample App",
     "search": "Deploy docker application to the cloud, build and deploy Docker application on the cloud, build a chat Docker app, deploy and scale Docker application",
-    "MostClicked": "",
+    "MostClicked": "Most Viewed",
     "Added": "Recently Added"
   },
-
   {
     "State" : "live",
     "urlVideo": "https://vimeo.com/202225946",
@@ -102,7 +99,6 @@
     "MostClicked": "",
     "Added": "Recently Added"
   },
-
   {
     "State" : "live",
     "urlVideo": "https://www.youtube.com/watch?v=Rvc1CqNJkOA&t=1509s",
@@ -121,7 +117,7 @@
     "industry": "Sample App",
     "search": "Stream water conservation starter Kit",
     "MostClicked": "",
-    "Added": "Recently Added"
+    "Added": ""
   },
 
 
@@ -144,7 +140,7 @@
     "industry": "Sample App",
     "search": "Build an Android on app, build an ChatBot for Android",
     "MostClicked": "Most Viewed",
-    "Added": "Recently Added"
+    "Added": ""
   },
 
 
@@ -166,7 +162,7 @@
     "industry": "Sample App",
     "search": "Build a simple php todo app, Build a simple Node.js todo app, Build a simple Swift todo app, Build a simple IOS todo app, Build a simple Java todo app, Build a simple Python todo app, Build a simple Rails todo app,  ",
     "MostClicked": "",
-    "Added": "Recently Added"
+    "Added": ""
   },
   {
     "State" : "live",
@@ -186,7 +182,7 @@
     "industry": "News application",
     "search": "Build a news application using IBM Bluemix services",
     "MostClicked": "",
-    "Added": "Recently Added"
+    "Added": ""
   },
   {
     "State" : "live",
@@ -207,7 +203,7 @@
     "rate": "5",
     "search": "Build a swift app with IBM Bluemix",
     "MostClicked": "",
-    "Added": "Recently Added"
+    "Added": ""
   },
   {
     "State" : "live",
@@ -228,7 +224,7 @@
     "rate": "5",
     "search": "Build an IoT application with using OpenWhisk, OpenWhisk and IoT on Bluemix",
     "MostClicked": "",
-    "Added": "Recently Added"
+    "Added": ""
   },
   {
     "State" : "live",
@@ -249,7 +245,7 @@
     "rate": "5",
     "search": "Blockchain on Bluemix",
     "MostClicked": "",
-    "Added": "Recently Added"
+    "Added": ""
   },
 
   {
@@ -269,7 +265,7 @@
     "blogPost" : "",
     "industry": "Insurance",
     "search": "Build an insurance app, app for insurance, insurance with node",
-    "MostClicked": "",
+    "MostClicked": "Most Viewed",
     "Added": ""
 
   },
@@ -797,7 +793,7 @@
     "industry": "How To",
     "rate": "5",
     "search": "Build an app with Tradeoff Analytics to make better choices, build an app to make better choices, better choices app",
-    "MostClicked": "Most Viewed",
+    "MostClicked": "",
     "Added": ""
   }
 
