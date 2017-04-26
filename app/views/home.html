@@ -134,7 +134,7 @@
             <div class="project-outer" ng-class="{demo: sample.tags.indexOf('demo')>=0}">
                 <!-- tracking sample links -->
                 <div class="link-title">
-                    <a id="demoID" data-track-action="sample-title" data-track-label="{{sample.urlLink}}" href="{{sample.url}}" target="_blank" analytics-on="click" analytics-event="Sample Title: {{sample.name}}">{{sample.name}}</a>
+                    <a id="demoID" data-track-action="sample-title" data-track-label="{{sample.urlLink}}" href="{{sample.url}}" target="_blank" analytics-on="click" analytics-name="Visited Content" analytics-event="Sample Title: {{sample.name}}">{{sample.name}}</a>
                     <a href="{{sample.homepage}}" ng-if="sample.homepage"> <span class="e1a-sample e1a-sm"></span></a>
                 </div>
                 <div class="project-content description">
@@ -173,13 +173,13 @@
 
             <div class="tag-level">
                 <span ng-show="{{sample.blogPost !== ''}}" class="project-link">
-                    <a id="BlogPost" data-track-action="sample-blog" data-track-label="{{sample.blogPost}}" href="{{sample.blogPost}}" class="hrefLink" target="_blank" analytics-on="click" analytics-event="Blog Post: {{sample.name}}">Blog Post</a>
+                    <a id="BlogPost" data-track-action="sample-blog" data-track-label="{{sample.blogPost}}" href="{{sample.blogPost}}" class="hrefLink" target="_blank" analytics-on="click" analytics-name="Viewed Blog Post" analytics-event="Blog Post: {{sample.name}}">Blog Post</a>
                 </span>
                 <span ng-show="{{sample.urlLink !== ''}}" class="project-link">
-                    <a id="LiveDemo" data-track-action="sample-demo" data-track-label="{{sample.urlLink}}" href="{{sample.urlLink}}" class="hrefLink" target="_blank" analytics-on="click" analytics-event="Live Demo: {{sample.name}}">Live Demo</a>
+                    <a id="LiveDemo" data-track-action="sample-demo" data-track-label="{{sample.urlLink}}" href="{{sample.urlLink}}" class="hrefLink" target="_blank" analytics-on="click" analytics-name="Viewed Live Demo" analytics-event="Live Demo: {{sample.name}}">Live Demo</a>
                 </span>
                 <span ng-show="{{sample.urlVideo !== ''}}" class="project-link">
-                    <a id="LiveVideo" data-track-action="sample-video" data-track-label="{{sample.urlVideo}}" href="{{sample.urlVideo}}" class="hrefLink" target="_blank" analytics-on="click" analytics-event="View Video: {{sample.name}}">View Video</a>
+                    <a id="LiveVideo" data-track-action="sample-video" data-track-label="{{sample.urlVideo}}" href="{{sample.urlVideo}}" class="hrefLink" target="_blank" analytics-on="click" analytics-name="Viewed Video" analytics-event="View Video: {{sample.name}}">View Video</a>
                 </span>
             </div>
 
