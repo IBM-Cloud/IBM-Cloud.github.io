@@ -125,6 +125,9 @@ p.info a {
 .icon:hover .fa-stack-overflow, .icon:hover .fa-github {
   color: #5aaafa;
 }
+.hideItem{
+  font-size: 0px;
+}
 
 body .container .jumbotron-primary, body .container .well-primary, body .container-fluid .jumbotron-primary, body .container-fluid .well-primary{
   background-color: #f5f7fa;
@@ -1109,7 +1112,7 @@ button.ng-isolate-scope:hover{
     width: 21px;
     height: 70px;
   }
-  
+
   ul.list-separator.nav.navbar-nav.well.well-primary.default {
     width: auto;
   }
