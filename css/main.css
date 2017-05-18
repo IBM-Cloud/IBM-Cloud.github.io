@@ -387,8 +387,8 @@ span.tag-filter.category.ng-binding.active {
 
 .project-content{
   font-size: 14px;
-  margin-bottom: 10px;
   color: rgba(0,0,0,0.75);
+  margin-bottom: 10px;
 }
 
 .project-content.description {
@@ -433,7 +433,7 @@ span.tag-filter.category.ng-binding.myCategory {
 
 .project-outer {
   border-top: 3px solid #8C9BA5;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
   background-color: white;
   flex: 1
 }
@@ -449,7 +449,9 @@ span.tag-filter.category.ng-binding.myCategory {
 }
 
 .tag-services {
-
+  display: inline-block;
+  height: 40px;
+  overflow: hidden;
 }
 
 a.btn.btn-info.btn-raised.btn-sm.project-link {
@@ -488,6 +490,10 @@ a.btn.btn-info.btn-raised.btn-sm.project-link {
 .tag-level span, .tag-level a {
   color: #337ab7;
 
+}
+span.project-link.demo {
+  float: left;
+  margin-left: 0.5rem;
 }
 
 a.hrefLink {

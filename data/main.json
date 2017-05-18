@@ -3,7 +3,7 @@
     "State" : "live",
     "urlVideo": "",
     "Author" : "IBM",
-    "name": "Static website generation with Jekyll, Object Storage and OpenWhisk in Bluemix",
+    "name": "Static website generation with Jekyll",
     "url": "https://github.com/IBM-Bluemix/openwhisk-publisher",
     "description": "This example is about the process of generating a static website with Jekyll, Object Storage and IBM OpenWhisk. This is ideal for simple web pages, blog's where you do not want to run a database.",
     "language": ["Jekyll"],
