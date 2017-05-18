@@ -81,10 +81,8 @@ a.survey .give-feedback {
 
 a.survey .floating-feedback {
     position: fixed;
-    top: -250px;
-    bottom: 0;
+    top: calc((100% - 70px) / 2);
     left: 15px;
-    margin: auto;
     width: 21px;
     height: 70px;
 }
@@ -154,5 +152,3 @@ a.survey:hover .floating-feedback .feedback-tooltip, a.survey:active .floating-f
         transform: translatey(-10px);
     }
 }
-
-

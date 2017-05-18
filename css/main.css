@@ -136,7 +136,7 @@ body .container .jumbotron-primary, body .container .well-primary, body .contain
 .page-container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 0 6rem;
 }
 
 .menu ul li {
@@ -1105,10 +1105,8 @@ button.ng-isolate-scope:hover{
 @media (min-width: 321px) and (max-width: 780px){
   a.survey .floating-feedback {
     position: fixed;
-    top: 0px;
-    bottom: 0;
+    top: calc((100% - 70px) / 2);
     left: 15px;
-    margin: auto;
     width: 21px;
     height: 70px;
   }
