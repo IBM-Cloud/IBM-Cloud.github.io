@@ -393,7 +393,7 @@ span.tag-filter.category.ng-binding.active {
 
 .project-content.description {
   display: inline-block;
-  height: 100px;
+  height: 120px;
   overflow: hidden;
 }
 
@@ -1003,7 +1003,7 @@ button.ng-isolate-scope:hover{
     margin-right: 3%;
   }
   .project-item {
-    height: 426px;
+    height: 450px;
   }
 }
 
@@ -1033,7 +1033,7 @@ button.ng-isolate-scope:hover{
     width: 22.75%;
     margin-left: 1.5%;
     margin-right: 1.5%;
-    height: 426px;
+    height: 450px;
 
   }
 
@@ -1111,7 +1111,7 @@ button.ng-isolate-scope:hover{
 @media (min-width: 321px) and (max-width: 780px){
   a.survey .floating-feedback {
     position: fixed;
-    top: calc((100% - 155px) / 2);
+    top: calc((100% - 157px) / 2);
     left: 15px;
     width: 21px;
     height: 70px;

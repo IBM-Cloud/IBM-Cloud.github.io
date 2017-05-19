@@ -81,7 +81,7 @@ a.survey .give-feedback {
 
 a.survey .floating-feedback {
     position: fixed;
-    top: calc((100% - 70px) / 2);
+    top: calc((100% - 157px) / 2);
     left: 15px;
     width: 21px;
     height: 70px;
