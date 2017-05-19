@@ -378,6 +378,23 @@ span.tag-filter.category.ng-binding.active {
   background: #aaf9e6;
   color: #238070;
 }
+.category.search-body button.tagFilter.btn.btn-sm.clear {
+  padding: 1px 10px;
+  font-size: 11px;
+  margin-right: 5px;
+  border-bottom: none;
+  border-radius: 10px;
+  font-weight: normal;
+  background: #ffffff;
+  color: #238070;
+}
+button.tagFilter.btn.btn-sm.clear.active{
+  background: #ffffff;
+  color: #238070;
+  padding-right: 15px;
+  border-bottom: none;
+  box-shadow: none;
+}
 
 .category.search-body button.tagFilter.btn.btn-sm.active{
   background: #238070;
