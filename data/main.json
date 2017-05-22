@@ -833,28 +833,5 @@
     "search": "Build an app with Watson Discovery",
     "MostClicked": "",
     "Added": ""
-  },
-
-  {
-    "State" : "live",
-    "urlVideo": "",
-    "Author" : "Bluemix Team",
-    "name": "Watson Tradeoff Analytics",
-    "description": "Helps users make better choices to best meet multiple conflicting goals.",
-    "url": "https://github.com/watson-developer-cloud/tradeoff-analytics-nodejs",
-    "language": ["NodeJS"],
-    "tags": ["SampleCode"],
-    "services": [ "Tradeoff Analytics"],
-    "level" : "Beginner",
-    "category" : ["Web", "Watson"],
-    "Subcategory": ["Watson"],
-    "urlLink": "http://tradeoff-analytics-demo.mybluemix.net/",
-    "blogPost" : "https://www.ibm.com/blogs/bluemix/2015/05/watson-tradeoff-analytics/",
-    "industry": "How To",
-    "rate": "5",
-    "search": "Build an app with Tradeoff Analytics to make better choices, build an app to make better choices, better choices app.",
-    "MostClicked": "",
-    "Added": ""
   }
-
 ]
