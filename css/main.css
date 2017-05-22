@@ -741,7 +741,8 @@ ul.list-separator.nav.navbar-nav.well.well-primary.default {
   border: 1px solid #ebf0f7;
   margin: 20px auto 0 auto;
   max-width: 1440px;
-  display: flex;
+  /*display: flex;*/
+  display: none;
 }
 
 .dropdown::after {
