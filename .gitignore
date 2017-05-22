@@ -1,7 +1,2 @@
 .DS_Store
 /.idea
-css/main.css
-
-app/views/home.html
-
-app/filters/samplesFilter.js
