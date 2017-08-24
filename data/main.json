@@ -1,5 +1,25 @@
 [
   {
+  "State" : "live",
+  "urlVideo": "",
+  "Author" : "IBM",
+  "name": "Investment Insights for Asset Managers",
+  "url": "https://github.com/IBM-Bluemix/investment-insights-for-asset-managers",
+  "description": "Investment Insights for Asset Managers is a modern finance portfolio manager that provides real-time insight into how news all around the world can impact the investment to any given portfolio.",
+  "language": ["NodeJS"],
+  "tags": ["SampleCode"],
+  "services": ["Investment Portfolio", "Discovery News", "Predictive Market Scenarios", "Simulated Instrument Analytics"],
+  "level" : "advanced",
+  "category": ["Web", "Watson"],
+  "Subcategory": ["Watson"],
+  "urlLink": "https://investment-insights-am.mybluemix.net/",
+  "blogPost" : "https://www.ibm.com/blogs/bluemix/2017/08/developing-finance-application-using-ibm-cloud/",
+  "industry": "Sample App",
+  "search": "IBM FINANCIAL SERVICES, Discovery News, Investment Portfolio",
+  "MostClicked": "",
+  "Added": "Recently Added"
+  },
+  {
     "State" : "live",
     "urlVideo": "",
     "Author" : "IBM",
@@ -57,7 +77,7 @@
     "industry": "Sample App",
     "search": "Retail Chatbot using Watson Conversation, Watson Discovery, ",
     "MostClicked": "",
-    "Added": "Recently Added"
+    "Added": ""
   },
   {
     "State" : "live",
@@ -77,7 +97,7 @@
     "industry": "Sample App",
     "search": "Deploy static website generation with Jekyll, deploy Jekyll app with OpenWhisk, OpenWhisk with Jekyll",
     "MostClicked": "",
-    "Added": "Recently Added"
+    "Added": ""
   },
   {
     "State" : "live",
@@ -97,7 +117,7 @@
     "industry": "Sample App",
     "search": "",
     "MostClicked": "Form Processing without backend, Form Processing with OpenWhisk, Form Processing with SendGrid",
-    "Added": "Recently Added"
+    "Added": ""
   },
   {
     "State" : "live",
@@ -117,7 +137,7 @@
     "industry": "Sample App",
     "search": "Deploy docker application to the cloud, build and deploy Docker application on the cloud, build a chat Docker app, deploy and scale Docker application, Deploy & Scale a chat app to Cloud Foundry, Docker Container and Kubernetes",
     "MostClicked": "Most Viewed",
-    "Added": "Recently Added"
+    "Added": ""
   },
   {
     "State" : "live",
@@ -137,7 +157,7 @@
     "industry": "Sample App",
     "search": "",
     "MostClicked": "Processing Images with IBM Watson, How to process images using Watson visual recognition",
-    "Added": "Recently Added"
+    "Added": ""
   },
   {
     "State" : "live",
