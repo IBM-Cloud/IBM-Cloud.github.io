@@ -1,9 +1,9 @@
-# Bluemix Github.io Page
-The [IBM-Bluemix GitHub.io](https://ibm-bluemix.github.io/) site is a well-maintained, centralized, curated collection of open sample applications built using Bluemix and Bluemix services. The site gives developers a go-to page to see all Bluemix capabilities.
+# IBM Cloud Github.io Page
+The [IBM Cloud GitHub.io](https://ibm-bluemix.github.io/) site is a well-maintained, centralized, curated collection of open sample applications built using IBM Cloud and IBM Cloud services. The site gives developers a go-to page to see all IBM Cloud capabilities.
 
 
 ### How to add new links to the Bluemix.github.io page.
-We have a process in which how new links can be added to the Bluemix GitHub.io page.
+We have a process in which how new links can be added to the IBM Cloud GitHub.io page.
 To add a new link follow these steps:
 
 Step 1) Create a new issue and label it as "Potential-Links".
@@ -11,7 +11,7 @@ The issue descreption must have the following details:
 - Live URL of the site
 - GitHub repo
 - DeveloperWorks blog post for that demo
-- Good ReadMe follows our IBM Bluemix ReadMe standards.
+- Good ReadMe follows our IBM Cloud ReadMe standards.
 
 Step 2) Once issue is created with new link, we will review the issue created, we will quickly check the source code demo, ReadMe and making sure the application is at the standards we want.
 
@@ -56,7 +56,7 @@ Category tags also double as filters. Selecting a category tag should filter the
 
 #### Services (?)
 
-Every demo card features a list of *Services* used with that specific demo. This helps users to better understand the services they can utilize on Bluemix to achieve the same results.
+Every demo card features a list of *Services* used with that specific demo. This helps users to better understand the services they can utilize on IBM Cloud to achieve the same results.
 
 Currently, the list of services does not act as a filter.
 
