@@ -21,7 +21,7 @@ svg {
 }
 
 .header-container {
-  padding: 0 4rem;
+  padding: 0 5rem;
 }
 
 .header-panel.shadow-z-2 {
@@ -123,7 +123,7 @@ body .container .jumbotron-primary, body .container .well-primary, body .contain
 .page-container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 6rem;
+  padding: 0 5rem;
 }
 
 .menu ul li {
@@ -250,14 +250,29 @@ h2.blog-title-pro:after {
 
 }
 .tutorialsButton{
+  font-size: 15px;
+  margin-right: 10px;
+  background-color: #5596e6;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  color: #fff;
+  margin-right: 24px;
+  padding: 5px 20px;
+}
+.tutorialsButton:hover{
+  color: #fff;  
+  text-decoration: none;
+}
+
+.submitSample{
   color: #ffffff;
   font-size: 15px;
   background: none;
   border: none;
-  margin-right: 10px;
 }
-.tutorialsButton:hover{
-  color: #5596e6;
+.submitSample:hover{
+  color: #5596e6;  
   text-decoration: none;
 }
 
@@ -303,7 +318,7 @@ footer {
 .TotHome {
   text-align: left;
   width: 100%;
-  padding: 2rem 2rem 2rem 3rem;
+  padding: 2rem 2rem 2rem 0rem;
   color: #5A6872;
   font-size: 14px;
 }
@@ -1004,12 +1019,37 @@ button.ng-isolate-scope:hover{
 }
 
 
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+  .submitSample{
+    display: none;
+  }
+  .header-container{
+    padding: 0 15px;
+  }
+  .icon{
+    margin-left: 4px;
+  }
+  .tutorialsButton{
+    margin-right: 4px;
+  }
+  .page-container{
+    padding: 0 10px;
+  }
+  a.survey .floating-feedback{
+    display: none;
+  }
+}
+
+/* Tablets size */
 @media (min-width: 600px) {
   .project-item {
     width: 49%;
     margin-right: 2%;
   }
-
 }
 
 @media (min-width: 600px) and (max-width: 970px) {
@@ -1088,10 +1128,6 @@ button.ng-isolate-scope:hover{
     float: right;
     text-align: right;
   }
-
-
-
-
   .col-md-12.col-xs-12.footer {
     width: 100%;
   }
