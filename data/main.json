@@ -1,5 +1,99 @@
 [
   {
+    "url": "https://github.com/IBM-Cloud/jpetstore-kubernetes",
+    "urlLink": "http://jpetstore.cloud-demos.us-south.containers.appdomain.cloud",
+    "urlVideo": "https://www.ibm.com/events/think/watch/replay/113899235/#29",
+    "blogPost": "",
+    "name": "Modernize and extend apps on IBM Cloud Kubernetes Service",
+    "description": "This demo modernizes an existing Java web application (JPetStore) by building a Docker container from the legacy stack. Then moving the app to IBM Cloud Kubernetes Service and extending it with Watson Visual Recognition and Twilio text messaging.",
+    "language": [
+      "Java"
+    ],
+    "services": [
+      "Watson Visual Recognition",
+      "Twilio"
+    ],
+    "category": [
+      "Web", 
+      "Kubernetes"
+    ],
+    "Subcategory": [
+    ],
+    "MostClicked": "Most Viewed",
+    "industry": "Sample App",
+    "Added": "Recently Added",
+    "search": "Kubernetes",
+    "Author": "IBM",
+    "tags": [
+      "SampleCode"
+    ],
+    "level": "advanced",
+    "State": "live"
+  },
+  {
+    "url": "https://github.com/IBM/rotisserie",
+    "urlLink": "https://rotisserie.tv/",
+    "urlVideo": "https://www.youtube.com/watch?v=MTNFUtba4Pk",
+    "blogPost": "https://developer.ibm.com/code/videos/tech-talk-replay-implement-computer-vision-playerunknowns-battlegrounds-live-streams/",
+    "name": "Build a web app that uses OCR on live-streaming video Twitch",
+    "description": "Rotisserie takes the concept of the red zone in American football and applies it to the popular online battle royale game. The idea is to always be viewing the most popular PUBG twitch stream with the least amount of people alive in-game.",
+    "language": [
+      "NodeJS"
+    ],
+    "services": [
+      "Kubernetes Clusters"
+    ],
+    "category": [
+      "Web", 
+      "Kubernetes"
+    ],
+    "Subcategory": [
+    ],
+    "MostClicked": "",
+    "industry": "Sample App",
+    "Added": "Recently Added",
+    "search": "",
+    "Author": "IBM",
+    "tags": [
+      "SampleCode"
+    ],
+    "level": "advanced",
+    "State": "live"
+  },
+  {
+    "url": "https://github.com/IBM/watson-banking-chatbot",
+    "urlLink": "https://create-a-cognitive-banking-chatbot-hnike.mybluemix.net/?cm_sp=dw-bluemix-_-code-_-devcenter&cm_mc_uid=22216093017615210266964&cm_mc_sid_50200000=77607231528207247004&cm_mc_sid_52640000=98037941528207814113",
+    "urlVideo": "https://www.youtube.com/watch?v=Jxi7U7VOMYg",
+    "blogPost": "",
+    "name": "Create a banking ChatBot",
+    "description": "Use Node.js and Watson to build a Banking ChatBot, the app will detect emotion, identify entities, and discover answers. The sample app uses many Watson services demonstrate what can be done with Watson services with a ChatBot.",
+    "language": [
+      "NodeJS"
+    ],
+    "services": [
+      "Watson Tone Analyzer",
+      "Natural Language Understanding", 
+      "Discovery",
+      "Watson Assistant"
+    ],
+    "category": [
+      "Web"
+    ],
+    "Subcategory": [
+      "Watson"
+    ],
+    "MostClicked": "",
+    "industry": "Sample App",
+    "Added": "Recently Added",
+    "search": "",
+    "Author": "IBM",
+    "tags": [
+      "SampleCode"
+    ],
+    "level": "advanced",
+    "State": "live"
+  },
+  {
     "url": "https://github.com/IBM-Cloud/serverless-followupapp-ios",
     "urlLink": "https://console.bluemix.net/docs/tutorials/serverless-mobile-backend.html#mobile-application-with-a-serverless-backend",
     "urlVideo": "",
@@ -26,7 +120,7 @@
     ],
     "MostClicked": "",
     "industry": "Sample App",
-    "Added": "Recently Added",
+    "Added": "",
     "search": "",
     "Author": "IBM",
     "tags": [
@@ -55,7 +149,7 @@
     "Subcategory": [],
     "MostClicked": "",
     "industry": "Sample App",
-    "Added": "Recently Added",
+    "Added": "",
     "search": "",
     "Author": "IBM",
     "tags": [
@@ -74,8 +168,8 @@
       "NodeJS"
     ],
     "services": [
-      "Conversation"
-    ],
+      "Watson Assistant"
+      ],
     "category": [
       "Web"
     ],
@@ -84,7 +178,7 @@
     ],
     "MostClicked": "",
     "industry": "Sample App",
-    "Added": "Recently Added",
+    "Added": "",
     "search": "",
     "Author": "IBM",
     "tags": [
@@ -105,7 +199,7 @@
     ],
     "services": [
       "Cloud Functions",
-      "Conversation",
+      "Watson Assistant",
       "Redis Cloud"
     ],
     "category": [
@@ -117,7 +211,7 @@
     ],
     "MostClicked": "",
     "industry": "Sample App",
-    "Added": "Recently Added",
+    "Added": "",
     "search": "",
     "Author": "IBM",
     "tags": [
@@ -158,7 +252,7 @@
     "industry": "Sample App",
     "search": "IBM FINANCIAL SERVICES, Discovery News, Investment Portfolio",
     "MostClicked": "",
-    "Added": "Recently Added"
+    "Added": ""
   },
   {
     "State": "live",
@@ -242,7 +336,7 @@
       "SampleCode"
     ],
     "services": [
-      "Conversation",
+      "Watson Assistant",
       "Discovery",
       "Cloudant NoSQL DB",
       "Slack"
@@ -323,41 +417,7 @@
     "blogPost": "https://www.ibm.com/blogs/bluemix/2017/03/form-processing-ibm-bluemix-openwhisk/",
     "industry": "Sample App",
     "search": "",
-    "MostClicked": "Form Processing without backend, Form Processing with Cloud Functions, Form Processing with SendGrid",
-    "Added": ""
-  },
-  {
-    "State": "live",
-    "urlVideo": "",
-    "Author": "IBM",
-    "name": "Deploy and Scale Docker and Kubernetes chat app",
-    "url": "https://github.com/IBM-Bluemix/bluechatter",
-    "description": "Deploy and Scale a chat app to Cloud Foundry, Docker Container and Kubernetes. You will learn all about Cloud Foundry, Docker Container and Kubernetes. ",
-    "language": [
-      "NodeJS"
-    ],
-    "tags": [
-      "SampleCode"
-    ],
-    "services": [
-      "Docker Containers",
-      "Redis Cloud",
-      "Auto-Scaling",
-      "Kubernetes"
-    ],
-    "level": "Beginner",
-    "category": [
-      "Web",
-      "Kubernetes"
-    ],
-    "Subcategory": [
-      "Kubernetes"
-    ],
-    "urlLink": "https://bluechattercontainergroup.mybluemix.net/",
-    "blogPost": "https://www.ibm.com/blogs/bluemix/2017/05/2-2-deploy-scale-kubernetes-chat-app-ibm-bluemix/",
-    "industry": "Sample App",
-    "search": "Deploy docker application to the cloud, build and deploy Docker application on the cloud, build a chat Docker app, deploy and scale Docker application, Deploy & Scale a chat app to Cloud Foundry, Docker Container and Kubernetes",
-    "MostClicked": "Most Viewed",
+    "MostClicked": "",
     "Added": ""
   },
   {
@@ -388,7 +448,7 @@
     "blogPost": "https://www.ibm.com/blogs/bluemix/2017/03/sharpen-watson-visual-recognition-results/",
     "industry": "Sample App",
     "search": "",
-    "MostClicked": "Processing Images with IBM Watson, How to process images using Watson visual recognition",
+    "MostClicked": "",
     "Added": ""
   },
   {
@@ -468,7 +528,7 @@
       "SampleCode"
     ],
     "services": [
-      "Conversation API",
+      "Watson Assistant",
       "Text to Speech",
       "Speech to Text",
       "Mobile Analytics"
@@ -485,7 +545,7 @@
     "blogPost": "https://www.ibm.com/blogs/bluemix/2017/01/build-voice-enabled-chatbot-minutes/",
     "industry": "Sample App",
     "search": "Build an Android on app, build an ChatBot for Android",
-    "MostClicked": "Most Viewed",
+    "MostClicked": "",
     "Added": ""
   },
   {
@@ -645,7 +705,7 @@
     ],
     "services": [
       "Tone Analyzer",
-      "Conversation API",
+      "Watson Assistant",
       "Natural Language Classifier",
       "Cloudant"
     ],
@@ -786,7 +846,7 @@
     "industry": "Chatbot",
     "rate": "4/5",
     "search": "build a chatbot using IBM Cloud, Build a car dashboard chatbot",
-    "MostClicked": "Most Viewed",
+    "MostClicked": "",
     "Added": ""
   },
   {
@@ -803,7 +863,7 @@
       "SampleCode"
     ],
     "services": [
-      "Conversation API",
+      "Watson Assistant",
       "Text to Speech",
       "Speech to Text",
       "Alchemy Language APIs"
@@ -1146,7 +1206,7 @@
       "SampleCode"
     ],
     "services": [
-      "Conversation API",
+      "Watson Assistant",
       "Tone Analyzer"
     ],
     "level": "Beginner",
@@ -1179,7 +1239,7 @@
       "SampleCode"
     ],
     "services": [
-      "Conversation API",
+      "Watson Assistant",
       "Retrieve and Rank"
     ],
     "level": "Beginner",
