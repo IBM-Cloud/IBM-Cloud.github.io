@@ -2,7 +2,7 @@
   {
     "url": "https://github.com/IBM-Cloud/jpetstore-kubernetes",
     "urlLink": "http://jpetstore.cloud-demos.us-south.containers.appdomain.cloud",
-    "urlVideo": "https://www.ibm.com/events/think/watch/replay/113899235/#29",
+    "urlVideo": "https://www.youtube.com/watch?v=26RjSa0UZp0&feature=youtu.be",
     "blogPost": "https://www.ibm.com/blogs/bluemix/2018/06/move-vm-based-application-kubernetes/",
     "name": "Modernize and extend apps on IBM Cloud Kubernetes Service",
     "description": "This demo modernizes an existing Java web application (JPetStore) by building a Docker container from the legacy stack. Then moving the app to IBM Cloud Kubernetes Service and extending it with Watson Visual Recognition and Twilio text messaging.",
