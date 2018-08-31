@@ -1,15 +1,11 @@
 angular
   .module('ngSamples')
-  .factory('samplesFactory', function($http){
-
-
-    function getSamples(){
-      return $http.get('data/main.json');
+  .factory('solutionFactory', function($http){
+    function getSolutions(){
+      // return $http.get('data/tutorials.json');
+      return $http.get('https://raw.githubusercontent.com/IBM-Bluemix-Docs/tutorials/master/tutorials.json');
     }
-
-
     return{
-      getSamples: getSamples
+      getSolutions: getSolutions
     }
-
   });

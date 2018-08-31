@@ -11,6 +11,11 @@ a.survey .give-feedback {
     background: #f9f9f9;
     box-sizing: border-box;
 }
+.give-feedback, .feedback-tooltip{
+    overflow:hidden;
+    position:relative; 
+}
+
 
 a.survey .give-feedback:hover h5, a.survey .give-feedback:active h5, a.survey .give-feedback:focus h5 {
     text-decoration: underline;

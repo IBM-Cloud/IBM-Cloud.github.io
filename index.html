@@ -5,58 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="./img/favicon.png"/>
-    <title>IBM Cloud Samples, IBM Cloud Tutorials, IBM Cloud GitHub Apps</title>
+    <link rel="shortcut icon" href="./icons/favicon.png"/>
+    <title>IBM Cloud solutions tutorials</title>
     <meta name="author" content="Twana Daniel || IBM"/>
-    <meta name="description" content="IBM Cloud Samples, IBM Cloud Tutorials, IBM Cloud Examples, Watson Samples, IBM Cloud Apps, IBM Cloud GitHub, IBM Cloud demos"/>
+    <meta name="description" content="IBM Cloud solution tutorials, learn how to build, deploy and scale real-world solutions on IBM Cloud. These guides provide step-by-step instructions on how to use IBM Cloud to implement common patterns based on best practices and proven technologies."/>
     <meta name="keywords" content="Samples,Tutorials, IBM Cloud Tutorials, Code Samples, IBM Cloud, IBM Cloud, IoT, Watson, Cognitive, Cloudant, OpenWhisk, IBM Cloud Tutorials, IBM Cloud samples, mobile app, python, java, nodeJS, swift, IBM Cloud Code, IBM Cloud Apps, Watson Samples"/>
     <meta name="segment" property="IBM-Bluemix.GitHub.io" value="BluemixSample">
     <meta name="google-site-verification" content="fUE5UABOVoKfMqnyk498ykxLXpTBhRdXQn7fD4Cb02w" />
     <!-- FontAwesome icons -->
     <link rel="stylesheet" href="//use.fontawesome.com/74dfc6cf47.css">
 
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="//use.fontawesome.com/74dfc6cf47.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/emojione-awesome.css"/>
-    <link rel="stylesheet" href="./css/NPS-Style.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/NPS-Style.css">
+
     <link rel="stylesheet" href="./css/animations.css">
 
-    <!-- ngDialog’s basic and theme CSS files -->
-    <link rel="stylesheet" href="./css/ngDialogCSS/ngDialog.css">
-    <link rel="stylesheet" href="./css/ngDialogCSS/ngDialog-theme-default.css">
-    <link rel="stylesheet" href="./css/ngDialogCSS/ngDialog-theme-plain.css">
+    <!-- <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" /> -->
 </head>
 
 <body ng-app="ngSamples" ng-controller="samplesController" class="home overflow-hidden">
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDPHZL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
+<div id="fb-root"></div>
 
 <!-- Top header blue line -->
 <div class="header-panel shadow-z-2">
     <div class="header-container">
         <div class="header-row">
             <div class="header01 header-logo">
-                <div class="row-picture">
-                    <a href="./#!/index"><img id="about" width="27" height="24" src="./icons/ibm-cloud-logo-white.svg"></a>
-                </div>
                 <div class="row-details">
-                    <p class="list-group-item-text">IBM Cloud | GitHub.io</p>
+                    <span class="nameP">IBM <b>Cloud</b></span>
                 </div>
             </div>
+
             <div class="header02">
-                <div class="social-icons">
-                    <!-- <button type="button" ng-dialog="firstDialogId" ng-dialog-controller="InsideCtrl" ng-dialog-data="{{jsonData}}" ng-dialog-class="ngdialog-theme-default" ng-dialog-show-close="false" analytics-on="click" analytics-event="SubmitYourSample Popup">Submit Your Sample</button> -->
-                    <a href="https://console.bluemix.net/docs/tutorials/index.html#tutorials" target="_blank" class="tutorialsButton" analytics-on="IBM-Cloud.GitHub.io button" analytics-event="IBM-Cloud.GitHub.io button">Tutorials</a>                    
-                    <a href="https://github.com/IBM-Cloud/IBM-Cloud.github.io/issues/new" target="_blank" class="submitSample" analytics-on="Submit new sample" analytics-event="ubmit new sample">Submit Your Sample</a>                    
-                    
-                    <a class="icon" data-track-action="Icon" data-track-label="StackOverFlow" target="_blank"
-                       href="http://stackoverflow.com/questions/tagged/ibm-bluemix" analytics-on="click" analytics-event="Header To: StackOverFlow"><i class="fa fa-stack-overflow"></i></a>
-                    <a class="icon" data-track-action="Icon" data-track-label="github" target="_blank"
-                       href="https://github.com/IBM-Cloud" analytics-on="click" analytics-event="Header To: Main IBM GitHub"><i class="fa fa-github"></i></a>
-                </div>
+                    <div class="social-icons">
+                        <a class="icon" target="_blank" href="https://stackoverflow.com/questions/tagged/ibm-cloud" >
+                            <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+                        </a>     
+                        <a class="icon" target="_blank" href="https://github.com/IBM-Cloud" >
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>   
+                    </div>  
             </div>
         </div>
     </div>
@@ -68,60 +61,57 @@
 <!-- Loading the view -->
 <div ng-view class="page-animation"> </div>
 
-
 <div class="rowFooter">
         <footer>
             Made with <i class="fa fa-heart" aria-hidden="true"></i> by the IBM Cloud team</br>
-            Copyright © IBM 2018 | <a target="_blank" href="https://www.ibm.com/privacy/us/en/?lnk=flg-priv-usen" analytics-on="click" analytics-event="Footer To: Privacy" analytics-category="Footer" analytics-name="clickEvent">Privacy</a>
-            <br>Powered by <a id="IBMBluemix" target="_blank" href="https://www.ibm.com/cloud" analytics-on="click" analytics-event="Footer To: IBM Bluemix Site" analytics-category="Footer" analytics-name="clickEvent">IBM Cloud</a>
-            <br>
+            Copyright © IBM 2018 | <a href="https://www.ibm.com/privacy/us/en/?lnk=flg-priv-usen">Privacy</a> 
         </footer>
-
 </div>
 <br>
 
 <a href="#" onclick="showNpsSurvey();return false" class="survey cancelled-out-taborder" tabindex="0">
-    <div class="floating-feedback">
-        <!--?xml version="1.0" encoding="utf-8"?-->
-        <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15 50.6" style="enable-background:new 0 0 15 50.6" xml:space="preserve" class="feedback-icon">
-          <g class="feedback-inner">
-          	<g class="feedback-inner-g">
-          		<g>
-          			<path d="M14.5,7.5H14c0,1.8-0.7,3.4-1.9,4.6S9.3,14,7.5,14s-3.4-0.7-4.6-1.9S1,9.3,1,7.5s0.7-3.4,1.9-4.6
-          				S5.7,1,7.5,1s3.4,0.7,4.6,1.9S14,5.7,14,7.5H14.5H15C15,3.4,11.6,0,7.5,0S0,3.4,0,7.5S3.4,15,7.5,15S15,11.6,15,7.5H14.5z"></path>
-          			<path d="M10.3,7.8c0,1.5-1.3,2.8-2.8,2.8S4.7,9.3,4.7,7.8h-1c0,2.1,1.7,3.8,3.8,3.8s3.8-1.7,3.8-3.8H10.3L10.3,7.8z"></path>
-          			<circle cx="5.4" cy="5.4" r="0.8"></circle>
-          			<circle cx="9.6" cy="5.4" r="0.8"></circle>
-          		</g>
-          		<g>
-          			<path d="M14.5,25.3H14c0,1.8-0.7,3.4-1.9,4.6s-2.8,1.9-4.6,1.9s-3.4-0.7-4.6-1.9S1,27.1,1,25.3
-          				c0-1.8,0.7-3.4,1.9-4.6s2.8-1.9,4.6-1.9s3.4,0.7,4.6,1.9c1.2,1.2,1.9,2.8,1.9,4.6H14.5H15c0-4.1-3.4-7.5-7.5-7.5S0,21.2,0,25.3
-          				s3.4,7.5,7.5,7.5s7.5-3.4,7.5-7.5H14.5z"></path>
-          			<polyline points="3.8,27.8 11.2,27.8 11.2,26.8 3.8,26.8 			"></polyline>
-          			<circle cx="5.4" cy="23.2" r="0.8"></circle>
-          			<circle cx="9.6" cy="23.2" r="0.8"></circle>
-          		</g>
-          		<g>
-          			<path d="M14.5,43.1H14c0,1.8-0.7,3.4-1.9,4.6c-1.2,1.2-2.8,1.9-4.6,1.9s-3.4-0.7-4.6-1.9C1.7,46.5,1,44.9,1,43.1
-          				c0-1.8,0.7-3.4,1.9-4.6c1.2-1.2,2.8-1.9,4.6-1.9s3.4,0.7,4.6,1.9s1.9,2.8,1.9,4.6H14.5H15c0-4.1-3.4-7.5-7.5-7.5S0,39,0,43.1
-          				s3.4,7.5,7.5,7.5s7.5-3.4,7.5-7.5H14.5z"></path>
-          			<path d="M4.7,46.8C4.7,45.2,6,44,7.5,44s2.8,1.3,2.8,2.8h1c0-2.1-1.7-3.8-3.8-3.8s-3.8,1.7-3.8,3.8H4.7L4.7,46.8z"></path>
-          			<circle cx="5.4" cy="41" r="0.8"></circle>
-          			<circle cx="9.6" cy="41" r="0.8"></circle>
-          		</g>
-          	</g>
-          </g>
-          </svg>
-        <div class="feedback-tooltip">
-            <span>Give Feedback</span>
+        <div class="floating-feedback">
+            <!--?xml version="1.0" encoding="utf-8"?-->
+            <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15 50.6" style="enable-background:new 0 0 15 50.6" xml:space="preserve" class="feedback-icon">
+              <g class="feedback-inner">
+                  <g class="feedback-inner-g">
+                      <g>
+                          <path d="M14.5,7.5H14c0,1.8-0.7,3.4-1.9,4.6S9.3,14,7.5,14s-3.4-0.7-4.6-1.9S1,9.3,1,7.5s0.7-3.4,1.9-4.6
+                              S5.7,1,7.5,1s3.4,0.7,4.6,1.9S14,5.7,14,7.5H14.5H15C15,3.4,11.6,0,7.5,0S0,3.4,0,7.5S3.4,15,7.5,15S15,11.6,15,7.5H14.5z"></path>
+                          <path d="M10.3,7.8c0,1.5-1.3,2.8-2.8,2.8S4.7,9.3,4.7,7.8h-1c0,2.1,1.7,3.8,3.8,3.8s3.8-1.7,3.8-3.8H10.3L10.3,7.8z"></path>
+                          <circle cx="5.4" cy="5.4" r="0.8"></circle>
+                          <circle cx="9.6" cy="5.4" r="0.8"></circle>
+                      </g>
+                      <g>
+                          <path d="M14.5,25.3H14c0,1.8-0.7,3.4-1.9,4.6s-2.8,1.9-4.6,1.9s-3.4-0.7-4.6-1.9S1,27.1,1,25.3
+                              c0-1.8,0.7-3.4,1.9-4.6s2.8-1.9,4.6-1.9s3.4,0.7,4.6,1.9c1.2,1.2,1.9,2.8,1.9,4.6H14.5H15c0-4.1-3.4-7.5-7.5-7.5S0,21.2,0,25.3
+                              s3.4,7.5,7.5,7.5s7.5-3.4,7.5-7.5H14.5z"></path>
+                          <polyline points="3.8,27.8 11.2,27.8 11.2,26.8 3.8,26.8 			"></polyline>
+                          <circle cx="5.4" cy="23.2" r="0.8"></circle>
+                          <circle cx="9.6" cy="23.2" r="0.8"></circle>
+                      </g>
+                      <g>
+                          <path d="M14.5,43.1H14c0,1.8-0.7,3.4-1.9,4.6c-1.2,1.2-2.8,1.9-4.6,1.9s-3.4-0.7-4.6-1.9C1.7,46.5,1,44.9,1,43.1
+                              c0-1.8,0.7-3.4,1.9-4.6c1.2-1.2,2.8-1.9,4.6-1.9s3.4,0.7,4.6,1.9s1.9,2.8,1.9,4.6H14.5H15c0-4.1-3.4-7.5-7.5-7.5S0,39,0,43.1
+                              s3.4,7.5,7.5,7.5s7.5-3.4,7.5-7.5H14.5z"></path>
+                          <path d="M4.7,46.8C4.7,45.2,6,44,7.5,44s2.8,1.3,2.8,2.8h1c0-2.1-1.7-3.8-3.8-3.8s-3.8,1.7-3.8,3.8H4.7L4.7,46.8z"></path>
+                          <circle cx="5.4" cy="41" r="0.8"></circle>
+                          <circle cx="9.6" cy="41" r="0.8"></circle>
+                      </g>
+                  </g>
+              </g>
+              </svg>
+            <div class="feedback-tooltip">
+                <span>Give Feedback</span>
+            </div>
         </div>
-    </div>
-    <div class="give-feedback">
-        <h5><span></span>Give Feedback</h5>
-    </div>
-</a>
+        <div class="give-feedback">
+            <h5><span></span>Give Feedback</h5>
+        </div>
+    </a>
 </body>
+
 
 
 <!-- Vendor libraries: jQuery only used for Bootstrap functionality -->
@@ -130,6 +120,7 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap-tpls.min.js"></script>
+
 
 <!-- Loading Angular scripts-->
 <script src="app/scripts/ngCookies.js"></script>
@@ -142,66 +133,30 @@
 <!-- Loading controllers, factory, filters and dependencies -->
 <script src="app.js"></script>
 <script src="app/controllers/samplesController.js"></script>
-<script src="app/controllers/requestController.js"></script>
 <script src="app/services/samplesFactory.js"></script>
-<script src="app/filters/samplesFilter.js"></script>
+
+<!-- Loading Google Analytics, segment scripts, angulartics.min.js and angulartics-segment.min.js to track events, Bluemix analytics Amplitude, snipes for (Tealium and Coremetrics), ida_production -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-84377423-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84377423-1');
+</script>
+
+
+<!-- ng-Dialog Popup -->
+<script src="app/scripts/ngDialog.js"></script>
 
 <!-- Loading Google Analytics, segment scripts, angulartics.min.js and angulartics-segment.min.js to track events, Bluemix analytics Amplitude, snipes for (Tealium and Coremetrics), ida_production -->
 <script src="external_scripts/angulartics.min.js"></script>
 <script src="external_scripts/angulartics-segment.min.js"></script>
 <script src="external_scripts/segment.js"> </script>
 
+
 <!-- NPS Feedback -->
 <script src="external_scripts/NPS.js"></script>
 <script async src="https://nps.mybluemix.net/survey/nps-survey.js"></script>
 
-<!-- ng-Dialog Popup -->
-<script src="app/scripts/ngDialog.js"></script>
-<script type="text/ng-template" id="firstDialogId">
-    <div class="ngdialog-message">
-        <h3>Submit Your Sample Application</h3>
-        <p ng-show="theme">Think your application should be featured here? Don't be afraid to drop us a line, we'd love to get in touch.</p>
-    </div>
-
-        <div class="RequestForm" ng-controller="requestController">
-            <form name="myForm" ng-submit="sendMail()">
-                <div class="inputFormPopup">
-                    <div ng-messages="myForm.myName.$error">
-                        <div ng-message="required">This field is required</div>
-                    </div>
-                    <input type="text" name="myName" ng-model="myName" placeholder="Name *" required /><br>
-
-
-                    <div ng-messages="myForm.myEmail.$error">
-                        <div ng-message="required">This field is required</div>
-                        <div ng-message="email">Your email address is invalid</div>
-                    </div>
-                    <input type="email" name="myEmail" ng-model="myEmail" placeholder="Email *" required /><br>
-
-
-                    <div ng-messages="myForm.myUrl.$error">
-                        <div ng-message="required">This field is required</div>
-                    </div>
-                    <input type="text" name="myUrl" ng-model="myUrl" placeholder="Sample Repo URL *" required /><br>
-
-                    <div >
-                        <div>Description (Optional)</div>
-                    </div>
-                    <textarea type="text" name="myDescription" ng-model="myDescription" placeholder="Description" class="myDescription"></textarea>
-                </div>
-
-
-                <div class="form-group-popup">
-                    <div class="ngdialog-buttons">
-                        <button type="button" class="ngdialog-button ngdialog-button-cancel" ng-click="closeThisDialog()">Close</button>
-                        <button type="submit" class="ngdialog-button ngdialog-button-primary" ng-disabled="myForm.$invalid">Submit</button>
-
-                    </div>
-                    <div class="messageContact" ng-show="emailSent">
-                        <div uib-alert ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')" close="closeAlert($index)" class="alert">{{alert.msg}}</div>
-                    </div>
-                </div>
-            </form>
-        </div>
-</script>
 </html>

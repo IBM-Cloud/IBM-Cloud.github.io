@@ -14,10 +14,6 @@
                 controller: 'samplesController',
                 templateUrl: 'app/views/home.html'
             })
-            .when('/index', {
-                controller: 'samplesController',
-                templateUrl: 'app/views/home.html'
-            })
             .otherwise( { redirectTo: '/' } );
     });
 }());
