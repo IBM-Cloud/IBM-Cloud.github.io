@@ -12,6 +12,21 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('../fonts/roman/IBMPlexSans-Regular.eot?') format('eot'), url('../fonts/roman/IBMPlexSans-Regular.woff2') format('woff2'), url('../fonts/roman/IBMPlexSans-Regular.woff') format('woff'), url('../fonts/roman/IBMPlexSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('../fonts/bold/IBMPlexSans-Bold.eot?') format('eot'), url('../fonts/bold/IBMPlexSans-Bold.woff2') format('woff2'), url('../fonts/bold/IBMPlexSans-Bold.woff') format('woff'), url('../fonts/bold/IBMPlexSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 svg {
   vertical-align: middle;
 }
