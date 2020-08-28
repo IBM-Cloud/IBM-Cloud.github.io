@@ -67,7 +67,7 @@
                             <span class="project-link">Last updated: {{sample.lastUpdated}}</span>
 
                             <span ng-show="{{sample.urlLink !== ''}}" class="project-link demo">
-                                <a id="LiveDemo" href="https://cloud.ibm.com/docs/solution-tutorials/{{sample.url}}" class="hrefLink" target="_blank">View Solution</a>
+                                <a id="LiveDemo" href="https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-{{sample.url.split('.')[0]}}" class="hrefLink" target="_blank">View Solution</a>
                             </span>
 
                         </div>
