@@ -87,7 +87,7 @@ a.survey .give-feedback {
 a.survey .floating-feedback {
     position: fixed;
     top: calc((100% - 157px) / 2);
-    left: 15px;
+    right: 15px;
     width: 21px;
     height: 70px;
 }
@@ -108,7 +108,7 @@ a.survey .floating-feedback .feedback-tooltip {
     position: absolute;
     padding: .3em .5em .5em;
     top: -45px;
-    left: 10px;
+    right: 10px;
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
