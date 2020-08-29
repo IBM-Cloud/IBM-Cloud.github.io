@@ -530,7 +530,7 @@ a#demoID:hover {
   margin: 0;
   color: rgba(58, 66, 80, 0.5);
   display: inline-block;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .search-body {
@@ -593,7 +593,7 @@ a#demoID:hover {
   margin-right: 2px;
   border-radius: 10px;
   padding: 2px 6px;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 a#LiveDemo {
