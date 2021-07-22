@@ -42,7 +42,7 @@
                         <div class="project-outer solutions" ng-class="{{sample.count}}">
                             <!-- tracking sample links -->
                             <div class="link-title">
-                                <a id="demoID" href="https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-{{sample.url.split('.')[0]}}" target="_blank">{{sample.name}}</a>
+                                <a id="demoID" href="https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-{{sample.url.split('.')[0].replace('index','tutorials')}}" target="_blank">{{sample.name}}</a>
                             </div>
                             <div class="project-content description">
                                 <span>{{sample.description}}</span>
