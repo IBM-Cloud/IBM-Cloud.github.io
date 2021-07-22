@@ -42,7 +42,7 @@
                         <div class="project-outer solutions" ng-class="{{sample.count}}">
                             <!-- tracking sample links -->
                             <div class="link-title">
-                                <a id="demoID" href="https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-{{sample.url.split('.')[0].replace('index','tutorials')}}" target="_blank">{{sample.name}}</a>
+                                <a id="demoID" href="https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-{{replaceIndexWithTutorials(sample.url)}}" target="_blank">{{sample.name}}</a>
                             </div>
                             <div class="project-content description">
                                 <span>{{sample.description}}</span>
@@ -67,7 +67,7 @@
                             <span class="project-link">Last updated: {{sample.lastUpdated}}</span>
 
                             <span ng-show="{{sample.urlLink !== ''}}" class="project-link demo">
-                                <a id="LiveDemo" href="https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-{{sample.url.split('.')[0]}}" class="hrefLink" target="_blank">View Solution</a>
+                                <a id="LiveDemo" href="https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-{{replaceIndexWithTutorials(sample.url)}}" class="hrefLink" target="_blank">View Solution</a>
                             </span>
 
                         </div>

@@ -9,6 +9,12 @@ angular
         $scope.scrollToLeft = function () {
             console.log('scrollToLeft');
         }
+        
+        $scope.replaceIndexWithTutorials = function(url) {
+            //console.log(url.split('.')[0]);
+            return url.split('.')[0].replace("index","tutorials");
+            
+          };
 
         // load solutions from the factory
         solutionFactory.getSolutions().then(function (data) {
